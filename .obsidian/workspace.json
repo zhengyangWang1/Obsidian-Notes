@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux学习/文本编辑器nano.md",
-                "mode": "preview",
+                "file": "Git/Obsidian Git初使用.md",
+                "mode": "source",
                 "source": false
               }
             }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": " ",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux学习/文本编辑器nano.md",
+                "file": "Git/Obsidian Git初使用.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linux学习/文本编辑器nano.md",
+                "file": "Git/Obsidian Git初使用.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Linux学习/文本编辑器nano.md"
+                "file": "Git/Obsidian Git初使用.md"
               }
             }
           }
@@ -149,14 +149,16 @@
   "active": "c29e26cda2449ae2",
   "lastOpenFiles": [
     "README.md",
+    "Git/Obsidian Git初使用.md",
+    "Git",
+    "Linux学习/文本编辑器nano.md",
+    "Linux学习/文本编辑器Vim.md",
     "newrepo",
     "旅游/西安8.16-20.md",
     "旅游/美食.md",
     "旅游/景点.md",
     "AI/AI绘画.md",
     "Linux学习/命令.md",
-    "Linux学习/文本编辑器nano.md",
-    "Linux学习/文本编辑器Vim.md",
     "TODO.md",
     "[[1705.07874v2].md",
     "Linux学习",
