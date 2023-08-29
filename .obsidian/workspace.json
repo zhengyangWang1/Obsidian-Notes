@@ -25,8 +25,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Git/Obsidian Git初使用.md",
-                "mode": "preview",
+                "file": "TODO.md",
+                "mode": "source",
                 "source": false
               }
             }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Git/Obsidian Git初使用.md",
+                "file": "TODO.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Git/Obsidian Git初使用.md",
+                "file": "TODO.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Git/Obsidian Git初使用.md"
+                "file": "TODO.md"
               }
             }
           }
@@ -162,11 +162,11 @@
   },
   "active": "190c37da20f7ee08",
   "lastOpenFiles": [
+    "Git/Obsidian Git初使用.md",
     "Ob插件/Advanced Tables 表格绘制.md",
     "Ob插件/Admonition.md",
     "Linux学习/命令.md",
     "Linux学习/文本编辑器nano.md",
-    "Git/Obsidian Git初使用.md",
     "Linux学习/文本编辑器Vim TD.md",
     "TODO.md",
     "未命名",
