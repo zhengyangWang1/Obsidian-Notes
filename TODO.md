@@ -13,7 +13,7 @@
 #### 数据增强方法
 数据增强是一种基于有限数据生成更多有效数据来扩充训练集，从而使得训练集训练出的模型效果得到提升的方法。目前，许多数据增强方法在图像生成和表格数据生成等领域应用广泛。
 SMOTE是该领域较早提出的方法之一。SMOTE方法是一种基于插值的数据增强方法，通过处理样本不平衡问题来提升分类器性能。
-近年来，生成对抗网络(Generative adversarial network)在数据增强领域广泛应用。基于GAN，学者们提出了许多变体。MedGAN将一个自编码器与GAN结合，可以在图像层面实现端到端的生成任务，可以生成连续和离散变量，被用于EHR（electronic health record）数据的生成。CrGAN-Cnet将Cramér Distance和Cross-Net architecture整合到算法中，用于航空公司乘客姓名记录生成（Airline Passenger Name Record Generation），此外还能生成数据来填补数据表格中的缺失值。IRGAN首次将在CV领域中广泛应用的GAN引入到信息检索，利用强化学习，创造性地解决了GAN在离散领域的适用问题。
+近年来，生成对抗网络(Generative adversarial network)在数据增强领域广泛应用。基于GAN，学者们提出了许多变体。MedGAN将一个自编码器与GAN结合，可以在图像层面实现端到端的生成任务，可以生成连续和离散变量，被用于EHR（electronic health record）数据的生成。CrGAN-Cnet将Cramér Distance和Cross-Net architecture整合到算法中，用于航空公司乘客姓名记录生成（Airline Passenger Name Record Generation），此外还能生成数据来填补数据表格中的缺失值。IRGAN首次将在CV领域中广泛应用的GAN引入到信息检索，利用强化学习，创造性地解决了GAN在离散领域的适用问题。TableGAN将分类器和信息损失引入GAN，并在生成器、鉴别器和分类器
 
 #### 客户流失预估： 
 两个阶段：
