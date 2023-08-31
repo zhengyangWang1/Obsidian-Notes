@@ -15,7 +15,7 @@
 SMOTE是该领域较早提出的方法之一。SMOTE方法是一种基于插值的数据增强方法，通过处理样本不平衡问题来提升分类器性能。
 近年来，生成对抗网络(Generative adversarial network)在数据增强领域广泛应用。基于GAN，学者们提出了许多变体。MedGAN将一个自编码器与GAN结合，可以在图像层面实现端到端的生成任务，可以生成连续和离散变量，被用于EHR（electronic health record）数据的生成。CrGAN-Cnet将Cramér Distance和Cross-Net architecture整合到算法中，用于航空公司乘客姓名记录生成（Airline Passenger Name Record Generation），此外还能生成数据来填补数据表格中的缺失值。IRGAN首次将在CV领域中广泛应用的GAN引入到信息检索，利用强化学习，创造性地解决了GAN在离散领域的适用问题。TableGAN将分类器和信息损失引入GAN，并在生成器、鉴别器和分类器中应用卷积神经网络（CNN）。另外，在表格数据增强中，隐私保护能力也是一个重要的因素。PATE-GAN提出了一个生成具有差分隐私保证数据的框架。
 上述基于GAN的算法在生成特定类别数据上存在很大不足，而Conditional GAN（CGAN）可以有效控制生成数据，因而被广泛应用。CGAN在生成器和判别器的输入中增加了额外的条件信息，限制了生成数据的生成类型。CW-GAN将Wasserstein距离应用到CGAN中，利用条件向量对少数类进行过采样，以解决表格数据生成不平衡的问题。CTGAN将 PacGAN结构集成到它的鉴别器中，并使用 WGAN 损失加上梯度惩罚来训练一个条件 GAN 框架。CTAB-GAN通过数据编码连续和分类变量的混合数据类型，以及对长尾连续变量有效建模。
-
+2020年，DDPM（Denoising Diffusion Probabilistic Model）被提出，被称为扩散模型，在图像生成领域广泛应用。扩散模型包括两个过程：前向过程和反向过程，其中前向过程又称为扩散过程。无论是前向过程还是反向过程都是一个参数化的马尔可夫链。
 
 #### 客户流失预估： 
 两个阶段：
