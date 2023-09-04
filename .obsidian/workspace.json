@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TODO.md",
+                "file": "Linux学习/文本编辑器Vim.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 212.5
   },
   "right": {
     "id": "19896551692ed0f8",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TODO.md",
+                "file": "Linux学习/文本编辑器Vim.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TODO.md",
+                "file": "Linux学习/文本编辑器Vim.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TODO.md"
+                "file": "Linux学习/文本编辑器Vim.md"
               }
             }
           }
@@ -148,7 +147,7 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "9211477e9a11476d",
+  "active": "190c37da20f7ee08",
   "lastOpenFiles": [
     "TODO.md",
     "未命名.md",
@@ -161,7 +160,7 @@
     "Ob插件/Admonition.md",
     "Linux学习/命令.md",
     "Linux学习/文本编辑器nano.md",
-    "Linux学习/文本编辑器Vim TD.md",
+    "Linux学习/文本编辑器Vim.md",
     "未命名",
     "Ob插件",
     "README.md",
