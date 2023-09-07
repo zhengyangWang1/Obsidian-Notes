@@ -138,3 +138,14 @@ CTABGAN：
 
 
 
+In the field of data mining, there are commonly encountered issues of data imbalance and inadequate protection of user privacy data. These issues can have a detrimental impact on the accuracy of model predictions and the applicability of models in privacy-preserving scenarios. Therefore, the generation of new data has emerged as a prominent solution in addressing these challenges.  
+However, generating high-quality data poses certain challenges in the field of data mining, which primarily deals with structured data characterized by a high number of dimensions and unrelated features.  
+Considering the successful application of diffusion models in tasks such as image generation, this study attempts to apply diffusion models to the task of customer churn prediction.  
+This paper employs Gaussian diffusion models and polynomial diffusion models to generate data for numerical and categorical features in churn data. It also conducts research and analysis on the predictive performance and privacy protection capabilities of these models.  
+We conducted extensive experiments on customer churn data from multiple domains to explore the potential of merging synthetic data with real data for reconstruction.  
+The experimental results indicate that the adoption of the diffusion model enables the generation of high-quality data. Furthermore, the generated data exhibits improvements across various customer churn prediction methods, with a particular advantage observed for weak classifiers. This approach also effectively mitigates the issue of data imbalance.  
+Moreover, the data generated by the diffusion model exhibits a distribution that is closer to real data, thereby possessing potential value in preserving customer privacy.
+
+
+
+
