@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TODO.md",
+                "file": "Linux学习/文件系统.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TODO.md",
+                "file": "Linux学习/文件系统.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TODO.md",
+                "file": "Linux学习/文件系统.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TODO.md"
+                "file": "Linux学习/文件系统.md"
               }
             }
           }
@@ -149,13 +149,13 @@
   },
   "active": "190c37da20f7ee08",
   "lastOpenFiles": [
-    "Git/Git操作.md",
-    "TODO.md",
-    "Ob插件/Advanced Tables 表格绘制.md",
+    "Linux学习/基本命令.md",
+    "Linux学习/文本编辑器.md",
     "Linux学习/文件系统.md",
-    "Linux学习/命令.md",
-    "Linux学习/文本编辑器nano.md",
     "Linux学习/文本编辑器Vim.md",
+    "TODO.md",
+    "Git/Git操作.md",
+    "Ob插件/Advanced Tables 表格绘制.md",
     "未命名.md",
     "Git/Obsidian Git初使用.md",
     "img/Pasted image 20230829225716.png",
