@@ -49,14 +49,13 @@ SMOTE是该领域较早提出的方法之一。SMOTE方法是一种基于插值�
 
 #### 客户流失预估： 
 在过去的研究中，学者们对客户流失预测在多种领域进行了大量的探索，包括电信客户流失、银行理财客户流失、新兴互联网行业客户流失，如电商、直播、旅游产品等。预测方法也逐渐成熟，形成了以机器学习算法为主流的现状。从发展历程上主要分为两个阶段。
-
-第一阶段是传统统计学预测方法，主要包括决策树（decision tree, DT）、逻辑回归（logistic regression，LR）、贝叶斯分类器（bayesian）、支持向量机（support vector machine，SVM）等算法。
-早在2007年，Luo Bin就使用决策树来预测手机服务中的客户流失（# Customer Churn Prediction Based on the Decision Tree in Personal Handyphone System Service）。同年，针对实际客户流失数据中正负样本数量不平衡而且数据量大的特点,Ying Weiyun提出带有不同类权重参数的支持向量机算法CW-SVM来预测客户流失,通过调整类权重参数改变分类面位置,提高算法分类准确性[6]。近些年电子商务发展迅速，客户激增，Qiu Yanfang使用逻辑回归来预测电子商务场景下的客户流失[4]。在[3]中，Hemlata Jain将逻辑回归和logit boost结合起来，在美国电信公司Orange的数据集上表现良好。在[5]中，Guangli Nie分别使用决策树和逻辑回归对某银行信用卡用户流失数据做预测。Arno De Caigny在其论文中将决策树和逻辑回归结合提出了一种新的混合算法，logit leaf model (LLM) ，以更好地对数据进行分类。（# A new hybrid classification algorithm for customer churn prediction based on logistic regression and decision trees）。
-这一阶段的客户流失预测方法主要集中在将这些基础算法和手动特征工程结合对客户流失进行建模[1-3, 6-7]。
-
+第一阶段是传统统计学预测方法，主要包括决策树（decision tree, DT）、逻辑回归（logistic regression，LR）、贝叶斯分类器（bayesian）、支持向量机（support vector machine，SVM）等算法。早在2007年，Luo Bin就使用决策树来预测手机服务中的客户流失（# Customer Churn Prediction Based on the Decision Tree in Personal Handyphone System Service）。同年，针对实际客户流失数据中正负样本数量不平衡而且数据量大的特点,Ying Weiyun提出带有不同类权重参数的支持向量机算法CW-SVM来预测客户流失,通过调整类权重参数改变分类面位置,提高算法分类准确性[6]。近些年电子商务发展迅速，客户激增，Qiu Yanfang使用逻辑回归来预测电子商务场景下的客户流失[4]。在[3]中，Hemlata Jain将逻辑回归和logit boost结合起来，在美国电信公司Orange的数据集上表现良好。在[5]中，Guangli Nie分别使用决策树和逻辑回归对某银行信用卡用户流失数据做预测。Arno De Caigny在其论文中将决策树和逻辑回归结合提出了一种新的混合算法，logit leaf model (LLM) ，以更好地对数据进行分类。（# A new hybrid classification algorithm for customer churn prediction based on logistic regression and decision trees）。这一阶段的客户流失预测方法主要集中在将这些基础算法和手动特征工程结合对客户流失进行建模[1-3, 6-7]。
 第二阶段是客户流失预测场景中集成学习算法的垄断和深度学习的初步探索。随着集成学习的引入，随机森林（random forest，RF）、梯度提升决策树（gradient boosting decision tree，GBDT）、Adaboost和Stack等方法被大量引入到对客户流失预测中，包括在电信、银行、互联网等场景。特别是GBDT，由于其算法具有很好的性能被客户流失预测广泛应用。
 Yaya Xie提出了一种基于随机森林的学习方法，称为改进的平衡随机森林(improved balanced random forests，IBRF)，通过改变类的分布和对少数类的错误分类施加更高的惩罚来迭代学习最佳特征，并将该方法应用于某银行客户流失数据集。（# Customer churn prediction using improved balanced random forests）Liang Jiafu提出了一种基于梯度提升决策树算法(GBDT)和逻辑回归(LR)算法的用户流失预防模型,对参数特征进行调整,对已有移动用户流失数据进行计算,识别速度和准确率均拥有好的效果[8]。Zengyuan Wu提出 PCA-AdaBoost 模型，采用主成分分析来减少数据维度，使用AdaBoost对多个决策树进行级联，以最小化不平衡数据的影响。该模型在kaggle的电子商务数据集上证明了模型的有效性。（# A PCA-AdaBoost model for E-commerce customer churn prediction）
-总结
+在深度学习领域，Ebru Pekel Ozmen改进卷积神经网络算法，提出了一种新的混合扩展卷积决策树模型(ECDT)，将模型应用于零售业员工流失预测的数据集[10]。[11]提出了一个利用交易数据预测银行客户流失的框架,将GRU和bi-directional LSTM应用于客户流失预测。这一阶段的客户流失方法开始尝试将一些机器学习方法集成起来，或是使用流行的深度学习方法，用更复杂的模型学习和预测流失数据。
+整体上，客户流失预测以机器学习算法为主，并发展出集成学习等不同模型，深度学习在该领域也有一定应用。预测领域也从电信用户流失逐渐发展到银行信用卡用户流失、电商用户流失等多个领域。
+
+
 
 
 
