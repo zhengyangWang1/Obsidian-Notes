@@ -55,8 +55,7 @@ SMOTE是该领域较早提出的方法之一。SMOTE方法是一种基于插值�
 这一阶段的客户流失预测方法主要集中在将这些基础算法和手动特征工程结合对客户流失进行建模[1-3, 6-7]。
 
 第二阶段是客户流失预测场景中集成学习算法的垄断和深度学习的初步探索。随着集成学习的引入，随机森林（random forest，RF）、梯度提升决策树（gradient boosting decision tree，GBDT）、Adaboost和Stack等方法被大量引入到对客户流失预测中，包括在电信、银行、互联网等场景。特别是GBDT，由于其算法具有很好的性能被客户流失预测广泛应用。
-
-
+Yaya Xie提出了一种基于随机森林的学习方法，称为改进的平衡随机森林(improved balanced random forests，IBRF)，通过改变类的分布和对少数类的错误分类施加更高的惩罚来迭代学习最佳特征，并将该方法应用于某银行客户流失数据集。（# Customer churn prediction using improved balanced random forests）Liang Jiafu提出了一种基于梯度提升决策树算法(GBDT)和逻辑回归(LR)算法的用户流失预防模型,对参数特征进行调整,对已有移动用户流失数据进行计算,识别速度和准确率均拥有好的效果[8]。Zengyuan Wu提出 PCA-AdaBoost 模型，采用主成分分析来减少数据维度，使用AdaBoost对多个决策树进行级联，以最小化不平衡数据的影响。该模型在kaggle的电子商务数据集上证明了模型的有效性。（# A PCA-AdaBoost model for E-commerce customer churn prediction）
 总结
 
 
