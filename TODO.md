@@ -51,7 +51,8 @@ SMOTE是该领域较早提出的方法之一。SMOTE方法是一种基于插值�
 在过去的研究中，学者们对客户流失预测在多种领域进行了大量的探索，包括电信客户流失、银行理财客户流失、新兴互联网行业客户流失，如电商、直播、旅游产品等。预测方法也逐渐成熟，形成了以机器学习算法为主流的现状。从发展历程上主要分为两个阶段。
 
 第一阶段是传统统计学预测方法，主要包括决策树（decision tree, DT）、逻辑回归（logistic regression，LR）、贝叶斯分类器（bayesian）、支持向量机（support vector machine，SVM）等算法。
-2007年，Luo Bin就使用决策树来预测手机服务中的客户流失
+早在2007年，Luo Bin就使用决策树来预测手机服务中的客户流失（# Customer Churn Prediction Based on the Decision Tree in Personal Handyphone System Service）。2016年，Preeti K. Dalvi
+
 其中，xxx于2019年基于决策树再银行的数据上做了流失的研究，结果。。。。xxx于。。。。
 
 这一阶段的客户流失预测方法主要集中在将这些基础算法和手动特征工程结合对客户流失进行建模[1-3, 6-7]。
