@@ -25,14 +25,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "操作系统.md",
+                "file": "课程/操作系统.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "596cb8f81312fc84",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "课程/数据库.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -98,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "操作系统.md",
+                "file": "课程/数据库.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "操作系统.md",
+                "file": "课程/数据库.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "操作系统.md"
+                "file": "课程/数据库.md"
               }
             }
           }
@@ -160,10 +172,12 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "a4057719c6a004ef",
+  "active": "9211477e9a11476d",
   "lastOpenFiles": [
+    "课程",
+    "课程/操作系统.md",
+    "课程/数据库.md",
     "TODO.md",
-    "操作系统.md",
     "Linux学习/基本命令.md",
     "Linux学习/程序与进程管理.md",
     "数据迁移.md",
@@ -178,7 +192,6 @@
     "img/Pasted image 20230829224733.png",
     "余茂玮诺手心得.md",
     "Ob插件/Admonition.md",
-    "未命名",
     "Ob插件",
     "README.md",
     "img/Pasted image 20230829165617.png",
