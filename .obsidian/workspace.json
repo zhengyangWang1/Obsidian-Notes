@@ -1,64 +1,52 @@
 {
   "main": {
-    "id": "10ddabb870555ad7",
+    "id": "a74c086e2bf00ecc",
     "type": "split",
     "children": [
       {
-        "id": "07e0d81a0b9840f0",
+        "id": "accff24c6c1eb8f4",
         "type": "tabs",
         "children": [
           {
-            "id": "190c37da20f7ee08",
+            "id": "02449a276e3c5810",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TODO.md",
+                "file": "Git/Git操作.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "a4057719c6a004ef",
+            "id": "d2506e15d18c1f7d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "课程/操作系统.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "596cb8f81312fc84",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "课程/数据库.md",
+                "file": "Test.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "f1f79e41573eabec",
+    "id": "e2648d0f43efb10a",
     "type": "split",
     "children": [
       {
-        "id": "962e1a163c1ae8d5",
+        "id": "f9b4bb6e1b652b41",
         "type": "tabs",
         "children": [
           {
-            "id": "9211477e9a11476d",
+            "id": "a096be5067d8f57d",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -68,12 +56,12 @@
             }
           },
           {
-            "id": "a8d8feb56d9a89ef",
+            "id": "0c8343d26f066854",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
-                "query": " ",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -83,7 +71,7 @@
             }
           },
           {
-            "id": "0ec30703e4a73a8e",
+            "id": "e4079a98789e38c6",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -94,23 +82,23 @@
       }
     ],
     "direction": "horizontal",
-    "width": 212.5
+    "width": 300
   },
   "right": {
-    "id": "19896551692ed0f8",
+    "id": "45464171d8013cd8",
     "type": "split",
     "children": [
       {
-        "id": "c9eff28a71186043",
+        "id": "b05f87f54bb51d0f",
         "type": "tabs",
         "children": [
           {
-            "id": "c8fcc01726fa6e85",
+            "id": "5a139571ad452815",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "课程/数据库.md",
+                "file": "Test.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,19 +110,19 @@
             }
           },
           {
-            "id": "a415c3e351135eb9",
+            "id": "b9c112c45a60efc5",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "课程/数据库.md",
+                "file": "Test.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "790ef7dcac8efb36",
+            "id": "66da3d9bb2288acb",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -145,12 +133,12 @@
             }
           },
           {
-            "id": "6f24880691621790",
+            "id": "7be48aeafb4b3406",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "课程/数据库.md"
+                "file": "Test.md"
               }
             }
           }
@@ -172,49 +160,14 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "9211477e9a11476d",
+  "active": "d2506e15d18c1f7d",
   "lastOpenFiles": [
-    "课程",
-    "课程/操作系统.md",
-    "课程/数据库.md",
-    "TODO.md",
+    "Git/Git操作.md",
+    "Test.md",
+    "Linux学习/文件系统.md",
     "Linux学习/基本命令.md",
     "Linux学习/程序与进程管理.md",
-    "数据迁移.md",
-    "Linux学习/文本编辑器.md",
-    "img/Pasted image 20230907160359.png",
-    "Linux学习/文件系统.md",
-    "Linux学习/文本编辑器Vim.md",
-    "Git/Git操作.md",
-    "Ob插件/Advanced Tables 表格绘制.md",
-    "Git/Obsidian Git初使用.md",
-    "img/Pasted image 20230829225716.png",
-    "img/Pasted image 20230829224733.png",
-    "余茂玮诺手心得.md",
-    "Ob插件/Admonition.md",
-    "Ob插件",
-    "README.md",
-    "img/Pasted image 20230829165617.png",
-    "img",
-    "Pasted image 20230829165546.png",
-    "Pasted image 20230829165244.png",
-    "Git",
-    "newrepo",
-    "旅游/西安8.16-20.md",
-    "旅游/美食.md",
-    "旅游/景点.md",
-    "AI/AI绘画.md",
-    "[[1705.07874v2].md",
-    "Linux学习",
-    "编程",
-    "AI",
-    "旅游",
-    "Pasted image 20230825154702.png.md",
-    "扩散实验结果.md",
-    "Pasted image 20230825154702.png",
-    "Pasted image 20230825154609.png",
-    "ai绘画",
-    "2023-08-15.md",
-    "未命名.canvas"
+    "test/test.md",
+    "test"
   ]
 }

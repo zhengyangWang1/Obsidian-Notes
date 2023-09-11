@@ -1,7 +1,7 @@
 [
-  "obsidian-style-settings",
-  "obsidian-git",
   "table-editor-obsidian",
   "obsidian-auto-link-title",
-  "editing-toolbar"
+  "editing-toolbar",
+  "obsidian-git",
+  "obsidian-style-settings"
 ]
