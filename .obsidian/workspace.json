@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Test.md",
+                "file": "Git/Git操作.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Test.md",
+                "file": "Git/Git操作.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Test.md",
+                "file": "Git/Git操作.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Test.md"
+                "file": "Git/Git操作.md"
               }
             }
           }
@@ -149,8 +149,8 @@
   },
   "active": "d2506e15d18c1f7d",
   "lastOpenFiles": [
-    "Git/Git操作.md",
     "Test.md",
+    "Git/Git操作.md",
     "Linux学习/文件系统.md",
     "Linux学习/基本命令.md",
     "Linux学习/程序与进程管理.md",

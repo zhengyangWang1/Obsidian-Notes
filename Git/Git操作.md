@@ -45,6 +45,13 @@ git clone <repo> <directory>
 ### Git 基本操作
 Git 常用的是以下 6 个命令：**git clone**、**git push**、**git add** 、**git commit**、**git checkout**、**git pull**
 ![[Pasted image 20230829224733.png]]
+
+#### Git工作区、暂存库和版本库
+
+- **工作区：** 电脑中的文件目录
+- **暂存区：** 英文叫 stage 或 index。一般存放在 .git 目录下的 index 文件（.git/index）中，所以我们把暂存区有时也叫作索引（index）。
+- **版本库：** 工作区有一个隐藏目录 .git，这个不算工作区，而是 Git 的版本库。
+
 **说明：**
 - workspace：工作区
 - staging area：暂存区/缓存区
