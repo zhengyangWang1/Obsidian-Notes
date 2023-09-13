@@ -25,8 +25,12 @@ kaggle：[免费部署stable diffusion，白嫖32G GPU - 知乎 (zhihu.com)](htt
 - controlnet：[GitHub - lllyasviel/ControlNet-v1-1-nightly: Nightly release of ControlNet 1.1](https://github.com/lllyasviel/ControlNet-v1-1-nightly)同上的下载方式
 **注意：** 下载时可能会因为网络问题下载失败，挂梯子多尝试几次。下载失败后需要到webui\\tmp中删除文件夹，否则无法再次下载。
 
-**Controlnet使用：** 
+**Controlnet使用：** 下载controlnet插件后，按照[GitHub - Mikubill/sd-webui-controlnet: WebUI extension for ControlNet](https://github.com/Mikubill/sd-webui-controlnet)提供的地址下载controlnet模型（14个），放到webui\\extensions\\sd-webui-controlnet\\models目录下
+此时在WebUI中即可看到controlnet界面，有许多参数可选项可调
+可参考b站教程：[“牛逼”的教程来了！一次学会AI二维码+艺术字+光影光效+创意Logo生成，绝对是B站最详细的Stable Diffusion特效设计流程教学！AI绘画进阶应用\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1gX4y1J7ei/?spm_id_from=333.788.recommend_more_video.-1&vd_source=7d4ddbfe6a66f2fbe94075935b693c57)
 
 **模型配置方案：** 
 SD提供了太多的模型组合，在此记录一下模型搭配及其效果
 
+**提示词：** 
+一些通用的提示词可以提高图像质量，特定的提示词可以指定生成内容
