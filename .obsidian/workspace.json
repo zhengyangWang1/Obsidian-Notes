@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "WSL配置.md",
+                "file": "AI/AI绘画.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "WSL配置.md",
+                "file": "AI/AI绘画.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "WSL配置.md",
+                "file": "AI/AI绘画.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "WSL配置.md"
+                "file": "AI/AI绘画.md"
               }
             }
           },
@@ -172,12 +172,13 @@
   },
   "active": "2b0da0095ce909ad",
   "lastOpenFiles": [
+    "img/Pasted image 20230913125854.png",
+    "WSL配置.md",
     "img/Pasted image 20230912235338.png",
     "img/Pasted image 20230912235011.png",
     "img/Pasted image 20230912234523.png",
     "img/Pasted image 20230912234005.png",
     "README.md",
-    "WSL配置.md",
     "数据迁移.md",
     "Git/Obsidian Git初使用.md",
     "Git/Git操作.md",
