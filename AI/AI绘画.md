@@ -15,3 +15,18 @@ kaggle：[免费部署stable diffusion，白嫖32G GPU - 知乎 (zhihu.com)](htt
 [GitHub - AUTOMATIC1111/stable-diffusion-webui: Stable Diffusion web UI](https://github.com/AUTOMATIC1111/stable-diffusion-webui)在Github上下载压缩包并按照说明安装
 ![[Pasted image 20230913125854.png]]
 
+**添加模型：** 在[Civitai | Stable Diffusion models, embeddings, LoRAs and more](https://civitai.com/)上下载模型，添加到相应文件夹。
+- Checkpoint:基本模型，下载到webui\\models\\Stable-diffusion
+- Lora:微调模型，下载到webui\\models\\Lora
+- 其他（待补充）
+
+**插件下载：**
+- 中文汉化：[GitHub - VinsonLaro/stable-diffusion-webui-chinese: stable-diffusion-webui 的汉化扩展](https://github.com/VinsonLaro/stable-diffusion-webui-chinese)作者写了非常详细的下载和使用教程
+- controlnet：[GitHub - lllyasviel/ControlNet-v1-1-nightly: Nightly release of ControlNet 1.1](https://github.com/lllyasviel/ControlNet-v1-1-nightly)同上的下载方式
+**注意：** 下载时可能会因为网络问题下载失败，挂梯子多尝试几次。下载失败后需要到webui\\tmp中删除文件夹，否则无法再次下载。
+
+**Controlnet使用：** 
+
+**模型配置方案：** 
+SD提供了太多的模型组合，在此记录一下模型搭配及其效果
+
