@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux学习/文件系统.md",
+                "file": "Linux学习/文本编辑器.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux学习/文件系统.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linux学习/文件系统.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Linux学习/文件系统.md"
+                "file": "README.md"
               }
             }
           },
@@ -182,8 +182,9 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "f5830e3838245936",
+  "active": "a096be5067d8f57d",
   "lastOpenFiles": [
+    "Linux学习/文件系统.md",
     "WSL配置.md",
     "TODO.md",
     "课程/神经网络与深度学习.md",
@@ -203,7 +204,6 @@
     "论文/扩散模型论文todo（已过期）.md",
     "论文",
     "Test.md",
-    "Linux学习/文件系统.md",
     "Linux学习/基本命令.md",
     "Linux学习/程序与进程管理.md",
     "test/test.md",
