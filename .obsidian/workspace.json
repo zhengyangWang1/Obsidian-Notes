@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TODO.md",
+                "file": "课程/智能计算系统.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TODO.md",
+                "file": "课程/智能计算系统.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TODO.md",
+                "file": "课程/智能计算系统.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TODO.md"
+                "file": "课程/智能计算系统.md"
               }
             }
           },
@@ -184,8 +184,9 @@
   },
   "active": "f5830e3838245936",
   "lastOpenFiles": [
-    "AI/AI绘画.md",
     "TODO.md",
+    "课程/智能计算系统.md",
+    "AI/AI绘画.md",
     "img/Pasted image 20230913125854.png",
     "WSL配置.md",
     "img/Pasted image 20230912235338.png",
