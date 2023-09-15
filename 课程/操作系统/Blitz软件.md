@@ -13,6 +13,9 @@ BLITZ 机器包括两个输入输出设备。第一个是磁盘。仿真器通�
 
 调试器内置于模拟器中，并且是模拟器的组成部分。该模拟器可以在命令行模式下运行，学生可以一次键入一个命令。这些命令可用于调试其 BLITZ 内核代码。
 
+CPU 都在系统模式或用户模式下执行。内核代码在系统模式下执行，而用户级程序在用户模式下执行。任何指令都可以在系统模式下执行，但某些指令是有特权的，因为它们只能在系统模式下执行。特权指令的示例包括更改页表和更改模式本身的指令。
+
+在 BLITZ 架构中，寄存器“r15”指向执行堆栈，该堆栈从较高的内存地址向较低的地址向下增长。
 #### 工具
 - **blitz：** The BLITZ virtual machine emulator and debugger虚拟机模拟器和调试器
 - **asm：** The BLITZ assembler汇编器。
@@ -21,3 +24,14 @@ BLITZ 机器包括两个输入输出设备。第一个是磁盘。仿真器通�
 - **dumpObj：** A tool to examine BLITZ object and executable files检查blitz对象和可执行文件
 - **diskUtil：** A tool to manipulate the initial file system on the emulated BLITZ disk用于操作模拟 BLITZ 磁盘上的初始文件系统的工具
 - **kpl：** The KPL compiler编译器
+
+#### 模拟器Emulator
+在 Unix 下运行时，您可以通过在 Unix 提示符下键入“blitz”来启动模拟器。模拟器首先读入 BLITZ 程序并将其加载到内存中。通常，BLITZ 可执行文件称为“a.out”，但也可以指定其他名称。模拟器首先从“a.out”读取数据并将其加载到其内部存储器中。实际上，模拟器首先使用“a.out”文件中的字节初始化 BLITZ 机器的主内存
+
+asm 程序是 BLITZ 汇编程序。它以汇编语言程序为输入，生成一个对象文件
+第二个程序（称为 "ldd"）是 BLITZ 连接器。它输入一个或多个对象文件，生成一个名为 "a.out "的可执行文件。
+
+quit 命令（可缩写为 "q"）将终止 BLITZ 模拟器。
+
+go 指令（可缩写为 "g"）用于启动仿真器的执行。一旦开始执行，BLITZ 机器将执行指令，直到检测到错误或 BLITZ 机器执行 "等待 "或 "调试 "指令为止。
+
