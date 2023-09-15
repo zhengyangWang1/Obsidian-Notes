@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux学习/文件系统.md",
+                "file": "课程/软件工程.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux学习/文件系统.md",
+                "file": "课程/软件工程.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linux学习/文件系统.md",
+                "file": "课程/软件工程.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Linux学习/文件系统.md"
+                "file": "课程/软件工程.md"
               }
             }
           },
@@ -184,10 +184,11 @@
   },
   "active": "f5830e3838245936",
   "lastOpenFiles": [
+    "Linux学习/文件系统.md",
+    "课程/软件工程.md",
     "Linux学习/基本命令.md",
     "Linux学习/程序与进程管理.md",
     "README.md",
-    "Linux学习/文件系统.md",
     "WSL配置.md",
     "TODO.md",
     "课程/神经网络与深度学习.md",
