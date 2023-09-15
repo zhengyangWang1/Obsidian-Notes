@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TODO.md",
+                "file": "课程/操作系统/Blitz软件.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TODO.md",
+                "file": "课程/操作系统/Blitz软件.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TODO.md",
+                "file": "课程/操作系统/Blitz软件.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TODO.md"
+                "file": "课程/操作系统/Blitz软件.md"
               }
             }
           },
@@ -184,7 +184,11 @@
   },
   "active": "f5830e3838245936",
   "lastOpenFiles": [
-    "课程/软件工程.md",
+    "课程/软件工程/软件工程.md",
+    "课程/软件工程",
+    "课程/操作系统/Blitz软件.md",
+    "课程/操作系统/操作系统.md",
+    "课程/操作系统",
     "TODO.md",
     "Linux学习/文件系统.md",
     "Linux学习/基本命令.md",
@@ -194,7 +198,6 @@
     "课程/神经网络与深度学习.md",
     "课程/智能计算系统.md",
     "课程/数据库.md",
-    "课程/操作系统.md",
     "AI/AI绘画.md",
     "img/Pasted image 20230913125854.png",
     "img/Pasted image 20230912235338.png",
