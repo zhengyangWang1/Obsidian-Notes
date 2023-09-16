@@ -42,19 +42,9 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "1d973090616b6561",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.4.13"
-              }
-            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -192,7 +182,7 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "1d973090616b6561",
+  "active": "f5830e3838245936",
   "lastOpenFiles": [
     "Linux学习/文件系统.md",
     "Linux学习/WSL配置.md",

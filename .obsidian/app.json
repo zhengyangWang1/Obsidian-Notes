@@ -1,4 +1,5 @@
 {
   "newFileLocation": "root",
-  "attachmentFolderPath": "img"
+  "attachmentFolderPath": "img",
+  "vimMode": false
 }
