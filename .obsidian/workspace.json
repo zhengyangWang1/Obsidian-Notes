@@ -37,14 +37,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TODO.md",
+                "file": "Linux学习/WSL配置.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "7d0095210f84291a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "PowerShell美化.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -110,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TODO.md",
+                "file": "PowerShell美化.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "TODO.md",
+                "file": "PowerShell美化.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "TODO.md"
+                "file": "PowerShell美化.md"
               }
             }
           },
@@ -182,19 +194,22 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "f5830e3838245936",
+  "active": "7d0095210f84291a",
   "lastOpenFiles": [
-    "Git/Git操作.md",
+    "img/Pasted image 20230917203623.png",
+    "Linux学习/WSL配置.md",
+    "PowerShell美化.md",
     "Linux学习/文件系统.md",
+    "Linux学习/文本编辑器.md",
     "Linux学习/基本命令.md",
+    "TODO.md",
+    "Git/Git操作.md",
     "课程/软件工程/大作业 酒店温控计费系统 规划.md",
     "img/Pasted image 20230917104741.png",
-    "Linux学习/WSL配置.md",
     "课程/软件工程/软件工程.md",
     "课程/软件工程/作业1 课后阅读.md",
     "课程/操作系统/Blitz软件.md",
     "课程/操作系统/操作系统.md",
-    "TODO.md",
     "课程/软件工程",
     "课程/操作系统",
     "Linux学习/程序与进程管理.md",
