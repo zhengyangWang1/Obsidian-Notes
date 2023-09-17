@@ -8,4 +8,5 @@
 先是按官方的指令下载不了，后来又成功了，然后根据给的config配置文件更改setting
 ![[Pasted image 20230917203623.png]]
 
-根据官网安装主题
+根据官网安装主题,修改profile中的代码
+[Themes | Oh My Posh](https://ohmyposh.dev/docs/themes)这里有所有主题，更换时把profile的id改一下就行
