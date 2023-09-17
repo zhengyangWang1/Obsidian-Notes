@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux学习/WSL配置.md",
+                "file": "课程/软件工程/大作业 酒店温控计费系统 规划.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Linux学习/WSL配置.md",
+                "file": "课程/软件工程/大作业 酒店温控计费系统 规划.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Linux学习/WSL配置.md",
+                "file": "课程/软件工程/大作业 酒店温控计费系统 规划.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Linux学习/WSL配置.md"
+                "file": "课程/软件工程/大作业 酒店温控计费系统 规划.md"
               }
             }
           },
@@ -184,12 +184,13 @@
   },
   "active": "f5830e3838245936",
   "lastOpenFiles": [
+    "img/Pasted image 20230917104741.png",
+    "Linux学习/WSL配置.md",
     "课程/软件工程/大作业 酒店温控计费系统 规划.md",
     "课程/软件工程/软件工程.md",
     "课程/软件工程/作业1 课后阅读.md",
     "课程/操作系统/Blitz软件.md",
     "课程/操作系统/操作系统.md",
-    "Linux学习/WSL配置.md",
     "Linux学习/文件系统.md",
     "TODO.md",
     "课程/软件工程",
