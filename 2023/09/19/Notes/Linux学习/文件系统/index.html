@@ -1,0 +1,765 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
+  <link rel="icon" href="/img/fluid.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="John Doe">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="目录与路径   符号 含义    &#x2F; 根目录   &#x2F;bin 可执行文件   &#x2F;home 用户的主目录   特殊目录符号：    目录 释义    . 代表当前目录   .. 代表上层目录   - 代表上一个工作目录   ~ 代表当前用户的主目录   ~accountname 代表该name账户的主目录   PATH环境变量当前工作目录下的命令和程序可以直接在bash中">
+<meta property="og:type" content="article">
+<meta property="og:title" content="文件系统">
+<meta property="og:url" content="http://example.com/2023/09/19/Notes/Linux%E5%AD%A6%E4%B9%A0/%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="目录与路径   符号 含义    &#x2F; 根目录   &#x2F;bin 可执行文件   &#x2F;home 用户的主目录   特殊目录符号：    目录 释义    . 代表当前目录   .. 代表上层目录   - 代表上一个工作目录   ~ 代表当前用户的主目录   ~accountname 代表该name账户的主目录   PATH环境变量当前工作目录下的命令和程序可以直接在bash中">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2023-09-19T12:47:32.975Z">
+<meta property="article:modified_time" content="2023-09-19T13:32:26.398Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary_large_image">
+  
+  
+  
+  <title>文件系统 - Hexo</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.5-a","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>Fluid</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="文件系统"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2023-09-19 20:47" pubdate>
+          2023年9月19日 晚上
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          2.7k 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          23 分钟
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header">文件系统</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <h3 id="目录与路径"><a href="#目录与路径" class="headerlink" title="目录与路径"></a>目录与路径</h3><table>
+<thead>
+<tr>
+<th>符号</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>&#x2F;</td>
+<td>根目录</td>
+</tr>
+<tr>
+<td>&#x2F;bin</td>
+<td>可执行文件</td>
+</tr>
+<tr>
+<td>&#x2F;home</td>
+<td>用户的主目录</td>
+</tr>
+</tbody></table>
+<p><strong>特殊目录符号：</strong></p>
+<table>
+<thead>
+<tr>
+<th>目录</th>
+<th>释义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>.</td>
+<td>代表当前目录</td>
+</tr>
+<tr>
+<td>..</td>
+<td>代表上层目录</td>
+</tr>
+<tr>
+<td>-</td>
+<td>代表上一个工作目录</td>
+</tr>
+<tr>
+<td>~</td>
+<td>代表当前用户的主目录</td>
+</tr>
+<tr>
+<td>~accountname</td>
+<td>代表该name账户的主目录</td>
+</tr>
+</tbody></table>
+<h3 id="PATH环境变量"><a href="#PATH环境变量" class="headerlink" title="PATH环境变量"></a>PATH环境变量</h3><p>当前工作目录下的命令和程序可以直接在bash中执行，其他目录下的命令和程序无法执行。而PATH中的目录下的命令和程序可以在任何目录下执行。当执行命令时，会先在当前目录中寻找，如果存在即执行命令，如果不存在，则会在PATH中寻找并执行第一个相匹配的命令。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># 显示环境变量中的内容，每个路径用：隔开</span><br><span class="hljs-built_in">echo</span> <span class="hljs-variable">$PATH</span>      <span class="hljs-comment"># $与PATH间没有空格</span><br><br><span class="hljs-comment"># 添加路径到PATH环境变量</span><br><span class="hljs-built_in">export</span> PATH=命令行路径:<span class="hljs-variable">$PATH</span><br></code></pre></td></tr></table></figure>
+
+<h3 id="目录管理"><a href="#目录管理" class="headerlink" title="目录管理"></a>目录管理</h3><p><strong>显示当前工作目录：</strong></p>
+<figure class="highlight mel"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs mel"># <span class="hljs-keyword">pwd</span>显示当前工作目录（<span class="hljs-keyword">print</span> working directory）<br><span class="hljs-keyword">pwd</span><br><br># 用<span class="hljs-keyword">help</span>查看<span class="hljs-keyword">pwd</span>命令的帮助信息<br><span class="hljs-keyword">help</span> <span class="hljs-keyword">pwd</span><br></code></pre></td></tr></table></figure>
+
+<p><strong>查看目录与文件：</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># -l查看文件属性</span><br><span class="hljs-built_in">ls</span> -l<br><br><span class="hljs-comment"># -h以方便阅读的单位显示文件尺寸</span><br><span class="hljs-built_in">ls</span> -lh<br><br><span class="hljs-comment"># -S按照文件大小降序排列</span><br><span class="hljs-built_in">ls</span> -lS<br><br><span class="hljs-comment"># -R可以递归地显示所有路径</span><br><span class="hljs-built_in">ls</span> -R<br></code></pre></td></tr></table></figure>
+
+<p><strong>常用目录操作：</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># 新建目录</span><br><span class="hljs-built_in">mkdir</span> 文件名<br><br><span class="hljs-comment"># 用-p创建多级目录</span><br><span class="hljs-built_in">mkdir</span> -p 路径<br><br><span class="hljs-comment"># 复制目录</span><br><span class="hljs-built_in">cp</span> -r 源路径 目标路径<br><br><span class="hljs-comment"># 移动目录</span><br><span class="hljs-built_in">mv</span> 源路径 目标路径<br><br><span class="hljs-comment"># 删除目录，加-r递归删除目录中的内容</span><br><span class="hljs-built_in">rm</span> -r 路径<br></code></pre></td></tr></table></figure>
+
+<h3 id="文件管理"><a href="#文件管理" class="headerlink" title="文件管理"></a>文件管理</h3><h4 id="文件类型："><a href="#文件类型：" class="headerlink" title="文件类型："></a>文件类型：</h4><p><strong>普通文件类型</strong>：<br>Linux中最多的一种文件类型, 包括 纯文本文件(ASCII)；二进制文件(binary)；数据格式的文件(data);各种压缩文件.第一个属性为 [-]<br><strong>目录文件</strong>：<br>就是目录， 能用 # cd 命令进入的。第一个属性为 [d]，例如 [drwxrwxrwx]<br><strong>块设备文件</strong>：<br>块设备文件 ： 就是存储数据以供系统存取的接口设备，简单而言就是硬盘。例如一号硬盘的代码是 &#x2F;dev&#x2F;hda1等文件。第一个属性为 [b]<br><strong>字符设备</strong>：<br>字符设备文件：即串行端口的接口设备，例如键盘、鼠标等等。第一个属性为 [c]<br><strong>套接字文件</strong>：<br>这类文件通常用在网络数据连接。可以启动一个程序来监听客户端的要求，客户端就可以通过套接字来进行数据通信。第一个属性为 [s]，最常在 &#x2F;var&#x2F;run目录中看到这种文件类型<br><strong>管道文件</strong>：<br>FIFO也是一种特殊的文件类型，它主要的目的是，解决多个程序同时存取一个文件所造成的错误。FIFO是first-in-first-out(先进先出)的缩写。第一个属性为 [p]<br><strong>链接文件</strong>：<br>类似Windows下面的快捷方式。第一个属性为 [l]，例如 [lrwxrwxrwx]</p>
+<h4 id="管道"><a href="#管道" class="headerlink" title="管道"></a>管道</h4><p>管道是一系列将标准输入输出连接起来的进程</p>
+<p><strong>匿名管道：</strong> 用符号“|”表示，用来连接多个命令，将前一个命令的输出导入第二个命令作为输入</p>
+<figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs vim"># 查看<span class="hljs-keyword">ls</span>中包含某个关键词的文件<br><span class="hljs-keyword">ls</span> -<span class="hljs-keyword">l</span> | <span class="hljs-keyword">grep</span> 关键词<br></code></pre></td></tr></table></figure>
+
+<p><strong>命名管道：</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># 用mkfifo命令创建命名管道（FIFO）</span><br><span class="hljs-built_in">mkfifo</span> 管道文件名<br></code></pre></td></tr></table></figure>
+
+<h4 id="新建文件"><a href="#新建文件" class="headerlink" title="新建文件"></a>新建文件</h4><ul>
+<li>touch：文件存在时，修改文件访问时间为当前时间，否则创建该文件</li>
+<li>用文本编辑器创建文件</li>
+<li>重定向方式创建文件：1）“&gt;”操作符：覆盖源文件中已有内容  2）“&gt;&gt;”操作符：将新内容追加到源文件内容的后面</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>命令</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>command &gt; file</td>
+<td>将输出重定向到 file。</td>
+</tr>
+<tr>
+<td>command &lt; file</td>
+<td>将输入重定向到 file。</td>
+</tr>
+<tr>
+<td>command &gt;&gt; file</td>
+<td>将输出以追加的方式重定向到 file。</td>
+</tr>
+<tr>
+<td>n &gt; file</td>
+<td>将文件描述符为 n 的文件重定向到 file。</td>
+</tr>
+<tr>
+<td>n &gt;&gt; file</td>
+<td>将文件描述符为 n 的文件以追加的方式重定向到 file。</td>
+</tr>
+<tr>
+<td>n &gt;&amp; m</td>
+<td>将输出文件 m 和 n 合并。</td>
+</tr>
+<tr>
+<td>n &lt;&amp; m</td>
+<td>将输入文件 m 和 n 合并。</td>
+</tr>
+<tr>
+<td>&lt;&lt; tag</td>
+<td>将开始标记 tag 和结束标记 tag 之间的内容作为输入。</td>
+</tr>
+</tbody></table>
+<h4 id="复制、移动、删除文件"><a href="#复制、移动、删除文件" class="headerlink" title="复制、移动、删除文件"></a>复制、移动、删除文件</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># 使用cp命令复制文件</span><br><span class="hljs-built_in">cp</span> 文件名 新文件名<br><br><span class="hljs-comment"># 用cp命令创建快捷方式（符号链接）</span><br><span class="hljs-built_in">cp</span> -s 文件名 快捷方式名<br><br><span class="hljs-comment"># 使用cp命令-p选项复制文件的完整属性</span><br><span class="hljs-built_in">cp</span> -p 文件名 新文件名<br><br><span class="hljs-comment"># 使用mv命令移动文件</span><br><span class="hljs-built_in">mv</span> 文件名 指定路径<br><br><span class="hljs-comment"># 使用mv命令-i选项移动文件时会提示是否覆盖</span><br><span class="hljs-built_in">mv</span> -i 文件名 指定路径<br><br><span class="hljs-comment"># 使用 mv命令-b选项移动文件时会自动备份重名文件之后直接移动</span><br><span class="hljs-built_in">mv</span> -b 文件名 指定路径  <span class="hljs-comment"># 备份</span><br><br></code></pre></td></tr></table></figure>
+
+<h4 id="搜索文件"><a href="#搜索文件" class="headerlink" title="搜索文件"></a>搜索文件</h4><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><code class="hljs routeros"><span class="hljs-comment"># 使用which命令搜索PATH环境变量中包含的命令的具体路径</span><br>which ls<br><br><span class="hljs-comment"># 使用locate命令查找文件路径，会显示含该关键词的所有文件</span><br>locate 关键词<br><br><span class="hljs-comment"># locate -c输出查找到的文件的个数</span><br>locate -c 关键词<br><br><span class="hljs-comment"># locate -l输出查找到的前n个文档</span><br>locate -l n 关键词<br><br><span class="hljs-comment"># find查找最近三天修改过的文件</span><br><span class="hljs-built_in">find</span> ~ -mtime -3<br><br><span class="hljs-comment"># find查找某路径下属于某用户的所有文件</span><br><span class="hljs-built_in">find</span> 路径 -user 用户名<br><br><span class="hljs-comment"># 根据文件名查找文件路径</span><br><span class="hljs-built_in">find</span> -name 文件名 # 需要输入完整文件名<br><br><span class="hljs-comment"># 查找当前目录下所有管道类型文件</span><br><span class="hljs-built_in">find</span> -type p<br></code></pre></td></tr></table></figure>
+
+<h4 id="显示文件内容"><a href="#显示文件内容" class="headerlink" title="显示文件内容"></a>显示文件内容</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># cat拼接两个文件</span><br><span class="hljs-built_in">cat</span> 第一个文件 第二个文件 &gt; 输出的文件  <span class="hljs-comment"># 用重定向输出到指定文件，默认是输出到终端</span><br><br><span class="hljs-comment"># 当cat一个文件时，则会输出文件内容</span><br> <span class="hljs-built_in">cat</span> 文件名<br> <br><span class="hljs-comment"># cat -n显示文件行号</span><br><span class="hljs-built_in">cat</span> -n 文件名<br><br><span class="hljs-comment"># more命令</span><br>more 文件名<br><br><span class="hljs-comment"># head命令</span><br><span class="hljs-built_in">head</span> -n 5 文件名  <span class="hljs-comment"># 输出文件前5行</span><br>more -c 100 文件名  <span class="hljs-comment"># 输出文件前100个字符</span><br><br><span class="hljs-comment"># tail命令</span><br><span class="hljs-built_in">tail</span> -n 5 文件名  <span class="hljs-comment"># 输出后5行</span><br><span class="hljs-built_in">tail</span> -c +115 文件名  <span class="hljs-comment"># 输出115行至最后</span><br><br><span class="hljs-comment"># less命令</span><br>less 文件名<br><br><span class="hljs-comment"># grep命令可以实现关键词匹配</span><br>grep <span class="hljs-string">&quot;关键词&quot;</span> 文件名<br></code></pre></td></tr></table></figure>
+
+<h4 id="文件压缩与备份"><a href="#文件压缩与备份" class="headerlink" title="文件压缩与备份"></a>文件压缩与备份</h4><figure class="highlight ldif"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><code class="hljs ldif"><span class="hljs-comment"># 使用gzip进行文件压缩</span><br>gzip 文件名<br><br><span class="hljs-comment"># gzip -c：将压缩的内容输出到屏幕上，源文件不变，可以通过重定向处理输出的内容</span><br><br><span class="hljs-comment"># 使用gzip解压缩</span><br>gzip -d 文件名<br><br><span class="hljs-comment"># bzip2 同gzip</span><br><br><span class="hljs-comment"># tar命令可以将多个文件合并为一个压缩包</span><br><span class="hljs-literal">-</span>c:新建打包文件<br><span class="hljs-literal">-</span>t：查看打包文件中包含哪些文件<br><span class="hljs-literal">-</span>x：解包文件包<br><span class="hljs-literal">-</span>j：通过bzip2的支持进行压缩/解压缩<br><span class="hljs-literal">-</span>z：通过gzip的支持进行压缩/解压缩<br><span class="hljs-literal">-</span>C：指定解包目标路径<br><span class="hljs-literal">-</span>p：打包过程中保留源文件的属性和权限<br><span class="hljs-literal">-</span>v：输出打包过程中正在处理的文件名<br></code></pre></td></tr></table></figure>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/Notes/" class="category-chain-item">Notes</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/Notes/Linux%E5%AD%A6%E4%B9%A0/" class="category-chain-item">Linux学习</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>文件系统</div>
+      <div>http://example.com/2023/09/19/Notes/Linux学习/文件系统/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>John Doe</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2023年9月19日</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2023/09/19/Notes/Linux%E5%AD%A6%E4%B9%A0/%E6%96%87%E6%9C%AC%E7%BC%96%E8%BE%91%E5%99%A8/" title="文本编辑器">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">文本编辑器</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2023/09/19/Notes/Linux%E5%AD%A6%E4%B9%A0/%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4/" title="基本命令">
+                        <span class="hidden-mobile">基本命令</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
+    </div>
+  
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>
