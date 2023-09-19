@@ -1,0 +1,27 @@
+name: Deployment
+
+on:
+  push:
+    branches: main
+jobs:
+  hexo-deployment:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout source
+      uses: actions/checkout@v3
+      with:
+        submodules: true
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18.18'
+
+    - name: Install dependencies & Generate static files
+      run: 
+        node -v
+        npm i -g hexo-cli
+        npm i
+        hexo clean
+        hexo g
