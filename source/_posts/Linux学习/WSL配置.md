@@ -1,3 +1,9 @@
+---
+title: WSL配置
+categories:
+  - Linux学习
+---
+
 WSL(Windows Subsystem for Linux)，Windows自带的Linux子系统
 
 ## TODO 

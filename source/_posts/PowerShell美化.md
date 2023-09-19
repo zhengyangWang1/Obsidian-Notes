@@ -1,3 +1,6 @@
+---
+title: PowellShell美化
+---
 下载最新的PowerShell7.x.x
 
 根据oh my posh官网安装，结合网上的博客配置

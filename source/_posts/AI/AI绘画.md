@@ -1,4 +1,8 @@
-
+---
+title: Git操作
+categories:
+  - AI
+---
 ## stable diffusion 模型画任意要求
 
 飞桨： [文生图[多loRA,ControlNet预处理,高清v2,视频生成]v11_副本](https://aistudio.baidu.com/projectdetail/6665563)
