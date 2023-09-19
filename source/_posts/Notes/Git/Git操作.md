@@ -1,6 +1,7 @@
 ---
 title: Git操作
 categories:
+  - Notes
   - Git
 ---
 

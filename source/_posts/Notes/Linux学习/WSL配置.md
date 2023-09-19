@@ -1,6 +1,7 @@
 ---
 title: WSL配置
 categories:
+  - Notes
   - Linux学习
 ---
 

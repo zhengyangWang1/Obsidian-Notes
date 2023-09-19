@@ -1,5 +1,7 @@
 ---
 title: PowellShell美化
+categories:
+  - Notes
 ---
 下载最新的PowerShell7.x.x
 

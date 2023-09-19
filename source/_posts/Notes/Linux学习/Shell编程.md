@@ -1,6 +1,7 @@
 ---
 title: Shell编程
 categories:
+  - Notes
   - Linux学习
 ---
 打开文本编辑器(可以使用 vi/vim 命令来创建文件)，新建一个文件 test.sh，扩展名为 sh（sh代表shell）

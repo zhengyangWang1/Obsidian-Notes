@@ -1,6 +1,7 @@
 ---
 title: OBsidian Git使用
 categories:
+  - Notes
   - Git
 ---
 

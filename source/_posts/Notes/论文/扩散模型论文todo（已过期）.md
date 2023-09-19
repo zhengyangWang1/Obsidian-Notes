@@ -1,6 +1,7 @@
 ---
 title: 扩散模型论文todo（已过期）
 categories:
+  - Notes
   - 论文
 ---
 - [x] 只考虑真实&生成，修改文字

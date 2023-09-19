@@ -1,5 +1,22 @@
 {
-  "newFileLocation": "root",
-  "attachmentFolderPath": "img",
-  "vimMode": false
+  "newFileLocation": "folder",
+  "attachmentFolderPath": "",
+  "vimMode": false,
+  "userIgnoreFilters": [
+    "2023/",
+    "categories/",
+    "archives/",
+    "css/",
+    "img/",
+    "js/",
+    "links/",
+    "node_modules/",
+    "public/",
+    "page/",
+    "scaffolds/",
+    "tags/",
+    "themes/",
+    "xml/"
+  ],
+  "newFileFolderPath": "source/_posts/Notes"
 }
