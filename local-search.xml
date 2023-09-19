@@ -4,11 +4,19 @@
   
   
   <entry>
+<<<<<<< HEAD
     <title></title>
     <link href="/2023/09/19/Notes/%E6%9C%AA%E5%91%BD%E5%90%8D/"/>
     <url>/2023/09/19/Notes/%E6%9C%AA%E5%91%BD%E5%90%8D/</url>
     
     <content type="html"><![CDATA[<p>123</p>]]></content>
+=======
+    <title>hexo+Obsidian+github笔记博客</title>
+    <link href="/2023/09/19/Notes/hexo+Obsidian+github%E5%8D%9A%E5%AE%A2/"/>
+    <url>/2023/09/19/Notes/hexo+Obsidian+github%E5%8D%9A%E5%AE%A2/</url>
+    
+    <content type="html"><![CDATA[]]></content>
+>>>>>>> f394604d20841abf36f8c2e1288dedbf67d823a1
     
     
     
@@ -169,6 +177,11 @@
     
     <categories>
       
+<<<<<<< HEAD
+=======
+      <category>Notes</category>
+      
+>>>>>>> f394604d20841abf36f8c2e1288dedbf67d823a1
       <category>课程</category>
       
       <category>软件工程</category>
@@ -190,6 +203,11 @@
     
     <categories>
       
+<<<<<<< HEAD
+=======
+      <category>Notes</category>
+      
+>>>>>>> f394604d20841abf36f8c2e1288dedbf67d823a1
       <category>课程</category>
       
       <category>软件工程</category>
@@ -211,6 +229,11 @@
     
     <categories>
       
+<<<<<<< HEAD
+=======
+      <category>Notes</category>
+      
+>>>>>>> f394604d20841abf36f8c2e1288dedbf67d823a1
       <category>课程</category>
       
       <category>软件工程</category>
@@ -232,6 +255,11 @@
     
     <categories>
       
+<<<<<<< HEAD
+=======
+      <category>Notes</category>
+      
+>>>>>>> f394604d20841abf36f8c2e1288dedbf67d823a1
       <category>课程</category>
       
       <category>操作系统</category>
@@ -253,6 +281,11 @@
     
     <categories>
       
+<<<<<<< HEAD
+=======
+      <category>Notes</category>
+      
+>>>>>>> f394604d20841abf36f8c2e1288dedbf67d823a1
       <category>课程</category>
       
       <category>操作系统</category>
@@ -269,11 +302,20 @@
     <link href="/2023/09/19/Notes/%E8%AF%BE%E7%A8%8B/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E4%B8%8E%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
     <url>/2023/09/19/Notes/%E8%AF%BE%E7%A8%8B/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E4%B8%8E%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/</url>
     
+<<<<<<< HEAD
     <content type="html"><![CDATA[<p>教材：</p><ul><li>神经网络与深度学习，邱锡鹏 <a href="https://nndl.github.io/">神经网络与深度学习</a></li><li>动手学深度学习 阿斯顿·张、李沐</li><li><strong>深度学习，Ian Goddfellow</strong></li></ul><p>公开课：</p><ul><li>李宏毅：机器学习</li><li>CS224n</li><li>CS231n</li></ul><p>考核：平时作业80（选够100分的题量）+其他20（随堂考试、问答）</p>]]></content>
+=======
+    <content type="html"><![CDATA[<p><u></u>教材：</p><ul><li>神经网络与深度学习，邱锡鹏 <a href="https://nndl.github.io/">神经网络与深度学习</a></li><li>动手学深度学习 阿斯顿·张、李沐</li><li><strong>深度学习，Ian Goddfellow</strong></li></ul><p>公开课：</p><ul><li>李宏毅：机器学习</li><li>CS224n</li><li>CS231n</li></ul><p>考核：平时作业80（选够100分的题量）+其他20（随堂考试、问答）</p>]]></content>
+>>>>>>> f394604d20841abf36f8c2e1288dedbf67d823a1
     
     
     <categories>
       
+<<<<<<< HEAD
+=======
+      <category>Notes</category>
+      
+>>>>>>> f394604d20841abf36f8c2e1288dedbf67d823a1
       <category>课程</category>
       
     </categories>
@@ -293,6 +335,11 @@
     
     <categories>
       
+<<<<<<< HEAD
+=======
+      <category>Notes</category>
+      
+>>>>>>> f394604d20841abf36f8c2e1288dedbf67d823a1
       <category>课程</category>
       
     </categories>
@@ -312,6 +359,11 @@
     
     <categories>
       
+<<<<<<< HEAD
+=======
+      <category>Notes</category>
+      
+>>>>>>> f394604d20841abf36f8c2e1288dedbf67d823a1
       <category>课程</category>
       
     </categories>

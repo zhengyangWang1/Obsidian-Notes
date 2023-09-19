@@ -178,8 +178,18 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "4bc0dd1b75d7440c",
+  "active": "66503dcea198d72b",
   "lastOpenFiles": [
+    "categories/Notes/课程/操作系统/index.html",
+    "categories/Notes/课程/软件工程/index.html",
+    "categories/Notes/课程/软件工程",
+    "categories/Notes/课程/操作系统",
+    "categories/Notes/课程/index.html",
+    "categories/Notes/课程",
+    "categories/Notes/page/3/index.html",
+    "categories/Notes/page/3",
+    "2023/09/19/Notes/hexo+Obsidian+github博客/index.html",
+    "2023/09/19/Notes/hexo+Obsidian+github博客",
     "source/_posts/Notes/img/Pasted image 20230912235011.png",
     "source/_posts/Notes/img/Pasted image 20230907160359.png",
     "source/_posts/Notes/img/Pasted image 20230913125854.png",
@@ -191,18 +201,9 @@
     "source/_posts/Notes/img/Pasted image 20230829165617.png",
     "source/_posts/Notes/img",
     "source/_posts/Notes/hexo+Obsidian+github博客.md",
-    "public/2023/09/19/Notes/hexo+Obsidian+github博客/index.html",
-    "public/2023/09/19/Notes/hexo+Obsidian+github博客",
     "source/_posts/Notes/PowerShell美化.md",
     "source/_posts/Notes/TODO.md",
     "source/_posts/Notes/课程/神经网络与深度学习.md",
-    "public/categories/Notes/page/3/index.html",
-    "public/categories/Notes/page/3",
-    "public/categories/Notes/课程/软件工程/index.html",
-    "public/categories/Notes/课程/操作系统/index.html",
-    "public/categories/Notes/课程/软件工程",
-    "public/categories/Notes/课程/操作系统",
-    "public/categories/Notes/课程/index.html",
     "source/_posts/Notes/课程/智能计算系统.md",
     "source/_posts/Notes/课程/数据库.md",
     "Template/hexo.md",
@@ -224,7 +225,6 @@
     "source/_posts/Linux学习/程序与进程管理.md",
     "source/_posts/Linux学习/文本编辑器.md",
     "source/_posts/Linux学习/文件系统.md",
-    "source/_posts/img/Pasted image 20230918212903.png",
-    "source/_posts/img/Pasted image 20230918213533.png"
+    "source/_posts/img/Pasted image 20230918212903.png"
   ]
 }
