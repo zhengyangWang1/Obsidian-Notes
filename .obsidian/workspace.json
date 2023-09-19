@@ -1,0 +1,226 @@
+{
+  "main": {
+    "id": "a74c086e2bf00ecc",
+    "type": "split",
+    "children": [
+      {
+        "id": "accff24c6c1eb8f4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d2506e15d18c1f7d",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "2b0da0095ce909ad",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "f5830e3838245936",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "7d0095210f84291a",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "e2648d0f43efb10a",
+    "type": "split",
+    "children": [
+      {
+        "id": "f9b4bb6e1b652b41",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a096be5067d8f57d",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "0c8343d26f066854",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "e4079a98789e38c6",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "45464171d8013cd8",
+    "type": "split",
+    "children": [
+      {
+        "id": "b05f87f54bb51d0f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5a139571ad452815",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "b9c112c45a60efc5",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "66da3d9bb2288acb",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "7be48aeafb4b3406",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          },
+          {
+            "id": "0dbcb1dcfde04ffa",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false
+    }
+  },
+  "active": "a096be5067d8f57d",
+  "lastOpenFiles": [
+    "source/_posts/Ob插件/Advanced Tables 表格绘制.md",
+    "source/_posts/Ob插件",
+    "source/_posts/Linux学习/程序与进程管理.md",
+    "source/_posts/Linux学习/文本编辑器.md",
+    "source/_posts/Linux学习/文件系统.md",
+    "source/_posts/Linux学习/基本命令.md",
+    "source/_posts/Linux学习/WSL配置.md",
+    "source/_posts/Linux学习/Shell编程.md",
+    "source/_posts/Linux学习",
+    "source/_posts/AI/AI绘画.md",
+    "source/_posts/AI",
+    "source/_posts/TODO.md",
+    "source/_posts/README.md",
+    "source/_posts/PowerShell美化.md",
+    "source/_posts/旅游/美食.md",
+    "source/_posts/旅游/西安8.16-20.md",
+    "source/_posts/旅游/景点.md",
+    "source/_posts/旅游",
+    "source/_posts/论文/扩散模型论文todo（已过期）.md",
+    "source/_posts/论文",
+    "source/_posts/课程/软件工程/软件工程.md",
+    "source/_posts/课程/软件工程/大作业 酒店温控计费系统 规划.md",
+    "source/_posts/课程/软件工程/作业1 课后阅读.md",
+    "source/_posts/课程/操作系统/Blitz软件.md",
+    "source/_posts/课程/操作系统/操作系统.md",
+    "source/_posts/课程/软件工程",
+    "source/_posts/课程/神经网络与深度学习.md",
+    "source/_posts/课程/智能计算系统.md",
+    "source/_posts/课程/数据库.md",
+    "source/_posts/课程/操作系统",
+    "source/_posts/课程",
+    "source/_posts/编程",
+    "source/_posts/img/Pasted image 20230918212903.png",
+    "source/_posts/img/Pasted image 20230918213533.png",
+    "source/_posts/img/Pasted image 20230917203623.png",
+    "source/_posts/img/Pasted image 20230918212851.png",
+    "source/_posts/img/Pasted image 20230917104741.png",
+    "source/_posts/img/Pasted image 20230913125854.png",
+    "source/_posts/img/Pasted image 20230912235338.png",
+    "source/_posts/img/Pasted image 20230912235011.png",
+    "source/_posts/img/Pasted image 20230912234523.png",
+    "source/_posts/img/Pasted image 20230912234005.png",
+    "source/_posts/img",
+    "README.md",
+    "TODO.md",
+    "课程/操作系统/Blitz软件.md"
+  ]
+}
