@@ -8,26 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "d2506e15d18c1f7d",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
-            }
-          },
-          {
-            "id": "2b0da0095ce909ad",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "source/_posts/Notes/未命名.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "f5830e3838245936",
             "type": "leaf",
             "state": {
@@ -39,8 +19,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -106,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "source/_posts/Notes/未命名.md",
+                "file": "source/_posts/Notes/课程/神经网络与深度学习.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -123,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "source/_posts/Notes/未命名.md",
+                "file": "source/_posts/Notes/课程/神经网络与深度学习.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "source/_posts/Notes/未命名.md"
+                "file": "source/_posts/Notes/课程/神经网络与深度学习.md"
               }
             }
           },
@@ -159,13 +138,21 @@
                 "sortOrder": "frequency"
               }
             }
+          },
+          {
+            "id": "66503dcea198d72b",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 289.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -178,44 +165,44 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "2b0da0095ce909ad",
+  "active": "66503dcea198d72b",
   "lastOpenFiles": [
+    "categories/课程/软件工程/index.html",
+    "categories/课程/操作系统/index.html",
+    "categories/课程/软件工程",
+    "categories/课程/操作系统",
+    "categories/课程/index.html",
+    "categories/课程",
+    "categories/Notes/page/2/index.html",
+    "categories/Notes/论文/index.html",
+    "categories/Notes/旅游/index.html",
+    "categories/Notes/Ob插件/index.html",
+    "categories/Notes/page/2",
+    "source/_posts/Notes/课程/神经网络与深度学习.md",
     "Template/hexo.md",
     "source/_posts/Notes/未命名.md",
-    "source/_posts/Notes/课程/神经网络与深度学习.md",
-    "Template",
     "source/_posts/Notes/TODO.md",
     "source/_posts/Notes/PowerShell美化.md",
     "source/_posts/Notes/旅游/美食.md",
     "source/_posts/Notes/旅游/西安8.16-20.md",
     "source/_posts/Notes/旅游/景点.md",
-    "source/_posts/Notes/旅游",
     "source/_posts/Notes/论文/扩散模型论文todo（已过期）.md",
-    "source/_posts/Notes/论文",
-    "source/_posts/Notes/编程",
     "source/_posts/Notes/Ob插件/Advanced Tables 表格绘制.md",
-    "source/_posts/Notes/Ob插件",
     "source/_posts/Notes/AI/AI绘画.md",
-    "source/_posts/Notes/AI",
     "source/_posts/Notes/Linux学习/程序与进程管理.md",
     "source/_posts/Notes/Linux学习/WSL配置.md",
     "source/_posts/Notes/Linux学习/文本编辑器.md",
     "source/_posts/Notes/Linux学习/文件系统.md",
     "source/_posts/Notes/Linux学习/基本命令.md",
     "source/_posts/Notes/Linux学习/Shell编程.md",
-    "source/_posts/Notes/Linux学习",
     "source/_posts/Notes/Git/Git操作.md",
     "source/_posts/Notes/Git/Obsidian Git初使用.md",
-    "source/_posts/Notes/Git",
-    "source/_posts/Notes",
-    "page/2/index.html",
     "source/_posts/Ob插件/Advanced Tables 表格绘制.md",
     "source/_posts/Linux学习/程序与进程管理.md",
     "source/_posts/Linux学习/文本编辑器.md",
     "source/_posts/Linux学习/文件系统.md",
     "source/_posts/Linux学习/基本命令.md",
     "source/_posts/Linux学习/WSL配置.md",
-    "source/_posts/Linux学习/Shell编程.md",
     "source/_posts/img/Pasted image 20230918212903.png",
     "source/_posts/img/Pasted image 20230918213533.png",
     "source/_posts/img/Pasted image 20230917203623.png",

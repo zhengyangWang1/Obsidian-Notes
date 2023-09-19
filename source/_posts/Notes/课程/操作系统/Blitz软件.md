@@ -1,6 +1,7 @@
 ---
 title: Blitz软件
 categories:
+  - Notes
   - 课程
   - 操作系统
 ---
