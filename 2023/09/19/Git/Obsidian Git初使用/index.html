@@ -16,21 +16,21 @@
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
   
-    <meta name="description" content="this is a test.">
+    <meta name="description" content="Git使用第一次使用需要配置用户名和邮箱，这个数据是全局的，不需要重复配置 123git config --global user.name 用户名  # 配置用户名git config --global user.email  # 配置邮箱git config --global --list  # 检查是否配置成功  在Github上配置SSH key原理 SSH登录安全性由非对称加密保证，产生">
 <meta property="og:type" content="article">
-<meta property="og:title" content="test">
-<meta property="og:url" content="http://example.com/2023/09/19/test/index.html">
+<meta property="og:title" content="OBGit使用">
+<meta property="og:url" content="http://example.com/2023/09/19/Git/Obsidian%20Git%E5%88%9D%E4%BD%BF%E7%94%A8/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="this is a test.">
+<meta property="og:description" content="Git使用第一次使用需要配置用户名和邮箱，这个数据是全局的，不需要重复配置 123git config --global user.name 用户名  # 配置用户名git config --global user.email  # 配置邮箱git config --global --list  # 检查是否配置成功  在Github上配置SSH key原理 SSH登录安全性由非对称加密保证，产生">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-09-19T11:42:24.000Z">
-<meta property="article:modified_time" content="2023-09-19T11:43:03.000Z">
+<meta property="article:published_time" content="2023-09-19T12:38:33.934Z">
+<meta property="article:modified_time" content="2023-09-19T12:39:32.858Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>test - Hexo</title>
+  <title>OBGit使用 - Hexo</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -196,7 +196,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="test"></span>
+            <span id="subtitle" data-typed-text="OBGit使用"></span>
           
         </div>
 
@@ -207,7 +207,7 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-09-19 19:42" pubdate>
+        <time datetime="2023-09-19 20:38" pubdate>
           2023年9月19日 晚上
         </time>
       </span>
@@ -219,7 +219,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          12 字
+          962 字
         
       </span>
     
@@ -230,7 +230,7 @@
         
         
         
-          1 分钟
+          9 分钟
         
       </span>
     
@@ -267,12 +267,34 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">test</h1>
+            <h1 id="seo-header">OBGit使用</h1>
             
             
               <div class="markdown-body">
                 
-                <p>this is a test.</p>
+                <h3 id="Git使用"><a href="#Git使用" class="headerlink" title="Git使用"></a>Git使用</h3><p>第一次使用需要配置用户名和邮箱，这个数据是全局的，不需要重复配置</p>
+<figure class="highlight dsconfig"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs dsconfig"><span class="hljs-string">git</span> <span class="hljs-string">config</span> <span class="hljs-built_in">--global</span> <span class="hljs-string">user</span>.<span class="hljs-string">name</span> 用户名  <span class="hljs-comment"># 配置用户名</span><br><span class="hljs-string">git</span> <span class="hljs-string">config</span> <span class="hljs-built_in">--global</span> <span class="hljs-string">user</span>.<span class="hljs-string">email</span>  <span class="hljs-comment"># 配置邮箱</span><br><span class="hljs-string">git</span> <span class="hljs-string">config</span> <span class="hljs-built_in">--global</span> <span class="hljs-built_in">--list</span>  <span class="hljs-comment"># 检查是否配置成功</span><br></code></pre></td></tr></table></figure>
+
+<h3 id="在Github上配置SSH-key"><a href="#在Github上配置SSH-key" class="headerlink" title="在Github上配置SSH key"></a>在Github上配置SSH key</h3><h5 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h5><blockquote>
+<p>SSH登录安全性由非对称加密保证，产生密钥时，一次产生两个密钥，一个公钥，一个私钥，在git中一般命名为id_rsa.pub, id_rsa。<br>  本地生成一个密钥对，其中公钥放到远程主机，私钥保存在本地<br>  当本地主机需要登录远程主机时，本地主机向远程主机发送一个登录请求，远程收到消息后，随机生成一个字符串并用公钥加密，发回给本地。本地拿到该字符串，用存放在本地的私钥进行解密，再次发送到远程，远程比对该解密后的字符串与源字符串是否等同，如果等同则认证成功。<br>  <strong>ssh key的配置是针对每台主机的</strong>。<br>  目的是在Github上实现免密登录</p>
+</blockquote>
+<p><strong>第一步：检查本地主机是否已经存在ssh key</strong></p>
+<figure class="highlight jboss-cli"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs jboss-cli"><span class="hljs-keyword">cd</span> ~<span class="hljs-string">/.ssh</span> <br>   <span class="hljs-keyword">ls</span> <br>   <span class="hljs-string">//</span>看是否存在 id_rsa 和 id_rsa.pub文件，如果存在，说明已经有SSH Key<br></code></pre></td></tr></table></figure>
+
+<p><strong>第二步：如果不存在，生成ssh key</strong></p>
+<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs awk">ssh-keygen -t rsa -C <span class="hljs-string">&quot;xxx@xxx.com&quot;</span><br><span class="hljs-regexp">//</span>执行后一直回车即可<br></code></pre></td></tr></table></figure>
+
+<p><strong>第三步：获取ssh key公钥内容（id_rsa.pub）</strong></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">cd</span> ~/.ssh<br><span class="hljs-built_in">cat</span> id_rsa.pub<br></code></pre></td></tr></table></figure>
+
+<p><strong>第四步：在Github的Setting中添加key</strong><br><strong>第五步：验证是否成功</strong></p>
+<figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs nginx"><span class="hljs-attribute">ssh</span> -T git<span class="hljs-variable">@github</span>.com<br></code></pre></td></tr></table></figure>
+
+<h3 id="添加Github远程仓库："><a href="#添加Github远程仓库：" class="headerlink" title="添加Github远程仓库："></a>添加Github远程仓库：</h3><p>创建一个Github仓库用于存放笔记</p>
+<p>![[Pasted image 20230829165617.png]]</p>
+<h3 id="配置本地-Obsidian-仓库"><a href="#配置本地-Obsidian-仓库" class="headerlink" title="配置本地 Obsidian 仓库"></a>配置本地 Obsidian 仓库</h3><figure class="highlight mipsasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs mipsasm">touch README.md<br>git init<br>git <span class="hljs-keyword">add </span>README.md<br>git commit -m <span class="hljs-string">&quot;first commit&quot;</span><br>git <span class="hljs-keyword">branch </span>-M main<br>git remote <span class="hljs-keyword">add </span><span class="hljs-keyword">origin </span><span class="hljs-string">&quot;替换为上图中本条命令位置提示的远端地址（形如 git@gitee.com:user/repo.git）&quot;</span><br>git push -u <span class="hljs-keyword">origin </span>main<br></code></pre></td></tr></table></figure>
+
+<p>然后Obsidian Git成功同步笔记：）</p>
 
                 
               </div>
@@ -290,8 +312,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>test</div>
-      <div>http://example.com/2023/09/19/test/</div>
+      <div>OBGit使用</div>
+      <div>http://example.com/2023/09/19/Git/Obsidian Git初使用/</div>
     </div>
     <div class="license-meta">
       
@@ -335,18 +357,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/09/19/Git/Git%E6%93%8D%E4%BD%9C/" title="Git操作">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">Git操作</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/09/19/hello-world/" title="Hello World">
-                        <span class="hidden-mobile">Hello World</span>
+                      <a href="/2023/09/19/Git/Git%E6%93%8D%E4%BD%9C/" title="Git操作">
+                        <span class="hidden-mobile">Git操作</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
