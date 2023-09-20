@@ -6,7 +6,7 @@ on:
     - main
 
 env:
-  GIT_USER: wang
+  GIT_USER: zhengyangWang1
   GIT_EMAIL: wangzhengyang@bupt.edu.cn
   THEME_REPO: fluid-dev/hexo-theme-fluid
   THEME_BRANCH: main
