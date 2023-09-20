@@ -39,3 +39,8 @@ deploy:
 ```
 完成后运行 `hexo d` 将网站上传部署到 GitHub Pages
 ### Obsidian实现笔记与博客同步
+[javascript - hexo配合github action 自动构建（多种形式） - 前端与算法 - SegmentFault 思否](https://segmentfault.com/a/1190000040767893)
+[github action 部署 hexo踩坑记录 - 知乎](https://zhuanlan.zhihu.com/p/626270948)
+[GitHub自动部署HEXO个人博客 - 知乎](https://zhuanlan.zhihu.com/p/441558922)
+参考了很多文章，解决了无数bug
+首先需要两个GitHub仓库，一个用来和Obsidian Git远程连接，传输博客内容

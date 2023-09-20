@@ -181,6 +181,8 @@
   },
   "active": "4bc0dd1b75d7440c",
   "lastOpenFiles": [
+    "source/_posts/Notes/Linux学习/文本编辑器.md",
+    "source/_posts/Notes/hexo+Obsidian+github博客.md",
     "github-deploy-key.pub",
     "github-deploy-key",
     "课程/软件工程/大作业 酒店温控计费系统 规划.md",
@@ -224,8 +226,6 @@
     "Linux学习",
     "Git/Obsidian Git初使用.md",
     "Git/Git操作.md",
-    "Git",
-    "AI/AI绘画.md",
-    "AI"
+    "Git"
   ]
 }
