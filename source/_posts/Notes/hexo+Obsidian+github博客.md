@@ -138,4 +138,11 @@ jobs:
 使用hexo new创建笔记会在文件头加入一段模板，这样才会在部署时部署到网页。在ob中，打开核心插件中的模板功能，并将模板文件夹位置设为Template。新建一个Template文件夹，存放一个hexo文件头模板文件。当创建文件时，点击左侧功能栏中的插入模板即可插入文件头。
 
 #### 自动生成分类
+Hexo写日志，通常我们都需要维护一个front-matter信息，包括`title`、`date`。博客多了，为了方便日志分类，一般还需要设置`categories`。
+[GitHub - xu-song/hexo-auto-category: Generate categories automatically for each post in Hexo](https://github.com/xu-song/hexo-auto-category)自动生成categories
+安装：
+```
+npm install hexo-auto-category --save
+```
+在站点根目录下的`_config.yml`添加
 
