@@ -144,5 +144,17 @@ Hexo写日志，通常我们都需要维护一个front-matter信息，包括`tit
 ```
 npm install hexo-auto-category --save
 ```
-在站点根目录下的`_config.yml`添加
+在站点根目录下的`_config.yml`添加:
+```
+auto_category:  
+ enable: true  
+ depth:
+```
 
+**利用Git钩子函数触发更新:**
+这个插件只有执行`hexo generate`时才会去读取文件夹并更新所有文章的Front-matter分类信息，所以我们可以利用[Git的钩子函数](https://link.zhihu.com/?target=https%3A//git-scm.com/book/zh/v2/%25E8%2587%25AA%25E5%25AE%259A%25E4%25B9%2589-Git-Git-%25E9%2592%25A9%25E5%25AD%2590%23_git_hooks)，在commit的时候先执行下`hexo generate`，这样就能实现自动更新了。
+在`.git/hooks`目录下新建一个`pre-commit`文件，也可以执行`touch pre-commit`命令新建该文件,将如下命令写到文件里
+```bash
+#!/bin/sh
+hexo generate && git add .
+```
