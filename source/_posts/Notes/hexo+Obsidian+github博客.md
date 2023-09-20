@@ -158,3 +158,5 @@ auto_category:
 #!/bin/sh
 hexo generate && git add .
 ```
+
+#### PicGo+Github图床
