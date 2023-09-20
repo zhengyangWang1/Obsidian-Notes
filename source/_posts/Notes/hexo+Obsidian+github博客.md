@@ -128,5 +128,9 @@ jobs:
 
 配置好后push一下，看到deploy成功方可。
 
-### Obsidian美化
-在ob中打开hexo博客的文件夹，发现文件太多，都是些平时不会浏览的配置文件，所以下载ob插件
+### Obsidian配置
+#### 插件Folder foucs mode
+在ob中打开hexo博客的文件夹，发现文件太多，都是些平时不会浏览的配置文件，所以下载ob插件Folder foucs mode，可以将左侧文件列表聚焦到想要的地方（\_posts文件夹下）
+
+#### 适配hexo格式
+使用hexo new创建笔记会在文件头加入一段模板，这样才会在部署时部署到网页。在ob中
