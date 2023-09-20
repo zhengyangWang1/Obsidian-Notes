@@ -161,11 +161,12 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
-    "width": 289.5
+    "width": 289.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -178,7 +179,7 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "66503dcea198d72b",
+  "active": "66da3d9bb2288acb",
   "lastOpenFiles": [
     "github-deploy-key.pub",
     "github-deploy-key",
