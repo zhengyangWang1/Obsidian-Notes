@@ -953,7 +953,7 @@ about:
   banner_img: https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/b3f6b2565c3149a2a8df94ab43cf3a3b.jpg
   banner_img_height: 60
   banner_mask_alpha: 0.3
-  avatar: /img/avatar.png
+  avatar: https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/5f7f67be3fb9b74deb8161f2b906b2c.jpg
   name: "阳"
   intro: "An elegant theme for Hexo"
   # 更多图标可从 https://hexo.fluid-dev.com/docs/icon/ 查找，`class` 代表图标的 css class，添加 `qrcode` 后，图标不再是链接而是悬浮二维码
