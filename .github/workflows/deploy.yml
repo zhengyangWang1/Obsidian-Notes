@@ -43,6 +43,8 @@ jobs:
       
       - name: 生成静态文件
         run: |
+          rm -rf .deploy_git
+          npm install hexo-deployer-git --save
           hexo clean
           hexo generate
       - name: 部署到Github page
