@@ -180,6 +180,8 @@
   },
   "active": "66503dcea198d72b",
   "lastOpenFiles": [
+    "github-deploy-key.pub",
+    "github-deploy-key",
     "课程/软件工程/大作业 酒店温控计费系统 规划.md",
     "课程/软件工程/软件工程.md",
     "课程/软件工程/作业1 课后阅读.md",
@@ -223,8 +225,6 @@
     "Git/Git操作.md",
     "Git",
     "AI/AI绘画.md",
-    "AI",
-    "source/_posts/Notes/PowerShell美化.md",
-    "categories/Notes/课程/操作系统/index.html"
+    "AI"
   ]
 }
