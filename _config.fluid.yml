@@ -528,7 +528,7 @@ index:
 # Post Page
 #---------------------------
 post:
-  banner_img: /img/default.png
+  banner_img: https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/v2-9e127a3fbe3e8223668fe45b18422790_1440w.webp
   banner_img_height: 70
   banner_mask_alpha: 0.3
 
