@@ -2,12 +2,8 @@
   "table-editor-obsidian",
   "obsidian-auto-link-title",
   "editing-toolbar",
-  "obsidian-git",
-<<<<<<< HEAD
-  "obsidian-style-settings",
   "obsidian-folder-focus-mode",
-  "obsidian-shellcommands"
-=======
+  "obsidian-git",
+  "obsidian-shellcommands",
   "obsidian-style-settings"
->>>>>>> a6745fd06c7adc509929da1719470ca45e674334
 ]
