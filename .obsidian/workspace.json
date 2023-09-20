@@ -168,6 +168,8 @@
   },
   "active": "f5830e3838245936",
   "lastOpenFiles": [
+    "public/about/index.html",
+    "public/about",
     "source/about/index.md",
     "source/about",
     "source/_posts/Notes/PowerShell美化.md",
@@ -211,8 +213,6 @@
     "Ob插件/Advanced Tables 表格绘制.md",
     "Ob插件",
     "Linux学习/文件系统.md",
-    "Linux学习/程序与进程管理.md",
-    "Linux学习/WSL配置.md",
-    "Linux学习"
+    "Linux学习/程序与进程管理.md"
   ]
 }
