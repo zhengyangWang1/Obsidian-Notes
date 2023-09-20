@@ -130,7 +130,7 @@ jobs:
 
 ### 配置
 [Hexo + Obsidian + Git 完美的博客部署与编辑方案 - 掘金](https://juejin.cn/post/7120189614660255781)
-
+[Obsidian+Git完美维护Hexo博客 - 知乎](https://zhuanlan.zhihu.com/p/554333805)
 #### 插件Folder foucs mode
 在ob中打开hexo博客的文件夹，发现文件太多，都是些平时不会浏览的配置文件，所以下载ob插件Folder foucs mode，可以将左侧文件列表聚焦到想要的地方（\_posts文件夹下）
 

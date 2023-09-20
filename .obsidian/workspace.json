@@ -13,22 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "source/_posts/Notes/PowerShell美化.md",
+                "file": "source/_posts/Notes/hexo+Obsidian+github博客.md",
                 "mode": "source",
                 "source": false
               }
             }
-          },
-          {
-            "id": "4bc0dd1b75d7440c",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {}
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -94,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "source/_posts/Notes/hexo+Obsidian+github博客.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "source/_posts/Notes/hexo+Obsidian+github博客.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -131,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "source/_posts/Notes/hexo+Obsidian+github博客.md"
+              }
             }
           },
           {
@@ -171,8 +166,9 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "4bc0dd1b75d7440c",
+  "active": "f5830e3838245936",
   "lastOpenFiles": [
+    "source/_posts/Notes/PowerShell美化.md",
     "source/_posts/Notes/hexo+Obsidian+github博客.md",
     "source/_posts/Notes/Linux学习/WSL配置.md",
     "source/_posts/Notes/Linux学习/Shell编程.md",
@@ -216,7 +212,6 @@
     "Linux学习/程序与进程管理.md",
     "Linux学习/WSL配置.md",
     "Linux学习/文本编辑器.md",
-    "Linux学习/基本命令.md",
     "Linux学习",
     "Git"
   ]
