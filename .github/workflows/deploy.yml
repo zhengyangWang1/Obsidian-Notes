@@ -26,12 +26,7 @@ jobs:
         with:
           node-version: "20.x"
 
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v3
-        with:
-          node-version: ${{ matrix.node-version }}
-
-      - name: Configuration environment
+      - name: 配置 环境变量
         env:
           HEXO_DEPLOY_PRI: ${{secrets.HEXO_DEPLOY_PRI}}
         run: |
@@ -41,11 +36,30 @@ jobs:
           ssh-keyscan github.com >> ~/.ssh/known_hosts
           git config --global user.name $GIT_USER
           git config --global user.email $GIT_EMAIL
-      - name: Install dependencies
+      - name: 安装 Hexo
         run: |
-          npm i -g hexo-cli
-          npm install hexo-deployer-git –save
-          npm i
-      - name: Deploy hexo
+          export TZ='Asia/Shanghai'
+          npm install hexo-cli -g
+      - name: 缓存 Hexo
+        id: cache-npm
+        uses: actions/cache@v3
+        env:
+          cache-name: cache-node-modules
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-build-${{ env.cache-name }}-
+            ${{ runner.os }}-build-
+            ${{ runner.os }}-
+      - name: 安装依赖
+        if: ${{ steps.cache-npm.outputs.cache-hit != 'true' }}
         run: |
-          hexo clean && hexo generate && hexo deploy
+          npm install --save
+      - name: 生成静态文件
+        run: |
+          hexo clean
+          hexo generate
+      - name: 部署到Github page
+        run: |
+          hexo deploy
