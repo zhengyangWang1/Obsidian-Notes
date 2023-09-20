@@ -961,7 +961,7 @@ about:
   icons:
     - { class: "iconfont icon-github-fill", link: "https://github.com/zhengyangWang1", tip: "GitHub" }
     - { class: "iconfont icon-bilibili-fill", link: "https://space.bilibili.com/490168773?spm_id_from=333.1007.0.0", tip: "bilibili" }
-    - { class: "iconfont icon-wechat-fill", qrcode: "/img/favicon.png" }
+    - { class: "iconfont icon-zhihu-fill", link: "https://www.zhihu.com/people/bqqmjh", tip: "知乎" }
 
 
 #---------------------------
