@@ -25,5 +25,17 @@ npm install    # 安装组件
 hexo g   # 生成页面
 hexo s   # 启动预览，在本地
 ```
-
+#### 部署到Github Page
+**安装 hexo-deployer-git**
+```text
+npm install hexo-deployer-git --save
+```
+然后**修改  _ config.yml**  文件末尾的 Deployment 部分
+```text
+deploy:
+  type: git
+  repository: git@github.com:用户名/用户名.github.io.git
+  branch: master
+```
+完成后运行 `hexo d` 将网站上传部署到 GitHub Pages
 ### Obsidian实现笔记与博客同步
