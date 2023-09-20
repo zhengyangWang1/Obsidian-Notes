@@ -102,6 +102,11 @@ theme: fluid
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 
+deploy:
+  type: git
+  repo: git@github.com:zhengyangWang1/zhengyangWang1.github.io.git
+  branch: main
+
 auto_category:
  enable: true
  depth:
