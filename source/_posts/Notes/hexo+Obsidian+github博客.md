@@ -35,7 +35,7 @@ npm install hexo-deployer-git --save
 deploy:
   type: git
   repository: git@github.com:用户名/用户名.github.io.git
-  branch: master
+  branch: main
 ```
 完成后运行 `hexo d` 将网站上传部署到 GitHub Pages
 

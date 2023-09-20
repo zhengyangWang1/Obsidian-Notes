@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "source/_posts/Notes/课程/操作系统/操作系统.md",
+                "file": "source/_posts/Notes/hexo+Obsidian+github博客.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "source/_posts/Notes/课程/操作系统/操作系统.md",
+                "file": "source/_posts/Notes/hexo+Obsidian+github博客.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "source/_posts/Notes/课程/操作系统/操作系统.md",
+                "file": "source/_posts/Notes/hexo+Obsidian+github博客.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "source/_posts/Notes/课程/操作系统/操作系统.md"
+                "file": "source/_posts/Notes/hexo+Obsidian+github博客.md"
               }
             }
           },
@@ -168,18 +168,20 @@
   },
   "active": "93dbd5c966292001",
   "lastOpenFiles": [
+    "source/_posts/Notes/PowerShell美化.md",
+    "source/_posts/Notes/hexo+Obsidian+github博客.md",
+    "source/_posts/Notes/课程/操作系统/操作系统.md",
+    "public/未命名.html",
     "scaffolds/draft.md",
     "Template/hexo.md",
     "未命名 2.md",
     "未命名.md",
     "未命名 1.md",
     "source/未命名.md",
-    "source/_posts/Notes/hexo+Obsidian+github博客.md",
     "public/about/index.html",
     "public/about",
     "source/about/index.md",
     "source/about",
-    "source/_posts/Notes/PowerShell美化.md",
     "source/_posts/Notes/img/Pasted image 20230829165617.png",
     "source/_posts/Notes/img/Pasted image 20230829224733.png",
     "source/_posts/Notes/img/Pasted image 20230829225716.png",
@@ -211,8 +213,6 @@
     "旅游/美食.md",
     "旅游/景点.md",
     "旅游/西安8.16-20.md",
-    "旅游",
-    "img/Pasted image 20230918213533.png",
-    "TODO.md"
+    "img/Pasted image 20230918213533.png"
   ]
 }
