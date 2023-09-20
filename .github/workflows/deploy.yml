@@ -21,12 +21,6 @@ jobs:
         with:
           ref: main
 
-      - name: Checkout theme repo
-        uses: actions/checkout@v3
-        with:
-          repository: ${{ env.THEME_REPO }}
-          ref: ${{ env.THEME_BRANCH }}
-          path: node_modules/hexo-theme-fluid
       - name: 安装 Node
         uses: actions/setup-node@v3
         with:
