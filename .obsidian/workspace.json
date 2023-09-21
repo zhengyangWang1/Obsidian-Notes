@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "source/_posts/Notes/TODO.md",
+                "file": "source/_posts/Notes/课程/神经网络与深度学习.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "source/_posts/Notes/TODO.md",
+                "file": "source/_posts/Notes/课程/神经网络与深度学习.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "source/_posts/Notes/TODO.md",
+                "file": "source/_posts/Notes/课程/神经网络与深度学习.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "source/_posts/Notes/TODO.md"
+                "file": "source/_posts/Notes/课程/神经网络与深度学习.md"
               }
             }
           },
@@ -168,6 +168,7 @@
   },
   "active": "5b356816fefe0b5a",
   "lastOpenFiles": [
+    "source/_posts/Notes/TODO.md",
     "source/_posts/Notes/课程/智能计算系统.md",
     "source/_posts/Notes/课程/神经网络与深度学习.md",
     "source/_posts/Notes/Ob插件/Advanced Tables 表格绘制.md",
@@ -211,7 +212,6 @@
     "课程/智能计算系统.md",
     "课程/操作系统",
     "课程",
-    "论文/扩散模型论文todo（已过期）.md",
     "论文",
     "img/Pasted image 20230918213533.png"
   ]
