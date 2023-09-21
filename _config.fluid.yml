@@ -656,13 +656,13 @@ post:
     # 显示发布日期
     # Show post date
     post_date:
-      enable: true
+      enable: false
       format: "LL"
 
     # 显示更新日期
     # Show update date
     update_date:
-      enable: false
+      enable: true
       format: "LL"
 
   # 文章底部上一篇下一篇功能
