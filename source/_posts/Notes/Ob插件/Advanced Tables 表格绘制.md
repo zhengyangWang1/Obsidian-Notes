@@ -3,6 +3,7 @@ title: Advanced Tables表格绘制
 categories:
   - Notes
   - Ob插件
+update:
 ---
 用 | 隔开内容，然后按TAB生成表格，Enter进入下一行
 

@@ -4,18 +4,33 @@
   
   
   <entry>
-    <title>Git操作</title>
-    <link href="/2023/09/22/Notes/AI/AI%E7%BB%98%E7%94%BB/"/>
-    <url>/2023/09/22/Notes/AI/AI%E7%BB%98%E7%94%BB/</url>
+    <title></title>
+    <link href="/2023/09/22/writeupdatetime/"/>
+    <url>/2023/09/22/writeupdatetime/</url>
     
-    <content type="html"><![CDATA[<h2 id="stable-diffusion-模型画任意要求"><a href="#stable-diffusion-模型画任意要求" class="headerlink" title="stable diffusion 模型画任意要求"></a>stable diffusion 模型画任意要求</h2><p>飞桨： <a href="https://aistudio.baidu.com/projectdetail/6665563">文生图[多loRA,ControlNet预处理,高清v2,视频生成]v11_副本</a><br>kaggle：<a href="https://zhuanlan.zhihu.com/p/643442494">免费部署stable diffusion，白嫖32G GPU - 知乎 (zhihu.com)</a></p><h2 id="ai-二维码美化"><a href="#ai-二维码美化" class="headerlink" title="ai 二维码美化"></a>ai 二维码美化</h2><p>飞桨：[AI艺术二维码生成器](<a href="https://aistudio.baidu.com/projectdetail/6452331">【创意应用】AI艺术二维码生成 - 飞桨AI Studio (baidu.com)</a>)</p><hr><h4 id="Stable-Diffusion使用"><a href="#Stable-Diffusion使用" class="headerlink" title="Stable Diffusion使用"></a>Stable Diffusion使用</h4><p><a href="https://github.com/AUTOMATIC1111/stable-diffusion-webui">GitHub - AUTOMATIC1111&#x2F;stable-diffusion-webui: Stable Diffusion web UI</a>在Github上下载压缩包并按照说明安装<br>![[Pasted image 20230913125854.png]]</p><p><strong>添加模型：</strong> 在<a href="https://civitai.com/">Civitai | Stable Diffusion models, embeddings, LoRAs and more</a>上下载模型，添加到相应文件夹。</p><ul><li>Checkpoint:基本模型，下载到webui\models\Stable-diffusion</li><li>Lora:微调模型，下载到webui\models\Lora</li><li>其他（待补充）</li></ul><p><strong>插件下载：</strong></p><ul><li>中文汉化：<a href="https://github.com/VinsonLaro/stable-diffusion-webui-chinese">GitHub - VinsonLaro&#x2F;stable-diffusion-webui-chinese: stable-diffusion-webui 的汉化扩展</a>作者写了非常详细的下载和使用教程</li><li>controlnet：<a href="https://github.com/lllyasviel/ControlNet-v1-1-nightly">GitHub - lllyasviel&#x2F;ControlNet-v1-1-nightly: Nightly release of ControlNet 1.1</a>同上的下载方式<br><strong>注意：</strong> 下载时可能会因为网络问题下载失败，挂梯子多尝试几次。下载失败后需要到webui\tmp中删除文件夹，否则无法再次下载。</li></ul><p><strong>Controlnet使用：</strong> 下载controlnet插件后，按照<a href="https://github.com/Mikubill/sd-webui-controlnet">GitHub - Mikubill&#x2F;sd-webui-controlnet: WebUI extension for ControlNet</a>提供的地址下载controlnet模型（14个），放到webui\extensions\sd-webui-controlnet\models目录下<br>此时在WebUI中即可看到controlnet界面，有许多参数可选项可调<br>可参考b站教程：<a href="https://www.bilibili.com/video/BV1gX4y1J7ei/?spm_id_from=333.788.recommend_more_video.-1&vd_source=7d4ddbfe6a66f2fbe94075935b693c57">“牛逼”的教程来了！一次学会AI二维码+艺术字+光影光效+创意Logo生成，绝对是B站最详细的Stable Diffusion特效设计流程教学！AI绘画进阶应用_哔哩哔哩_bilibili</a></p><p><strong>模型配置方案：</strong><br>SD提供了太多的模型组合，在此记录一下模型搭配及其效果</p><p><strong>提示词：</strong><br>一些通用的提示词可以提高图像质量，特定的提示词可以指定生成内容</p>]]></content>
+    <content type="html"><![CDATA[#!/usr/bin/env node/*批量添加修改时间用于bolg初始化修改时间*/console.log('脚本开始运行..');var fs = require("fs"); //请求文件系统var file = "./txt/Notes"; //设置读取和写入的文件，当前目录下的test文件var RegExp=/(updated:\s*)((\d{2}(([02468][048])|([13579][26]))[\-\/\s]?((((0?[13578])|(1[02]))[\-\/\s]?((0?[1-9])|([1-2][0-9])|(3[01])))|(((0?[469])|(11))[\-\/\s]?((0?[1-9])|([1-2][0-9])|(30)))|(0?2[\-\/\s]?((0?[1-9])|([1-2][0-9])))))|(\d{2}(([02468][1235679])|([13579][01345789]))[\-\/\s]?((((0?[13578])|(1[02]))[\-\/\s]?((0?[1-9])|([1-2][0-9])|(3[01])))|(((0?[469])|(11))[\-\/\s]?((0?[1-9])|([1-2][0-9])|(30)))|(0?2[\-\/\s]?((0?[1-9])|(1[0-9])|(2[0-8]))))))(\s((([0-1][0-9])|(2?[0-3]))\:([0-5]?[0-9])((\s)|(\:([0-5]?[0-9])))))\r/g;fs.readdir("./",function(err,files){var len=files.length;var file=null;for(var i=0;i<len;i++){file=files[i];//console.log("读取文件：",file);if(file.indexOf(".md")>-1){console.log("正在处理文件：",file);writeFileTime(file,fs);}}    console.log("运行完毕！");});/*file:读取时间的文件以及写入内容的文件fs: 文件系统*/function writeFileTime(file,fs){fs.readFile(file, 'utf8',function(err, data) { //读取文件内容if (err) return console.log("读取文件内容错误：",err);//console.log("文件"+file+"的内容：",data);fs.stat(file,function(err, stats) { //读取文件信息，创建时间等   if (err) return console.log("读取文件信息错误：",err);//console.log("文件"+file+"的信息：",stats);  //打印文件的信息//console.log("创建时间是：",stats.mtime);//console.log("文件的创建时间是：",getFormatDate(stats.mtime));            var result= data.replace(RegExp,""); //替换更新时间result = result.replace(/categories:/g, "updated: "+getFormatDate(stats.mtime)+"\r"+"categories:");//data:替换为标准化日期//console.log("修改后文件内容为：",result);fs.writeFile(file, result, 'utf8',function(err) { //写入新的文件内容if (err) return console.log("写文件错误：",err);});});});}/* timeStr:时间，格式可为："September 16,2016 14:15:05、 "September 16,2016"、"2016/09/16 14:15:05"、"2016/09/16"、 '2014-04-23T18:55:49'和毫秒 dateSeparator：年、月、日之间的分隔符，默认为"-"， timeSeparator：时、分、秒之间的分隔符，默认为":" */function getFormatDate(timeStr, dateSeparator, timeSeparator) {    dateSeparator = dateSeparator ? dateSeparator : "-";    timeSeparator = timeSeparator ? timeSeparator : ":";    var date = new Date(timeStr),            year = date.getFullYear(),// 获取完整的年份(4位,1970)            month = date.getMonth(),// 获取月份(0-11,0代表1月,用的时候记得加上1)            day = date.getDate(),// 获取日(1-31)            hour = date.getHours(),// 获取小时数(0-23)            minute = date.getMinutes(),// 获取分钟数(0-59)            seconds = date.getSeconds(),// 获取秒数(0-59)            Y = year + dateSeparator,            M = ((month + 1) > 9 ? (month + 1) : ('0' + (month + 1))) + dateSeparator,            D = (day > 9 ? day : ('0' + day)) + ' ',            h = (hour > 9 ? hour : ('0' + hour)) + timeSeparator,            m = (minute > 9 ? minute : ('0' + minute)) + timeSeparator,            s = (seconds > 9 ? seconds : ('0' + seconds)),            formatDate = Y + M + D + h + m + s;    return formatDate;}]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>软件工程</title>
+    <link href="/2023/09/22/Notes/%E8%AF%BE%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/"/>
+    <url>/2023/09/22/Notes/%E8%AF%BE%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/</url>
+    
+    <content type="html"><![CDATA[<p>考核：期中10+平时和作业40+期末50</p><h3 id="大作业"><a href="#大作业" class="headerlink" title="大作业"></a>大作业</h3><p>TODO：</p><ul><li><input disabled="" type="checkbox"> 项目了解与初步计划</li></ul><hr>]]></content>
     
     
     <categories>
       
       <category>Notes</category>
       
-      <category>AI</category>
+      <category>课程</category>
+      
+      <category>软件工程</category>
       
     </categories>
     
@@ -25,18 +40,106 @@
   
   
   <entry>
-    <title>Advanced Tables表格绘制</title>
-    <link href="/2023/09/22/Notes/Ob%E6%8F%92%E4%BB%B6/Advanced%20Tables%20%E8%A1%A8%E6%A0%BC%E7%BB%98%E5%88%B6/"/>
-    <url>/2023/09/22/Notes/Ob%E6%8F%92%E4%BB%B6/Advanced%20Tables%20%E8%A1%A8%E6%A0%BC%E7%BB%98%E5%88%B6/</url>
+    <title>作业1 课后阅读</title>
+    <link href="/2023/09/22/Notes/%E8%AF%BE%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/%E4%BD%9C%E4%B8%9A1%20%E8%AF%BE%E5%90%8E%E9%98%85%E8%AF%BB/"/>
+    <url>/2023/09/22/Notes/%E8%AF%BE%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/%E4%BD%9C%E4%B8%9A1%20%E8%AF%BE%E5%90%8E%E9%98%85%E8%AF%BB/</url>
     
-    <content type="html"><![CDATA[<p>用 | 隔开内容，然后按TAB生成表格，Enter进入下一行</p><p>示例：</p><table><thead><tr><th>Hotkey</th><th>Action</th></tr></thead><tbody><tr><td>Tab</td><td>Next Cell</td></tr><tr><td>Enter</td><td>Next Row</td></tr><tr><td>Shift+Tab</td><td>Previous Cell</td></tr><tr><td>Ctrl+Shift+D</td><td>Open table controls sidebar</td></tr></tbody></table>]]></content>
+    <content type="html"><![CDATA[<p>问题1：时至今日的软件开发过程中是否还存在软件危机中存在的现象？如果存在，软件工程的方法能否解决？未来的AI能否解决？</p><p>存在。软件危机中主要存在以下现象：</p><ol><li>对软件开发成本和进度的估计常常很不准确</li><li>用户对“已完成的”软件系统不满意</li><li>软件常常是不可维护的</li><li>软件通常没有适当的文档资料<br>随着人们使用软件工程的方法进行软件开发，这些问题逐渐减少，但不会完全消灭。<br>利用软件工程的方法可以有效解决这些问题，软件工程采用工程的概念、原理、技术和方法来开发和维护软件，进行详细需求分析和规划，使用合适的设计模式和架构，使用版本控制系统等特点可以有效解决上述问题。随着AI的发展，未来AI很有可能具备自主设计程序的能力，如果AI能实现正确理解客户需求，合理开发软件功能，自动维护软件运行，则可以开发出优质软件。</li></ol><hr><p>问题2：软件工程的知识体系中，你认为哪几个环节与软件质量相关？</p><p>需求分析：只有正确理解客户的需求，才能做出好的软件<br>软件稳定性和可维护性：当软件在使用中经常出现问题，或需要频繁投入人力进行维护时，意味着软件质量不高。<br>软件代码的可读性：高可读性的代码可以使软件在维护和升级时更方便。<br>经过测试：软件需要经过大量的测试才能保证质量。</p>]]></content>
     
     
     <categories>
       
       <category>Notes</category>
       
-      <category>Ob插件</category>
+      <category>课程</category>
+      
+      <category>软件工程</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>大作业 酒店控温计费系统 规划</title>
+    <link href="/2023/09/22/Notes/%E8%AF%BE%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/%E5%A4%A7%E4%BD%9C%E4%B8%9A%20%E9%85%92%E5%BA%97%E6%B8%A9%E6%8E%A7%E8%AE%A1%E8%B4%B9%E7%B3%BB%E7%BB%9F%20%E8%A7%84%E5%88%92/"/>
+    <url>/2023/09/22/Notes/%E8%AF%BE%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/%E5%A4%A7%E4%BD%9C%E4%B8%9A%20%E9%85%92%E5%BA%97%E6%B8%A9%E6%8E%A7%E8%AE%A1%E8%B4%B9%E7%B3%BB%E7%BB%9F%20%E8%A7%84%E5%88%92/</url>
+    
+    <content type="html"><![CDATA[<ul><li><input checked="" disabled="" type="checkbox"> 需求阶段</li><li><input disabled="" type="checkbox"> 设计阶段</li><li><input disabled="" type="checkbox"> 开发阶段</li><li><input disabled="" type="checkbox"> 测试阶段</li></ul><p>9.21</p><ul><li><input checked="" disabled="" type="checkbox"> 需求分析</li><li><input checked="" disabled="" type="checkbox"> 确定技术栈</li><li><input checked="" disabled="" type="checkbox"> 组内分工</li><li><input checked="" disabled="" type="checkbox"> 版本控制</li></ul><h4 id="需求分析："><a href="#需求分析：" class="headerlink" title="需求分析："></a>需求分析：</h4><p><strong>功能</strong><br>客户：设定空调温度和风速<br>房间内控制面板：显示使用空调消费的金额<br>打印空调使用的详单（什么时间打开，什么时间关闭）<br>空调管理员：监控各房间空调的使用状态<br>酒店管理员：生成酒店及房间的空调使用统计报表<br>![[Pasted image 20230917104741.png]]</p><h4 id="实现框架："><a href="#实现框架：" class="headerlink" title="实现框架："></a>实现框架：</h4><p><strong>Djiago</strong><br><strong>MVC模型</strong>：<br>MVC 模式（Model–view–controller）是软件工程中的一种软件架构模式，把软件系统分为三个基本部分：模型（Model）、视图（View）和控制器（Controller）。<br>![[Pasted image 20230918212851.png]]</p><p>![[Pasted image 20230918212903.png]]</p><p>Django 的 MTV 模式本质上和 MVC 是一样的，也是为了各组件间保持松耦合关系，只是定义上有些许不同，Django 的 MTV 分别是指：</p><ul><li>M 表示模型（Model）：编写程序应有的功能，负责业务对象与数据库的映射(ORM)。</li><li>T 表示模板 (Template)：负责如何把页面(html)展示给用户。</li><li>V 表示视图（View）：负责业务逻辑，并在适当时候调用 Model和 Template。<br>![[Pasted image 20230918213533.png]]</li></ul><p>Django + vue<br><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20230921154013.png"></p><p>分工<br>1 客户端 @李<br>2 服务器 @周 @王<br>1 数据库 @高</p><p>git 暂定</p><ul><li><input disabled="" type="checkbox"> 学习各自的内容（前端、后端、数据库）</li><li><input disabled="" type="checkbox"> 学习用Git上传代码</li><li><input disabled="" type="checkbox"> Github创建一个远程仓库</li></ul>]]></content>
+    
+    
+    <categories>
+      
+      <category>Notes</category>
+      
+      <category>课程</category>
+      
+      <category>软件工程</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>智能计算系统</title>
+    <link href="/2023/09/22/Notes/%E8%AF%BE%E7%A8%8B/%E6%99%BA%E8%83%BD%E8%AE%A1%E7%AE%97%E7%B3%BB%E7%BB%9F/"/>
+    <url>/2023/09/22/Notes/%E8%AF%BE%E7%A8%8B/%E6%99%BA%E8%83%BD%E8%AE%A1%E7%AE%97%E7%B3%BB%E7%BB%9F/</url>
+    
+    <content type="html"><![CDATA[<p>50期末+30课程编程作业+10大作业+10平时</p><hr><p>智能计算系统：智能的物质载体</p><ul><li>集成CPU和智能芯片的<strong>异构系统</strong></li><li>面向开发者的智能计算<strong>编程环境</strong></li></ul>]]></content>
+    
+    
+    <categories>
+      
+      <category>Notes</category>
+      
+      <category>课程</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>神经网络与深度学习</title>
+    <link href="/2023/09/22/Notes/%E8%AF%BE%E7%A8%8B/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E4%B8%8E%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
+    <url>/2023/09/22/Notes/%E8%AF%BE%E7%A8%8B/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E4%B8%8E%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/</url>
+    
+    <content type="html"><![CDATA[<p><u></u>教材：</p><ul><li>神经网络与深度学习，邱锡鹏 <a href="https://nndl.github.io/">神经网络与深度学习</a></li><li>动手学深度学习 阿斯顿·张、李沐</li><li><strong>深度学习，Ian Goddfellow</strong></li></ul><p>公开课：</p><ul><li>李宏毅：机器学习</li><li>CS224n</li><li>CS231n</li></ul><p>考核：平时作业80（选够100分的题量）+其他20（随堂考试、问答）</p><hr><h3 id="神经网络"><a href="#神经网络" class="headerlink" title="神经网络"></a>神经网络</h3><p><strong>激活函数：最关键部分</strong></p><ul><li>激活函数：连续并可导的非线性函数</li><li>激活函数及其导函数要尽可能简单</li><li>激活函数的导函数要在一个合适的区间内<br><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20230921102752.png"></li></ul><p>神经网络的要素：</p><ul><li><p>拓扑结构：前馈网络，反馈网络，图网络。<br>前馈神经网络（FNN），循环神经网络（RNN）</p></li><li><p>网络的表示</p></li><li><p>学习算法</p></li></ul><p><strong>前馈神经网络</strong>：<br>一层的输出作用于下一层的输入<br><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20230921104850.png"><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20230921104913.png"><br>向量表示：<br><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20230921105212.png"></p><p><strong>输出层</strong>： 根据任务确定输出层的激活函数</p><ul><li>回归任务：根据输出的值域选择激活函数</li><li>分类任务：softmax函数<br><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20230921110000.png"></li></ul><p><strong>反向传播算法：</strong><br><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20230921110918.png"><br>J1为结果的误差，根据结果误差更新参数<br><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20230921111754.png"><br>需要会推导</p><p>均方误差会使深层的反向传播训练缓慢</p><p>神经网络具有通用近似性，只要神经元数量足够，可以拟合任何函数</p><p>非凸优化问题<br>梯度消失问题</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>Notes</category>
+      
+      <category>课程</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>数据库</title>
+    <link href="/2023/09/22/Notes/%E8%AF%BE%E7%A8%8B/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    <url>/2023/09/22/Notes/%E8%AF%BE%E7%A8%8B/%E6%95%B0%E6%8D%AE%E5%BA%93/</url>
+    
+    <content type="html"><![CDATA[<p>成绩：20期中+60期末+10笔记+10作业</p><p>笔记本：一周交一次</p><hr><h2 id="9-11"><a href="#9-11" class="headerlink" title="9.11"></a>9.11</h2><p><strong>concept:</strong></p><ul><li>database(DB):数据库，是一个文件，有关联的数据的集合</li><li>database management system(DBMS):数据库管理系统，包含程序处理DB中的数据</li><li>database system(DBS):&#x3D;DB+DBMS+User</li><li>database application system(DBAS):DB+DBMS+Application programs+User</li></ul>]]></content>
+    
+    
+    <categories>
+      
+      <category>Notes</category>
+      
+      <category>课程</category>
       
     </categories>
     
@@ -58,6 +161,52 @@
       <category>Notes</category>
       
       <category>论文</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Blitz软件</title>
+    <link href="/2023/09/22/Notes/%E8%AF%BE%E7%A8%8B/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/Blitz%E8%BD%AF%E4%BB%B6/"/>
+    <url>/2023/09/22/Notes/%E8%AF%BE%E7%A8%8B/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/Blitz%E8%BD%AF%E4%BB%B6/</url>
+    
+    <content type="html"><![CDATA[<p>Blitz是一个软件包，内含一个虚拟机，给操作者提供一个建立操作系统内核的功能</p><p>学生将在主机上编辑、编译和链接他们的操作系统内核项目。然后，他们将使用仿真器在虚拟机上执行这些项目。当学生的代码出现错误时，仿真器会显示各种错误信息，学生可以使用仿真器工具进行调试</p><h4 id="架构"><a href="#架构" class="headerlink" title="架构"></a>架构</h4><p>CPU 采用 RISC 设计，大致仿照 Sun 的 Sparc 架构。 BLITZ 处理器包含 32 个通用整数寄存器，每个寄存器为 32 位。</p><p>处理器有两种执行模式，即 “系统模式 “和 “用户模式”。内核代码在系统模式下运行，而应用程序则在用户模式下运行。</p><p>BLITZ 机器包括两个输入输出设备。第一个是磁盘。仿真器通过主机上的文件来模拟磁盘。第二个 I&#x2F;O 设备是终端，仿真器通常将终端输入&#x2F;输出直接传递到主机的用户界面，这样学生就可以直接与运行中的 BLITZ 代码交互。</p><p>该架构还包括一个 “trap “指令，用户程序可以执行该指令。陷阱指令允许用户进程进入内核。</p><p>调试器内置于模拟器中，并且是模拟器的组成部分。该模拟器可以在命令行模式下运行，学生可以一次键入一个命令。这些命令可用于调试其 BLITZ 内核代码。</p><p>CPU 都在系统模式或用户模式下执行。内核代码在系统模式下执行，而用户级程序在用户模式下执行。任何指令都可以在系统模式下执行，但某些指令是有特权的，因为它们只能在系统模式下执行。特权指令的示例包括更改页表和更改模式本身的指令。</p><p>在 BLITZ 架构中，寄存器“r15”指向执行堆栈，该堆栈从较高的内存地址向较低的地址向下增长。</p><h4 id="工具"><a href="#工具" class="headerlink" title="工具"></a>工具</h4><ul><li><strong>blitz：</strong> The BLITZ virtual machine emulator and debugger虚拟机模拟器和调试器</li><li><strong>asm：</strong> The BLITZ assembler汇编器。<blockquote><p>汇编器（Assembler）是将汇编语言翻译为机器语言的程序。一般而言，汇编生成的是目标代码，需要经链接器（Linker）生成可执行代码才可以执行。</p></blockquote></li><li><strong>lddd：</strong> The BLITZ linker链接器</li><li><strong>dumpObj：</strong> A tool to examine BLITZ object and executable files检查blitz对象和可执行文件</li><li><strong>diskUtil：</strong> A tool to manipulate the initial file system on the emulated BLITZ disk用于操作模拟 BLITZ 磁盘上的初始文件系统的工具</li><li><strong>kpl：</strong> The KPL compiler编译器</li></ul><h4 id="模拟器Emulator"><a href="#模拟器Emulator" class="headerlink" title="模拟器Emulator"></a>模拟器Emulator</h4><p>在 Unix 下运行时，您可以通过在 Unix 提示符下键入“blitz”来启动模拟器。模拟器首先读入 BLITZ 程序并将其加载到内存中。通常，BLITZ 可执行文件称为“a.out”，但也可以指定其他名称。模拟器首先从“a.out”读取数据并将其加载到其内部存储器中。实际上，模拟器首先使用“a.out”文件中的字节初始化 BLITZ 机器的主内存</p><p>asm 程序是 BLITZ 汇编程序。它以汇编语言程序为输入，生成一个对象文件<br>第二个程序（称为 “ldd”）是 BLITZ 连接器。它输入一个或多个对象文件，生成一个名为 “a.out “的可执行文件。</p><p>quit 命令（可缩写为 “q”）将终止 BLITZ 模拟器。</p><p>go 指令（可缩写为 “g”）用于启动仿真器的执行。一旦开始执行，BLITZ 机器将执行指令，直到检测到错误或 BLITZ 机器执行 “等待 “或 “调试 “指令为止。</p><p>在KPL中，以“.h”结尾的文件称为“头文件”，以“.c”结尾的文件称为“代码文件”。每个包（如HelloWorld）都会有头文件和代码文件。HelloWorld包使用系统包。每当HelloWorld使用的包的头文件发生变化时，HelloWorld必须重新编译。但是，如果系统的代码文件发生变化，则不需要重新编译HelloWorld。</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>Notes</category>
+      
+      <category>课程</category>
+      
+      <category>操作系统</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>操作系统</title>
+    <link href="/2023/09/22/Notes/%E8%AF%BE%E7%A8%8B/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
+    <url>/2023/09/22/Notes/%E8%AF%BE%E7%A8%8B/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/</url>
+    
+    <content type="html"><![CDATA[<p>老师声音小，需要坐前排</p><p>40分平时作业（gitee），60分期末</p><p>TODO：</p><ul><li><input checked="" disabled="" type="checkbox"> 加入gitee仓库</li></ul><hr>]]></content>
+    
+    
+    <categories>
+      
+      <category>Notes</category>
+      
+      <category>课程</category>
+      
+      <category>操作系统</category>
       
     </categories>
     
@@ -130,25 +279,6 @@
   
   
   <entry>
-    <title>TODO</title>
-    <link href="/2023/09/22/Notes/TODO/"/>
-    <url>/2023/09/22/Notes/TODO/</url>
-    
-    <content type="html"><![CDATA[<ul><li><input checked="" disabled="" type="checkbox"> 大创定级检查 16日</li><li><input checked="" disabled="" type="checkbox"> OS作业 17日</li><li><input disabled="" type="checkbox"> 软件工程开会 21日</li><li><input checked="" disabled="" type="checkbox"> 数据库 17日</li><li><input disabled="" type="checkbox"> 六级报名等待候补</li><li><input checked="" disabled="" type="checkbox"> powershell下7版本，设置主题</li><li><input disabled="" type="checkbox"> 课堂讨论25号</li><li><input disabled="" type="checkbox"> github主页美化</li><li><input checked="" disabled="" type="checkbox"> 博客翻新</li><li><input disabled="" type="checkbox"> 博客图片问题</li></ul>]]></content>
-    
-    
-    <categories>
-      
-      <category>Notes</category>
-      
-    </categories>
-    
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>PowellShell美化</title>
     <link href="/2023/09/22/Notes/PowerShell%E7%BE%8E%E5%8C%96/"/>
     <url>/2023/09/22/Notes/PowerShell%E7%BE%8E%E5%8C%96/</url>
@@ -159,184 +289,6 @@
     <categories>
       
       <category>Notes</category>
-      
-    </categories>
-    
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>数据库</title>
-    <link href="/2023/09/22/Notes/%E8%AF%BE%E7%A8%8B/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
-    <url>/2023/09/22/Notes/%E8%AF%BE%E7%A8%8B/%E6%95%B0%E6%8D%AE%E5%BA%93/</url>
-    
-    <content type="html"><![CDATA[<p>成绩：20期中+60期末+10笔记+10作业</p><p>笔记本：一周交一次</p><hr><h2 id="9-11"><a href="#9-11" class="headerlink" title="9.11"></a>9.11</h2><p><strong>concept:</strong></p><ul><li>database(DB):数据库，是一个文件，有关联的数据的集合</li><li>database management system(DBMS):数据库管理系统，包含程序处理DB中的数据</li><li>database system(DBS):&#x3D;DB+DBMS+User</li><li>database application system(DBAS):DB+DBMS+Application programs+User</li></ul>]]></content>
-    
-    
-    <categories>
-      
-      <category>Notes</category>
-      
-      <category>课程</category>
-      
-    </categories>
-    
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>智能计算系统</title>
-    <link href="/2023/09/22/Notes/%E8%AF%BE%E7%A8%8B/%E6%99%BA%E8%83%BD%E8%AE%A1%E7%AE%97%E7%B3%BB%E7%BB%9F/"/>
-    <url>/2023/09/22/Notes/%E8%AF%BE%E7%A8%8B/%E6%99%BA%E8%83%BD%E8%AE%A1%E7%AE%97%E7%B3%BB%E7%BB%9F/</url>
-    
-    <content type="html"><![CDATA[<p>50期末+30课程编程作业+10大作业+10平时</p><hr><p>智能计算系统：智能的物质载体</p><ul><li>集成CPU和智能芯片的<strong>异构系统</strong></li><li>面向开发者的智能计算<strong>编程环境</strong></li></ul>]]></content>
-    
-    
-    <categories>
-      
-      <category>Notes</category>
-      
-      <category>课程</category>
-      
-    </categories>
-    
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>作业1 课后阅读</title>
-    <link href="/2023/09/22/Notes/%E8%AF%BE%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/%E4%BD%9C%E4%B8%9A1%20%E8%AF%BE%E5%90%8E%E9%98%85%E8%AF%BB/"/>
-    <url>/2023/09/22/Notes/%E8%AF%BE%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/%E4%BD%9C%E4%B8%9A1%20%E8%AF%BE%E5%90%8E%E9%98%85%E8%AF%BB/</url>
-    
-    <content type="html"><![CDATA[<p>问题1：时至今日的软件开发过程中是否还存在软件危机中存在的现象？如果存在，软件工程的方法能否解决？未来的AI能否解决？</p><p>存在。软件危机中主要存在以下现象：</p><ol><li>对软件开发成本和进度的估计常常很不准确</li><li>用户对“已完成的”软件系统不满意</li><li>软件常常是不可维护的</li><li>软件通常没有适当的文档资料<br>随着人们使用软件工程的方法进行软件开发，这些问题逐渐减少，但不会完全消灭。<br>利用软件工程的方法可以有效解决这些问题，软件工程采用工程的概念、原理、技术和方法来开发和维护软件，进行详细需求分析和规划，使用合适的设计模式和架构，使用版本控制系统等特点可以有效解决上述问题。随着AI的发展，未来AI很有可能具备自主设计程序的能力，如果AI能实现正确理解客户需求，合理开发软件功能，自动维护软件运行，则可以开发出优质软件。</li></ol><hr><p>问题2：软件工程的知识体系中，你认为哪几个环节与软件质量相关？</p><p>需求分析：只有正确理解客户的需求，才能做出好的软件<br>软件稳定性和可维护性：当软件在使用中经常出现问题，或需要频繁投入人力进行维护时，意味着软件质量不高。<br>软件代码的可读性：高可读性的代码可以使软件在维护和升级时更方便。<br>经过测试：软件需要经过大量的测试才能保证质量。</p>]]></content>
-    
-    
-    <categories>
-      
-      <category>Notes</category>
-      
-      <category>课程</category>
-      
-      <category>软件工程</category>
-      
-    </categories>
-    
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>操作系统</title>
-    <link href="/2023/09/22/Notes/%E8%AF%BE%E7%A8%8B/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
-    <url>/2023/09/22/Notes/%E8%AF%BE%E7%A8%8B/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/</url>
-    
-    <content type="html"><![CDATA[<p>老师声音小，需要坐前排</p><p>40分平时作业（gitee），60分期末</p><p>TODO：</p><ul><li><input checked="" disabled="" type="checkbox"> 加入gitee仓库</li></ul><hr>]]></content>
-    
-    
-    <categories>
-      
-      <category>Notes</category>
-      
-      <category>课程</category>
-      
-      <category>操作系统</category>
-      
-    </categories>
-    
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>Blitz软件</title>
-    <link href="/2023/09/22/Notes/%E8%AF%BE%E7%A8%8B/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/Blitz%E8%BD%AF%E4%BB%B6/"/>
-    <url>/2023/09/22/Notes/%E8%AF%BE%E7%A8%8B/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/Blitz%E8%BD%AF%E4%BB%B6/</url>
-    
-    <content type="html"><![CDATA[<p>Blitz是一个软件包，内含一个虚拟机，给操作者提供一个建立操作系统内核的功能</p><p>学生将在主机上编辑、编译和链接他们的操作系统内核项目。然后，他们将使用仿真器在虚拟机上执行这些项目。当学生的代码出现错误时，仿真器会显示各种错误信息，学生可以使用仿真器工具进行调试</p><h4 id="架构"><a href="#架构" class="headerlink" title="架构"></a>架构</h4><p>CPU 采用 RISC 设计，大致仿照 Sun 的 Sparc 架构。 BLITZ 处理器包含 32 个通用整数寄存器，每个寄存器为 32 位。</p><p>处理器有两种执行模式，即 “系统模式 “和 “用户模式”。内核代码在系统模式下运行，而应用程序则在用户模式下运行。</p><p>BLITZ 机器包括两个输入输出设备。第一个是磁盘。仿真器通过主机上的文件来模拟磁盘。第二个 I&#x2F;O 设备是终端，仿真器通常将终端输入&#x2F;输出直接传递到主机的用户界面，这样学生就可以直接与运行中的 BLITZ 代码交互。</p><p>该架构还包括一个 “trap “指令，用户程序可以执行该指令。陷阱指令允许用户进程进入内核。</p><p>调试器内置于模拟器中，并且是模拟器的组成部分。该模拟器可以在命令行模式下运行，学生可以一次键入一个命令。这些命令可用于调试其 BLITZ 内核代码。</p><p>CPU 都在系统模式或用户模式下执行。内核代码在系统模式下执行，而用户级程序在用户模式下执行。任何指令都可以在系统模式下执行，但某些指令是有特权的，因为它们只能在系统模式下执行。特权指令的示例包括更改页表和更改模式本身的指令。</p><p>在 BLITZ 架构中，寄存器“r15”指向执行堆栈，该堆栈从较高的内存地址向较低的地址向下增长。</p><h4 id="工具"><a href="#工具" class="headerlink" title="工具"></a>工具</h4><ul><li><strong>blitz：</strong> The BLITZ virtual machine emulator and debugger虚拟机模拟器和调试器</li><li><strong>asm：</strong> The BLITZ assembler汇编器。<blockquote><p>汇编器（Assembler）是将汇编语言翻译为机器语言的程序。一般而言，汇编生成的是目标代码，需要经链接器（Linker）生成可执行代码才可以执行。</p></blockquote></li><li><strong>lddd：</strong> The BLITZ linker链接器</li><li><strong>dumpObj：</strong> A tool to examine BLITZ object and executable files检查blitz对象和可执行文件</li><li><strong>diskUtil：</strong> A tool to manipulate the initial file system on the emulated BLITZ disk用于操作模拟 BLITZ 磁盘上的初始文件系统的工具</li><li><strong>kpl：</strong> The KPL compiler编译器</li></ul><h4 id="模拟器Emulator"><a href="#模拟器Emulator" class="headerlink" title="模拟器Emulator"></a>模拟器Emulator</h4><p>在 Unix 下运行时，您可以通过在 Unix 提示符下键入“blitz”来启动模拟器。模拟器首先读入 BLITZ 程序并将其加载到内存中。通常，BLITZ 可执行文件称为“a.out”，但也可以指定其他名称。模拟器首先从“a.out”读取数据并将其加载到其内部存储器中。实际上，模拟器首先使用“a.out”文件中的字节初始化 BLITZ 机器的主内存</p><p>asm 程序是 BLITZ 汇编程序。它以汇编语言程序为输入，生成一个对象文件<br>第二个程序（称为 “ldd”）是 BLITZ 连接器。它输入一个或多个对象文件，生成一个名为 “a.out “的可执行文件。</p><p>quit 命令（可缩写为 “q”）将终止 BLITZ 模拟器。</p><p>go 指令（可缩写为 “g”）用于启动仿真器的执行。一旦开始执行，BLITZ 机器将执行指令，直到检测到错误或 BLITZ 机器执行 “等待 “或 “调试 “指令为止。</p><p>在KPL中，以“.h”结尾的文件称为“头文件”，以“.c”结尾的文件称为“代码文件”。每个包（如HelloWorld）都会有头文件和代码文件。HelloWorld包使用系统包。每当HelloWorld使用的包的头文件发生变化时，HelloWorld必须重新编译。但是，如果系统的代码文件发生变化，则不需要重新编译HelloWorld。</p>]]></content>
-    
-    
-    <categories>
-      
-      <category>Notes</category>
-      
-      <category>课程</category>
-      
-      <category>操作系统</category>
-      
-    </categories>
-    
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>大作业 酒店控温计费系统 规划</title>
-    <link href="/2023/09/22/Notes/%E8%AF%BE%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/%E5%A4%A7%E4%BD%9C%E4%B8%9A%20%E9%85%92%E5%BA%97%E6%B8%A9%E6%8E%A7%E8%AE%A1%E8%B4%B9%E7%B3%BB%E7%BB%9F%20%E8%A7%84%E5%88%92/"/>
-    <url>/2023/09/22/Notes/%E8%AF%BE%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/%E5%A4%A7%E4%BD%9C%E4%B8%9A%20%E9%85%92%E5%BA%97%E6%B8%A9%E6%8E%A7%E8%AE%A1%E8%B4%B9%E7%B3%BB%E7%BB%9F%20%E8%A7%84%E5%88%92/</url>
-    
-    <content type="html"><![CDATA[<ul><li><input checked="" disabled="" type="checkbox"> 需求阶段</li><li><input disabled="" type="checkbox"> 设计阶段</li><li><input disabled="" type="checkbox"> 开发阶段</li><li><input disabled="" type="checkbox"> 测试阶段</li></ul><p>9.21</p><ul><li><input checked="" disabled="" type="checkbox"> 需求分析</li><li><input checked="" disabled="" type="checkbox"> 确定技术栈</li><li><input checked="" disabled="" type="checkbox"> 组内分工</li><li><input checked="" disabled="" type="checkbox"> 版本控制</li></ul><h4 id="需求分析："><a href="#需求分析：" class="headerlink" title="需求分析："></a>需求分析：</h4><p><strong>功能</strong><br>客户：设定空调温度和风速<br>房间内控制面板：显示使用空调消费的金额<br>打印空调使用的详单（什么时间打开，什么时间关闭）<br>空调管理员：监控各房间空调的使用状态<br>酒店管理员：生成酒店及房间的空调使用统计报表<br>![[Pasted image 20230917104741.png]]</p><h4 id="实现框架："><a href="#实现框架：" class="headerlink" title="实现框架："></a>实现框架：</h4><p><strong>Djiago</strong><br><strong>MVC模型</strong>：<br>MVC 模式（Model–view–controller）是软件工程中的一种软件架构模式，把软件系统分为三个基本部分：模型（Model）、视图（View）和控制器（Controller）。<br>![[Pasted image 20230918212851.png]]</p><p>![[Pasted image 20230918212903.png]]</p><p>Django 的 MTV 模式本质上和 MVC 是一样的，也是为了各组件间保持松耦合关系，只是定义上有些许不同，Django 的 MTV 分别是指：</p><ul><li>M 表示模型（Model）：编写程序应有的功能，负责业务对象与数据库的映射(ORM)。</li><li>T 表示模板 (Template)：负责如何把页面(html)展示给用户。</li><li>V 表示视图（View）：负责业务逻辑，并在适当时候调用 Model和 Template。<br>![[Pasted image 20230918213533.png]]</li></ul><p>Django + vue<br><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20230921154013.png"></p><p>分工<br>1 客户端 @李<br>2 服务器 @周 @王<br>1 数据库 @高</p><p>git 暂定</p><ul><li><input disabled="" type="checkbox"> 学习各自的内容（前端、后端、数据库）</li><li><input disabled="" type="checkbox"> 学习用Git上传代码</li><li><input disabled="" type="checkbox"> Github创建一个远程仓库</li></ul>]]></content>
-    
-    
-    <categories>
-      
-      <category>Notes</category>
-      
-      <category>课程</category>
-      
-      <category>软件工程</category>
-      
-    </categories>
-    
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>软件工程</title>
-    <link href="/2023/09/22/Notes/%E8%AF%BE%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/"/>
-    <url>/2023/09/22/Notes/%E8%AF%BE%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/</url>
-    
-    <content type="html"><![CDATA[<p>考核：期中10+平时和作业40+期末50</p><h3 id="大作业"><a href="#大作业" class="headerlink" title="大作业"></a>大作业</h3><p>TODO：</p><ul><li><input disabled="" type="checkbox"> 项目了解与初步计划</li></ul><hr>]]></content>
-    
-    
-    <categories>
-      
-      <category>Notes</category>
-      
-      <category>课程</category>
-      
-      <category>软件工程</category>
-      
-    </categories>
-    
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>神经网络与深度学习</title>
-    <link href="/2023/09/22/Notes/%E8%AF%BE%E7%A8%8B/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E4%B8%8E%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
-    <url>/2023/09/22/Notes/%E8%AF%BE%E7%A8%8B/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E4%B8%8E%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/</url>
-    
-    <content type="html"><![CDATA[<p><u></u>教材：</p><ul><li>神经网络与深度学习，邱锡鹏 <a href="https://nndl.github.io/">神经网络与深度学习</a></li><li>动手学深度学习 阿斯顿·张、李沐</li><li><strong>深度学习，Ian Goddfellow</strong></li></ul><p>公开课：</p><ul><li>李宏毅：机器学习</li><li>CS224n</li><li>CS231n</li></ul><p>考核：平时作业80（选够100分的题量）+其他20（随堂考试、问答）</p><hr><h3 id="神经网络"><a href="#神经网络" class="headerlink" title="神经网络"></a>神经网络</h3><p><strong>激活函数：最关键部分</strong></p><ul><li>激活函数：连续并可导的非线性函数</li><li>激活函数及其导函数要尽可能简单</li><li>激活函数的导函数要在一个合适的区间内<br><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20230921102752.png"></li></ul><p>神经网络的要素：</p><ul><li><p>拓扑结构：前馈网络，反馈网络，图网络。<br>前馈神经网络（FNN），循环神经网络（RNN）</p></li><li><p>网络的表示</p></li><li><p>学习算法</p></li></ul><p><strong>前馈神经网络</strong>：<br>一层的输出作用于下一层的输入<br><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20230921104850.png"><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20230921104913.png"><br>向量表示：<br><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20230921105212.png"></p><p><strong>输出层</strong>： 根据任务确定输出层的激活函数</p><ul><li>回归任务：根据输出的值域选择激活函数</li><li>分类任务：softmax函数<br><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20230921110000.png"></li></ul><p><strong>反向传播算法：</strong><br><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20230921110918.png"><br>J1为结果的误差，根据结果误差更新参数<br><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20230921111754.png"><br>需要会推导</p><p>均方误差会使深层的反向传播训练缓慢</p><p>神经网络具有通用近似性，只要神经元数量足够，可以拟合任何函数</p><p>非凸优化问题<br>梯度消失问题</p>]]></content>
-    
-    
-    <categories>
-      
-      <category>Notes</category>
-      
-      <category>课程</category>
       
     </categories>
     
@@ -365,12 +317,60 @@
   
   
   <entry>
-    <title></title>
-    <link href="/2023/09/21/writeupdatetime/"/>
-    <url>/2023/09/21/writeupdatetime/</url>
+    <title>TODO</title>
+    <link href="/2023/09/22/Notes/TODO/"/>
+    <url>/2023/09/22/Notes/TODO/</url>
     
-    <content type="html"><![CDATA[#!/usr/bin/env node/*批量添加修改时间用于bolg初始化修改时间*/console.log('脚本开始运行..');var fs = require("fs"); //请求文件系统var file = "./txt"; //设置读取和写入的文件，当前目录下的test文件var RegExp=/(updated:\s*)((\d{2}(([02468][048])|([13579][26]))[\-\/\s]?((((0?[13578])|(1[02]))[\-\/\s]?((0?[1-9])|([1-2][0-9])|(3[01])))|(((0?[469])|(11))[\-\/\s]?((0?[1-9])|([1-2][0-9])|(30)))|(0?2[\-\/\s]?((0?[1-9])|([1-2][0-9])))))|(\d{2}(([02468][1235679])|([13579][01345789]))[\-\/\s]?((((0?[13578])|(1[02]))[\-\/\s]?((0?[1-9])|([1-2][0-9])|(3[01])))|(((0?[469])|(11))[\-\/\s]?((0?[1-9])|([1-2][0-9])|(30)))|(0?2[\-\/\s]?((0?[1-9])|(1[0-9])|(2[0-8]))))))(\s((([0-1][0-9])|(2?[0-3]))\:([0-5]?[0-9])((\s)|(\:([0-5]?[0-9])))))\r/g;fs.readdir("./",function(err,files){var len=files.length;var file=null;for(var i=0;i<len;i++){file=files[i];//console.log("读取文件：",file);if(file.indexOf(".md")>-1){console.log("正在处理文件：",file);writeFileTime(file,fs);}}    console.log("运行完毕！");});/*file:读取时间的文件以及写入内容的文件fs: 文件系统*/function writeFileTime(file,fs){fs.readFile(file, 'utf8',function(err, data) { //读取文件内容if (err) return console.log("读取文件内容错误：",err);//console.log("文件"+file+"的内容：",data);fs.stat(file,function(err, stats) { //读取文件信息，创建时间等   if (err) return console.log("读取文件信息错误：",err);//console.log("文件"+file+"的信息：",stats);  //打印文件的信息//console.log("创建时间是：",stats.mtime);//console.log("文件的创建时间是：",getFormatDate(stats.mtime));            var result= data.replace(RegExp,""); //替换更新时间result = result.replace(/categories:/g, "updated: "+getFormatDate(stats.mtime)+"\r"+"categories:");//data:替换为标准化日期//console.log("修改后文件内容为：",result);fs.writeFile(file, result, 'utf8',function(err) { //写入新的文件内容if (err) return console.log("写文件错误：",err);});});});}/* timeStr:时间，格式可为："September 16,2016 14:15:05、 "September 16,2016"、"2016/09/16 14:15:05"、"2016/09/16"、 '2014-04-23T18:55:49'和毫秒 dateSeparator：年、月、日之间的分隔符，默认为"-"， timeSeparator：时、分、秒之间的分隔符，默认为":" */function getFormatDate(timeStr, dateSeparator, timeSeparator) {    dateSeparator = dateSeparator ? dateSeparator : "-";    timeSeparator = timeSeparator ? timeSeparator : ":";    var date = new Date(timeStr),            year = date.getFullYear(),// 获取完整的年份(4位,1970)            month = date.getMonth(),// 获取月份(0-11,0代表1月,用的时候记得加上1)            day = date.getDate(),// 获取日(1-31)            hour = date.getHours(),// 获取小时数(0-23)            minute = date.getMinutes(),// 获取分钟数(0-59)            seconds = date.getSeconds(),// 获取秒数(0-59)            Y = year + dateSeparator,            M = ((month + 1) > 9 ? (month + 1) : ('0' + (month + 1))) + dateSeparator,            D = (day > 9 ? day : ('0' + day)) + ' ',            h = (hour > 9 ? hour : ('0' + hour)) + timeSeparator,            m = (minute > 9 ? minute : ('0' + minute)) + timeSeparator,            s = (seconds > 9 ? seconds : ('0' + seconds)),            formatDate = Y + M + D + h + m + s;    return formatDate;}]]></content>
+    <content type="html"><![CDATA[<ul><li><input checked="" disabled="" type="checkbox"> 大创定级检查 16日</li><li><input checked="" disabled="" type="checkbox"> OS作业 17日</li><li><input disabled="" type="checkbox"> 软件工程开会 21日</li><li><input checked="" disabled="" type="checkbox"> 数据库 17日</li><li><input disabled="" type="checkbox"> 六级报名等待候补</li><li><input checked="" disabled="" type="checkbox"> powershell下7版本，设置主题</li><li><input disabled="" type="checkbox"> 课堂讨论25号</li><li><input disabled="" type="checkbox"> github主页美化</li><li><input checked="" disabled="" type="checkbox"> 博客翻新</li><li><input disabled="" type="checkbox"> 博客图片问题</li></ul>]]></content>
     
+    
+    <categories>
+      
+      <category>Notes</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Advanced Tables表格绘制</title>
+    <link href="/2023/09/22/Notes/Ob%E6%8F%92%E4%BB%B6/Advanced%20Tables%20%E8%A1%A8%E6%A0%BC%E7%BB%98%E5%88%B6/"/>
+    <url>/2023/09/22/Notes/Ob%E6%8F%92%E4%BB%B6/Advanced%20Tables%20%E8%A1%A8%E6%A0%BC%E7%BB%98%E5%88%B6/</url>
+    
+    <content type="html"><![CDATA[<p>用 | 隔开内容，然后按TAB生成表格，Enter进入下一行</p><p>示例：</p><table><thead><tr><th>Hotkey</th><th>Action</th></tr></thead><tbody><tr><td>Tab</td><td>Next Cell</td></tr><tr><td>Enter</td><td>Next Row</td></tr><tr><td>Shift+Tab</td><td>Previous Cell</td></tr><tr><td>Ctrl+Shift+D</td><td>Open table controls sidebar</td></tr></tbody></table>]]></content>
+    
+    
+    <categories>
+      
+      <category>Notes</category>
+      
+      <category>Ob插件</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>Git操作</title>
+    <link href="/2023/09/22/Notes/AI/AI%E7%BB%98%E7%94%BB/"/>
+    <url>/2023/09/22/Notes/AI/AI%E7%BB%98%E7%94%BB/</url>
+    
+    <content type="html"><![CDATA[<h2 id="stable-diffusion-模型画任意要求"><a href="#stable-diffusion-模型画任意要求" class="headerlink" title="stable diffusion 模型画任意要求"></a>stable diffusion 模型画任意要求</h2><p>飞桨： <a href="https://aistudio.baidu.com/projectdetail/6665563">文生图[多loRA,ControlNet预处理,高清v2,视频生成]v11_副本</a><br>kaggle：<a href="https://zhuanlan.zhihu.com/p/643442494">免费部署stable diffusion，白嫖32G GPU - 知乎 (zhihu.com)</a></p><h2 id="ai-二维码美化"><a href="#ai-二维码美化" class="headerlink" title="ai 二维码美化"></a>ai 二维码美化</h2><p>飞桨：[AI艺术二维码生成器](<a href="https://aistudio.baidu.com/projectdetail/6452331">【创意应用】AI艺术二维码生成 - 飞桨AI Studio (baidu.com)</a>)</p><hr><h4 id="Stable-Diffusion使用"><a href="#Stable-Diffusion使用" class="headerlink" title="Stable Diffusion使用"></a>Stable Diffusion使用</h4><p><a href="https://github.com/AUTOMATIC1111/stable-diffusion-webui">GitHub - AUTOMATIC1111&#x2F;stable-diffusion-webui: Stable Diffusion web UI</a>在Github上下载压缩包并按照说明安装<br>![[Pasted image 20230913125854.png]]</p><p><strong>添加模型：</strong> 在<a href="https://civitai.com/">Civitai | Stable Diffusion models, embeddings, LoRAs and more</a>上下载模型，添加到相应文件夹。</p><ul><li>Checkpoint:基本模型，下载到webui\models\Stable-diffusion</li><li>Lora:微调模型，下载到webui\models\Lora</li><li>其他（待补充）</li></ul><p><strong>插件下载：</strong></p><ul><li>中文汉化：<a href="https://github.com/VinsonLaro/stable-diffusion-webui-chinese">GitHub - VinsonLaro&#x2F;stable-diffusion-webui-chinese: stable-diffusion-webui 的汉化扩展</a>作者写了非常详细的下载和使用教程</li><li>controlnet：<a href="https://github.com/lllyasviel/ControlNet-v1-1-nightly">GitHub - lllyasviel&#x2F;ControlNet-v1-1-nightly: Nightly release of ControlNet 1.1</a>同上的下载方式<br><strong>注意：</strong> 下载时可能会因为网络问题下载失败，挂梯子多尝试几次。下载失败后需要到webui\tmp中删除文件夹，否则无法再次下载。</li></ul><p><strong>Controlnet使用：</strong> 下载controlnet插件后，按照<a href="https://github.com/Mikubill/sd-webui-controlnet">GitHub - Mikubill&#x2F;sd-webui-controlnet: WebUI extension for ControlNet</a>提供的地址下载controlnet模型（14个），放到webui\extensions\sd-webui-controlnet\models目录下<br>此时在WebUI中即可看到controlnet界面，有许多参数可选项可调<br>可参考b站教程：<a href="https://www.bilibili.com/video/BV1gX4y1J7ei/?spm_id_from=333.788.recommend_more_video.-1&vd_source=7d4ddbfe6a66f2fbe94075935b693c57">“牛逼”的教程来了！一次学会AI二维码+艺术字+光影光效+创意Logo生成，绝对是B站最详细的Stable Diffusion特效设计流程教学！AI绘画进阶应用_哔哩哔哩_bilibili</a></p><p><strong>模型配置方案：</strong><br>SD提供了太多的模型组合，在此记录一下模型搭配及其效果</p><p><strong>提示词：</strong><br>一些通用的提示词可以提高图像质量，特定的提示词可以指定生成内容</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>Notes</category>
+      
+      <category>AI</category>
+      
+    </categories>
     
     
   </entry>

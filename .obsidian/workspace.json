@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "c532ea47089fbb5b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "source/_posts/Notes/TODO.md",
+                "file": "conflict-files-obsidian-git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "source/_posts/Notes/TODO.md",
+                "file": "conflict-files-obsidian-git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "source/_posts/Notes/TODO.md"
+                "file": "conflict-files-obsidian-git.md"
               }
             }
           },
@@ -166,8 +179,10 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "5b356816fefe0b5a",
+  "active": "c532ea47089fbb5b",
   "lastOpenFiles": [
+    "source/_posts/Notes/TODO.md",
+    "conflict-files-obsidian-git.md",
     "public/2023/09/22/Notes/课程/软件工程/软件工程/index.html",
     "public/2023/09/22/Notes/课程/操作系统/操作系统/index.html",
     "public/2023/09/22/Notes/课程/软件工程/大作业 酒店温控计费系统 规划/index.html",
@@ -178,9 +193,7 @@
     "public/2023/09/22/Notes/课程/软件工程/作业1 课后阅读",
     "public/2023/09/22/Notes/课程/神经网络与深度学习/index.html",
     "public/2023/09/22/Notes/课程/智能计算系统/index.html",
-    "public/2023/09/22/Notes/课程/数据库/index.html",
     "source/_posts/Notes/PowerShell美化.md",
-    "source/_posts/Notes/TODO.md",
     "Template/hexo.md",
     "source/_posts/Notes/hexo+Obsidian+github博客.md",
     "source/_posts/Notes/Ob插件/Advanced Tables 表格绘制.md",
