@@ -8,7 +8,7 @@
     <link href="/2023/09/22/Notes/%E8%AF%BE%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/"/>
     <url>/2023/09/22/Notes/%E8%AF%BE%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/</url>
     
-    <content type="html"><![CDATA[<p>考核：期中10+平时和作业40+期末50</p><hr><h3 id="软件生命周期"><a href="#软件生命周期" class="headerlink" title="软件生命周期"></a>软件生命周期</h3><p>指软件产品从考虑其概念开始，直至废弃为止的整个时期，包括概念阶段、分析与设计阶段、构造阶段、移交和运行阶段等不同时期</p><p><strong>制定计划：</strong></p><p>指定出完成开发任务的实施计划</p><ul><li>任务列表</li><li>每个任务的起止时间</li><li>每个任务的责任人</li></ul><p><strong>传统模型种类：</strong></p><ul><li>瀑布模型<br>推迟软件实现，强调在软件实现之前必须进行分析和设计工作</li><li>演化模型<br>提倡两次开发，第一次是试验开发，探索需求</li><li>增量模型<br>按优先级逐步将需求进行开发</li><li>喷泉模型</li><li>V模型和W模型</li><li>螺旋模型</li><li>构建组装模型</li><li>快速应用开发模型</li><li>原型方法</li></ul>]]></content>
+    <content type="html"><![CDATA[<p>考核：期中10+平时和作业40+期末50</p><hr><h3 id="软件生命周期"><a href="#软件生命周期" class="headerlink" title="软件生命周期"></a>软件生命周期</h3><p>指软件产品从考虑其概念开始，直至废弃为止的整个时期，包括概念阶段、分析与设计阶段、构造阶段、移交和运行阶段等不同时期</p><p><strong>制定计划：</strong></p><p>指定出完成开发任务的实施计划</p><ul><li>任务列表</li><li>每个任务的起止时间</li><li>每个任务的责任人</li></ul><p><strong>传统模型种类：</strong></p><ul><li>瀑布模型<br>推迟软件实现，强调在软件实现之前必须进行分析和设计工作<br><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20230922111030.png"></li><li>演化模型<br>提倡两次开发，第一次是试验开发，探索需求</li><li>增量模型<br>按优先级逐步将需求进行开发</li><li>喷泉模型<br>各个开发阶段没有特定的次序要求，可以并行进行，效率高但难于管理</li><li>V模型和W模型<br><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20230922111109.png"></li><li>螺旋模型</li><li>构建组装模型</li><li>快速应用开发模型</li><li>原型方法</li></ul>]]></content>
     
     
     <categories>
