@@ -19,7 +19,7 @@ kaggle：[免费部署stable diffusion，白嫖32G GPU - 知乎 (zhihu.com)](htt
 
 #### Stable Diffusion使用
 [GitHub - AUTOMATIC1111/stable-diffusion-webui: Stable Diffusion web UI](https://github.com/AUTOMATIC1111/stable-diffusion-webui)在Github上下载压缩包并按照说明安装
-![[Pasted image 20230913125854.png]]
+![](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20230923234607.png)
 
 **添加模型：** 在[Civitai | Stable Diffusion models, embeddings, LoRAs and more](https://civitai.com/)上下载模型，添加到相应文件夹。
 - Checkpoint:基本模型，下载到webui\\models\\Stable-diffusion

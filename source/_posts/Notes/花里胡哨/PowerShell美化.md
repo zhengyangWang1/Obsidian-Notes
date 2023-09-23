@@ -13,7 +13,7 @@ update:
 
 安装字体
 先是按官方的指令下载不了，后来又成功了，然后根据给的config配置文件更改setting
-![[source/_posts/Notes/img/Pasted image 20230917203623.png]]
+![](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20230923234327.png)
 
 根据官网安装主题,修改profile中的代码
 [Themes | Oh My Posh](https://ohmyposh.dev/docs/themes)这里有所有主题，更换时把profile的id改一下就行

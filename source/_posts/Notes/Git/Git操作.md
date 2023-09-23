@@ -51,7 +51,7 @@ git clone <repo> <directory>
 
 ### Git 基本操作
 Git 常用的是以下 6 个命令：**git clone**、**git push**、**git add** 、**git commit**、**git checkout**、**git pull**
-![[Pasted image 20230829224733.png]]
+![](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20230923234622.png)
 
 #### Git工作区、暂存库和版本库
 
@@ -100,7 +100,7 @@ git checkout (branchname)
 ```
 git merge
 ```
-![[Pasted image 20230829225716.png]]
+![](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20230923234633.png)
 
 合并后删除无用分支：
 

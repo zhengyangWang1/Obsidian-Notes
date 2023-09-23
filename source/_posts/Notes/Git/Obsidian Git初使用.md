@@ -55,8 +55,6 @@ ssh -T git@github.com
 ### 添加Github远程仓库：
 创建一个Github仓库用于存放笔记
 
-![[Pasted image 20230829165617.png]]
-
 ### 配置本地 Obsidian 仓库
 
 ```
