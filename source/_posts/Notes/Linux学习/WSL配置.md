@@ -8,7 +8,7 @@ categories:
 WSL(Windows Subsystem for Linux)，Windows自带的Linux子系统
 
 ## TODO 
-- [ ] 输入bash没反应，暂未解决，也无法稳定复现，尝试在关闭终端时使用`wsl --shutdown`关闭wsl
+- [ ] 输入bash没反应，重启后正常，待解决
 
 #### 安装过程及问题
 在Windows中开启该功能然后重启

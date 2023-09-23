@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "source/_posts/Notes/编程/Django/First Class.md",
+                "file": "source/_posts/Notes/Linux学习/WSL配置.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "source/_posts/Notes/编程/Django/First Class.md",
+                "file": "source/_posts/Notes/Linux学习/WSL配置.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "source/_posts/Notes/编程/Django/First Class.md",
+                "file": "source/_posts/Notes/Linux学习/WSL配置.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "source/_posts/Notes/编程/Django/First Class.md"
+                "file": "source/_posts/Notes/Linux学习/WSL配置.md"
               }
             }
           },
@@ -168,6 +168,7 @@
   },
   "active": "5b356816fefe0b5a",
   "lastOpenFiles": [
+    "source/_posts/Notes/编程/Django/First Class.md",
     "public/categories/Notes/编程/Django/index.html",
     "public/categories/Notes/编程/Django",
     "public/categories/Notes/编程/index.html",
@@ -178,9 +179,7 @@
     "public/2023/09/23/Notes/编程/Django/First Class",
     "public/2023/09/23/Notes/编程/Django",
     "public/2023/09/23/Notes/编程",
-    "public/2023/09/23/Notes",
     "source/_posts/Notes/花里胡哨/hexo+Obsidian+github博客.md",
-    "source/_posts/Notes/编程/Django/First Class.md",
     "source/_posts/Notes/花里胡哨/PowerShell美化.md",
     "source/_posts/Notes/课程/软件工程/软件工程.md",
     "source/_posts/Notes/课程/软件工程/大作业 酒店温控计费系统 规划.md",
