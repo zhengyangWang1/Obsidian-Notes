@@ -2,7 +2,8 @@
 title: hexo+Obsidian+github笔记博客
 categories:
   - Notes
-update: 
+  - 花里胡哨
+update:
 tags:
 ---
 之前的Obsidian笔记都存在本地仓库，github page业已荒废，遂着手将ob笔记同步到blog上并实现自动更新
