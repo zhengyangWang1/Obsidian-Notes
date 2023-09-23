@@ -11,6 +11,16 @@
     <content type="html"><![CDATA[]]></content>
     
     
+    <categories>
+      
+      <category>Notes</category>
+      
+      <category>编程</category>
+      
+      <category>Django</category>
+      
+    </categories>
+    
     
   </entry>
   
@@ -309,6 +319,8 @@
       
       <category>Notes</category>
       
+      <category>花里胡哨</category>
+      
     </categories>
     
     
@@ -327,6 +339,8 @@
     <categories>
       
       <category>Notes</category>
+      
+      <category>花里胡哨</category>
       
     </categories>
     
