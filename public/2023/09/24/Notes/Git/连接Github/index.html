@@ -16,15 +16,15 @@
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
   
-    <meta name="description" content="git连接远程仓库从github克隆仓库到本地 1git clone ssh  连接远程仓库 1git remote add origin ssh  分支管理本地新建分支后push到github github上新建分支 本地删除本地分支 删除远程仓库分支">
+    <meta name="description" content="git连接远程仓库从github克隆仓库到本地 1git clone ssh  连接远程仓库 1git remote add origin ssh  分支管理本地新建分支后push到github 123git branch -v  # 查看分支列表git branch 分支名  # 新建分支git checkout 分支名  # 转到该分支  删除本地分支 12git branch -d 分支名">
 <meta property="og:type" content="article">
 <meta property="og:title" content="连接Github">
 <meta property="og:url" content="http://example.com/2023/09/24/Notes/Git/%E8%BF%9E%E6%8E%A5Github/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="git连接远程仓库从github克隆仓库到本地 1git clone ssh  连接远程仓库 1git remote add origin ssh  分支管理本地新建分支后push到github github上新建分支 本地删除本地分支 删除远程仓库分支">
+<meta property="og:description" content="git连接远程仓库从github克隆仓库到本地 1git clone ssh  连接远程仓库 1git remote add origin ssh  分支管理本地新建分支后push到github 123git branch -v  # 查看分支列表git branch 分支名  # 新建分支git checkout 分支名  # 转到该分支  删除本地分支 12git branch -d 分支名">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-09-24T05:22:26.422Z">
-<meta property="article:modified_time" content="2023-09-24T05:29:41.149Z">
+<meta property="article:modified_time" content="2023-09-24T05:40:04.901Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary_large_image">
   
@@ -214,7 +214,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          112 字
+          233 字
         
       </span>
     
@@ -225,7 +225,7 @@
         
         
         
-          1 分钟
+          2 分钟
         
       </span>
     
@@ -274,10 +274,12 @@
 <figure class="highlight mipsasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs mipsasm">git remote <span class="hljs-keyword">add </span><span class="hljs-keyword">origin </span>ssh<br></code></pre></td></tr></table></figure>
 
 <h3 id="分支管理"><a href="#分支管理" class="headerlink" title="分支管理"></a>分支管理</h3><p>本地新建分支后push到github</p>
-<p>github上新建分支</p>
-<p>本地删除本地分支</p>
-<p>删除远程仓库分支</p>
+<figure class="highlight mipsasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs mipsasm">git <span class="hljs-keyword">branch </span>-v  <span class="hljs-comment"># 查看分支列表</span><br>git <span class="hljs-keyword">branch </span>分支名  <span class="hljs-comment"># 新建分支</span><br>git checkout 分支名  <span class="hljs-comment"># 转到该分支</span><br></code></pre></td></tr></table></figure>
 
+<p>删除本地分支</p>
+<figure class="highlight mipsasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs mipsasm">git <span class="hljs-keyword">branch </span>-d 分支名  <span class="hljs-comment"># 删除本地分支</span><br>git <span class="hljs-keyword">branch </span>-D 分支名  <span class="hljs-comment"># 强制删除本地分支</span><br></code></pre></td></tr></table></figure>
+<p>删除远程分支</p>
+<figure class="highlight gauss"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs gauss">git <span class="hljs-keyword">push</span> origin --<span class="hljs-keyword">delete</span> 分支名  <span class="hljs-meta"># 删除远程分支</span><br></code></pre></td></tr></table></figure>
                 
               </div>
             
