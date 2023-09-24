@@ -729,7 +729,7 @@ post:
     # 指定的插件，需要同时设置对应插件的必要参数
     # The specified plugin needs to set the necessary parameters at the same time
     # Options: utterances | disqus | gitalk | valine | waline | changyan | livere | remark42 | twikoo | cusdis | giscus | discuss
-    type: livere
+    type: valine
 
 
 #---------------------------
@@ -790,10 +790,10 @@ gitalk:
 # Based on LeanCloud
 # See: https://valine.js.org/
 valine:
-  appId:
-  appKey:
+  appId: Gu5ECxvGGmgKCcp5rU4dq6mf-gzGzoHsz
+  appKey: yhwIunMgUsQgFKezVjcG9sYe
   path: window.location.pathname
-  placeholder:
+  placeholder: 留言
   avatar: 'retro'
   meta: ['nick', 'mail', 'link']
   requiredFields: []
@@ -804,7 +804,7 @@ valine:
   serverURLs: ''
   emojiCDN:
   emojiMaps:
-  enableQQ: false
+  enableQQ: true
 
 # Waline
 # 从 Valine 衍生而来，额外增加了服务端和多种功能

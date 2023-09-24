@@ -94,11 +94,11 @@
   
   
   <entry>
-    <title>作业1 课后阅读</title>
-    <link href="/2023/09/22/Notes/%E8%AF%BE%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/%E4%BD%9C%E4%B8%9A1%20%E8%AF%BE%E5%90%8E%E9%98%85%E8%AF%BB/"/>
-    <url>/2023/09/22/Notes/%E8%AF%BE%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/%E4%BD%9C%E4%B8%9A1%20%E8%AF%BE%E5%90%8E%E9%98%85%E8%AF%BB/</url>
+    <title>大作业 酒店控温计费系统 规划</title>
+    <link href="/2023/09/22/Notes/%E8%AF%BE%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/%E5%A4%A7%E4%BD%9C%E4%B8%9A%20%E9%85%92%E5%BA%97%E6%B8%A9%E6%8E%A7%E8%AE%A1%E8%B4%B9%E7%B3%BB%E7%BB%9F%20%E8%A7%84%E5%88%92/"/>
+    <url>/2023/09/22/Notes/%E8%AF%BE%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/%E5%A4%A7%E4%BD%9C%E4%B8%9A%20%E9%85%92%E5%BA%97%E6%B8%A9%E6%8E%A7%E8%AE%A1%E8%B4%B9%E7%B3%BB%E7%BB%9F%20%E8%A7%84%E5%88%92/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>问题1：时至今日的软件开发过程中是否还存在软件危机中存在的现象？如果存在，软件工程的方法能否解决？未来的AI能否解决？</p><p>存在。软件危机中主要存在以下现象：</p><ol><li>对软件开发成本和进度的估计常常很不准确</li><li>用户对“已完成的”软件系统不满意</li><li>软件常常是不可维护的</li><li>软件通常没有适当的文档资料<br>随着人们使用软件工程的方法进行软件开发，这些问题逐渐减少，但不会完全消灭。<br>利用软件工程的方法可以有效解决这些问题，软件工程采用工程的概念、原理、技术和方法来开发和维护软件，进行详细需求分析和规划，使用合适的设计模式和架构，使用版本控制系统等特点可以有效解决上述问题。随着AI的发展，未来AI很有可能具备自主设计程序的能力，如果AI能实现正确理解客户需求，合理开发软件功能，自动维护软件运行，则可以开发出优质软件。</li></ol><hr><p>问题2：软件工程的知识体系中，你认为哪几个环节与软件质量相关？</p><p>需求分析：只有正确理解客户的需求，才能做出好的软件<br>软件稳定性和可维护性：当软件在使用中经常出现问题，或需要频繁投入人力进行维护时，意味着软件质量不高。<br>软件代码的可读性：高可读性的代码可以使软件在维护和升级时更方便。<br>经过测试：软件需要经过大量的测试才能保证质量。</p>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><ul><li><input checked="" disabled="" type="checkbox"> 需求阶段</li><li><input disabled="" type="checkbox"> 设计阶段</li><li><input disabled="" type="checkbox"> 开发阶段</li><li><input disabled="" type="checkbox"> 测试阶段</li></ul><p>9.21</p><ul><li><input checked="" disabled="" type="checkbox"> 需求分析</li><li><input checked="" disabled="" type="checkbox"> 确定技术栈</li><li><input checked="" disabled="" type="checkbox"> 组内分工</li><li><input checked="" disabled="" type="checkbox"> 版本控制</li></ul><h4 id="需求分析："><a href="#需求分析：" class="headerlink" title="需求分析："></a>需求分析：</h4><p><strong>功能</strong><br>客户：设定空调温度和风速<br>房间内控制面板：显示使用空调消费的金额<br>打印空调使用的详单（什么时间打开，什么时间关闭）<br>空调管理员：监控各房间空调的使用状态<br>酒店管理员：生成酒店及房间的空调使用统计报表<br><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20230923234400.png"></p><h4 id="实现框架："><a href="#实现框架：" class="headerlink" title="实现框架："></a>实现框架：</h4><p><strong>Djiago</strong><br><strong>MVC模型</strong>：<br>MVC 模式（Model–view–controller）是软件工程中的一种软件架构模式，把软件系统分为三个基本部分：模型（Model）、视图（View）和控制器（Controller）。<br><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20230923234417.png"></p><p><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20230923234432.png"></p><p>Django 的 MTV 模式本质上和 MVC 是一样的，也是为了各组件间保持松耦合关系，只是定义上有些许不同，Django 的 MTV 分别是指：</p><ul><li>M 表示模型（Model）：编写程序应有的功能，负责业务对象与数据库的映射(ORM)。</li><li>T 表示模板 (Template)：负责如何把页面(html)展示给用户。</li><li>V 表示视图（View）：负责业务逻辑，并在适当时候调用 Model和 Template。<br><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20230923234456.png"></li></ul><p>Django + vue<br><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20230921154013.png"><br>分工<br>1 客户端 @李<br>2 服务器 @周 @王<br>1 数据库 @高</p><p>git 暂定</p><ul><li><input disabled="" type="checkbox"> 学习各自的内容（前端、后端、数据库）</li><li><input disabled="" type="checkbox"> 学习用Git上传代码</li><li><input checked="" disabled="" type="checkbox"> Github创建一个远程仓库</li></ul>]]></content>
     
     
     <categories>
@@ -117,11 +117,11 @@
   
   
   <entry>
-    <title>大作业 酒店控温计费系统 规划</title>
-    <link href="/2023/09/22/Notes/%E8%AF%BE%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/%E5%A4%A7%E4%BD%9C%E4%B8%9A%20%E9%85%92%E5%BA%97%E6%B8%A9%E6%8E%A7%E8%AE%A1%E8%B4%B9%E7%B3%BB%E7%BB%9F%20%E8%A7%84%E5%88%92/"/>
-    <url>/2023/09/22/Notes/%E8%AF%BE%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/%E5%A4%A7%E4%BD%9C%E4%B8%9A%20%E9%85%92%E5%BA%97%E6%B8%A9%E6%8E%A7%E8%AE%A1%E8%B4%B9%E7%B3%BB%E7%BB%9F%20%E8%A7%84%E5%88%92/</url>
+    <title>作业1 课后阅读</title>
+    <link href="/2023/09/22/Notes/%E8%AF%BE%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/%E4%BD%9C%E4%B8%9A1%20%E8%AF%BE%E5%90%8E%E9%98%85%E8%AF%BB/"/>
+    <url>/2023/09/22/Notes/%E8%AF%BE%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/%E4%BD%9C%E4%B8%9A1%20%E8%AF%BE%E5%90%8E%E9%98%85%E8%AF%BB/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><ul><li><input checked="" disabled="" type="checkbox"> 需求阶段</li><li><input disabled="" type="checkbox"> 设计阶段</li><li><input disabled="" type="checkbox"> 开发阶段</li><li><input disabled="" type="checkbox"> 测试阶段</li></ul><p>9.21</p><ul><li><input checked="" disabled="" type="checkbox"> 需求分析</li><li><input checked="" disabled="" type="checkbox"> 确定技术栈</li><li><input checked="" disabled="" type="checkbox"> 组内分工</li><li><input checked="" disabled="" type="checkbox"> 版本控制</li></ul><h4 id="需求分析："><a href="#需求分析：" class="headerlink" title="需求分析："></a>需求分析：</h4><p><strong>功能</strong><br>客户：设定空调温度和风速<br>房间内控制面板：显示使用空调消费的金额<br>打印空调使用的详单（什么时间打开，什么时间关闭）<br>空调管理员：监控各房间空调的使用状态<br>酒店管理员：生成酒店及房间的空调使用统计报表<br><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20230923234400.png"></p><h4 id="实现框架："><a href="#实现框架：" class="headerlink" title="实现框架："></a>实现框架：</h4><p><strong>Djiago</strong><br><strong>MVC模型</strong>：<br>MVC 模式（Model–view–controller）是软件工程中的一种软件架构模式，把软件系统分为三个基本部分：模型（Model）、视图（View）和控制器（Controller）。<br><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20230923234417.png"></p><p><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20230923234432.png"></p><p>Django 的 MTV 模式本质上和 MVC 是一样的，也是为了各组件间保持松耦合关系，只是定义上有些许不同，Django 的 MTV 分别是指：</p><ul><li>M 表示模型（Model）：编写程序应有的功能，负责业务对象与数据库的映射(ORM)。</li><li>T 表示模板 (Template)：负责如何把页面(html)展示给用户。</li><li>V 表示视图（View）：负责业务逻辑，并在适当时候调用 Model和 Template。<br><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20230923234456.png"></li></ul><p>Django + vue<br><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20230921154013.png"><br>分工<br>1 客户端 @李<br>2 服务器 @周 @王<br>1 数据库 @高</p><p>git 暂定</p><ul><li><input disabled="" type="checkbox"> 学习各自的内容（前端、后端、数据库）</li><li><input disabled="" type="checkbox"> 学习用Git上传代码</li><li><input checked="" disabled="" type="checkbox"> Github创建一个远程仓库</li></ul>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>问题1：时至今日的软件开发过程中是否还存在软件危机中存在的现象？如果存在，软件工程的方法能否解决？未来的AI能否解决？</p><p>存在。软件危机中主要存在以下现象：</p><ol><li>对软件开发成本和进度的估计常常很不准确</li><li>用户对“已完成的”软件系统不满意</li><li>软件常常是不可维护的</li><li>软件通常没有适当的文档资料<br>随着人们使用软件工程的方法进行软件开发，这些问题逐渐减少，但不会完全消灭。<br>利用软件工程的方法可以有效解决这些问题，软件工程采用工程的概念、原理、技术和方法来开发和维护软件，进行详细需求分析和规划，使用合适的设计模式和架构，使用版本控制系统等特点可以有效解决上述问题。随着AI的发展，未来AI很有可能具备自主设计程序的能力，如果AI能实现正确理解客户需求，合理开发软件功能，自动维护软件运行，则可以开发出优质软件。</li></ol><hr><p>问题2：软件工程的知识体系中，你认为哪几个环节与软件质量相关？</p><p>需求分析：只有正确理解客户的需求，才能做出好的软件<br>软件稳定性和可维护性：当软件在使用中经常出现问题，或需要频繁投入人力进行维护时，意味着软件质量不高。<br>软件代码的可读性：高可读性的代码可以使软件在维护和升级时更方便。<br>经过测试：软件需要经过大量的测试才能保证质量。</p>]]></content>
     
     
     <categories>
@@ -226,29 +226,6 @@
   
   
   <entry>
-    <title>Blitz软件</title>
-    <link href="/2023/09/22/Notes/%E8%AF%BE%E7%A8%8B/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/Blitz%E8%BD%AF%E4%BB%B6/"/>
-    <url>/2023/09/22/Notes/%E8%AF%BE%E7%A8%8B/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/Blitz%E8%BD%AF%E4%BB%B6/</url>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>Blitz是一个软件包，内含一个虚拟机，给操作者提供一个建立操作系统内核的功能</p><p>学生将在主机上编辑、编译和链接他们的操作系统内核项目。然后，他们将使用仿真器在虚拟机上执行这些项目。当学生的代码出现错误时，仿真器会显示各种错误信息，学生可以使用仿真器工具进行调试</p><h4 id="架构"><a href="#架构" class="headerlink" title="架构"></a>架构</h4><p>CPU 采用 RISC 设计，大致仿照 Sun 的 Sparc 架构。 BLITZ 处理器包含 32 个通用整数寄存器，每个寄存器为 32 位。</p><p>处理器有两种执行模式，即 “系统模式 “和 “用户模式”。内核代码在系统模式下运行，而应用程序则在用户模式下运行。</p><p>BLITZ 机器包括两个输入输出设备。第一个是磁盘。仿真器通过主机上的文件来模拟磁盘。第二个 I&#x2F;O 设备是终端，仿真器通常将终端输入&#x2F;输出直接传递到主机的用户界面，这样学生就可以直接与运行中的 BLITZ 代码交互。</p><p>该架构还包括一个 “trap “指令，用户程序可以执行该指令。陷阱指令允许用户进程进入内核。</p><p>调试器内置于模拟器中，并且是模拟器的组成部分。该模拟器可以在命令行模式下运行，学生可以一次键入一个命令。这些命令可用于调试其 BLITZ 内核代码。</p><p>CPU 都在系统模式或用户模式下执行。内核代码在系统模式下执行，而用户级程序在用户模式下执行。任何指令都可以在系统模式下执行，但某些指令是有特权的，因为它们只能在系统模式下执行。特权指令的示例包括更改页表和更改模式本身的指令。</p><p>在 BLITZ 架构中，寄存器“r15”指向执行堆栈，该堆栈从较高的内存地址向较低的地址向下增长。</p><h4 id="工具"><a href="#工具" class="headerlink" title="工具"></a>工具</h4><ul><li><strong>blitz：</strong> The BLITZ virtual machine emulator and debugger虚拟机模拟器和调试器</li><li><strong>asm：</strong> The BLITZ assembler汇编器。<blockquote><p>汇编器（Assembler）是将汇编语言翻译为机器语言的程序。一般而言，汇编生成的是目标代码，需要经链接器（Linker）生成可执行代码才可以执行。</p></blockquote></li><li><strong>lddd：</strong> The BLITZ linker链接器</li><li><strong>dumpObj：</strong> A tool to examine BLITZ object and executable files检查blitz对象和可执行文件</li><li><strong>diskUtil：</strong> A tool to manipulate the initial file system on the emulated BLITZ disk用于操作模拟 BLITZ 磁盘上的初始文件系统的工具</li><li><strong>kpl：</strong> The KPL compiler编译器</li></ul><h4 id="模拟器Emulator"><a href="#模拟器Emulator" class="headerlink" title="模拟器Emulator"></a>模拟器Emulator</h4><p>在 Unix 下运行时，您可以通过在 Unix 提示符下键入“blitz”来启动模拟器。模拟器首先读入 BLITZ 程序并将其加载到内存中。通常，BLITZ 可执行文件称为“a.out”，但也可以指定其他名称。模拟器首先从“a.out”读取数据并将其加载到其内部存储器中。实际上，模拟器首先使用“a.out”文件中的字节初始化 BLITZ 机器的主内存</p><p>asm 程序是 BLITZ 汇编程序。它以汇编语言程序为输入，生成一个对象文件<br>第二个程序（称为 “ldd”）是 BLITZ 连接器。它输入一个或多个对象文件，生成一个名为 “a.out “的可执行文件。</p><p>quit 命令（可缩写为 “q”）将终止 BLITZ 模拟器。</p><p>go 指令（可缩写为 “g”）用于启动仿真器的执行。一旦开始执行，BLITZ 机器将执行指令，直到检测到错误或 BLITZ 机器执行 “等待 “或 “调试 “指令为止。</p><p>在KPL中，以“.h”结尾的文件称为“头文件”，以“.c”结尾的文件称为“代码文件”。每个包（如HelloWorld）都会有头文件和代码文件。HelloWorld包使用系统包。每当HelloWorld使用的包的头文件发生变化时，HelloWorld必须重新编译。但是，如果系统的代码文件发生变化，则不需要重新编译HelloWorld。</p>]]></content>
-    
-    
-    <categories>
-      
-      <category>Notes</category>
-      
-      <category>课程</category>
-      
-      <category>操作系统</category>
-      
-    </categories>
-    
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>操作系统</title>
     <link href="/2023/09/22/Notes/%E8%AF%BE%E7%A8%8B/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
     <url>/2023/09/22/Notes/%E8%AF%BE%E7%A8%8B/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/</url>
@@ -272,18 +249,20 @@
   
   
   <entry>
-    <title>西安8.16-8.20</title>
-    <link href="/2023/09/22/Notes/%E6%97%85%E6%B8%B8/%E8%A5%BF%E5%AE%898.16-20/"/>
-    <url>/2023/09/22/Notes/%E6%97%85%E6%B8%B8/%E8%A5%BF%E5%AE%898.16-20/</url>
+    <title>Blitz软件</title>
+    <link href="/2023/09/22/Notes/%E8%AF%BE%E7%A8%8B/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/Blitz%E8%BD%AF%E4%BB%B6/"/>
+    <url>/2023/09/22/Notes/%E8%AF%BE%E7%A8%8B/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/Blitz%E8%BD%AF%E4%BB%B6/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="17号"><a href="#17号" class="headerlink" title="17号"></a>17号</h2><p>早餐 小南门早市</p><p>大雁塔 </p><blockquote><p>音乐喷泉 12:00-12:10</p></blockquote><p>大唐不夜城 晚上去</p><p>晚上 附近夜市 [[美食]]</p><p>大唐芙蓉园 20:00</p><h2 id="18号"><a href="#18号" class="headerlink" title="18号"></a>18号</h2><p>兵马俑 华清池 骊山 <del>秦始皇陵</del></p><p>午晚饭 [[美食]]</p><h2 id="19号"><a href="#19号" class="headerlink" title="19号"></a>19号</h2><p>碑林博物馆</p><p>钟楼&amp;鼓楼 <strong>晚上</strong></p><p>晚上 附近夜市</p><p>大唐芙蓉园 20:00</p><h2 id="20号"><a href="#20号" class="headerlink" title="20号"></a>20号</h2><p>小雁塔 西安博物馆</p><p>野球帝 livehouse</p><p><del>陕西历史博物馆</del></p><p>[[景点]]</p>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>Blitz是一个软件包，内含一个虚拟机，给操作者提供一个建立操作系统内核的功能</p><p>学生将在主机上编辑、编译和链接他们的操作系统内核项目。然后，他们将使用仿真器在虚拟机上执行这些项目。当学生的代码出现错误时，仿真器会显示各种错误信息，学生可以使用仿真器工具进行调试</p><h4 id="架构"><a href="#架构" class="headerlink" title="架构"></a>架构</h4><p>CPU 采用 RISC 设计，大致仿照 Sun 的 Sparc 架构。 BLITZ 处理器包含 32 个通用整数寄存器，每个寄存器为 32 位。</p><p>处理器有两种执行模式，即 “系统模式 “和 “用户模式”。内核代码在系统模式下运行，而应用程序则在用户模式下运行。</p><p>BLITZ 机器包括两个输入输出设备。第一个是磁盘。仿真器通过主机上的文件来模拟磁盘。第二个 I&#x2F;O 设备是终端，仿真器通常将终端输入&#x2F;输出直接传递到主机的用户界面，这样学生就可以直接与运行中的 BLITZ 代码交互。</p><p>该架构还包括一个 “trap “指令，用户程序可以执行该指令。陷阱指令允许用户进程进入内核。</p><p>调试器内置于模拟器中，并且是模拟器的组成部分。该模拟器可以在命令行模式下运行，学生可以一次键入一个命令。这些命令可用于调试其 BLITZ 内核代码。</p><p>CPU 都在系统模式或用户模式下执行。内核代码在系统模式下执行，而用户级程序在用户模式下执行。任何指令都可以在系统模式下执行，但某些指令是有特权的，因为它们只能在系统模式下执行。特权指令的示例包括更改页表和更改模式本身的指令。</p><p>在 BLITZ 架构中，寄存器“r15”指向执行堆栈，该堆栈从较高的内存地址向较低的地址向下增长。</p><h4 id="工具"><a href="#工具" class="headerlink" title="工具"></a>工具</h4><ul><li><strong>blitz：</strong> The BLITZ virtual machine emulator and debugger虚拟机模拟器和调试器</li><li><strong>asm：</strong> The BLITZ assembler汇编器。<blockquote><p>汇编器（Assembler）是将汇编语言翻译为机器语言的程序。一般而言，汇编生成的是目标代码，需要经链接器（Linker）生成可执行代码才可以执行。</p></blockquote></li><li><strong>lddd：</strong> The BLITZ linker链接器</li><li><strong>dumpObj：</strong> A tool to examine BLITZ object and executable files检查blitz对象和可执行文件</li><li><strong>diskUtil：</strong> A tool to manipulate the initial file system on the emulated BLITZ disk用于操作模拟 BLITZ 磁盘上的初始文件系统的工具</li><li><strong>kpl：</strong> The KPL compiler编译器</li></ul><h4 id="模拟器Emulator"><a href="#模拟器Emulator" class="headerlink" title="模拟器Emulator"></a>模拟器Emulator</h4><p>在 Unix 下运行时，您可以通过在 Unix 提示符下键入“blitz”来启动模拟器。模拟器首先读入 BLITZ 程序并将其加载到内存中。通常，BLITZ 可执行文件称为“a.out”，但也可以指定其他名称。模拟器首先从“a.out”读取数据并将其加载到其内部存储器中。实际上，模拟器首先使用“a.out”文件中的字节初始化 BLITZ 机器的主内存</p><p>asm 程序是 BLITZ 汇编程序。它以汇编语言程序为输入，生成一个对象文件<br>第二个程序（称为 “ldd”）是 BLITZ 连接器。它输入一个或多个对象文件，生成一个名为 “a.out “的可执行文件。</p><p>quit 命令（可缩写为 “q”）将终止 BLITZ 模拟器。</p><p>go 指令（可缩写为 “g”）用于启动仿真器的执行。一旦开始执行，BLITZ 机器将执行指令，直到检测到错误或 BLITZ 机器执行 “等待 “或 “调试 “指令为止。</p><p>在KPL中，以“.h”结尾的文件称为“头文件”，以“.c”结尾的文件称为“代码文件”。每个包（如HelloWorld）都会有头文件和代码文件。HelloWorld包使用系统包。每当HelloWorld使用的包的头文件发生变化时，HelloWorld必须重新编译。但是，如果系统的代码文件发生变化，则不需要重新编译HelloWorld。</p>]]></content>
     
     
     <categories>
       
       <category>Notes</category>
       
-      <category>旅游</category>
+      <category>课程</category>
+      
+      <category>操作系统</category>
       
     </categories>
     
@@ -319,6 +298,27 @@
     <url>/2023/09/22/Notes/%E6%97%85%E6%B8%B8/%E7%BE%8E%E9%A3%9F/</url>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><strong>1</strong> 回民街、洒金桥（网红景点）可以去逛逛</p><p><strong>2</strong> 早餐：小南门早市</p><p><strong>3</strong> 泡馍和面馆 路边摊就行 赵记羊杂</p><p><strong>4</strong> 夜市：<br>未央区六号大街<br>凤城六路和未央路交叉口<br>碑林区卧龙巷机关小区</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>Notes</category>
+      
+      <category>旅游</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>西安8.16-8.20</title>
+    <link href="/2023/09/22/Notes/%E6%97%85%E6%B8%B8/%E8%A5%BF%E5%AE%898.16-20/"/>
+    <url>/2023/09/22/Notes/%E6%97%85%E6%B8%B8/%E8%A5%BF%E5%AE%898.16-20/</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="17号"><a href="#17号" class="headerlink" title="17号"></a>17号</h2><p>早餐 小南门早市</p><p>大雁塔 </p><blockquote><p>音乐喷泉 12:00-12:10</p></blockquote><p>大唐不夜城 晚上去</p><p>晚上 附近夜市 [[美食]]</p><p>大唐芙蓉园 20:00</p><h2 id="18号"><a href="#18号" class="headerlink" title="18号"></a>18号</h2><p>兵马俑 华清池 骊山 <del>秦始皇陵</del></p><p>午晚饭 [[美食]]</p><h2 id="19号"><a href="#19号" class="headerlink" title="19号"></a>19号</h2><p>碑林博物馆</p><p>钟楼&amp;鼓楼 <strong>晚上</strong></p><p>晚上 附近夜市</p><p>大唐芙蓉园 20:00</p><h2 id="20号"><a href="#20号" class="headerlink" title="20号"></a>20号</h2><p>小雁塔 西安博物馆</p><p>野球帝 livehouse</p><p><del>陕西历史博物馆</del></p><p>[[景点]]</p>]]></content>
     
     
     <categories>
