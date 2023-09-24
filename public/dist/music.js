@@ -12,7 +12,7 @@ const ap = new APlayer({
             name: '兰亭序',
             artist: '周杰伦',
             url: 'https://www.ytmp3.cn/down/74278.mp3',
-            cover: 'cover1.jpg',
+            cover: 'https://y.qq.com/music/photo_new/T002R300x300M000002Neh8l0uciQZ_1.jpg?max_age=2592000',
         }，
        
     ]
