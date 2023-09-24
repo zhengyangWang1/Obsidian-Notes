@@ -61,4 +61,4 @@ urlpatterns = [
     url(r'^$', views.hello),  
 ]
 ```
-可在网页中看到Hello wo'r
+可在网页中看到“Hello world！”的输出
