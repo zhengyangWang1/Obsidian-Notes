@@ -67,3 +67,8 @@ urlpatterns = [
 ```
 path(route, view, kwargs=None, name=None)
 ```
+
+### 创建app
+```
+python3 manage.py startapp my_app
+```
