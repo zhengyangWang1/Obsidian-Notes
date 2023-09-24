@@ -24,7 +24,7 @@
 <meta property="og:description" content="创建第一个项目1django-admin startprojct HelloWorld 创建一个Django项目名为HelloWorld，目录结构如下 12345678910$ cd HelloWorld&#x2F;$ tree.|-- HelloWorld|   |-- __init__.py|   |-- asgi.py|   |-- settings.py|   |-- urls.py|   &#96;--">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-09-23T05:21:34.187Z">
-<meta property="article:modified_time" content="2023-09-24T07:12:19.686Z">
+<meta property="article:modified_time" content="2023-09-24T07:25:55.092Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary_large_image">
   
@@ -214,7 +214,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          521 字
+          770 字
         
       </span>
     
@@ -225,7 +225,7 @@
         
         
         
-          5 分钟
+          7 分钟
         
       </span>
     
@@ -280,6 +280,11 @@
 <li><strong>HelloWorld&#x2F;urls.py:</strong> 该 Django 项目的 URL 声明; 一份由 Django 驱动的网站”目录”。</li>
 <li><strong>HelloWorld&#x2F;wsgi.py:</strong> 一个 WSGI 兼容的 Web 服务器的入口，以便运行你的项目。</li>
 </ul>
+<h4 id="启动服务器"><a href="#启动服务器" class="headerlink" title="启动服务器"></a>启动服务器</h4><figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs nginx"><span class="hljs-attribute">python3</span> manage.py runserver <span class="hljs-number">0.0.0.0:8000</span><br></code></pre></td></tr></table></figure>
+<p>0.0.0.0 让其它电脑可连接到开发服务器，8000 为端口号。如果不说明，那么端口号默认为 8000</p>
+<blockquote>
+<p>第一次打开网页出现报错：DisallowedHost at Invaild HTTP_HOST header： ‘0.0.0.0:8000’. You may need to add ‘0.0.0.0’ to ALLOWED_HOSTS.<br>解决：在配置文件settings.py中找到<code>ALLOWED_HOSTS</code>，将‘0.0.0.0’添加到其中</p>
+</blockquote>
 
                 
               </div>

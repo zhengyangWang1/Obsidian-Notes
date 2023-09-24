@@ -32,3 +32,12 @@ $ tree
 - **HelloWorld/settings.py:** 该 Django 项目的设置/配置。
 - **HelloWorld/urls.py:** 该 Django 项目的 URL 声明; 一份由 Django 驱动的网站"目录"。
 - **HelloWorld/wsgi.py:** 一个 WSGI 兼容的 Web 服务器的入口，以便运行你的项目。
+
+#### 启动服务器
+```
+python3 manage.py runserver 0.0.0.0:8000
+```
+0.0.0.0 让其它电脑可连接到开发服务器，8000 为端口号。如果不说明，那么端口号默认为 8000
+
+>第一次打开网页出现报错：DisallowedHost at Invaild HTTP_HOST header： '0.0.0.0:8000'. You may need to add '0.0.0.0' to ALLOWED_HOSTS. 
+>解决：在配置文件settings.py中找到`ALLOWED_HOSTS`，将‘0.0.0.0’添加到其中
