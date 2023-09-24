@@ -166,8 +166,10 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "a096be5067d8f57d",
+  "active": "5b356816fefe0b5a",
   "lastOpenFiles": [
+    "public/categories/Notes/课程/神经网络与深度学习/index.html",
+    "public/categories/Notes/课程/神经网络与深度学习",
     "public/2023/09/22/Notes/课程/神经网络与深度学习/神经网络与深度学习/index.html",
     "public/2023/09/22/Notes/课程/神经网络与深度学习/神经网络与深度学习",
     "source/_posts/Notes/课程/神经网络与深度学习",
@@ -211,8 +213,6 @@
     "public/categories/Notes/编程/index.html",
     "public/categories/Notes/编程",
     "public/categories/Notes/花里胡哨/index.html",
-    "public/categories/Notes/花里胡哨",
-    "public/2023/09/23/Notes/编程/Django/First Class/index.html",
-    "public/2023/09/23/Notes/编程/Django/First Class"
+    "public/categories/Notes/花里胡哨"
   ]
 }
