@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "source/_posts/Notes/Git/连接Github.md",
+                "file": "source/_posts/Notes/编程/Django/First Class.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 375.5
+    "width": 375.5,
+    "collapsed": true
   },
   "right": {
     "id": "45464171d8013cd8",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "source/_posts/Notes/Git/连接Github.md",
+                "file": "source/_posts/Notes/编程/Django/First Class.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "source/_posts/Notes/Git/连接Github.md",
+                "file": "source/_posts/Notes/编程/Django/First Class.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "source/_posts/Notes/Git/连接Github.md"
+                "file": "source/_posts/Notes/编程/Django/First Class.md"
               }
             }
           },
@@ -168,8 +169,8 @@
   },
   "active": "5b356816fefe0b5a",
   "lastOpenFiles": [
-    "source/_posts/Notes/Git/Git操作.md",
     "source/_posts/Notes/Git/连接Github.md",
+    "source/_posts/Notes/Git/Git操作.md",
     "public/2023/09/24/Notes/Git/连接Github/index.html",
     "public/2023/09/24/Notes/Git/连接Github",
     "public/2023/09/24/Notes/Git",
