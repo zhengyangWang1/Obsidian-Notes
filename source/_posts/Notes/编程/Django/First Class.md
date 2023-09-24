@@ -70,7 +70,7 @@ path(route, view, kwargs=None, name=None)
 
 ### 创建app
 ```
-python3 manage.py startapp my_app
+python3 manage.py startapp app1  # 创建app1
 ```
 
 目录结构如下：
@@ -86,7 +86,7 @@ python3 manage.py startapp my_app
 │   │   └── wsgi.cpython-38.pyc
 │   ├── asgi.py
 │   ├── settings.py
-│   ├── urls.py  # 配置
+│   ├── urls.py  # 配置app用的url
 │   ├── views.py
 │   └── wsgi.py
 ├── app1
@@ -97,7 +97,26 @@ python3 manage.py startapp my_app
 │   │   └── __init__.py
 │   ├── models.py  # 对数据库进行操作
 │   ├── tests.py
-│   └── views.py  # 函数
+│   └── views.py  # 视图函数
 ├── db.sqlite3
 └── manage.py
+```
+
+**编写URL和视图函数的对应关系**
+```
+urlpatterns = [  
+    path('something/', views.something)  
+]
+```
+
+**编写视图函数**
+```
+def something(request)
+	return HttpResponse("xxxxx")
+```
+
+**启动django项目**
+- 命令行启动
+```
+python manage.py runserver
 ```
