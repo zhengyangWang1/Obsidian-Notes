@@ -72,3 +72,32 @@ path(route, view, kwargs=None, name=None)
 ```
 python3 manage.py startapp my_app
 ```
+
+目录结构如下：
+```
+.
+├── HelloWorld
+│   ├── __init__.py
+│   ├── __pycache__
+│   │   ├── __init__.cpython-38.pyc
+│   │   ├── settings.cpython-38.pyc
+│   │   ├── urls.cpython-38.pyc
+│   │   ├── views.cpython-38.pyc
+│   │   └── wsgi.cpython-38.pyc
+│   ├── asgi.py
+│   ├── settings.py
+│   ├── urls.py  # 配置
+│   ├── views.py
+│   └── wsgi.py
+├── app1
+│   ├── __init__.py
+│   ├── admin.py
+│   ├── apps.py
+│   ├── migrations
+│   │   └── __init__.py
+│   ├── models.py  # 对数据库进行操作
+│   ├── tests.py
+│   └── views.py  # 函数
+├── db.sqlite3
+└── manage.py
+```

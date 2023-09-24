@@ -24,7 +24,7 @@
 <meta property="og:description" content="创建第一个项目1django-admin startprojct HelloWorld 创建一个Django项目名为HelloWorld，目录结构如下 12345678910$ cd HelloWorld&#x2F;$ tree.|-- HelloWorld|   |-- __init__.py|   |-- asgi.py|   |-- settings.py|   |-- urls.py|   &#96;--">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-09-23T05:21:34.187Z">
-<meta property="article:modified_time" content="2023-09-24T15:46:05.855Z">
+<meta property="article:modified_time" content="2023-09-24T15:59:07.575Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary_large_image">
   
@@ -214,7 +214,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.2k 字
+          1.6k 字
         
       </span>
     
@@ -225,7 +225,7 @@
         
         
         
-          11 分钟
+          14 分钟
         
       </span>
     
@@ -295,6 +295,10 @@
 <figure class="highlight pgsql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs pgsql">path(route, <span class="hljs-keyword">view</span>, kwargs=<span class="hljs-keyword">None</span>, <span class="hljs-type">name</span>=<span class="hljs-keyword">None</span>)<br></code></pre></td></tr></table></figure>
 
 <h3 id="创建app"><a href="#创建app" class="headerlink" title="创建app"></a>创建app</h3><figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs vim"><span class="hljs-keyword">python3</span> manage.<span class="hljs-keyword">py</span> startapp my_app<br></code></pre></td></tr></table></figure>
+
+<p>目录结构如下：</p>
+<figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><code class="hljs vim">.<br>├── HelloWorld<br>│   ├── __init__.<span class="hljs-keyword">py</span><br>│   ├── __pycache__<br>│   │   ├── __init__.cpython-<span class="hljs-number">38</span>.pyc<br>│   │   ├── settings.cpython-<span class="hljs-number">38</span>.pyc<br>│   │   ├── urls.cpython-<span class="hljs-number">38</span>.pyc<br>│   │   ├── views.cpython-<span class="hljs-number">38</span>.pyc<br>│   │   └── wsgi.cpython-<span class="hljs-number">38</span>.pyc<br>│   ├── asgi.<span class="hljs-keyword">py</span><br>│   ├── settings.<span class="hljs-keyword">py</span><br>│   ├── urls.<span class="hljs-keyword">py</span>  # 配置<br>│   ├── views.<span class="hljs-keyword">py</span><br>│   └── wsgi.<span class="hljs-keyword">py</span><br>├── app1<br>│   ├── __init__.<span class="hljs-keyword">py</span><br>│   ├── admin.<span class="hljs-keyword">py</span><br>│   ├── apps.<span class="hljs-keyword">py</span><br>│   ├── migrations<br>│   │   └── __init__.<span class="hljs-keyword">py</span><br>│   ├── models.<span class="hljs-keyword">py</span>  # 对数据库进行操作<br>│   ├── tests.<span class="hljs-keyword">py</span><br>│   └── views.<span class="hljs-keyword">py</span>  # 函数<br>├── db.sqlite3<br>└── manage.<span class="hljs-keyword">py</span><br></code></pre></td></tr></table></figure>
+
                 
               </div>
             
