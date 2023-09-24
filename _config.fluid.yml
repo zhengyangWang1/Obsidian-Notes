@@ -426,10 +426,6 @@ footer:
   # HTML of the first line of the footer, it is recommended to keep the Fluid link to promote this theme to more people
   content: '
     <i class="iconfont icon-love"></i>
-    <link rel="stylesheet" href="/node_modules/hexo-theme-fluid/source/dist/APlayer.min.css">
-    <div id="aplayer"></div>
-    <script type="text/javascript" src="/node_modules/hexo-theme-fluid/source/dist/APlayer.min.js"></script>
-    <script type="text/javascript" src="/node_modules/hexo-theme-fluid/source/dist/music.js"></script>
   '
 
   # 展示网站的 PV、UV 统计数
@@ -658,7 +654,7 @@ post:
 
     # 显示作者
     author:
-      enable: true
+      enable: false
 
     # 显示发布日期
     # Show post date
