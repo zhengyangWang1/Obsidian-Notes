@@ -62,3 +62,8 @@ urlpatterns = [
 ]
 ```
 可在网页中看到“Hello world！”的输出
+
+**path（）函数**:
+```
+path(route, view, kwargs=None, name=None)
+```
