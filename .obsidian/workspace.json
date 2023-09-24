@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "source/_posts/Notes/课程/神经网络与深度学习/前馈神经网络.md",
+                "file": "source/_posts/Notes/Git/连接Github.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 375.5,
-    "collapsed": true
+    "width": 375.5
   },
   "right": {
     "id": "45464171d8013cd8",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "source/_posts/Notes/课程/神经网络与深度学习/前馈神经网络.md",
+                "file": "source/_posts/Notes/Git/连接Github.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "source/_posts/Notes/课程/神经网络与深度学习/前馈神经网络.md",
+                "file": "source/_posts/Notes/Git/连接Github.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "source/_posts/Notes/课程/神经网络与深度学习/前馈神经网络.md"
+                "file": "source/_posts/Notes/Git/连接Github.md"
               }
             }
           },
@@ -167,8 +166,11 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "a096be5067d8f57d",
+  "active": "5b356816fefe0b5a",
   "lastOpenFiles": [
+    "source/_posts/Notes/Git/Git操作.md",
+    "source/_posts/Notes/Git/Obsidian Git使用.md",
+    "source/_posts/Notes/Git/连接Github.md",
     "source/_posts/Notes/TODO.md",
     "source/_posts/Notes/课程/神经网络与深度学习/前馈神经网络.md",
     "source/_posts/Notes/课程/神经网络与深度学习/神经网络与深度学习.md",
@@ -199,8 +201,6 @@
     "source/_posts/Notes/Linux学习/文本编辑器.md",
     "source/_posts/Notes/Linux学习/基本命令.md",
     "source/_posts/Notes/Linux学习/程序与进程管理.md",
-    "source/_posts/Notes/Git/Obsidian Git初使用.md",
-    "source/_posts/Notes/Git/Git操作.md",
     "source/_posts/Notes/AI/AI绘画.md",
     "source/_posts/Notes/论文/扩散模型论文todo（已过期）.md",
     "source/_posts/Notes/旅游/西安8.16-20.md",
