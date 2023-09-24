@@ -169,8 +169,13 @@
   "active": "5b356816fefe0b5a",
   "lastOpenFiles": [
     "source/_posts/Notes/Git/Git操作.md",
-    "source/_posts/Notes/Git/Obsidian Git使用.md",
     "source/_posts/Notes/Git/连接Github.md",
+    "public/2023/09/24/Notes/Git/连接Github/index.html",
+    "public/2023/09/24/Notes/Git/连接Github",
+    "public/2023/09/24/Notes/Git",
+    "public/2023/09/19/Notes/Git/Obsidian Git使用/index.html",
+    "public/2023/09/19/Notes/Git/Obsidian Git使用",
+    "source/_posts/Notes/Git/Obsidian Git使用.md",
     "source/_posts/Notes/TODO.md",
     "source/_posts/Notes/课程/神经网络与深度学习/前馈神经网络.md",
     "source/_posts/Notes/课程/神经网络与深度学习/神经网络与深度学习.md",
@@ -179,11 +184,6 @@
     "public/2023/09/24/Notes/课程/神经网络与深度学习/未命名/index.html",
     "public/2023/09/24/Notes/课程/神经网络与深度学习/未命名",
     "public/2023/09/24/Notes/课程/神经网络与深度学习",
-    "public/2023/09/24/Notes/课程",
-    "public/2023/09/24/Notes",
-    "public/2023/09/24",
-    "public/categories/Notes/课程/神经网络与深度学习/index.html",
-    "public/categories/Notes/课程/神经网络与深度学习",
     "source/_posts/Notes/img/Pasted image 20230918213533.png",
     "source/_posts/Notes/img/Pasted image 20230918212903.png",
     "source/_posts/Notes/img/Pasted image 20230918212851.png",
@@ -212,7 +212,6 @@
     "source/_posts/Notes/课程/软件工程/作业1 课后阅读.md",
     "source/_posts/Notes/课程/软件工程/大作业 酒店温控计费系统 规划.md",
     "source/_posts/Notes/课程/操作系统/Blitz软件.md",
-    "source/_posts/Notes/课程/操作系统/操作系统.md",
-    "source/_posts/Notes/花里胡哨/PowerShell美化.md"
+    "source/_posts/Notes/课程/操作系统/操作系统.md"
   ]
 }
