@@ -24,7 +24,7 @@
 <meta property="og:description" content="创建第一个项目1django-admin startprojct HelloWorld 创建一个Django项目名为HelloWorld，目录结构如下 12345678910$ cd HelloWorld&#x2F;$ tree.|-- HelloWorld|   |-- __init__.py|   |-- asgi.py|   |-- settings.py|   |-- urls.py|   &#96;--">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-09-23T05:21:34.187Z">
-<meta property="article:modified_time" content="2023-09-24T07:25:55.092Z">
+<meta property="article:modified_time" content="2023-09-24T07:39:00.561Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary_large_image">
   
@@ -214,7 +214,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          770 字
+          1.1k 字
         
       </span>
     
@@ -225,7 +225,7 @@
         
         
         
-          7 分钟
+          10 分钟
         
       </span>
     
@@ -285,6 +285,12 @@
 <blockquote>
 <p>第一次打开网页出现报错：DisallowedHost at Invaild HTTP_HOST header： ‘0.0.0.0:8000’. You may need to add ‘0.0.0.0’ to ALLOWED_HOSTS.<br>解决：在配置文件settings.py中找到<code>ALLOWED_HOSTS</code>，将‘0.0.0.0’添加到其中</p>
 </blockquote>
+<h4 id="视图和URL配置"><a href="#视图和URL配置" class="headerlink" title="视图和URL配置"></a>视图和URL配置</h4><p>在<code>HelloWorld/HelloWorld/</code>目录下新建一个<code>views.py</code>文件，输入</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">from</span> django.http <span class="hljs-keyword">import</span> HttpResponse<br> <br><span class="hljs-keyword">def</span> <span class="hljs-title function_">hello</span>(<span class="hljs-params">request</span>):<br>    <span class="hljs-keyword">return</span> HttpResponse(<span class="hljs-string">&quot;Hello world ! &quot;</span>)<br></code></pre></td></tr></table></figure>
+
+<p>在urls.py文件中写入</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">from</span> django.urls <span class="hljs-keyword">import</span> re_path <span class="hljs-keyword">as</span> url  <br><span class="hljs-comment"># from django.conf.urls import url 这段代码已经过时，上面的re_path取代了之前版本的url  </span><br><span class="hljs-keyword">from</span> . <span class="hljs-keyword">import</span> views  <br>  <br>urlpatterns = [  <br>    url(<span class="hljs-string">r&#x27;^$&#x27;</span>, views.hello),  <br>]<br></code></pre></td></tr></table></figure>
+<p>可在网页中看到Hello’w</p>
 
                 
               </div>

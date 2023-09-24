@@ -41,3 +41,24 @@ python3 manage.py runserver 0.0.0.0:8000
 
 >第一次打开网页出现报错：DisallowedHost at Invaild HTTP_HOST header： '0.0.0.0:8000'. You may need to add '0.0.0.0' to ALLOWED_HOSTS. 
 >解决：在配置文件settings.py中找到`ALLOWED_HOSTS`，将‘0.0.0.0’添加到其中
+
+#### 视图和URL配置
+在`HelloWorld/HelloWorld/`目录下新建一个`views.py`文件，输入
+```
+from django.http import HttpResponse
+ 
+def hello(request):
+    return HttpResponse("Hello world ! ")
+```
+
+在urls.py文件中写入
+```
+from django.urls import re_path as url  
+# from django.conf.urls import url 这段代码已经过时，上面的re_path取代了之前版本的url  
+from . import views  
+  
+urlpatterns = [  
+    url(r'^$', views.hello),  
+]
+```
+可在网页中看到Hello wo'r
