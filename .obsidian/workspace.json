@@ -166,9 +166,20 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "5b356816fefe0b5a",
+  "active": "a096be5067d8f57d",
   "lastOpenFiles": [
     "source/_posts/Notes/TODO.md",
+    "source/_posts/Notes/img/Pasted image 20230918213533.png",
+    "source/_posts/Notes/img/Pasted image 20230918212903.png",
+    "source/_posts/Notes/img/Pasted image 20230918212851.png",
+    "source/_posts/Notes/img/Pasted image 20230917203623.png",
+    "source/_posts/Notes/img/Pasted image 20230917104741.png",
+    "source/_posts/Notes/img/Pasted image 20230913125854.png",
+    "source/_posts/Notes/img/Pasted image 20230912235338.png",
+    "source/_posts/Notes/img/Pasted image 20230912235011.png",
+    "source/_posts/Notes/img/Pasted image 20230912234523.png",
+    "source/_posts/Notes/img/Pasted image 20230912234005.png",
+    "source/_posts/Notes/课程/神经网络与深度学习.md",
     "source/_posts/Notes/Ob插件/Advanced Tables 表格绘制.md",
     "source/_posts/Notes/Linux学习/WSL配置.md",
     "source/_posts/Notes/Linux学习/Shell编程.md",
@@ -185,7 +196,6 @@
     "source/_posts/Notes/旅游/景点.md",
     "source/_posts/Notes/课程/智能计算系统.md",
     "source/_posts/Notes/课程/数据库.md",
-    "source/_posts/Notes/课程/神经网络与深度学习.md",
     "source/_posts/Notes/课程/软件工程/软件工程.md",
     "source/_posts/Notes/课程/软件工程/作业1 课后阅读.md",
     "source/_posts/Notes/课程/软件工程/大作业 酒店温控计费系统 规划.md",
@@ -193,8 +203,6 @@
     "source/_posts/Notes/课程/操作系统/操作系统.md",
     "source/_posts/Notes/花里胡哨/PowerShell美化.md",
     "source/_posts/Notes/花里胡哨/hexo+Obsidian+github博客.md",
-    "source/_posts/Notes/img/Pasted image 20230829165617.png",
-    "source/_posts/Notes/编程/Django/First Class.md",
     "public/categories/Notes/编程/Django/index.html",
     "public/categories/Notes/编程/Django",
     "public/categories/Notes/编程/index.html",
@@ -204,15 +212,6 @@
     "public/2023/09/23/Notes/编程/Django/First Class/index.html",
     "public/2023/09/23/Notes/编程/Django/First Class",
     "public/2023/09/23/Notes/编程/Django",
-    "public/2023/09/23/Notes/编程",
-    "source/_posts/Notes/img/Pasted image 20230829224733.png",
-    "source/_posts/Notes/img/Pasted image 20230829225716.png",
-    "source/_posts/Notes/img/Pasted image 20230907160359.png",
-    "source/_posts/Notes/img/Pasted image 20230912234005.png",
-    "source/_posts/Notes/img/Pasted image 20230912234523.png",
-    "source/_posts/Notes/img/Pasted image 20230912235011.png",
-    "source/_posts/Notes/img/Pasted image 20230912235338.png",
-    "source/_posts/Notes/img/Pasted image 20230913125854.png",
-    "img/Pasted image 20230918213533.png"
+    "public/2023/09/23/Notes/编程"
   ]
 }
