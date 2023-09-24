@@ -237,10 +237,10 @@ custom_js:
 # The usage is the same as custom_js
 custom_css:
 
-custom_html: '<link rel="stylesheet" href="/dist/APlayer.min.css">
+custom_html: '<link rel="stylesheet" href="/node_modules/hexo-theme-fluid/source/dist/APlayer.min.css">
 <div id="aplayer"></div>
-<script type="text/javascript" src="/dist/APlayer.min.js"></script>
-<script type="text/javascript" src="/dist/music.js"></script>
+<script type="text/javascript" src="/node_modules/hexo-theme-fluid/source/dist/APlayer.min.js"></script>
+<script type="text/javascript" src="/node_modules/hexo-theme-fluid/source/dist/music.js"></script>
 '
 # 网页访问统计
 # Analysis of website visitors
@@ -425,9 +425,11 @@ footer:
   # 页脚第一行文字的 HTML，建议保留 Fluid 的链接，用于向更多人推广本主题
   # HTML of the first line of the footer, it is recommended to keep the Fluid link to promote this theme to more people
   content: '
-    <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a>
     <i class="iconfont icon-love"></i>
-    <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a>
+    <link rel="stylesheet" href="/node_modules/hexo-theme-fluid/source/dist/APlayer.min.css">
+    <div id="aplayer"></div>
+    <script type="text/javascript" src="/node_modules/hexo-theme-fluid/source/dist/APlayer.min.js"></script>
+    <script type="text/javascript" src="/node_modules/hexo-theme-fluid/source/dist/music.js"></script>
   '
 
   # 展示网站的 PV、UV 统计数
