@@ -21,7 +21,7 @@ Structured Query Language
 
 ### 3.2 SQL Data Definition
 
-**Domain Types**
+#### Domain Types 定义域类型
 - char(n).固定长度字符串，用户定义
 - varchar(n).可变长度字符串，用户定义
 - int.整数
