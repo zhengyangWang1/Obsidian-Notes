@@ -120,3 +120,8 @@ def something(request)
 ```
 python manage.py runserver
 ```
+
+在app1下新建一个templates目录,写入HTML模板,可以在views中用`render`函数直接获取
+```
+return render(request, 'something.html')
+```
