@@ -42,7 +42,7 @@ Structured Query Language
 ![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20230925101602.png)
 - r是关系表的名称
 - A_i是变量名称
-- D_i是数据类型
+- D_i是数据类型（定义域）
 
 约束：指定主键，外键，非空等。
 ![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20230925101909.png)
@@ -52,7 +52,21 @@ Structured Query Language
 
 #### Updates to Schemas
 删除表：
-	drop table r
+	drop table r  # 删除表r
 Alter:
-	alter table r add A D
-	alter table r drop A
+	alter table r add A D  # 在表r中添加A属性，D是A的定义域 
+	alter table r drop A  # 把表r中的A属性删去
+
+tuples逐行存储，添加或删除表产生的数据移动花费很大，大数据表通常逐列存储
+
+### 3.3 Basic Structure of SQL Queries
+SQL query
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20230925103324.png)
+- A_i为属性
+- r_i为关系表
+- P为predicate
+等效于：
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20230925103521.png)
+
+#### The select Clause
+选择子句列出属性
