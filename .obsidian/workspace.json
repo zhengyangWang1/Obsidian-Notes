@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "source/_posts/Notes/课程/神经网络与深度学习/神经网络与深度学习.md",
+                "file": "source/_posts/Notes/课程/数据库/SQL.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "source/_posts/Notes/课程/神经网络与深度学习/神经网络与深度学习.md",
+                "file": "source/_posts/Notes/课程/数据库/SQL.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "source/_posts/Notes/课程/神经网络与深度学习/神经网络与深度学习.md",
+                "file": "source/_posts/Notes/课程/数据库/SQL.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "source/_posts/Notes/课程/神经网络与深度学习/神经网络与深度学习.md"
+                "file": "source/_posts/Notes/课程/数据库/SQL.md"
               }
             }
           },
@@ -168,24 +168,28 @@
   },
   "active": "5b356816fefe0b5a",
   "lastOpenFiles": [
-    "source/_posts/Notes/课程/智能计算系统.md",
-    "source/_posts/Notes/课程/数据库/SQL.md",
-    "public/categories/Notes/课程/数据库/index.html",
-    "public/categories/Notes/课程/数据库",
+    "db.json",
+    "public/categories/Notes/page/3/index.html",
+    "public/categories/Notes/page/2/index.html",
+    "public/categories/Notes/page/3",
+    "public/categories/Notes/page/2",
+    "public/categories/Notes/page",
     "public/2023/09/25/Notes/课程/数据库/SQL/index.html",
-    "public/2023/09/25/Notes/课程/数据库/SQL",
-    "public/2023/09/25/Notes/课程/数据库",
-    "public/2023/09/25/Notes/课程",
-    "public/2023/09/25/Notes",
-    "public/2023/09/25",
-    "public/2023/09/22/Notes/课程/数据库/数据库/index.html",
-    "public/2023/09/22/Notes/课程/数据库/数据库",
-    "source/_posts/Notes/编程/Django/First Class.md",
+    "public/2023/09/22/Notes/课程/软件工程/软件工程/index.html",
+    "public/2023/09/22/Notes/课程/软件工程/作业1 课后阅读/index.html",
+    "public/2023/09/22/Notes/课程/软件工程/大作业 酒店温控计费系统 规划/index.html",
+    "public/2023/09/24/Notes/课程/神经网络与深度学习/前馈神经网络/index.html",
+    "public/img/police_beian.png",
+    "public/img/loading.gif",
     "public/img/fluid.png",
     "public/img/avatar.png",
     "public/img/default.png",
-    "public/img/loading.gif",
-    "public/img/police_beian.png",
+    "source/_posts/Notes/课程/数据库/数据库.md",
+    "source/_posts/Notes/课程/神经网络与深度学习/神经网络与深度学习.md",
+    "source/_posts/Notes/课程/神经网络与深度学习/前馈神经网络.md",
+    "source/_posts/Notes/课程/智能计算系统.md",
+    "source/_posts/Notes/课程/数据库/SQL.md",
+    "source/_posts/Notes/编程/Django/First Class.md",
     "node_modules/core-js/README.md",
     "node_modules/hexo-tag-aplayer/node_modules/highlight.js/styles/school_book.png",
     "node_modules/hexo-tag-aplayer/node_modules/highlight.js/styles/pojoaque.jpg",
@@ -209,10 +213,6 @@
     "node_modules/nanomatch/README.md",
     "node_modules/is-data-descriptor/node_modules/kind-of/README.md",
     "node_modules/hexo-tag-aplayer/node_modules/readdirp/node_modules/kind-of/README.md",
-    "node_modules/hexo-tag-aplayer/node_modules/readdirp/node_modules/extglob/README.md",
-    "node_modules/hexo-tag-aplayer/node_modules/readdirp/node_modules/braces/README.md",
-    "node_modules/ncp/LICENSE.md",
-    "node_modules/define-property/CHANGELOG.md",
     "source/_posts/Notes/img/Pasted image 20230918213533.png"
   ]
 }
