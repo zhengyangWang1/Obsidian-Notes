@@ -162,4 +162,12 @@ group by:
 ![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20230925120755.png)
 
 对分组后的数据进行条件筛选
+havin用于group形成以后,where用于group形成之前
+
+### 3.8 Nested Subqueries嵌套子查询
+子查询是嵌套在另一个查询中的“select-from-where”表达式
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20230925121043.png)
+- r_i可以替换为任意有效的子查询
+- P可以替换为B<operation>(subquery)
+- A_i可以替换为生成单个值的子查询
 
