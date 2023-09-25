@@ -3,6 +3,7 @@ categories:
   - Notes
   - 课程
   - 数据库
+title: SQL
 ---
 ### 3.1 Overview of SQL
 Structured Query Language
@@ -37,11 +38,21 @@ Structured Query Language
 
 >关系表属性名最好取英文名，便于应用程序的可移植性
 
-### Create Table
+#### Create Table
 ![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20230925101602.png)
-
 - r是关系表的名称
 - A_i是变量名称
 - D_i是数据类型
+
+约束：指定主键，外键，非空等。
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20230925101909.png)
+
 例：
-![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20230925101739.png)
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20230925102014.png)
+
+#### Updates to Schemas
+删除表：
+	drop table r
+Alter:
+	alter table r add A D
+	alter table r drop A
