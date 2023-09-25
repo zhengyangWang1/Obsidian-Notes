@@ -4,6 +4,19 @@
   
   
   <entry>
+    <title></title>
+    <link href="/2023/09/25/Notes/%E8%AF%BE%E7%A8%8B/%E6%95%B0%E6%8D%AE%E5%BA%93/SQL/"/>
+    <url>/2023/09/25/Notes/%E8%AF%BE%E7%A8%8B/%E6%95%B0%E6%8D%AE%E5%BA%93/SQL/</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="3-1-Overview-of-SQL"><a href="#3-1-Overview-of-SQL" class="headerlink" title="3.1 Overview of SQL"></a>3.1 Overview of SQL</h3><p>Structured Query Language<br><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20230925100326.png"></p><p><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20230925100343.png" alt="image.png"></p><table><thead><tr><th>data query</th><th>Select</th></tr></thead><tbody><tr><td>data manipulation</td><td>Insert,  Delete,  Update</td></tr><tr><td>data definition</td><td>Create,  Drop, Alter   (on schema)</td></tr><tr><td>data control</td><td>Grant,  Revoke</td></tr><tr><td>transaction processing</td><td>begin transaction, commit, rollback</td></tr><tr><td>指针&#x2F;游标控制语言(CCL)</td><td>DECLARE CURSOR，FETCH INTO和UPDATE WHERE CURRENT</td></tr></tbody></table><h3 id="3-2-SQL-Data-Definition"><a href="#3-2-SQL-Data-Definition" class="headerlink" title="3.2 SQL Data Definition"></a>3.2 SQL Data Definition</h3><h2 id="Domain-Types-char-n-固定长度字符串-varchar-n-可变长度字符串"><a href="#Domain-Types-char-n-固定长度字符串-varchar-n-可变长度字符串" class="headerlink" title="Domain Types- char(n).固定长度字符串- varchar(n).可变长度字符串"></a><strong>Domain Types</strong><br>- char(n).固定长度字符串<br>- varchar(n).可变长度字符串</h2>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>连接Github</title>
     <link href="/2023/09/24/Notes/Git/%E8%BF%9E%E6%8E%A5Github/"/>
     <url>/2023/09/24/Notes/Git/%E8%BF%9E%E6%8E%A5Github/</url>
@@ -185,8 +198,8 @@
   
   <entry>
     <title>数据库</title>
-    <link href="/2023/09/22/Notes/%E8%AF%BE%E7%A8%8B/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
-    <url>/2023/09/22/Notes/%E8%AF%BE%E7%A8%8B/%E6%95%B0%E6%8D%AE%E5%BA%93/</url>
+    <link href="/2023/09/22/Notes/%E8%AF%BE%E7%A8%8B/%E6%95%B0%E6%8D%AE%E5%BA%93/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    <url>/2023/09/22/Notes/%E8%AF%BE%E7%A8%8B/%E6%95%B0%E6%8D%AE%E5%BA%93/%E6%95%B0%E6%8D%AE%E5%BA%93/</url>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>成绩：20期中+60期末+10笔记+10作业</p><p>笔记本：一周交一次</p><hr><h2 id="9-11"><a href="#9-11" class="headerlink" title="9.11"></a>9.11</h2><p><strong>concept:</strong></p><ul><li>database(DB):数据库，是一个文件，有关联的数据的集合</li><li>database management system(DBMS):数据库管理系统，包含程序处理DB中的数据</li><li>database system(DBS):&#x3D;DB+DBMS+User</li><li>database application system(DBAS):DB+DBMS+Application programs+User</li></ul>]]></content>
     

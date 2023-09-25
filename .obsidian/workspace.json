@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "source/_posts/Notes/编程/Django/First Class.md",
+                "file": "source/_posts/Notes/课程/数据库/SQL.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "source/_posts/Notes/编程/Django/First Class.md",
+                "file": "source/_posts/Notes/课程/数据库/SQL.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "source/_posts/Notes/编程/Django/First Class.md",
+                "file": "source/_posts/Notes/课程/数据库/SQL.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "source/_posts/Notes/编程/Django/First Class.md"
+                "file": "source/_posts/Notes/课程/数据库/SQL.md"
               }
             }
           },
@@ -169,6 +169,9 @@
   },
   "active": "5b356816fefe0b5a",
   "lastOpenFiles": [
+    "source/_posts/Notes/编程/Django/First Class.md",
+    "source/_posts/Notes/课程/数据库/SQL.md",
+    "source/_posts/Notes/课程/数据库",
     "db.json",
     "public/2023/09/24/Notes/课程/神经网络与深度学习/前馈神经网络/index.html",
     "public/2023/09/22/Notes/课程/软件工程/大作业 酒店温控计费系统 规划/index.html",
@@ -178,8 +181,6 @@
     "public/2023/09/23/Notes/编程/Django/First Class/index.html",
     "public/2023/09/22/Notes/课程/操作系统/操作系统/index.html",
     "public/2023/09/22/Notes/课程/操作系统/Blitz软件/index.html",
-    "public/2023/09/24/Notes/课程/神经网络与深度学习/前馈神经网络",
-    "public/2023/09/24/Notes/Git/连接Github/index.html",
     "public/img/fluid.png",
     "public/img/avatar.png",
     "public/img/default.png",
@@ -213,7 +214,6 @@
     "node_modules/ncp/LICENSE.md",
     "node_modules/define-property/CHANGELOG.md",
     "node_modules/base/README.md",
-    "node_modules/component-emitter/Readme.md",
     "source/_posts/Notes/img/Pasted image 20230918213533.png"
   ]
 }
