@@ -1007,16 +1007,16 @@ links:
   # Member item of page
   items:
     - {
-      title: "Fluid Blog",
-      intro: "主题博客",
+      title: "",
+      intro: "",
       link: "https://hexo.fluid-dev.com/",
       avatar: "/img/favicon.png"
     }
     - {
-      title: "Fluid Docs",
-      intro: "主题使用指南",
-      link: "https://hexo.fluid-dev.com/docs/",
-      avatar: "/img/favicon.png"
+      title: "Sparidae",
+      intro: ":D",
+      link: "https://github.com/Sparidae",
+      avatar: "https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20230925133855.png"
     }
     - {
       title: "Fluid Repo",
@@ -1038,11 +1038,11 @@ links:
   # 评论插件
   # Comment plugin
   comments:
-    enable: false
+    enable: true
     # 指定的插件，需要同时设置对应插件的必要参数
     # The specified plugin needs to set the necessary parameters at the same time
     # Options: utterances | disqus | gitalk | valine | waline | changyan | livere | remark42 | twikoo | cusdis | giscus | discuss
-    type: disqus
+    type: valine
 
 
 #---------------------------
