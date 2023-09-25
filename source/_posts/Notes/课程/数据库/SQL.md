@@ -114,6 +114,15 @@ between运算符
 #### String Operations
 运算符`like` :
 - percent(%):与任何子字符串匹配
-- underscore(\_):
+- underscore(\_):匹配任意字符
 
+注意转义字符的使用:匹配"100%"
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20230925113015.png)
 
+#### Ordering the Display of Tuples
+`order by`对指定属性进行排序,降序desc,升序asc(默认值)
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20230925113410.png)
+
+### Set Operations
+union(并),intersect(交),except(差)
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20230925113554.png)
