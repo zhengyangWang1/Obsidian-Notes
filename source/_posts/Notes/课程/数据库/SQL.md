@@ -123,6 +123,23 @@ between运算符
 `order by`对指定属性进行排序,降序desc,升序asc(默认值)
 ![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20230925113410.png)
 
-### Set Operations
-union(并),intersect(交),except(差)
+### 3.5 Set Operations
+`union`(并),`intersect`(交),`except`(差)
 ![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20230925113554.png)
+自动消除重复项,`union all`可以保留重复项
+
+### 3.6 Null Values
+Null表示:
+- 一个未知的值
+- 一个不存在的值
+任何涉及Null的算术表达式的结果都是Null
+
+检查空值
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20230925114200.png)
+
+SQL将涉及Null的比较结果视为unknown
+where中的谓词可以涉及布尔运算（and，or，not）,因此需要扩展布尔运算来处理unknown
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20230925114508.png)
+如果只有unknown,则视为false
+
+### 
