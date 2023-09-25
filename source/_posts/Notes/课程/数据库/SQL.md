@@ -153,3 +153,13 @@ where中的谓词可以涉及布尔运算（and，or，not）,因此需要扩展
 分组后聚合:
 group by:
 ![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20230925115629.png)
+先按dept_name分组,然后对每个组内的salary求平均
+
+- 聚合函数之外的 select 中的属性必须出现在group by中
+- 除count之外的所有聚合操作都忽略有Null的tuples
+
+#### Having Clause
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20230925120755.png)
+
+对分组后的数据进行条件筛选
+
