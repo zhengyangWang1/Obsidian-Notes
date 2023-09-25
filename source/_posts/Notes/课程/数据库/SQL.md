@@ -64,7 +64,7 @@ SQL query
 ![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20230925103324.png)
 - A_i为属性
 - r_i为关系表
-- P为predicate
+- P为predicate(谓词)
 等效于：
 ![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20230925103521.png)
 
@@ -78,7 +78,7 @@ SQL允许冗余，加入关键字Distinct消除冗余
 
 属性可以是没有`from`的文本
 ![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20230925104758.png)
-结果为一行一列的表内容为437，可以为它加上名字
+结果为一行一列的表, 内容为437，可以为它加上名字
 ![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20230925104903.png)
 
 select可以包含数学表达式
