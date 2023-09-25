@@ -104,8 +104,16 @@ between运算符
 ![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20230925111128.png)
 自然连接默认把主键相同作为条件
 
-### 3.4 The Rename Opration
+### 3.4 Additional Basic Operation
+#### The Rename Opration
 ![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20230925111544.png)
 ![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20230925111558.png)
+利用T和S区分不同的instructor, 实现对同一属性的不同值比较
+>字符要加单引号
+
+#### String Operations
+运算符`like` :
+- percent(%):与任何子字符串匹配
+- underscore(\_):
 
 
