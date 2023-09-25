@@ -86,7 +86,7 @@ select可以包含数学表达式
 
 #### The where Clause
 
-为查询添加条件，对应于关系代数的选择代数
+where为查询添加条件，对应于关系代数的选择代数
 
 可以包含 and，or，not，比较运算符：<,>,<=,>=,=,<>（不等于）
 ![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20230925105530.png)
