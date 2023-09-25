@@ -142,4 +142,14 @@ where中的谓词可以涉及布尔运算（and，or，not）,因此需要扩展
 ![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20230925114508.png)
 如果只有unknown,则视为false
 
-### 
+### 3.7 Aggregate Functions
+聚合函数:输入一列,输出一个值
+- avg:平均值
+- min:最小值
+- max:最大值
+- sum:求和
+- count:数量
+
+分组后聚合:
+group by:
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20230925115629.png)

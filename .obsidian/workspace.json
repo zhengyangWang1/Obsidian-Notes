@@ -149,11 +149,11 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 289.5,
+    "width": 286.5,
     "collapsed": true
   },
   "left-ribbon": {
@@ -167,7 +167,7 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "5b356816fefe0b5a",
+  "active": "7be48aeafb4b3406",
   "lastOpenFiles": [
     "public/categories/Notes/课程/数据库/index.html",
     "public/categories/Notes/课程/数据库",
