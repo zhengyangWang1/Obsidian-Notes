@@ -90,3 +90,10 @@ select可以包含数学表达式
 
 可以包含 and，or，not，比较运算符：<,>,<=,>=,=,<>（不等于）
 ![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20230925105530.png)
+
+between运算符
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20230925110022.png)
+
+元组比较
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20230925110122.png)
+
