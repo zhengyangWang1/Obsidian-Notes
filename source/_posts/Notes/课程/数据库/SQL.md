@@ -70,3 +70,11 @@ SQL query
 
 #### The select Clause
 选择子句列出属性
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20230925103844.png)
+
+SQL允许冗余，加入关键字Distinct消除冗余
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20230925103947.png)
+关键字all可以使冗余不被移除
+
+属性可以是没有`from`的文本
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20230925104758.png)
