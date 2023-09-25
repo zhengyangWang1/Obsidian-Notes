@@ -97,3 +97,15 @@ between运算符
 元组比较
 ![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20230925110122.png)
 
+#### natural join
+`natural` join in `from` subclause
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20230925111025.png)
+等于
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20230925111128.png)
+自然连接默认把主键相同作为条件
+
+### 3.4 The Rename Opration
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20230925111544.png)
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20230925111558.png)
+
+
