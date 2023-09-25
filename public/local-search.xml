@@ -8,8 +8,18 @@
     <link href="/2023/09/25/Notes/%E8%AF%BE%E7%A8%8B/%E6%95%B0%E6%8D%AE%E5%BA%93/SQL/"/>
     <url>/2023/09/25/Notes/%E8%AF%BE%E7%A8%8B/%E6%95%B0%E6%8D%AE%E5%BA%93/SQL/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="3-1-Overview-of-SQL"><a href="#3-1-Overview-of-SQL" class="headerlink" title="3.1 Overview of SQL"></a>3.1 Overview of SQL</h3><p>Structured Query Language<br><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20230925100326.png"></p><p><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20230925100343.png" alt="image.png"></p><table><thead><tr><th>data query</th><th>Select</th></tr></thead><tbody><tr><td>data manipulation</td><td>Insert,  Delete,  Update</td></tr><tr><td>data definition</td><td>Create,  Drop, Alter   (on schema)</td></tr><tr><td>data control</td><td>Grant,  Revoke</td></tr><tr><td>transaction processing</td><td>begin transaction, commit, rollback</td></tr><tr><td>指针&#x2F;游标控制语言(CCL)</td><td>DECLARE CURSOR，FETCH INTO和UPDATE WHERE CURRENT</td></tr></tbody></table><h3 id="3-2-SQL-Data-Definition"><a href="#3-2-SQL-Data-Definition" class="headerlink" title="3.2 SQL Data Definition"></a>3.2 SQL Data Definition</h3><h2 id="Domain-Types-char-n-固定长度字符串-varchar-n-可变长度字符串"><a href="#Domain-Types-char-n-固定长度字符串-varchar-n-可变长度字符串" class="headerlink" title="Domain Types- char(n).固定长度字符串- varchar(n).可变长度字符串"></a><strong>Domain Types</strong><br>- char(n).固定长度字符串<br>- varchar(n).可变长度字符串</h2>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="3-1-Overview-of-SQL"><a href="#3-1-Overview-of-SQL" class="headerlink" title="3.1 Overview of SQL"></a>3.1 Overview of SQL</h3><p>Structured Query Language<br><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20230925100326.png"></p><p><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20230925100343.png" alt="image.png"></p><table><thead><tr><th>data query</th><th>Select</th></tr></thead><tbody><tr><td>data manipulation</td><td>Insert,  Delete,  Update</td></tr><tr><td>data definition</td><td>Create,  Drop, Alter   (on schema)</td></tr><tr><td>data control</td><td>Grant,  Revoke</td></tr><tr><td>transaction processing</td><td>begin transaction, commit, rollback</td></tr><tr><td>指针&#x2F;游标控制语言(CCL)</td><td>DECLARE CURSOR，FETCH INTO和UPDATE WHERE CURRENT</td></tr></tbody></table><h3 id="3-2-SQL-Data-Definition"><a href="#3-2-SQL-Data-Definition" class="headerlink" title="3.2 SQL Data Definition"></a>3.2 SQL Data Definition</h3><p><strong>Domain Types</strong></p><ul><li><p>char(n).固定长度字符串，用户定义</p></li><li><p>varchar(n).可变长度字符串，用户定义</p></li><li><p>int.整数</p></li><li><p>smallint.小整数</p></li><li><p>numeric(p, d):固定小数，用户定义</p></li><li><p>float(n).浮点数，用户定义</p></li><li><p>date:日期包含年月日</p></li><li><p>time:时分秒</p></li><li><p>timestamp:日期加上时间</p></li><li><p>Interval:一段时间</p></li><li><p>Null：空集</p></li><li><p>create domain:自定义类型，不允许是Null</p></li></ul><blockquote><p>关系表属性名最好取英文名，便于应用程序的可移植性</p></blockquote><h3 id="Create-Table"><a href="#Create-Table" class="headerlink" title="Create Table"></a>Create Table</h3><p><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20230925101602.png" alt="image.png"></p><ul><li>r是关系表的名称</li><li>A_i是变量名称</li><li>D_i是数据类型<br>例：<br><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20230925101739.png" alt="image.png"></li></ul>]]></content>
     
+    
+    <categories>
+      
+      <category>Notes</category>
+      
+      <category>课程</category>
+      
+      <category>数据库</category>
+      
+    </categories>
     
     
   </entry>
@@ -209,6 +219,8 @@
       <category>Notes</category>
       
       <category>课程</category>
+      
+      <category>数据库</category>
       
     </categories>
     
