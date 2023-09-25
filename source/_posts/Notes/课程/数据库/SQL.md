@@ -69,7 +69,7 @@ SQL query
 ![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20230925103521.png)
 
 #### The select Clause
-选择子句列出属性
+
 ![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20230925103844.png)
 
 SQL允许冗余，加入关键字Distinct消除冗余
@@ -78,3 +78,15 @@ SQL允许冗余，加入关键字Distinct消除冗余
 
 属性可以是没有`from`的文本
 ![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20230925104758.png)
+结果为一行一列的表内容为437，可以为它加上名字
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20230925104903.png)
+
+select可以包含数学表达式
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20230925105014.png)
+
+#### The where Clause
+
+为查询添加条件，对应于关系代数的选择代数
+
+可以包含 and，or，not，比较运算符：<,>,<=,>=,=,<>（不等于）
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20230925105530.png)
