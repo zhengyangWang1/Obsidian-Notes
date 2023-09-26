@@ -167,6 +167,11 @@
   },
   "active": "5b356816fefe0b5a",
   "lastOpenFiles": [
+    "public/2023/09/26/Notes/编程/WSL安装MySQL/index.html",
+    "public/2023/09/26/Notes/编程/WSL安装MySQL",
+    "public/2023/09/26/Notes/编程",
+    "public/2023/09/26/Notes",
+    "public/2023/09/26",
     "source/_posts/Notes/编程/WSL安装MySQL.md",
     "source/_posts/Notes/TODO.md",
     "source/_posts/Notes/课程/数据库/SQL.md",
@@ -177,10 +182,6 @@
     "public/js/local-search.js",
     "public/js/plugins.js",
     "public/js/leancloud.js",
-    "public/js/img-lazyload.js",
-    "public/js/events.js",
-    "public/js/color-schema.js",
-    "public/js/boot.js",
     "public/img/police_beian.png",
     "public/img/loading.gif",
     "public/img/fluid.png",
@@ -211,7 +212,6 @@
     "node_modules/is-descriptor/node_modules/kind-of/README.md",
     "node_modules/nanomatch/node_modules/kind-of/README.md",
     "node_modules/nanomatch/README.md",
-    "node_modules/is-data-descriptor/node_modules/kind-of/README.md",
     "source/_posts/Notes/img/Pasted image 20230918213533.png"
   ]
 }
