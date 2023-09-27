@@ -3,6 +3,9 @@ title: OBsidian Git使用
 categories:
   - Notes
   - Git
+tags:
+  - Git
+  - Obsidian
 ---
 
 ### Git使用

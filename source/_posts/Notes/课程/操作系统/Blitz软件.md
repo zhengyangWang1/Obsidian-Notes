@@ -4,7 +4,9 @@ categories:
   - Notes
   - 课程
   - 操作系统
-update:
+update: 
+tags:
+  - 操作系统
 ---
 Blitz是一个软件包，内含一个虚拟机，给操作者提供一个建立操作系统内核的功能
 

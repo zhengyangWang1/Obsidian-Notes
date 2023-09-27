@@ -3,7 +3,9 @@ title: PowellShell美化
 categories:
   - Notes
   - 花里胡哨
-update:
+update: 
+tags:
+  - powershell
 ---
 下载最新的PowerShell7.x.x
 

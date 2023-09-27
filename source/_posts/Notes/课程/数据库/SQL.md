@@ -4,6 +4,9 @@ categories:
   - 课程
   - 数据库
 title: SQL
+tags:
+  - 数据库
+  - SQL
 ---
 ### 3.1 Overview of SQL
 Structured Query Language

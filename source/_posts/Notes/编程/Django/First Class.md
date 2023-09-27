@@ -4,8 +4,10 @@ categories:
   - Notes
   - 编程
   - Django
-date:
+date: 
 tags:
+  - 软件工程
+  - Python
 ---
 ### 创建第一个项目
 ```

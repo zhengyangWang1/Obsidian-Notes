@@ -3,8 +3,10 @@ title: 连接Github
 categories:
   - Notes
   - Git
-date:
+date: 
 tags:
+  - Github
+  - Git
 ---
 ### git连接远程仓库
 从github克隆仓库到本地

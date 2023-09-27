@@ -2,7 +2,9 @@
 title: WSL配置
 categories:
   - Notes
-  - Linux学习
+  - 编程
+tags:
+  - WSL
 ---
 
 WSL(Windows Subsystem for Linux)，Windows自带的Linux子系统

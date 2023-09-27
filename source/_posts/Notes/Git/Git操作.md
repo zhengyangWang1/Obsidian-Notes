@@ -3,6 +3,8 @@ title: Git操作
 categories:
   - Notes
   - Git
+tags:
+  - Git
 ---
 
 [Git 教程 | 菜鸟教程](https://www.runoob.com/git/git-tutorial.html)

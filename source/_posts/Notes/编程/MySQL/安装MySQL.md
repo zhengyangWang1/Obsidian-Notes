@@ -6,6 +6,7 @@ categories:
   - MySQL
 tags:
   - 数据库
+  - MySQL
 date:
 ---
 ### 安装配置

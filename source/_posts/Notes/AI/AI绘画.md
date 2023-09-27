@@ -3,7 +3,9 @@ title: Git操作
 categories:
   - Notes
   - AI
-update:
+update: 
+tags:
+  - StableDiffusion
 ---
 ## stable diffusion 模型画任意要求
 
