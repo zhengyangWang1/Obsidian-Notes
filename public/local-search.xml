@@ -24,9 +24,9 @@
     
     <tags>
       
-      <tag>数据库</tag>
-      
       <tag>MySQL</tag>
+      
+      <tag>数据库</tag>
       
     </tags>
     
@@ -55,9 +55,9 @@
     
     <tags>
       
-      <tag>数据库</tag>
-      
       <tag>MySQL</tag>
+      
+      <tag>数据库</tag>
       
     </tags>
     
@@ -115,9 +115,9 @@
     
     <tags>
       
-      <tag>Git</tag>
-      
       <tag>Github</tag>
+      
+      <tag>Git</tag>
       
     </tags>
     
@@ -391,35 +391,6 @@
   
   
   <entry>
-    <title>操作系统</title>
-    <link href="/2023/09/22/Notes/%E8%AF%BE%E7%A8%8B/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
-    <url>/2023/09/22/Notes/%E8%AF%BE%E7%A8%8B/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/</url>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>老师声音小，需要坐前排</p><p>40分平时作业（gitee），60分期末</p><p>TODO：</p><ul><li><input checked="" disabled="" type="checkbox"> 加入gitee仓库</li></ul><hr>]]></content>
-    
-    
-    <categories>
-      
-      <category>Notes</category>
-      
-      <category>课程</category>
-      
-      <category>操作系统</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>操作系统</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>Blitz软件</title>
     <link href="/2023/09/22/Notes/%E8%AF%BE%E7%A8%8B/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/Blitz%E8%BD%AF%E4%BB%B6/"/>
     <url>/2023/09/22/Notes/%E8%AF%BE%E7%A8%8B/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/Blitz%E8%BD%AF%E4%BB%B6/</url>
@@ -449,11 +420,40 @@
   
   
   <entry>
-    <title>景点</title>
-    <link href="/2023/09/22/Notes/%E6%97%85%E6%B8%B8/%E6%99%AF%E7%82%B9/"/>
-    <url>/2023/09/22/Notes/%E6%97%85%E6%B8%B8/%E6%99%AF%E7%82%B9/</url>
+    <title>操作系统</title>
+    <link href="/2023/09/22/Notes/%E8%AF%BE%E7%A8%8B/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
+    <url>/2023/09/22/Notes/%E8%AF%BE%E7%A8%8B/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>远：</p><blockquote><p>兵马俑 华清池 骊山 秦始皇陵</p></blockquote><p>晚上:</p><blockquote><p>大唐不夜城 大唐芙蓉园 钟楼&amp;鼓楼 </p></blockquote><p>城墙<br>大雁塔 小雁塔<br><del>陕西历史博物馆（只能越20号了 8.14 10点、11点、18点）</del><br>碑林博物馆</p>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>老师声音小，需要坐前排</p><p>40分平时作业（gitee），60分期末</p><p>TODO：</p><ul><li><input checked="" disabled="" type="checkbox"> 加入gitee仓库</li></ul><hr>]]></content>
+    
+    
+    <categories>
+      
+      <category>Notes</category>
+      
+      <category>课程</category>
+      
+      <category>操作系统</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>操作系统</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>美食</title>
+    <link href="/2023/09/22/Notes/%E6%97%85%E6%B8%B8/%E7%BE%8E%E9%A3%9F/"/>
+    <url>/2023/09/22/Notes/%E6%97%85%E6%B8%B8/%E7%BE%8E%E9%A3%9F/</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><strong>1</strong> 回民街、洒金桥（网红景点）可以去逛逛</p><p><strong>2</strong> 早餐：小南门早市</p><p><strong>3</strong> 泡馍和面馆 路边摊就行 赵记羊杂</p><p><strong>4</strong> 夜市：<br>未央区六号大街<br>凤城六路和未央路交叉口<br>碑林区卧龙巷机关小区</p>]]></content>
     
     
     <categories>
@@ -503,11 +503,11 @@
   
   
   <entry>
-    <title>美食</title>
-    <link href="/2023/09/22/Notes/%E6%97%85%E6%B8%B8/%E7%BE%8E%E9%A3%9F/"/>
-    <url>/2023/09/22/Notes/%E6%97%85%E6%B8%B8/%E7%BE%8E%E9%A3%9F/</url>
+    <title>景点</title>
+    <link href="/2023/09/22/Notes/%E6%97%85%E6%B8%B8/%E6%99%AF%E7%82%B9/"/>
+    <url>/2023/09/22/Notes/%E6%97%85%E6%B8%B8/%E6%99%AF%E7%82%B9/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><strong>1</strong> 回民街、洒金桥（网红景点）可以去逛逛</p><p><strong>2</strong> 早餐：小南门早市</p><p><strong>3</strong> 泡馍和面馆 路边摊就行 赵记羊杂</p><p><strong>4</strong> 夜市：<br>未央区六号大街<br>凤城六路和未央路交叉口<br>碑林区卧龙巷机关小区</p>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>远：</p><blockquote><p>兵马俑 华清池 骊山 秦始皇陵</p></blockquote><p>晚上:</p><blockquote><p>大唐不夜城 大唐芙蓉园 钟楼&amp;鼓楼 </p></blockquote><p>城墙<br>大雁塔 小雁塔<br><del>陕西历史博物馆（只能越20号了 8.14 10点、11点、18点）</del><br>碑林博物馆</p>]]></content>
     
     
     <categories>
@@ -600,9 +600,9 @@
     
     <tags>
       
-      <tag>Obsidian</tag>
-      
       <tag>Github</tag>
+      
+      <tag>Obsidian</tag>
       
       <tag>hexo</tag>
       
