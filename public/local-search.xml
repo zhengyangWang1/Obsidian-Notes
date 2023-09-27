@@ -4,21 +4,19 @@
   
   
   <entry>
-    <title>WSL安装MySQL</title>
-    <link href="/2023/09/26/Notes/%E7%BC%96%E7%A8%8B/WSL%E5%AE%89%E8%A3%85MySQL/"/>
-    <url>/2023/09/26/Notes/%E7%BC%96%E7%A8%8B/WSL%E5%AE%89%E8%A3%85MySQL/</url>
+    <title>安装MySQL</title>
+    <link href="/2023/09/27/Notes/%E7%BC%96%E7%A8%8B/MySQL/%E5%AE%89%E8%A3%85MySQL/"/>
+    <url>/2023/09/27/Notes/%E7%BC%96%E7%A8%8B/MySQL/%E5%AE%89%E8%A3%85MySQL/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="安装配置"><a href="#安装配置" class="headerlink" title="安装配置"></a>安装配置</h3><p><a href="https://blog.csdn.net/m0_52559040/article/details/121843945">2023 年 MySQL 8.0 安装配置 最简易（保姆级）_mysql8.0安装配置教程_mobeicanyue的博客-CSDN博客</a><br>安装时需要输入一个密码作为mysql的root权限密码，需要牢记</p><h3 id="开始使用"><a href="#开始使用" class="headerlink" title="开始使用"></a>开始使用</h3><p>在Power Shell中输入：</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs css">mysql -u root -<span class="hljs-selector-tag">p</span><br></code></pre></td></tr></table></figure><p>然后输入密码进入mysql<br><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20230927202531.png" alt="image.png"></p>]]></content>
     
     
-    <categories>
+    
+    <tags>
       
-      <category>Notes</category>
+      <tag>数据库</tag>
       
-      <category>编程</category>
-      
-    </categories>
-    
+    </tags>
     
   </entry>
   
