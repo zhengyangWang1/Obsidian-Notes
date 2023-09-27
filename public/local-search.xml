@@ -24,9 +24,9 @@
     
     <tags>
       
-      <tag>MySQL</tag>
-      
       <tag>数据库</tag>
+      
+      <tag>MySQL</tag>
       
     </tags>
     
@@ -55,9 +55,9 @@
     
     <tags>
       
-      <tag>MySQL</tag>
-      
       <tag>数据库</tag>
+      
+      <tag>MySQL</tag>
       
     </tags>
     
@@ -115,9 +115,9 @@
     
     <tags>
       
-      <tag>Github</tag>
-      
       <tag>Git</tag>
+      
+      <tag>Github</tag>
       
     </tags>
     
@@ -449,6 +449,33 @@
   
   
   <entry>
+    <title>景点</title>
+    <link href="/2023/09/22/Notes/%E6%97%85%E6%B8%B8/%E6%99%AF%E7%82%B9/"/>
+    <url>/2023/09/22/Notes/%E6%97%85%E6%B8%B8/%E6%99%AF%E7%82%B9/</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>远：</p><blockquote><p>兵马俑 华清池 骊山 秦始皇陵</p></blockquote><p>晚上:</p><blockquote><p>大唐不夜城 大唐芙蓉园 钟楼&amp;鼓楼 </p></blockquote><p>城墙<br>大雁塔 小雁塔<br><del>陕西历史博物馆（只能越20号了 8.14 10点、11点、18点）</del><br>碑林博物馆</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>Notes</category>
+      
+      <category>旅游</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>西安</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>美食</title>
     <link href="/2023/09/22/Notes/%E6%97%85%E6%B8%B8/%E7%BE%8E%E9%A3%9F/"/>
     <url>/2023/09/22/Notes/%E6%97%85%E6%B8%B8/%E7%BE%8E%E9%A3%9F/</url>
@@ -481,33 +508,6 @@
     <url>/2023/09/22/Notes/%E6%97%85%E6%B8%B8/%E8%A5%BF%E5%AE%898.16-20/</url>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="17号"><a href="#17号" class="headerlink" title="17号"></a>17号</h2><p>早餐 小南门早市</p><p>大雁塔 </p><blockquote><p>音乐喷泉 12:00-12:10</p></blockquote><p>大唐不夜城 晚上去</p><p>晚上 附近夜市 [[美食]]</p><p>大唐芙蓉园 20:00</p><h2 id="18号"><a href="#18号" class="headerlink" title="18号"></a>18号</h2><p>兵马俑 华清池 骊山 <del>秦始皇陵</del></p><p>午晚饭 [[美食]]</p><h2 id="19号"><a href="#19号" class="headerlink" title="19号"></a>19号</h2><p>碑林博物馆</p><p>钟楼&amp;鼓楼 <strong>晚上</strong></p><p>晚上 附近夜市</p><p>大唐芙蓉园 20:00</p><h2 id="20号"><a href="#20号" class="headerlink" title="20号"></a>20号</h2><p>小雁塔 西安博物馆</p><p>野球帝 livehouse</p><p><del>陕西历史博物馆</del></p><p>[[景点]]</p>]]></content>
-    
-    
-    <categories>
-      
-      <category>Notes</category>
-      
-      <category>旅游</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>西安</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>景点</title>
-    <link href="/2023/09/22/Notes/%E6%97%85%E6%B8%B8/%E6%99%AF%E7%82%B9/"/>
-    <url>/2023/09/22/Notes/%E6%97%85%E6%B8%B8/%E6%99%AF%E7%82%B9/</url>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>远：</p><blockquote><p>兵马俑 华清池 骊山 秦始皇陵</p></blockquote><p>晚上:</p><blockquote><p>大唐不夜城 大唐芙蓉园 钟楼&amp;鼓楼 </p></blockquote><p>城墙<br>大雁塔 小雁塔<br><del>陕西历史博物馆（只能越20号了 8.14 10点、11点、18点）</del><br>碑林博物馆</p>]]></content>
     
     
     <categories>
@@ -600,9 +600,9 @@
     
     <tags>
       
-      <tag>Github</tag>
-      
       <tag>Obsidian</tag>
+      
+      <tag>Github</tag>
       
       <tag>hexo</tag>
       
