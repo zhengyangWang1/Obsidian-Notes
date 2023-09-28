@@ -4,6 +4,25 @@
   
   
   <entry>
+    <title>神经网络基础</title>
+    <link href="/2023/09/28/Notes/%E8%AF%BE%E7%A8%8B/%E6%99%BA%E8%83%BD%E8%AE%A1%E7%AE%97%E7%B3%BB%E7%BB%9F/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80/"/>
+    <url>/2023/09/28/Notes/%E8%AF%BE%E7%A8%8B/%E6%99%BA%E8%83%BD%E8%AE%A1%E7%AE%97%E7%B3%BB%E7%BB%9F/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80/</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="线性函数拟合"><a href="#线性函数拟合" class="headerlink" title="线性函数拟合"></a>线性函数拟合</h3><p>线性回归可以找到一些点的集合背后的规律：一个点集可以用一条直线来拟合，这条拟合出来的直线的参数特征，就是线性回归找到的点集背后的规律</p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>神经网络</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Django操作MySQL</title>
     <link href="/2023/09/27/Notes/%E7%BC%96%E7%A8%8B/MySQL/Django%E6%93%8D%E4%BD%9CMySQL/"/>
     <url>/2023/09/27/Notes/%E7%BC%96%E7%A8%8B/MySQL/Django%E6%93%8D%E4%BD%9CMySQL/</url>
@@ -308,33 +327,6 @@
   
   
   <entry>
-    <title>智能计算系统</title>
-    <link href="/2023/09/22/Notes/%E8%AF%BE%E7%A8%8B/%E6%99%BA%E8%83%BD%E8%AE%A1%E7%AE%97%E7%B3%BB%E7%BB%9F/"/>
-    <url>/2023/09/22/Notes/%E8%AF%BE%E7%A8%8B/%E6%99%BA%E8%83%BD%E8%AE%A1%E7%AE%97%E7%B3%BB%E7%BB%9F/</url>
-    
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>50期末+30课程编程作业+10大作业+10平时</p><hr><p>智能计算系统：智能的物质载体</p><ul><li>集成CPU和智能芯片的<strong>异构系统</strong></li><li>面向开发者的智能计算<strong>编程环境</strong></li></ul>]]></content>
-    
-    
-    <categories>
-      
-      <category>Notes</category>
-      
-      <category>课程</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>智能计算系统</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>神经网络与深度学习</title>
     <link href="/2023/09/22/Notes/%E8%AF%BE%E7%A8%8B/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E4%B8%8E%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E4%B8%8E%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
     <url>/2023/09/22/Notes/%E8%AF%BE%E7%A8%8B/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E4%B8%8E%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E4%B8%8E%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/</url>
@@ -358,6 +350,33 @@
       <tag>神经网络</tag>
       
       <tag>深度学习</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>智能计算系统</title>
+    <link href="/2023/09/22/Notes/%E8%AF%BE%E7%A8%8B/%E6%99%BA%E8%83%BD%E8%AE%A1%E7%AE%97%E7%B3%BB%E7%BB%9F/%E6%99%BA%E8%83%BD%E8%AE%A1%E7%AE%97%E7%B3%BB%E7%BB%9F/"/>
+    <url>/2023/09/22/Notes/%E8%AF%BE%E7%A8%8B/%E6%99%BA%E8%83%BD%E8%AE%A1%E7%AE%97%E7%B3%BB%E7%BB%9F/%E6%99%BA%E8%83%BD%E8%AE%A1%E7%AE%97%E7%B3%BB%E7%BB%9F/</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>50期末+30课程编程作业+10大作业+10平时</p><hr><p>智能计算系统：智能的物质载体</p><ul><li>集成CPU和智能芯片的<strong>异构系统</strong></li><li>面向开发者的智能计算<strong>编程环境</strong></li></ul>]]></content>
+    
+    
+    <categories>
+      
+      <category>Notes</category>
+      
+      <category>课程</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>智能计算系统</tag>
       
     </tags>
     
