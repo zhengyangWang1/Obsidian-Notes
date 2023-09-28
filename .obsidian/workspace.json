@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "source/_posts/Notes/课程/智能计算系统/神经网络基础.md",
+                "file": "source/_posts/Notes/课程/神经网络与深度学习/未命名.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "6e0320a8e72136b2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "source/_posts/Notes/课程/神经网络与深度学习/前馈神经网络.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -86,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "source/_posts/Notes/课程/智能计算系统/神经网络基础.md",
+                "file": "source/_posts/Notes/课程/神经网络与深度学习/前馈神经网络.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "source/_posts/Notes/课程/智能计算系统/神经网络基础.md",
+                "file": "source/_posts/Notes/课程/神经网络与深度学习/前馈神经网络.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "source/_posts/Notes/课程/智能计算系统/神经网络基础.md"
+                "file": "source/_posts/Notes/课程/神经网络与深度学习/前馈神经网络.md"
               }
             }
           },
@@ -167,8 +180,12 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "5b356816fefe0b5a",
+  "active": "6e0320a8e72136b2",
   "lastOpenFiles": [
+    "source/_posts/Notes/课程/神经网络与深度学习/未命名.md",
+    "source/_posts/Notes/课程/神经网络与深度学习/神经网络与深度学习.md",
+    "source/_posts/Notes/课程/神经网络与深度学习/前馈神经网络.md",
+    "source/_posts/Notes/课程/智能计算系统/神经网络基础.md",
     "public/categories/Notes/课程/page/2/index.html",
     "public/categories/Notes/课程/page/2",
     "public/categories/Notes/课程/page",
@@ -179,9 +196,7 @@
     "public/2023/09/28/Notes/课程/智能计算系统",
     "public/2023/09/28/Notes/课程",
     "public/2023/09/28/Notes",
-    "public/2023/09/28",
     "source/_posts/Notes/课程/智能计算系统/智能计算系统.md",
-    "source/_posts/Notes/课程/智能计算系统/神经网络基础.md",
     "source/_posts/Notes/编程/MySQL/Django操作MySQL.md",
     "source/_posts/Notes/编程/MySQL/MySQL基本使用.md",
     "source/_posts/Notes/课程/数据库/SQL.md",
@@ -203,8 +218,6 @@
     "source/_posts/Notes/AI/AI绘画.md",
     "source/_posts/Notes/论文/扩散模型论文todo（已过期）.md",
     "source/_posts/Notes/旅游/美食.md",
-    "source/_posts/Notes/编程/Django/First Class.md",
-    "source/_posts/Notes/花里胡哨/hexo+Obsidian+github博客.md",
     "public/img/police_beian.png",
     "public/img/loading.gif",
     "public/img/fluid.png",
