@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 271.5,
-    "collapsed": true
+    "width": 271.5
   },
   "right": {
     "id": "45464171d8013cd8",
@@ -169,6 +168,8 @@
   },
   "active": "5b356816fefe0b5a",
   "lastOpenFiles": [
+    "public/2023/09/27/Notes/编程/MySQL/Django操作MySQL/index.html",
+    "public/2023/09/27/Notes/编程/MySQL/Django操作MySQL",
     "source/_posts/Notes/编程/MySQL/MySQL基本使用.md",
     "source/_posts/Notes/编程/MySQL/Django操作MySQL.md",
     "public/categories/Notes/论文/index.html",
@@ -180,7 +181,6 @@
     "public/categories/Notes/page/3/index.html",
     "public/categories/Notes/page/4/index.html",
     "public/categories/Notes/page/2/index.html",
-    "public/categories/Notes/page/3",
     "source/_posts/Notes/课程/数据库/SQL.md",
     "source/_posts/Notes/旅游/西安8.16-20.md",
     "source/_posts/Notes/旅游/景点.md",
@@ -204,7 +204,6 @@
     "source/_posts/Notes/编程/Django/First Class.md",
     "source/_posts/Notes/花里胡哨/hexo+Obsidian+github博客.md",
     "source/_posts/Notes/课程/操作系统/操作系统.md",
-    "source/_posts/Notes/课程/操作系统/Blitz软件.md",
     "public/img/police_beian.png",
     "public/img/loading.gif",
     "public/img/fluid.png",
