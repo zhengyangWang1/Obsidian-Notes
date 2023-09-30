@@ -26,3 +26,4 @@ ORM全称是：Object Relational Mapping(对象关系映射)，其主要作用�
 ```
 create datebase 数据库名
 ```
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231001002046.png)
