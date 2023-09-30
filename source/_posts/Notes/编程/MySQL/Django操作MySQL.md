@@ -21,3 +21,8 @@ ORM全称是：Object Relational Mapping(对象关系映射)，其主要作用�
 - 操作表中的数据
 
 ### 创建数据库
+- 启动MySQL服务
+- 自带工具创建数据库
+```
+create datebase 数据库名
+```

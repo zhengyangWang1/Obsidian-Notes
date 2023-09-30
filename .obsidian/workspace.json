@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "source/_posts/Notes/课程/神经网络与深度学习/网络优化与正则化.md",
+                "file": "source/_posts/Notes/编程/MySQL/Django操作MySQL.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "source/_posts/Notes/课程/神经网络与深度学习/网络优化与正则化.md",
+                "file": "source/_posts/Notes/编程/MySQL/Django操作MySQL.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "source/_posts/Notes/课程/神经网络与深度学习/网络优化与正则化.md",
+                "file": "source/_posts/Notes/编程/MySQL/Django操作MySQL.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "source/_posts/Notes/课程/神经网络与深度学习/网络优化与正则化.md"
+                "file": "source/_posts/Notes/编程/MySQL/Django操作MySQL.md"
               }
             }
           },
@@ -181,12 +181,13 @@
   },
   "active": "5b356816fefe0b5a",
   "lastOpenFiles": [
+    "source/_posts/Notes/编程/Django/First Class.md",
+    "source/_posts/Notes/课程/神经网络与深度学习/网络优化与正则化.md",
     "public/2023/09/28/Notes/课程/神经网络与深度学习/网络优化与正则化/index.html",
     "public/2023/09/28/Notes/课程/神经网络与深度学习/网络优化与正则化",
     "public/2023/09/28/Notes/课程/神经网络与深度学习/梯度放缓问题/index.html",
     "public/2023/09/28/Notes/课程/神经网络与深度学习/梯度放缓问题",
     "source/_posts/Notes/课程/神经网络与深度学习/前馈神经网络.md",
-    "source/_posts/Notes/课程/神经网络与深度学习/网络优化与正则化.md",
     "public/2023/09/28/Notes/课程/神经网络与深度学习/未命名/index.html",
     "public/2023/09/28/Notes/课程/神经网络与深度学习/未命名",
     "public/2023/09/28/Notes/课程/神经网络与深度学习",
@@ -195,7 +196,6 @@
     "public/categories/Notes/课程/page/2/index.html",
     "public/categories/Notes/课程/page/2",
     "public/categories/Notes/课程/page",
-    "public/categories/Notes/课程/智能计算系统/index.html",
     "source/_posts/Notes/课程/智能计算系统/智能计算系统.md",
     "source/_posts/Notes/编程/MySQL/Django操作MySQL.md",
     "source/_posts/Notes/编程/MySQL/MySQL基本使用.md",
