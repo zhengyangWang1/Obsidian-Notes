@@ -29,4 +29,4 @@ show databases;  # 显示数据库列表
 ```
 
 ### Django连接数据库
-在setting中修改默认的数据库`DATABASES`，Django默认的数据库是sqlite，将其改为
+在setting中修改默认的数据库`DATABASES`，Django默认的数据库是sqlite，将其改为mysql
