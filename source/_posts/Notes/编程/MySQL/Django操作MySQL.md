@@ -28,4 +28,5 @@ create datebase 数据库名;  # 创建数据库
 show databases;  # 显示数据库列表
 ```
 
-
+### Django连接数据库
+在setting中修改默认的数据库`DATABASES`，Django默认的数据库是sqlite，将其改为
