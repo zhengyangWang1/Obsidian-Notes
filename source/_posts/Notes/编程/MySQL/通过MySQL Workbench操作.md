@@ -47,6 +47,11 @@ date:
 点击上方的`Export Progress`，进入导出界面开始导出，完成后可以在指定路径下看到sql脚本生成。
 
 #### 导入
+新建一个数据库，双击选中（名称会加粗）![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231006145753.png)
+在`File`中点击`Open SQL Script`,打开指定sql脚本
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231006145846.png)
+点击框中的按钮执行
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231006150022.png)
 
-
+执行结束后，返回home界面重新进入数据库（更新一下数据，否则导入的数据显示不出来），可以看到导入的数据。
 
