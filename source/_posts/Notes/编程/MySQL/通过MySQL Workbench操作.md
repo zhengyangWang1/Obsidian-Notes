@@ -31,3 +31,22 @@ date:
 ### 查看数据
 ![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231006143655.png)
 点击想查看的表
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231006144930.png)
+
+可以在此修改表的内容
+
+### 导出和导入sql脚本
+#### 导出
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231006145032.png)
+
+进入如下界面，勾选想要导出的数据表，并选择适当的选项
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231006145328.png)
+
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231006145437.png)
+
+点击上方的`Export Progress`，进入导出界面开始导出，完成后可以在指定路径下看到sql脚本生成。
+
+#### 导入
+
+
+
