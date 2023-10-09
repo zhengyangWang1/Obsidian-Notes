@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "source/_posts/Notes/课程/数据库/SQL中级.md",
+                "file": "source/_posts/Notes/编程/MySQL/Django操作MySQL.md",
                 "mode": "source",
                 "source": false
               }
@@ -82,8 +82,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 271.5,
-    "collapsed": true
+    "width": 271.5
   },
   "right": {
     "id": "45464171d8013cd8",
@@ -99,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "source/_posts/Notes/课程/数据库/SQL中级.md",
+                "file": "source/_posts/Notes/编程/MySQL/Django操作MySQL.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "source/_posts/Notes/课程/数据库/SQL中级.md",
+                "file": "source/_posts/Notes/编程/MySQL/Django操作MySQL.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "source/_posts/Notes/课程/数据库/SQL中级.md"
+                "file": "source/_posts/Notes/编程/MySQL/Django操作MySQL.md"
               }
             }
           },
@@ -167,7 +166,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "source/_posts/Notes/课程/数据库/SQL中级.md"
+                "file": "source/_posts/Notes/编程/MySQL/Django操作MySQL.md"
               }
             }
           }
@@ -192,8 +191,8 @@
   },
   "active": "b90d80796a629bb6",
   "lastOpenFiles": [
-    "source/_posts/Notes/课程/数据库/SQL基础.md",
     "source/_posts/Notes/课程/数据库/SQL中级.md",
+    "source/_posts/Notes/课程/数据库/SQL基础.md",
     "public/2023/10/09/Notes/课程/数据库/SQL中级/index.html",
     "public/2023/10/09/Notes/课程/数据库/SQL中级",
     "source/_posts/Notes/课程/操作系统/操作系统.md",
