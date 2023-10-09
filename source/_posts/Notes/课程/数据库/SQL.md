@@ -174,3 +174,10 @@ having用于group形成以后,where用于group形成之前
 - P可以替换为B<operation>(subquery)
 - A_i可以替换为生成单个值的子查询
 
+#### some Clause
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231009102217.png)
+some中只要有一个满足条件即为true
+
+#### all  Clause
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231009102433.png)
+需要some中所有都满足条件才为true
