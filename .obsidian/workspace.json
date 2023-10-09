@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "source/_posts/Notes/课程/数据库/SQL基础.md",
+                "file": "source/_posts/Notes/课程/数据库/SQL.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 271.5,
-    "collapsed": true
+    "width": 271.5
   },
   "right": {
     "id": "45464171d8013cd8",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "source/_posts/Notes/课程/数据库/SQL基础.md",
+                "file": "source/_posts/Notes/课程/数据库/SQL.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "source/_posts/Notes/课程/数据库/SQL基础.md",
+                "file": "source/_posts/Notes/课程/数据库/SQL.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "source/_posts/Notes/课程/数据库/SQL基础.md"
+                "file": "source/_posts/Notes/课程/数据库/SQL.md"
               }
             }
           },
@@ -168,10 +167,13 @@
   },
   "active": "5b356816fefe0b5a",
   "lastOpenFiles": [
+    "source/_posts/Notes/课程/数据库/SQL基础.md",
+    "source/_posts/Notes/课程/数据库/SQL.md",
+    "public/2023/09/25/Notes/课程/数据库/SQL基础/index.html",
+    "public/2023/09/25/Notes/课程/数据库/SQL基础",
     "source/_posts/Notes/课程/神经网络与深度学习/前馈神经网络.md",
     "source/_posts/Notes/课程/神经网络与深度学习/神经网络与深度学习.md",
     "source/_posts/Notes/课程/神经网络与深度学习/网络优化与正则化.md",
-    "source/_posts/Notes/课程/数据库/SQL基础.md",
     "source/_posts/Notes/课程/数据库/数据库.md",
     "source/_posts/Notes/编程/MySQL/通过MySQL Workbench操作.md",
     "public/2023/10/06/Notes/编程/MySQL/通过MySQL Workbench操作/index.html",
@@ -182,12 +184,10 @@
     "public/2023/10/06",
     "public/2023/10",
     "public/archives/2023/10/index.html",
-    "public/archives/2023/10",
     "source/_posts/Notes/编程/MySQL/MySQL基本使用.md",
     "source/_posts/Notes/编程/MySQL/安装MySQL.md",
     "source/_posts/Notes/课程/软件工程/作业.md",
     "source/_posts/Notes/课程/软件工程/软件生命周期.md",
-    "public/2023/09/22/Notes/课程/软件工程/作业/index.html",
     "source/_posts/Notes/课程/软件工程/大作业 酒店温控计费系统 规划.md",
     "source/_posts/Notes/编程/MySQL/Django操作MySQL.md",
     "source/_posts/Notes/编程/Django/First Class.md",

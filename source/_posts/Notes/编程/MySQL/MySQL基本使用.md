@@ -9,7 +9,7 @@ tags:
   - 数据库
 date:
 ---
-[[SQL]]
+[[SQL基础]]
 [mysql入门教程——基本操作\_mysql使用教程-CSDN博客](https://blog.csdn.net/qq_43323867/article/details/107433570)
 
 ### 数据库操作

@@ -3,7 +3,7 @@ categories:
   - Notes
   - 课程
   - 数据库
-title: SQL
+title: SQL基础
 tags:
   - 数据库
   - SQL
