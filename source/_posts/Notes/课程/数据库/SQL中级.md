@@ -19,7 +19,7 @@ date:
 Natural join特征：
 - 关联的表具有一对或多对同名的列
 - 连接时候不需要使用on或者using关键字
-![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231009171857.png)
+
 在自然连接中，会产生数据的丢失
 #### Outer join外连接
 - Left Outer Join左外连接：把左边表的数据全部取出来，而右边表的数据有相等的，显示出来，如果没有，显示NULL
@@ -36,10 +36,15 @@ Natural join特征：
 #### Inner join内连接
 为了把常规连接和外连接区分开来，在SQL中把常规连接称作内连接。关键字inner是可选的，当join子句中没有使用outer前缀时，缺省的连接是内连接。内连接以**笛卡尔积**的形式表现出来。
 
+自然连接只显示一列相同名称的列，而内连接显示两列
+>自然连接和内连接的区别：
+>[自然连接和内连接的区别|极客教程](https://geek-docs.com/sql/sql-ask-answer/the-difference-between-natural-join-and-inner-join.html)
+
 ### 4.2 Views视图
 
-#### Views as Virtual Table
-虚拟视图：只储存视图定义，视图是虚关系，在数据库中不存在，根据用户需求临时生成
+在 SQL 中，视图是基于 SQL 语句的结果集的可视化的表。
+视图包含行和列，就像一个真实的表。视图中的字段就是来自一个或多个数据库中的真实的表中的字段。
+视图是虚关系，在数据库中不存在，根据用户需求临时生成，数据库只储存视图定义。
 
 #### Create view创建视图
 ![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231009120344.png)
