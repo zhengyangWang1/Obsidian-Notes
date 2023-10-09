@@ -47,9 +47,10 @@ Natural join特征：
 视图是虚关系，在数据库中不存在，根据用户需求临时生成，数据库只储存视图定义。
 
 #### Create view创建视图
-![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231009120344.png)
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231009174818.png)
+其中\<query expression>为SQL表达式，v是视图的名称
 
 #### Views Defined Using Other Views
-v1可以直接依赖v2，即v2 ->  v1
-v1也可以依赖v2，既v2 -> v3 -> v2
-
+v1可以直接依赖（depend directly on）v2，即 v2 ->  v1
+v1也可以依赖（depend on）v2，即 v2 -> v3 -> v2
+如果视图依赖于自身，则称为递归关系
