@@ -165,7 +165,7 @@ group by:
 ![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20230925120755.png)
 
 对分组后的数据进行条件筛选
-having用于group形成以后,where用于group形成之前
+`having`用于group形成以后,where用于group形成之前
 
 ### 3.8 Nested Subqueries嵌套子查询
 子查询是嵌套在另一个查询中的“select-from-where”表达式
@@ -176,11 +176,11 @@ having用于group形成以后,where用于group形成之前
 
 #### some Clause
 ![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231009102217.png)
-some中只要有一个满足条件即为true
+`some`中只要有一个满足条件即为true
 
 #### all  Clause
 ![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231009102433.png)
-需要some中所有都满足条件才为true
+需要`some`中所有都满足条件才为true
 
 #### Empty Relations空关系（exist，except）
 ![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231009102903.png)
@@ -190,3 +190,5 @@ some中只要有一个满足条件即为true
 `unique`检查子查询中是否有重复元组，如果没有重复项返回true
 
 #### With Clause
+`with`子句提供了一种定义临时关系的方法，将一个复杂查询分解为若干步，每个视图定义一个各部的中间计算结果，逻辑清晰。
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231009105244.png)
