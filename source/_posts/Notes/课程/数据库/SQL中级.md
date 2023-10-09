@@ -1,5 +1,5 @@
 ---
-title: SQL
+title: SQL中级
 categories:
   - Notes
   - 课程
@@ -10,7 +10,7 @@ tags:
 date:
 ---
 ### 4.1 Joined Expressions
-`join`是笛卡尔积，将两张表输出为一张表
+`join`是笛卡尔积，它要求两个表中的元组匹配，用于`from`子句中的子查询表达式
 
 #### Natural join operations自然连接
 
