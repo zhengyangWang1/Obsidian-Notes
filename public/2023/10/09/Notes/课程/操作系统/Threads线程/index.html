@@ -16,17 +16,18 @@
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
   
-    <meta name="description" content="进程是最小资源分配单位线程是最小执行单元 多线程服务框架 单线程与多线程进程：线程共享进程中的数据，进程为每个线程创建栈和寄存器 Concurrency并发：在单核系统上Parallelism并行：在多核系统上">
+    <meta name="description" content="进程是最小资源分配单位线程是最小执行单元 多线程服务框架 单线程与多线程进程：线程共享进程中的数据，进程为每个线程创建栈和寄存器 Concurrency并发：在单核系统上Parallelism并行：在多核系统上 Race Conditions线程分为send和receive  send：当buffer中有空间，可以写入 receive：如果buffer中有messag">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Threads线程">
 <meta property="og:url" content="http://example.com/2023/10/09/Notes/%E8%AF%BE%E7%A8%8B/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/Threads%E7%BA%BF%E7%A8%8B/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="进程是最小资源分配单位线程是最小执行单元 多线程服务框架 单线程与多线程进程：线程共享进程中的数据，进程为每个线程创建栈和寄存器 Concurrency并发：在单核系统上Parallelism并行：在多核系统上">
+<meta property="og:description" content="进程是最小资源分配单位线程是最小执行单元 多线程服务框架 单线程与多线程进程：线程共享进程中的数据，进程为每个线程创建栈和寄存器 Concurrency并发：在单核系统上Parallelism并行：在多核系统上 Race Conditions线程分为send和receive  send：当buffer中有空间，可以写入 receive：如果buffer中有messag">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231009140512.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231009140611.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231009143100.png">
 <meta property="article:published_time" content="2023-10-09T06:02:39.808Z">
-<meta property="article:modified_time" content="2023-10-09T06:09:57.672Z">
+<meta property="article:modified_time" content="2023-10-09T06:33:05.488Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="操作系统">
 <meta name="twitter:card" content="summary_large_image">
@@ -206,7 +207,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          102 字
+          177 字
         
       </span>
     
@@ -217,7 +218,7 @@
         
         
         
-          1 分钟
+          2 分钟
         
       </span>
     
@@ -263,6 +264,11 @@
 <p>多线程服务框架<br><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231009140512.png" srcset="/img/loading.gif" lazyload alt="image.png"></p>
 <p>单线程与多线程进程：<br>线程共享进程中的数据，进程为每个线程创建栈和寄存器<br><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231009140611.png" srcset="/img/loading.gif" lazyload alt="image.png"></p>
 <p>Concurrency并发：在单核系统上<br>Parallelism并行：在多核系统上</p>
+<h3 id="Race-Conditions"><a href="#Race-Conditions" class="headerlink" title="Race Conditions"></a>Race Conditions</h3><p><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231009143100.png" srcset="/img/loading.gif" lazyload alt="image.png"><br>线程分为send和receive</p>
+<ul>
+<li>send：当buffer中有空间，可以写入</li>
+<li>receive：如果buffer中有messag</li>
+</ul>
 
                 
               </div>

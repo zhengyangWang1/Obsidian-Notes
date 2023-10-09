@@ -20,3 +20,9 @@ date:
 
 Concurrency并发：在单核系统上
 Parallelism并行：在多核系统上
+
+### Race Conditions
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231009143100.png)
+线程分为send和receive
+- send：当buffer中有空间，可以写入
+- receive：如果buffer中有message，
