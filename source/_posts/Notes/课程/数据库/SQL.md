@@ -30,3 +30,7 @@ date:
 #### Create view创建视图
 ![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231009120344.png)
 
+#### Views Defined Using Other Views
+v1可以直接依赖v2，即v2 ->  v1
+v1也可以依赖v2，既v2 -> v3 -> v2
+
