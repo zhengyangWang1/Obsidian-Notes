@@ -36,3 +36,6 @@ Parallelism并行：在多核系统上
 A和B会产生竞争，导致in的值不正确
 ![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231009144932.png)
 
+解决方法：acquire和release
+当一个线程进行时，需要先执行acquire申请一个lock，在执行期间持有，结束后释放
+当一个线程持有lock时，其他线程acquire相同的lock会失败
