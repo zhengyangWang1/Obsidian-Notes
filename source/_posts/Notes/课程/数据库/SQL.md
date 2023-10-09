@@ -192,3 +192,6 @@ group by:
 #### With Clause
 `with`子句提供了一种定义临时关系的方法，将一个复杂查询分解为若干步，每个视图定义一个各部的中间计算结果，逻辑清晰。
 ![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231009105244.png)
+
+### 3.9 Modification of Database
+#### Deletion删除
