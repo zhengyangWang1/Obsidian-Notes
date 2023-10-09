@@ -187,4 +187,6 @@ some中只要有一个满足条件即为true
 ![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231009102921.png)
 
 #### Duplicate Tuples重复元组（unique）
-`unique`检查子查询中是否有重复元组
+`unique`检查子查询中是否有重复元组，如果没有重复项返回true
+
+#### With Clause
