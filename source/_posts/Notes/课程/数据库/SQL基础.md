@@ -8,6 +8,7 @@ tags:
   - 数据库
   - SQL
 ---
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231009112654.png)
 ### 3.1 Overview of SQL
 Structured Query Language
 ![](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20230925100326.png)
@@ -202,3 +203,4 @@ group by:
 
 #### Update更新
 ![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231009111812.png)
+

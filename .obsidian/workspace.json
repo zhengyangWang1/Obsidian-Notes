@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "source/_posts/Notes/课程/数据库/SQL.md",
+                "file": "source/_posts/Notes/课程/数据库/SQL基础.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "source/_posts/Notes/课程/数据库/SQL.md",
+                "file": "source/_posts/Notes/课程/数据库/SQL基础.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "source/_posts/Notes/课程/数据库/SQL.md",
+                "file": "source/_posts/Notes/课程/数据库/SQL基础.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "source/_posts/Notes/课程/数据库/SQL.md"
+                "file": "source/_posts/Notes/课程/数据库/SQL基础.md"
               }
             }
           },
@@ -153,8 +153,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 286.5,
-    "collapsed": true
+    "width": 286.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -172,7 +171,7 @@
     "source/_posts/Notes/课程/神经网络与深度学习/前馈神经网络.md",
     "source/_posts/Notes/课程/神经网络与深度学习/神经网络与深度学习.md",
     "source/_posts/Notes/课程/神经网络与深度学习/网络优化与正则化.md",
-    "source/_posts/Notes/课程/数据库/SQL.md",
+    "source/_posts/Notes/课程/数据库/SQL基础.md",
     "source/_posts/Notes/课程/数据库/数据库.md",
     "source/_posts/Notes/编程/MySQL/通过MySQL Workbench操作.md",
     "public/2023/10/06/Notes/编程/MySQL/通过MySQL Workbench操作/index.html",
