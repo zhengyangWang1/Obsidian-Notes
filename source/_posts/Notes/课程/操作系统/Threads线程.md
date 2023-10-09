@@ -8,3 +8,15 @@ tags:
   - 操作系统
 date:
 ---
+进程是最小资源分配单位
+线程是最小执行单元
+
+多线程服务框架
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231009140512.png)
+
+单线程与多线程进程：
+线程共享进程中的数据，进程为每个线程创建栈和寄存器
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231009140611.png)
+
+Concurrency并发：在单核系统上
+Parallelism并行：在多核系统上

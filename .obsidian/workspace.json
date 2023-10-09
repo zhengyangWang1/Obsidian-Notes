@@ -153,7 +153,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 286.5
+    "width": 286.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -168,6 +169,9 @@
   },
   "active": "5b356816fefe0b5a",
   "lastOpenFiles": [
+    "public/2023/10/09/Notes/课程/操作系统/Threads线程/index.html",
+    "public/2023/10/09/Notes/课程/操作系统/Threads线程",
+    "public/2023/10/09/Notes/课程/操作系统",
     "source/_posts/Notes/课程/操作系统/Blitz软件.md",
     "source/_posts/Notes/课程/操作系统/Threads线程.md",
     "source/_posts/Notes/课程/操作系统/操作系统.md",
@@ -186,8 +190,6 @@
     "source/_posts/Notes/课程/神经网络与深度学习/网络优化与正则化.md",
     "source/_posts/Notes/课程/数据库/数据库.md",
     "source/_posts/Notes/编程/MySQL/通过MySQL Workbench操作.md",
-    "public/2023/10/06/Notes/编程/MySQL/通过MySQL Workbench操作/index.html",
-    "public/2023/10/06/Notes/编程/MySQL/通过MySQL Workbench操作",
     "source/_posts/Notes/编程/MySQL/MySQL基本使用.md",
     "source/_posts/Notes/编程/MySQL/安装MySQL.md",
     "source/_posts/Notes/课程/软件工程/作业.md",
@@ -203,7 +205,6 @@
     "source/_posts/Notes/TODO.md",
     "source/_posts/Notes/Linux学习/程序与进程管理.md",
     "source/_posts/Notes/Linux学习/基本命令.md",
-    "source/_posts/Notes/Linux学习/文本编辑器.md",
     "public/img/police_beian.png",
     "public/img/loading.gif",
     "public/img/fluid.png",
