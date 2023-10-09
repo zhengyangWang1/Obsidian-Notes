@@ -171,7 +171,7 @@ having用于group形成以后,where用于group形成之前
 子查询是嵌套在另一个查询中的“select-from-where”表达式
 ![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20230925121043.png)
 - r_i可以替换为任意有效的子查询
-- P可以替换为B<operation>(subquery)
+- P可以替换为B\<operation>(subquery)
 - A_i可以替换为生成单个值的子查询
 
 #### some Clause
@@ -181,3 +181,10 @@ some中只要有一个满足条件即为true
 #### all  Clause
 ![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231009102433.png)
 需要some中所有都满足条件才为true
+
+#### Empty Relations空关系（exist，except）
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231009102903.png)
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231009102921.png)
+
+#### Duplicate Tuples重复元组（unique）
+`unique`检查子查询中是否有重复元组
