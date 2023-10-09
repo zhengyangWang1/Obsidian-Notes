@@ -195,3 +195,9 @@ group by:
 
 ### 3.9 Modification of Database
 #### Deletion删除
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231009110615.png)
+
+#### Insertion插入
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231009110654.png)
+
+#### Update更新
