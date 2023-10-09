@@ -13,12 +13,19 @@ date:
 `join`是笛卡尔积，它要求两个表中的元组匹配，用于`from`子句中的子查询表达式
 
 #### Natural join operations自然连接
+将表中具有相同名称的列进行匹配
 
+Natural join特征：
+- 关联的表具有一对或多对同名的列
+- 连接时候不需要使用on或者using关键字
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231009171857.png)
+在自然连接中，会产生数据的丢失
 #### Outer join外连接
+- Left Outer Join左外连接：把左边表的数据全部取出来，而右边表的数据有相等的，显示出来，如果没有，显示NULL
 
-- **Right Outer Join**:
+- Right Outer Join：把右边表的数据全部取出来，而左边表的数据有相等的，显示出来，如果没有，显示NULL
 
-- **Full Outer Join**:
+- Full Outer Join:
 
 #### Inner join内连接
 
