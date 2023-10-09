@@ -31,7 +31,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -98,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "source/_posts/Notes/课程/数据库/SQL基础.md",
+                "file": "source/_posts/Notes/课程/数据库/SQL.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "source/_posts/Notes/课程/数据库/SQL基础.md",
+                "file": "source/_posts/Notes/课程/数据库/SQL.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "source/_posts/Notes/课程/数据库/SQL基础.md"
+                "file": "source/_posts/Notes/课程/数据库/SQL.md"
               }
             }
           },
@@ -179,10 +180,10 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "5b356816fefe0b5a",
+  "active": "b90d80796a629bb6",
   "lastOpenFiles": [
-    "source/_posts/Notes/课程/数据库/SQL.md",
     "source/_posts/Notes/课程/数据库/SQL基础.md",
+    "source/_posts/Notes/课程/数据库/SQL.md",
     "source/_posts/Notes/课程/操作系统/操作系统.md",
     "source/_posts/Notes/课程/操作系统/Blitz软件.md",
     "source/_posts/Notes/课程/操作系统/Threads线程.md",
