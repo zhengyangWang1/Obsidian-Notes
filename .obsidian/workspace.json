@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "source/_posts/Notes/课程/操作系统/Threads线程.md",
+                "file": "source/_posts/Notes/课程/操作系统/操作系统.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "source/_posts/Notes/课程/操作系统/Threads线程.md",
+                "file": "source/_posts/Notes/课程/操作系统/操作系统.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "source/_posts/Notes/课程/操作系统/Threads线程.md",
+                "file": "source/_posts/Notes/课程/操作系统/操作系统.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "source/_posts/Notes/课程/操作系统/Threads线程.md"
+                "file": "source/_posts/Notes/课程/操作系统/操作系统.md"
               }
             }
           },
@@ -169,13 +169,13 @@
   },
   "active": "5b356816fefe0b5a",
   "lastOpenFiles": [
+    "source/_posts/Notes/课程/数据库/SQL.md",
+    "source/_posts/Notes/课程/操作系统/操作系统.md",
+    "source/_posts/Notes/课程/操作系统/Blitz软件.md",
+    "source/_posts/Notes/课程/操作系统/Threads线程.md",
     "public/2023/10/09/Notes/课程/操作系统/Threads线程/index.html",
     "public/2023/10/09/Notes/课程/操作系统/Threads线程",
     "public/2023/10/09/Notes/课程/操作系统",
-    "source/_posts/Notes/课程/操作系统/Blitz软件.md",
-    "source/_posts/Notes/课程/操作系统/Threads线程.md",
-    "source/_posts/Notes/课程/操作系统/操作系统.md",
-    "source/_posts/Notes/课程/数据库/SQL.md",
     "public/2023/10/09/Notes/课程/数据库/SQL/index.html",
     "public/2023/10/09/Notes/课程/数据库/SQL",
     "public/2023/10/09/Notes/课程/数据库",
@@ -184,7 +184,6 @@
     "public/2023/10/09",
     "source/_posts/Notes/课程/数据库/SQL基础.md",
     "public/2023/09/25/Notes/课程/数据库/SQL基础/index.html",
-    "public/2023/09/25/Notes/课程/数据库/SQL基础",
     "source/_posts/Notes/课程/神经网络与深度学习/前馈神经网络.md",
     "source/_posts/Notes/课程/神经网络与深度学习/神经网络与深度学习.md",
     "source/_posts/Notes/课程/神经网络与深度学习/网络优化与正则化.md",
