@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "source/_posts/Notes/课程/神经网络与深度学习/前馈神经网络.md",
+                "file": "source/_posts/Notes/课程/神经网络与深度学习/实验 用numpy搭建全连接神经网络用于手写数字识别.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "source/_posts/Notes/课程/神经网络与深度学习/前馈神经网络.md",
+                "file": "source/_posts/Notes/课程/神经网络与深度学习/实验 用numpy搭建全连接神经网络用于手写数字识别.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "source/_posts/Notes/课程/神经网络与深度学习/前馈神经网络.md",
+                "file": "source/_posts/Notes/课程/神经网络与深度学习/实验 用numpy搭建全连接神经网络用于手写数字识别.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "source/_posts/Notes/课程/神经网络与深度学习/前馈神经网络.md"
+                "file": "source/_posts/Notes/课程/神经网络与深度学习/实验 用numpy搭建全连接神经网络用于手写数字识别.md"
               }
             }
           },
@@ -166,7 +166,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "source/_posts/Notes/课程/神经网络与深度学习/前馈神经网络.md"
+                "file": "source/_posts/Notes/课程/神经网络与深度学习/实验 用numpy搭建全连接神经网络用于手写数字识别.md"
               }
             }
           }
@@ -189,7 +189,7 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "a096be5067d8f57d",
+  "active": "ca48a76c58c13706",
   "lastOpenFiles": [
     "source/_posts/Notes/课程/神经网络与深度学习/神经网络与深度学习.md",
     "source/_posts/Notes/课程/神经网络与深度学习/前馈神经网络.md",
