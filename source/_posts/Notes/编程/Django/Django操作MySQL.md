@@ -3,7 +3,7 @@ title: Django操作MySQL
 categories:
   - Notes
   - 编程
-  - MySQL
+  - Django
 tags:
   - MySQL
   - Python
@@ -48,3 +48,5 @@ DATABASES = {
 SELECT User FROM mysql.user;  # 查看mysql的用户名列表
 ```
 
+### 创建表
+在app的models文件下写入类[[]]
