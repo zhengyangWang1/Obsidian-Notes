@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "source/_posts/Notes/课程/神经网络与深度学习/实验 用numpy搭建全连接神经网络用于手写数字识别.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ca48a76c58c13706",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "source/_posts/Notes/课程/神经网络与深度学习/前馈神经网络.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -176,17 +189,17 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "a096be5067d8f57d",
+  "active": "ca48a76c58c13706",
   "lastOpenFiles": [
-    "source/_posts/Notes/课程/神经网络与深度学习/神经网络与深度学习.md",
     "source/_posts/Notes/课程/神经网络与深度学习/实验 用numpy搭建全连接神经网络用于手写数字识别.md",
+    "source/_posts/Notes/课程/神经网络与深度学习/前馈神经网络.md",
+    "source/_posts/Notes/课程/神经网络与深度学习/神经网络与深度学习.md",
     "public/2023/10/10/Notes/课程/神经网络与深度学习/实验 用numpy搭建全连接神经网络用于手写数字识别/index.html",
     "public/2023/10/10/Notes/课程/神经网络与深度学习/实验 用numpy搭建全连接神经网络用于手写数字识别",
     "public/2023/10/10/Notes/课程/神经网络与深度学习",
     "public/2023/10/10/Notes/课程",
     "public/2023/10/10/Notes",
     "public/2023/10/10",
-    "source/_posts/Notes/课程/神经网络与深度学习/前馈神经网络.md",
     "source/_posts/Notes/编程/Django/Django操作MySQL.md",
     "public/2023/09/27/Notes/编程/Django/Django操作MySQL/index.html",
     "public/2023/09/27/Notes/编程/Django/Django操作MySQL",
