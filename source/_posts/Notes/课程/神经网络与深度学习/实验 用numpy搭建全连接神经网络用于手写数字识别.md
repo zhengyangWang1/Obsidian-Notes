@@ -11,4 +11,4 @@ date:
 ---
 结合代码和公式对全连接层的实现进行分析
 
-![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231010204450.png)
+
