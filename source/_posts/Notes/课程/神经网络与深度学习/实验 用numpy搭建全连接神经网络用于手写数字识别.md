@@ -29,4 +29,4 @@ date:
 
 ![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231011225851.png)
 
-实验准确率最终达到98%
+实验准确率最终达到98%左右
