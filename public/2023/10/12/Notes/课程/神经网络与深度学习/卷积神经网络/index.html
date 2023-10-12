@@ -27,8 +27,9 @@
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231012101800.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231012102036.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231012102551.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231012103227.png">
 <meta property="article:published_time" content="2023-10-12T01:52:46.091Z">
-<meta property="article:modified_time" content="2023-10-12T02:26:46.545Z">
+<meta property="article:modified_time" content="2023-10-12T02:38:25.210Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="神经网络">
 <meta name="twitter:card" content="summary_large_image">
@@ -208,7 +209,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          331 字
+          467 字
         
       </span>
     
@@ -219,7 +220,7 @@
         
         
         
-          3 分钟
+          4 分钟
         
       </span>
     
@@ -271,8 +272,10 @@
 <h3 id="动机"><a href="#动机" class="headerlink" title="动机"></a>动机</h3><p>比起浅层神经网络，深度神经网络会更难训练，然而，如果训练好一个深度网络，它会比浅层网络强大的多<br>因此，有必要开发一种能够训练的深度网络结构<br>卷积神经网络可以简化网络结构，同时利用空间结构信息</p>
 <h3 id="卷积神经网络"><a href="#卷积神经网络" class="headerlink" title="卷积神经网络"></a>卷积神经网络</h3><h4 id="卷积运算"><a href="#卷积运算" class="headerlink" title="卷积运算"></a>卷积运算</h4><p>卷积经常用在信号处理中，用于计算信号的<strong>延迟累积</strong><br><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231012101111.png" srcset="/img/loading.gif" lazyload alt="image.png"></p>
 <h4 id="局部感受野"><a href="#局部感受野" class="headerlink" title="局部感受野"></a>局部感受野</h4><p>单个视觉细胞仅对<strong>部分区域</strong>的<strong>特定模式</strong>反应<br>局部感受：对外部世界由局部到全局的感知<br><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231012101800.png" srcset="/img/loading.gif" lazyload alt="image.png"></p>
-<p>一个小区域的输入像素连接到隐藏层的一个神经元<br><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231012102036.png" srcset="/img/loading.gif" lazyload alt="image.png"><br>输入图像中的此类区域称为隐藏神经元的局部感受野<br>然后在整张图片上滑动这个局部感受野，每个不同的局部感受野对应于隐藏层的一个不同的神经元<br>步长：每次局部感受野移动的幅度</p>
+<p>一个小区域的输入像素连接到隐藏层的一个神经元<br><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231012102036.png" srcset="/img/loading.gif" lazyload alt="image.png"><br>输入图像中的此类区域称为隐藏神经元的局部感受野<br>然后在整张图片上滑动这个局部感受野，每个不同的局部感受野对应于隐藏层的一个不同的神经元</p>
 <h4 id="权值共享"><a href="#权值共享" class="headerlink" title="权值共享"></a>权值共享</h4><p><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231012102551.png" srcset="/img/loading.gif" lazyload alt="image.png"><br>每个隐藏层神经元使用相同权值与偏差</p>
+<p>步长（Stride）：每次局部感受野移动的幅度。相邻的子区域很相似，没有必要检测所有的子区域<br><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231012103227.png" srcset="/img/loading.gif" lazyload alt="image.png"></p>
+<p>第一个隐藏层中所有神经元都检测到了相同特征，只是在不同的输入图像的位置<br>因此，从输入层到隐藏层的映射通常称之为特征映射（feature map）<br>共享的权值和偏置被称为卷积核（kernel）或者滤波器（filter）</p>
 
                 
               </div>
