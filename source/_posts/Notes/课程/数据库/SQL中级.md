@@ -160,3 +160,30 @@ assertion是一个谓词，表示我们希望数据库始终满足的条件
 
 #### Authorization Specification授权规范
 `grant`语句用于授予权限
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231016170537.png)
+
+授予视图特权并不意味着授予对基础关系的任何特权
+特权的授予者必须已经拥有指定项的权限（或者是数据库管理员）
+
+#### Privileges特权
+- select：允许对关系表进行读取访问，或使用视图进行查询的能力
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231016170318.png)
+
+- insert：插入元组的能力
+- update：使用 SQL 更新语句进行更新的能力
+- delete：删除元组的功能
+- all privileges：所有可被允许的特权
+
+#### Revoking Authorization撤销授权
+`revoke`用于撤销授权
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231016170604.png)
+
+#### Roles
+`create role` \<role name>
+可以向角色授予权限
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231016170845.png)
+
+可以向用户以及其他角色授予角色
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231016170853.png)
+
+#### Authorization on Views
