@@ -55,3 +55,13 @@ v1可以直接依赖（depend directly on）v2，即 v2 ->  v1
 v1也可以依赖（depend on）v2，即 v2 -> v3 -> v2
 如果视图依赖于自身，则称为递归关系
 
+#### Materialized Views实例化视图
+创建一个物理表，其中包含查询定义视图的结果中的所有元组
+如果更新查询中使用的关系，则实例化视图结果将过期
+### 4.3 Transactions事务
+一个transaction包括一系列的查询和更新
+特性：原子性、一致性、隔离性、耐用性
+事务必须以下列语句之一结束：
+- Commit work
+- Rollback work
+
