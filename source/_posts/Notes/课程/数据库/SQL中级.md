@@ -98,4 +98,14 @@ Cascading Actions级联操作：对$r_1$的主键K1的删除/更新操作将导�
 - timestamp:
 - interval:
 
-#### Type Conversion
+#### Type Conversion类型转换
+cast和convert
+
+#### Default Values
+在创建table时设置属性的默认值，可以在插入tuple时不设置该属性的值
+
+#### Large-Object Types
+blob：二进制大对象
+clob：字符大对象
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231016110329.png)
+XML：
