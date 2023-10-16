@@ -16,13 +16,14 @@
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
   
-    <meta name="description" content="4.1 Joined Expressionsjoin是笛卡尔积，它要求两个表中的元组匹配，用于from子句中的子查询表达式。使用 join ... on子句可以指定任意的连接条件。on条件允许在参与连接的关系上设置通用的谓词。该谓词的写法与where子句谓词类似。 Natural join operations自然连接将表中具有相同名称的列进行匹配 Natural join特征：  关联的表具有一">
+    <meta name="description" content="4.1 Joined Expressionsjoin是笛卡尔积，它要求两个表中的元组匹配，用于from子句中的子查询表达式。使用 join ... on子句可以指定任意的连接条件。on条件允许在参与连接的关系上设置通用的谓词。该谓词的写法与where子句谓词类似。 Natural join operations自然连接将表中具有相同名称的列进行匹配 Natural join特征：  关联的表具有">
 <meta property="og:type" content="article">
 <meta property="og:title" content="SQL中级">
 <meta property="og:url" content="http://example.com/2023/10/09/Notes/%E8%AF%BE%E7%A8%8B/%E6%95%B0%E6%8D%AE%E5%BA%93/SQL%E4%B8%AD%E7%BA%A7/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="4.1 Joined Expressionsjoin是笛卡尔积，它要求两个表中的元组匹配，用于from子句中的子查询表达式。使用 join ... on子句可以指定任意的连接条件。on条件允许在参与连接的关系上设置通用的谓词。该谓词的写法与where子句谓词类似。 Natural join operations自然连接将表中具有相同名称的列进行匹配 Natural join特征：  关联的表具有一">
+<meta property="og:description" content="4.1 Joined Expressionsjoin是笛卡尔积，它要求两个表中的元组匹配，用于from子句中的子查询表达式。使用 join ... on子句可以指定任意的连接条件。on条件允许在参与连接的关系上设置通用的谓词。该谓词的写法与where子句谓词类似。 Natural join operations自然连接将表中具有相同名称的列进行匹配 Natural join特征：  关联的表具有">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231016171429.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231009172709.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231009172943.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231009173144.png">
@@ -42,12 +43,12 @@
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231016170845.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231016170853.png">
 <meta property="article:published_time" content="2023-10-09T03:36:13.314Z">
-<meta property="article:modified_time" content="2023-10-16T09:09:30.008Z">
+<meta property="article:modified_time" content="2023-10-16T09:14:33.711Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="数据库">
 <meta property="article:tag" content="SQL">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231009172709.png">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231016171429.png">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
@@ -276,7 +277,8 @@
             
               <div class="markdown-body">
                 
-                <h3 id="4-1-Joined-Expressions"><a href="#4-1-Joined-Expressions" class="headerlink" title="4.1 Joined Expressions"></a>4.1 Joined Expressions</h3><p><code>join</code>是笛卡尔积，它要求两个表中的元组匹配，用于<code>from</code>子句中的子查询表达式。<br>使用 <code>join ... on</code>子句可以指定任意的连接条件。<code>on</code>条件允许在参与连接的关系上设置通用的谓词。该谓词的写法与where子句谓词类似。</p>
+                <p><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231016171429.png" srcset="/img/loading.gif" lazyload alt="image.png"></p>
+<h3 id="4-1-Joined-Expressions"><a href="#4-1-Joined-Expressions" class="headerlink" title="4.1 Joined Expressions"></a>4.1 Joined Expressions</h3><p><code>join</code>是笛卡尔积，它要求两个表中的元组匹配，用于<code>from</code>子句中的子查询表达式。<br>使用 <code>join ... on</code>子句可以指定任意的连接条件。<code>on</code>条件允许在参与连接的关系上设置通用的谓词。该谓词的写法与where子句谓词类似。</p>
 <h4 id="Natural-join-operations自然连接"><a href="#Natural-join-operations自然连接" class="headerlink" title="Natural join operations自然连接"></a>Natural join operations自然连接</h4><p>将表中具有相同名称的列进行匹配</p>
 <p>Natural join特征：</p>
 <ul>
@@ -375,11 +377,13 @@
 </li>
 <li><p>all privileges：所有可被允许的特权</p>
 </li>
+<li><p>references：创建外键的权限</p>
+</li>
 </ul>
 <h4 id="Revoking-Authorization撤销授权"><a href="#Revoking-Authorization撤销授权" class="headerlink" title="Revoking Authorization撤销授权"></a>Revoking Authorization撤销授权</h4><p><code>revoke</code>用于撤销授权<br><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231016170604.png" srcset="/img/loading.gif" lazyload alt="image.png"></p>
 <h4 id="Roles"><a href="#Roles" class="headerlink" title="Roles"></a>Roles</h4><p><code>create role</code> &lt;role name&gt;<br>可以向角色授予权限<br><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231016170845.png" srcset="/img/loading.gif" lazyload alt="image.png"></p>
 <p>可以向用户以及其他角色授予角色<br><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231016170853.png" srcset="/img/loading.gif" lazyload alt="image.png"></p>
-<h4 id="Authorization-on-Views"><a href="#Authorization-on-Views" class="headerlink" title="Authorization on Views"></a>Authorization on Views</h4>
+
                 
               </div>
             

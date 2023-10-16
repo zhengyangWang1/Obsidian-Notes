@@ -9,6 +9,8 @@ tags:
   - 数据库
 date:
 ---
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231016171429.png)
+
 ### 4.1 Joined Expressions
 `join`是笛卡尔积，它要求两个表中的元组匹配，用于`from`子句中的子查询表达式。
 使用 `join ... on`子句可以指定任意的连接条件。`on`条件允许在参与连接的关系上设置通用的谓词。该谓词的写法与where子句谓词类似。
@@ -173,6 +175,8 @@ assertion是一个谓词，表示我们希望数据库始终满足的条件
 - update：使用 SQL 更新语句进行更新的能力
 - delete：删除元组的功能
 - all privileges：所有可被允许的特权
+- references：创建外键的权限
+
 
 #### Revoking Authorization撤销授权
 `revoke`用于撤销授权
@@ -186,4 +190,4 @@ assertion是一个谓词，表示我们希望数据库始终满足的条件
 可以向用户以及其他角色授予角色
 ![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231016170853.png)
 
-#### Authorization on Views
+
