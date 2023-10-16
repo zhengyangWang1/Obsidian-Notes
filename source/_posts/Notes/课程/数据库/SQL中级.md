@@ -86,3 +86,16 @@ v1也可以依赖（depend on）v2，即 v2 -> v3 -> v2
 #### Referential Integrity参照完整性
 确保在一个relation中attribute的值也出现在另一个relation的attribute中
 参照完整性约束也称为子集依赖关系（subset dependency）
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231016104636.png)
+table $r_2$的外键$\alpha$参考table $r_1$的主键K1
+
+Cascading Actions级联操作：对$r_1$的主键K1的删除/更新操作将导致$r_2$的外键$\alpha$的删除/更新
+
+### 4.5 SQL Data Types and Schemas
+内置数据类型：
+- date:
+- time:
+- timestamp:
+- interval:
+
+#### Type Conversion
