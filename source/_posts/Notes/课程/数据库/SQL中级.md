@@ -143,7 +143,7 @@ assertion是一个谓词，表示我们希望数据库始终满足的条件
 ![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231016165326.png)
 
 ### 4.6 Index Definition in SQL
-许多查询参考表中的一小部分记录，读取每条记录以查找具有特定值的记录效率低下
+许多查询只需参考表中的一小部分记录，读取每条记录以查找具有特定值的记录效率低下
 建立索引，在查找时数据库可以只遍历索引而非遍历所有的值
 ![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231016111831.png)
 
