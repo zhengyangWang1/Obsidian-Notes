@@ -3,9 +3,10 @@ categories:
   - Notes
   - 课程
   - 操作系统
-title:
-date:
+title: Semaphores信号量
+date: 
 tags:
+  - 操作系统
 ---
 sleep(): 暂停线程，把状态改为BLOCKED
 weakup(): 唤醒另一个线程，把其状态改为READY
