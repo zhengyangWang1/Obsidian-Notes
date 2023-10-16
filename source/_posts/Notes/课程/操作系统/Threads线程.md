@@ -42,3 +42,7 @@ A和B会产生竞争，导致in的值不正确
 
 在两个线程共用一个lock时，也会出现竞争条件
 ![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231016080611.png)
+
+解决方法：Test and Set Lock（TSL）把参数变为真值，返回它的旧值
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231016081529.png)
+
