@@ -67,4 +67,18 @@ v1也可以依赖（depend on）v2，即 v2 -> v3 -> v2
 ![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231016100923.png)
 
 ### 4.4 Integrity Constraints完整性约束
+通过对数据的约束防止数据的意外损坏
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231016101652.png)
+- E.g. 1   the salary of manager should not be lower than $1000 in Employee
+- E.g. 2   table T (x, y, z ), z =x+y, z is a derived attributes from x and y.
+- E.g. 3   the student# for table student should not be null
+- E.g. 4   the age  of students should only be added
+- E.g. 5   when  employee tuples is modified,  new.sal > old.sal + 0.5\*age
+- E.g. 6   statistical  constraints
 
+#### Constraints on Single Relation
+完整性约束包括：
+- primary key
+- not null
+- unique
+- check(P), where P is a predicate
