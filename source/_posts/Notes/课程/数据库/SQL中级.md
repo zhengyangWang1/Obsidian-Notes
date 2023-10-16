@@ -64,4 +64,7 @@ v1也可以依赖（depend on）v2，即 v2 -> v3 -> v2
 事务必须以下列语句之一结束：
 - Commit work
 - Rollback work
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231016100923.png)
+
+### 4.4 Integrity Constraints完整性约束
 
