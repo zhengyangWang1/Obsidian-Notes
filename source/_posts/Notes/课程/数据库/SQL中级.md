@@ -123,3 +123,18 @@ XML：
 `check`和`assertion`可以定义复杂的完整性约束
 
 #### Index Definition in SQL
+建立索引
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231016111831.png)
+在查找时数据库可以只遍历索引而非遍历所有的值
+
+#### Authorization
+对数据库各部分的授权形式包括：
+- Read
+- Insert
+- Update
+- Delete
+对schema的授权：
+- resources
+- alteration
+- drop
+- index
