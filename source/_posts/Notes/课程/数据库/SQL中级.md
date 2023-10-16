@@ -109,3 +109,17 @@ blob：二进制大对象
 clob：字符大对象
 ![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231016110329.png)
 XML：
+
+#### User-defined Types
+
+
+#### Schemas, Catalogs, and Environments
+现代数据库系统的三级层次结构
+- cactalogs（全文目录）
+- schemas（架构）
+- SQL objects
+
+#### Check Conditions and Assertions检查和评估
+`check`和`assertion`可以定义复杂的完整性约束
+
+#### Index Definition in SQL
