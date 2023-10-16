@@ -54,3 +54,4 @@ Natural join特征：
 v1可以直接依赖（depend directly on）v2，即 v2 ->  v1
 v1也可以依赖（depend on）v2，即 v2 -> v3 -> v2
 如果视图依赖于自身，则称为递归关系
+
