@@ -124,6 +124,10 @@ XML数据类型
 
 #### User-defined Types/Domains
 子句`create type`可以用于创建用户自定义类型
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231016165050.png)
+
+`create domain`可以创建用户定义域类型
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231016165114.png)
 
 #### Schemas, Catalogs, and Environments
 现代数据库系统的三级层次结构
@@ -133,20 +137,26 @@ XML数据类型
 
 #### Check Conditions and Assertions检查和评估
 `check`和`assertion`可以定义复杂的完整性约束
+assertion是一个谓词，表示我们希望数据库始终满足的条件
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231016165326.png)
 
-#### Index Definition in SQL
-建立索引
+### 4.6 Index Definition in SQL
+许多查询参考表中的一小部分记录，读取每条记录以查找具有特定值的记录效率低下
+建立索引，在查找时数据库可以只遍历索引而非遍历所有的值
 ![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231016111831.png)
-在查找时数据库可以只遍历索引而非遍历所有的值
 
-#### Authorization
+
+### 4.7 Authorization
 对数据库各部分的授权形式包括：
-- Read
-- Insert
-- Update
-- Delete
+- Read：允许读取数据，但不允许修改数据
+- Insert：允许插入新数据，但不允许修改现有数据
+- Update：允许修改，但不允许删除数据
+- Delete：允许删除数据
 对schema的授权：
-- resources
-- alteration
-- drop
-- index
+- resources：允许创建新关系表
+- alteration：允许在关系表中添加或删除属性
+- drop：允许删除关系表
+- index：允许创建索引
+
+#### Authorization Specification授权规范
+`grant`语句用于授予权限

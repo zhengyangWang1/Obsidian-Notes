@@ -32,9 +32,12 @@
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231016104636.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231016164651.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231016164842.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231016165050.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231016165114.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231016165326.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231016111831.png">
 <meta property="article:published_time" content="2023-10-09T03:36:13.314Z">
-<meta property="article:modified_time" content="2023-10-16T08:49:50.489Z">
+<meta property="article:modified_time" content="2023-10-16T08:59:52.816Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="数据库">
 <meta property="article:tag" content="SQL">
@@ -215,7 +218,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          2.4k 字
+          2.6k 字
         
       </span>
     
@@ -226,7 +229,7 @@
         
         
         
-          20 分钟
+          22 分钟
         
       </span>
     
@@ -333,26 +336,28 @@
 <p>Data Type Transition: <code>CAST</code> 和 <code>CONVERT</code></p>
 <h4 id="Default-Values"><a href="#Default-Values" class="headerlink" title="Default Values"></a>Default Values</h4><p>在创建table时设置属性的默认值，可以在插入tuple时不设置该属性的值<br><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231016164651.png" srcset="/img/loading.gif" lazyload alt="image.png"></p>
 <h4 id="Large-Object-Types"><a href="#Large-Object-Types" class="headerlink" title="Large-Object Types"></a>Large-Object Types</h4><p>blob：二进制大对象<br>clob：字符大对象<br>XML数据类型<br><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231016164842.png" srcset="/img/loading.gif" lazyload alt="image.png"></p>
-<h4 id="User-defined-Types-Domains"><a href="#User-defined-Types-Domains" class="headerlink" title="User-defined Types&#x2F;Domains"></a>User-defined Types&#x2F;Domains</h4><p>子句<code>create type</code>可以用于创建用户自定义类型</p>
+<h4 id="User-defined-Types-Domains"><a href="#User-defined-Types-Domains" class="headerlink" title="User-defined Types&#x2F;Domains"></a>User-defined Types&#x2F;Domains</h4><p>子句<code>create type</code>可以用于创建用户自定义类型<br><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231016165050.png" srcset="/img/loading.gif" lazyload alt="image.png"></p>
+<p><code>create domain</code>可以创建用户定义域类型<br><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231016165114.png" srcset="/img/loading.gif" lazyload alt="image.png"></p>
 <h4 id="Schemas-Catalogs-and-Environments"><a href="#Schemas-Catalogs-and-Environments" class="headerlink" title="Schemas, Catalogs, and Environments"></a>Schemas, Catalogs, and Environments</h4><p>现代数据库系统的三级层次结构</p>
 <ul>
 <li>cactalogs（全文目录）</li>
 <li>schemas（架构）</li>
 <li>SQL objects</li>
 </ul>
-<h4 id="Check-Conditions-and-Assertions检查和评估"><a href="#Check-Conditions-and-Assertions检查和评估" class="headerlink" title="Check Conditions and Assertions检查和评估"></a>Check Conditions and Assertions检查和评估</h4><p><code>check</code>和<code>assertion</code>可以定义复杂的完整性约束</p>
-<h4 id="Index-Definition-in-SQL"><a href="#Index-Definition-in-SQL" class="headerlink" title="Index Definition in SQL"></a>Index Definition in SQL</h4><p>建立索引<br><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231016111831.png" srcset="/img/loading.gif" lazyload alt="image.png"><br>在查找时数据库可以只遍历索引而非遍历所有的值</p>
-<h4 id="Authorization"><a href="#Authorization" class="headerlink" title="Authorization"></a>Authorization</h4><p>对数据库各部分的授权形式包括：</p>
+<h4 id="Check-Conditions-and-Assertions检查和评估"><a href="#Check-Conditions-and-Assertions检查和评估" class="headerlink" title="Check Conditions and Assertions检查和评估"></a>Check Conditions and Assertions检查和评估</h4><p><code>check</code>和<code>assertion</code>可以定义复杂的完整性约束<br>assertion是一个谓词，表示我们希望数据库始终满足的条件<br><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231016165326.png" srcset="/img/loading.gif" lazyload alt="image.png"></p>
+<h3 id="4-6-Index-Definition-in-SQL"><a href="#4-6-Index-Definition-in-SQL" class="headerlink" title="4.6 Index Definition in SQL"></a>4.6 Index Definition in SQL</h3><p>许多查询参考表中的一小部分记录，读取每条记录以查找具有特定值的记录效率低下<br>建立索引，在查找时数据库可以只遍历索引而非遍历所有的值<br><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231016111831.png" srcset="/img/loading.gif" lazyload alt="image.png"></p>
+<h3 id="4-7-Authorization"><a href="#4-7-Authorization" class="headerlink" title="4.7 Authorization"></a>4.7 Authorization</h3><p>对数据库各部分的授权形式包括：</p>
 <ul>
-<li>Read</li>
-<li>Insert</li>
-<li>Update</li>
-<li>Delete<br>对schema的授权：</li>
-<li>resources</li>
-<li>alteration</li>
-<li>drop</li>
-<li>index</li>
+<li>Read：允许读取数据，但不允许修改数据</li>
+<li>Insert：允许插入新数据，但不允许修改现有数据</li>
+<li>Update：允许修改，但不允许删除数据</li>
+<li>Delete：允许删除数据<br>对schema的授权：</li>
+<li>resources：允许创建新关系表</li>
+<li>alteration：允许在关系表中添加或删除属性</li>
+<li>drop：允许删除关系表</li>
+<li>index：允许创建索引</li>
 </ul>
+<h4 id="Authorization-Specification授权规范"><a href="#Authorization-Specification授权规范" class="headerlink" title="Authorization Specification授权规范"></a>Authorization Specification授权规范</h4><p><code>grant</code>语句用于授予权限</p>
 
                 
               </div>
