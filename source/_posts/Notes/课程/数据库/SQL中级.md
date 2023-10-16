@@ -85,3 +85,4 @@ v1也可以依赖（depend on）v2，即 v2 -> v3 -> v2
 
 #### Referential Integrity参照完整性
 确保在一个relation中attribute的值也出现在另一个relation的attribute中
+参照完整性约束也称为子集依赖关系（subset dependency）
