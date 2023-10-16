@@ -99,19 +99,31 @@ Cascading Actions级联操作：对$r_1$的主键K1的删除/更新操作将导�
 - interval: 时间间隔
 
 #### Type Conversion类型转换
-cast <>
+`cast` \<e> `as` \<t>
+将字符串e转换为类型t
+
+`extract` value d `from` day or time
+对于日期或时间d，提取其时间或日期字段
+
+#### Formatting Functions格式化函数
+数据可能需要以不同的类型显示：
+- 以特定位数显示数字
+- 以特定格式显示数据
+
+Data Type Transition: `CAST` 和 `CONVERT`
 
 #### Default Values
 在创建table时设置属性的默认值，可以在插入tuple时不设置该属性的值
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231016164651.png)
 
 #### Large-Object Types
 blob：二进制大对象
 clob：字符大对象
-![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231016110329.png)
-XML：
+XML数据类型
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231016164842.png)
 
-#### User-defined Types
-
+#### User-defined Types/Domains
+子句`create type`可以用于创建用户自定义类型
 
 #### Schemas, Catalogs, and Environments
 现代数据库系统的三级层次结构

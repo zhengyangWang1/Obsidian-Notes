@@ -30,10 +30,11 @@
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231016100923.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231016101652.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231016104636.png">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231016110329.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231016164651.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231016164842.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231016111831.png">
 <meta property="article:published_time" content="2023-10-09T03:36:13.314Z">
-<meta property="article:modified_time" content="2023-10-16T08:40:36.031Z">
+<meta property="article:modified_time" content="2023-10-16T08:49:50.489Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="数据库">
 <meta property="article:tag" content="SQL">
@@ -214,7 +215,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          2.2k 字
+          2.4k 字
         
       </span>
     
@@ -225,7 +226,7 @@
         
         
         
-          18 分钟
+          20 分钟
         
       </span>
     
@@ -322,10 +323,18 @@
 <li>timestamp: date+time</li>
 <li>interval: 时间间隔</li>
 </ul>
-<h4 id="Type-Conversion类型转换"><a href="#Type-Conversion类型转换" class="headerlink" title="Type Conversion类型转换"></a>Type Conversion类型转换</h4><p>cast &lt;&gt;</p>
-<h4 id="Default-Values"><a href="#Default-Values" class="headerlink" title="Default Values"></a>Default Values</h4><p>在创建table时设置属性的默认值，可以在插入tuple时不设置该属性的值</p>
-<h4 id="Large-Object-Types"><a href="#Large-Object-Types" class="headerlink" title="Large-Object Types"></a>Large-Object Types</h4><p>blob：二进制大对象<br>clob：字符大对象<br><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231016110329.png" srcset="/img/loading.gif" lazyload alt="image.png"><br>XML：</p>
-<h4 id="User-defined-Types"><a href="#User-defined-Types" class="headerlink" title="User-defined Types"></a>User-defined Types</h4><h4 id="Schemas-Catalogs-and-Environments"><a href="#Schemas-Catalogs-and-Environments" class="headerlink" title="Schemas, Catalogs, and Environments"></a>Schemas, Catalogs, and Environments</h4><p>现代数据库系统的三级层次结构</p>
+<h4 id="Type-Conversion类型转换"><a href="#Type-Conversion类型转换" class="headerlink" title="Type Conversion类型转换"></a>Type Conversion类型转换</h4><p><code>cast</code> &lt;e&gt; <code>as</code> &lt;t&gt;<br>将字符串e转换为类型t</p>
+<p><code>extract</code> value d <code>from</code> day or time<br>对于日期或时间d，提取其时间或日期字段</p>
+<h4 id="Formatting-Functions格式化函数"><a href="#Formatting-Functions格式化函数" class="headerlink" title="Formatting Functions格式化函数"></a>Formatting Functions格式化函数</h4><p>数据可能需要以不同的类型显示：</p>
+<ul>
+<li>以特定位数显示数字</li>
+<li>以特定格式显示数据</li>
+</ul>
+<p>Data Type Transition: <code>CAST</code> 和 <code>CONVERT</code></p>
+<h4 id="Default-Values"><a href="#Default-Values" class="headerlink" title="Default Values"></a>Default Values</h4><p>在创建table时设置属性的默认值，可以在插入tuple时不设置该属性的值<br><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231016164651.png" srcset="/img/loading.gif" lazyload alt="image.png"></p>
+<h4 id="Large-Object-Types"><a href="#Large-Object-Types" class="headerlink" title="Large-Object Types"></a>Large-Object Types</h4><p>blob：二进制大对象<br>clob：字符大对象<br>XML数据类型<br><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231016164842.png" srcset="/img/loading.gif" lazyload alt="image.png"></p>
+<h4 id="User-defined-Types-Domains"><a href="#User-defined-Types-Domains" class="headerlink" title="User-defined Types&#x2F;Domains"></a>User-defined Types&#x2F;Domains</h4><p>子句<code>create type</code>可以用于创建用户自定义类型</p>
+<h4 id="Schemas-Catalogs-and-Environments"><a href="#Schemas-Catalogs-and-Environments" class="headerlink" title="Schemas, Catalogs, and Environments"></a>Schemas, Catalogs, and Environments</h4><p>现代数据库系统的三级层次结构</p>
 <ul>
 <li>cactalogs（全文目录）</li>
 <li>schemas（架构）</li>
