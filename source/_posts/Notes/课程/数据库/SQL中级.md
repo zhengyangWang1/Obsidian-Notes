@@ -81,4 +81,7 @@ v1也可以依赖（depend on）v2，即 v2 -> v3 -> v2
 - primary key
 - not null
 - unique
-- check(P), where P is a predicate
+- check(P), where P is a predicate（谓词）
+
+#### Referential Integrity参照完整性
+确保在一个relation中attribute的值也出现在另一个relation的attribute中
