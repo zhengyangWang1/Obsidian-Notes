@@ -93,13 +93,13 @@ Cascading Actions级联操作：对$r_1$的主键K1的删除/更新操作将导�
 
 ### 4.5 SQL Data Types and Schemas
 内置数据类型：
-- date:
-- time:
-- timestamp:
-- interval:
+- date: 包含年月日
+- time: 时分秒
+- timestamp: date+time
+- interval: 时间间隔
 
 #### Type Conversion类型转换
-cast和convert
+cast <>
 
 #### Default Values
 在创建table时设置属性的默认值，可以在插入tuple时不设置该属性的值
