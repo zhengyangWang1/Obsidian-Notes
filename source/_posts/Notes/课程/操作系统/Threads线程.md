@@ -49,3 +49,8 @@ A和B会产生竞争，导致in的值不正确
 ![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231016081529.png)
 
 ![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231016082444.png)
+
+Compare-and-swap lock
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231016083314.png)
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231016083325.png)
+当线程A进行比较时，返回true，lck被置为true，线程A得到lock，此时线程B进行比较，返回false，进入循环，直到A进行release
