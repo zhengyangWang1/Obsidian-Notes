@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "source/_posts/Notes/TODO.md",
+                "file": "source/_posts/Notes/课程/操作系统/Threads线程.md",
                 "mode": "source",
                 "source": false
               }
@@ -82,7 +82,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 271.5
+    "width": 271.5,
+    "collapsed": true
   },
   "right": {
     "id": "45464171d8013cd8",
@@ -98,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "source/_posts/Notes/TODO.md",
+                "file": "source/_posts/Notes/课程/操作系统/Threads线程.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "source/_posts/Notes/TODO.md",
+                "file": "source/_posts/Notes/课程/操作系统/Threads线程.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "source/_posts/Notes/TODO.md"
+                "file": "source/_posts/Notes/课程/操作系统/Threads线程.md"
               }
             }
           },
@@ -166,7 +167,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "source/_posts/Notes/TODO.md"
+                "file": "source/_posts/Notes/课程/操作系统/Threads线程.md"
               }
             }
           }
@@ -191,6 +192,9 @@
   },
   "active": "a9edd7e510a84765",
   "lastOpenFiles": [
+    "source/_posts/Notes/课程/操作系统/Blitz软件.md",
+    "source/_posts/Notes/课程/操作系统/操作系统.md",
+    "source/_posts/Notes/TODO.md",
     "source/_posts/Notes/课程/软件工程/大作业 酒店温控计费系统 规划.md",
     "public/categories/Notes/编程/Vue/index.html",
     "public/categories/Notes/编程/Vue",
@@ -215,8 +219,6 @@
     "source/_posts/Notes/编程/Django/First Class.md",
     "source/_posts/Notes/课程/数据库/SQL基础.md",
     "source/_posts/Notes/课程/数据库/SQL中级.md",
-    "source/_posts/Notes/课程/操作系统/操作系统.md",
-    "source/_posts/Notes/课程/操作系统/Blitz软件.md",
     "source/_posts/Notes/课程/操作系统/Threads线程.md",
     "source/_posts/Notes/课程/数据库/数据库.md",
     "source/_posts/Notes/编程/MySQL/通过MySQL Workbench操作.md",
