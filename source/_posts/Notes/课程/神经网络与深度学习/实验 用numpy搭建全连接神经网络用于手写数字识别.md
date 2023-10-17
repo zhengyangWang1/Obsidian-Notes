@@ -11,6 +11,43 @@ date:
 ---
 结合代码和公式对全连接层的实现进行分析
 
+### 全连接层
+```
+class Net(object):  
+    def __init__(self, num_input, num_output):  
+        self.num_input = num_input  
+        self.num_output = num_output  
+        self.w = np.random.normal(loc=0.0, scale=0.01, size=(self.num_input, self.num_output))  # 随机初始化参数 假设为(n, m)  
+        self.bias = np.zeros([1, self.num_output])  # 初始化为0  (1, m)  
+        self.input_data = np.zeros(0)  
+        self.output_data = np.zeros(0)  
+        self.grad_w = np.zeros(0)  
+        self.grad_b = np.zeros(0)  
+  
+    def forward(self, input_data):  
+        self.input_data = input_data  # 假设input_data = (1, n)  
+        self.output_data = np.matmul(self.input_data, self.w) + self.bias  # (1, n) * (n, m) = (1, m) m为下一层的输入维度  
+        return self.output_data  
+  
+    def backward(self, grad):  
+        self.grad_w = np.dot(self.input_data.T, grad)  # (n, 1) * (1, m) = (n, m)  
+        self.grad_b = np.sum(grad, axis=0)  
+        next_grad = np.dot(grad, self.w.T)  # (1, m) * (m, n) = (1, n)  
+        return next_grad  
+  
+    def backward_with_l2(self, grad, lamb, batch_size):  
+        self.grad_w = np.dot(self.input_data.T, grad) + (lamb / batch_size) * self.w  
+        self.grad_b = np.sum(grad, axis=0)  
+        next_grad = np.dot(grad, self.w.T)  
+        return next_grad  
+  
+    def update(self, lr):  
+        self.w = self.w - lr * self.grad_w  
+        self.bias = self.bias - lr * self.grad_b
+```
+
+定义一个类，在其中实现的功能有：
+
 ### 实验结果
 
 ![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231011222110.png)
