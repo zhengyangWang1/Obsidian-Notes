@@ -47,7 +47,13 @@ class Net(object):
 ```
 
 定义一个类，在其中实现的功能有：
+- 初始化：在创建一层全连接层时，需要初始化w和b，w为（m，n）其中m为输入数据的维度，n为下一层的输入维度
 
+- 前馈函数：
+
+- 反向传播：
+
+- 更新参数：
 ### 实验结果
 
 ![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231011222110.png)
