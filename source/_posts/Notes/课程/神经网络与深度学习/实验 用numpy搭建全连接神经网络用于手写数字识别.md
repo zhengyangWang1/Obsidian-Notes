@@ -9,7 +9,7 @@ tags:
   - 神经网络
 date:
 ---
-结合代码和公式对全连接层的实现进行分析
+结合代码和公式对全连接神经网络的实现进行分析
 
 ### 全连接层
 ```
@@ -52,9 +52,56 @@ class Net(object):
 
 - 前馈函数：在前馈函数中实现上面的公式
 
-- 反向传播：需要根据损失更新参数w和b的值，因此分别对w和b求偏导，
+- 反向传播：需要根据损失更新参数w和b的值，因此分别对w和b求偏导
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231018001633.png)
 
-- 更新参数：
+
+- 更新参数：在原来的参数上减去梯度方向得到新的参数，实验中往往需要学习率来控制更新的程度
+
+### 激活函数
+```
+class ReLU(object):  
+  
+    def __init__(self):  
+        self.input_data = np.zeros(0)  
+  
+    def forward(self, input_data):  
+        self.input_data = input_data  
+        output_data = np.maximum(0, input_data)  # (1, n)  
+        return output_data  
+  
+    def backward(self, grad):  
+        next_grad = grad  # (1, n) * (1, n) 逐元素相乘  
+        next_grad[self.input_data < 0] = 0  
+        return next_grad
+```
+激活函数同样需要两个，一个实现前向传播，一个实现反向传播
+
+### Softmax+交叉熵损失
+```
+class Softmax(object):  
+    def __init__(self):  
+        self.prob = np.zeros(0)  
+        self.batch_size = []  
+        self.label = []  
+  
+    def forward(self, input_data):  
+        input_max = np.max(input_data, axis=1, keepdims=True)  
+        input_exp = np.exp(input_data - input_max)  
+        self.prob = input_exp / np.sum(input_exp, axis=1, keepdims=True)  
+        return self.prob  
+  
+    def get_loss(self, label):  # 计算损失  
+        self.label = label  
+        self.batch_size = self.prob.shape[0]  
+        loss = -np.sum(label * np.log(self.prob + 1e-7)) / self.batch_size  
+        return loss  
+  
+    def backward(self):  
+        grad = (self.prob - self.label) / self.batch_size  
+        return grad
+```
+在
 ### 实验结果
 
 ![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231011222110.png)
