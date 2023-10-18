@@ -57,6 +57,12 @@ class Net(object):
 - 反向传播：需要根据损失更新参数w和b的值，因此分别对w和b求偏导
 ![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231018001633.png)
 
+前一层的梯度可以根据后一层的梯度得到:
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231019001328.png)
+根据上面这个公式，可以发现，**前一层可以使用后一层的误差项来得到自己的误差项**，而不需要从最后用链式法则进行推导。因此称为反向**传播**。
+推导过程如下：
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231019001444.png)
+
 
 - 更新参数：在原来的参数上减去梯度方向得到新的参数，实验中往往需要学习率来控制更新的程度
 
