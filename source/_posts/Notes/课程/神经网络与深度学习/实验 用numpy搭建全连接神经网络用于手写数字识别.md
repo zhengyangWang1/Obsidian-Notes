@@ -101,7 +101,7 @@ class Softmax(object):
         grad = (self.prob - self.label) / self.batch_size  
         return grad
 ```
-在
+在Softmax中除了实现前向和后向传播外，添加了用交叉熵计算损失的函数，这是因为在softmax后加交叉熵，反向传播的公式会更简便。
 ### 实验结果
 
 ![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231011222110.png)
