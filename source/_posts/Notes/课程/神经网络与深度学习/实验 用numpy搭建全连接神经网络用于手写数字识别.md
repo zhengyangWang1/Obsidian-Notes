@@ -13,6 +13,38 @@ date:
 [入门讲解：使用numpy实现简单的神经网络（BP算法）-CSDN博客](https://blog.csdn.net/weixin_44023658/article/details/105694079)
 结合代码和公式对全连接神经网络的实现进行分析
 
+### 数据处理
+```
+# 标准化处理  
+if normalize:  
+    for _ in ('train_img', 'test_img'):  
+        dataset[_] = dataset[_].astype(np.float32) / 255.0  
+# one_hot_label处理  
+if one_hot_label:  
+    for _ in ('train_label', 'test_label'):  
+        t = np.zeros((dataset[_].size, 10))  
+        for idx, row in enumerate(t):  
+            row[dataset[_][idx]] = 1  
+        dataset[_] = t  
+# 展平处理  
+if flatten:  
+    for _ in ('train_img', 'test_img'):  
+        dataset[_] = dataset[_].reshape(-1, 784)  
+# 划分验证集  
+if val_data:  
+    x_val_data, x_test_data = np.split(dataset['test_img'], 2)  
+    y_val_data, y_test_data = np.split(dataset['test_label'], 2)  
+    return dataset['train_img'], dataset['train_label'], x_val_data, y_val_data, x_test_data, y_test_data
+```
+
+-  标准化处理：将数据归一化
+
+- one hot处理：将数据处理成one hot形式，即维度扩充为与数据类别相同，数据为哪个类别，其相应维度上的值为1，否则为0
+
+- 展平处理：将28\*28的图像转换成一个维度上784的大小
+
+- 划分验证集：原数据集为训练集：测试集60000：10000，把测试集中的5000条作为验证集
+
 ### 全连接层
 ```
 class Net(object):  
@@ -111,7 +143,7 @@ class Softmax(object):
 ```
 在Softmax中除了实现前向和后向传播外，添加了用交叉熵计算损失的函数，这是因为在softmax后加交叉熵，反向传播的公式会更简便。
 
-### MSE损失
+### MSE损失（Mean squared error均方误差）
 ```
 def MSE_loss(self, y_pre, y):  
     loss = 0.5 * np.sum((y_pre - y) ** 2) / batch_size  
@@ -150,4 +182,7 @@ def update(self, lr):
 ```
 ### 实验结果
 使用mini-batch GD，使用效果较好的模型参数
-![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231019002723.png)
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231019002745.png)
+得到实验结果如下：
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231019002819.png)
+最终测试集准确率稳定在98%以上。
