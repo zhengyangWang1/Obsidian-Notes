@@ -9,6 +9,8 @@ tags:
   - 神经网络
 date:
 ---
+[【代码+原理讲解】使用Numpy实现一个简单的四层全连接神经网络（手写数字识别，mnist数据集，正确率98.58%） - 知乎](https://zhuanlan.zhihu.com/p/377634925)
+[入门讲解：使用numpy实现简单的神经网络（BP算法）-CSDN博客](https://blog.csdn.net/weixin_44023658/article/details/105694079)
 结合代码和公式对全连接神经网络的实现进行分析
 
 ### 全连接层
