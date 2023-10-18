@@ -110,22 +110,44 @@ class Softmax(object):
         return grad
 ```
 在Softmax中除了实现前向和后向传播外，添加了用交叉熵计算损失的函数，这是因为在softmax后加交叉熵，反向传播的公式会更简便。
+
+### MSE损失
+```
+def MSE_loss(self, y_pre, y):  
+    loss = 0.5 * np.sum((y_pre - y) ** 2) / batch_size  
+    grad = (y_pre - y) / batch_size  
+    return loss, grad
+```
+
+### 整体的传播
+```
+def forward(self, input_data):  # 神经网络的前向传播  
+    h1 = self.fc1.forward(input_data)  
+    h1 = self.relu1.forward(h1)  
+    # h1 = self.sigmoid1.forward(h1)  
+    h2 = self.fc2.forward(h1)  
+    h2 = self.relu2.forward(h2)  
+    # h2 = self.sigmoid2.forward(h2)  
+    h3 = self.fc3.forward(h2)  
+    # prob = self.softmax.forward(h1)  
+    return h3  
+  
+def backward(self, y_pre, y):  # 神经网络的反向传播  
+    _, grad = self.MSE_loss(y_pre, y)  
+    # grad = self.softmax.backward()  
+    dh3 = self.fc3.backward(grad)  
+    dh2 = self.relu2.backward(dh3)  
+    # dh2 = self.sigmoid2.backward(dh3)  
+    dh2 = self.fc2.backward(dh2)  
+    dh1 = self.relu1.backward(dh2)  
+    # dh1 = self.sigmoid1.backward(dh2)  
+    dh1 = self.fc1.backward(dh1)
+    
+def update(self, lr):  
+    self.fc1.update(lr)  
+    self.fc2.update(lr)  
+    self.fc3.update(lr)
+```
 ### 实验结果
-
-![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231011222110.png)
-
-保持学习率lr=0.1不变，增大batchsize效果下降
-![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231011222928.png)
-
-减少batchsize效果上升，在训练时可以明显发现loss下降的更快，模型收敛更快
-![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231011222600.png)
-
-
-保持batchsize=20不变，增大lr
-![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231011224112.png)
-
-![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231011225231.png)
-
-![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231011225851.png)
-
-实验准确率最终达到98%左右
+使用mini-batch GD，使用效果较好的模型参数
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231019002723.png)
