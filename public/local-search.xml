@@ -8,8 +8,18 @@
     <link href="/2023/10/18/Notes/%E8%AF%BE%E7%A8%8B/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/Monitor%E7%AE%A1%E7%A8%8B/"/>
     <url>/2023/10/18/Notes/%E8%AF%BE%E7%A8%8B/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/Monitor%E7%AE%A1%E7%A8%8B/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="Monitor"><a href="#Monitor" class="headerlink" title="Monitor"></a>Monitor</h3><p><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231018102847.png" alt="image.png"></p><h3 id="Condition-variables"><a href="#Condition-variables" class="headerlink" title="Condition variables"></a>Condition variables</h3><p>condition是一个类，实现了以下函数：</p><ul><li>condition.wait()</li><li>condition.signal()</li><li>condition.broadcast()</li></ul>]]></content>
     
+    
+    <categories>
+      
+      <category>Notes</category>
+      
+      <category>课程</category>
+      
+      <category>操作系统</category>
+      
+    </categories>
     
     
     <tags>
