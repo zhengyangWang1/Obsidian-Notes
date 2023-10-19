@@ -28,7 +28,7 @@
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231019084544.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231019084557.png">
 <meta property="article:published_time" content="2023-10-19T00:11:43.144Z">
-<meta property="article:modified_time" content="2023-10-19T00:50:40.867Z">
+<meta property="article:modified_time" content="2023-10-19T00:58:52.000Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="深度学习">
 <meta name="twitter:card" content="summary_large_image">
@@ -208,7 +208,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          292 字
+          444 字
         
       </span>
     
@@ -219,7 +219,7 @@
         
         
         
-          3 分钟
+          4 分钟
         
       </span>
     
@@ -279,10 +279,19 @@
 <li>防止深度网络中图像被动持续减小</li>
 <li>强化图像边缘信息<br><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231019084544.png" srcset="/img/loading.gif" lazyload alt="image.png"><br><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231019084557.png" srcset="/img/loading.gif" lazyload alt="image.png"></li>
 </ul>
-<h3 id="池化层"><a href="#池化层" class="headerlink" title="池化层"></a>池化层</h3><p>Max Pooling &#x2F; Avg Pooling &#x2F; L2 Pooling<br>提取卷积核中的最大值&#x2F;平均值&#x2F;L2范数</p>
+<h4 id="池化层"><a href="#池化层" class="headerlink" title="池化层"></a>池化层</h4><p>Max Pooling &#x2F; Avg Pooling &#x2F; L2 Pooling<br>提取卷积核中的最大值&#x2F;平均值&#x2F;L2范数</p>
 <ul>
 <li>主动减小图片尺寸，从而减少参数的数量和计算量，控制过拟合</li>
 <li>不引入额外参数</li>
+</ul>
+<h4 id="全连接层"><a href="#全连接层" class="headerlink" title="全连接层"></a>全连接层</h4><ul>
+<li>卷积层和池化层构成特征提取器，全连接层则为分类器</li>
+<li>将特征提取得到的高维特征图映射成一维特征向量，该特征向量包含 所有特征信息，可转化为各个类别的概率。</li>
+</ul>
+<h4 id="softmax"><a href="#softmax" class="headerlink" title="softmax"></a>softmax</h4><ul>
+<li>通常作为网络的最后一层，对输出进行归一化，输出分类概率</li>
+<li>凸显其中最大的值并抑制远低于最大值的其他分量</li>
+<li>Softmax层输入、输出数据规模相同</li>
 </ul>
 
                 
