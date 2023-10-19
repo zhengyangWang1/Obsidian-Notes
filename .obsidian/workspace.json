@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 271.5
+    "width": 271.5,
+    "collapsed": true
   },
   "right": {
     "id": "45464171d8013cd8",
@@ -178,6 +179,9 @@
   },
   "active": "a9edd7e510a84765",
   "lastOpenFiles": [
+    "public/2023/10/19/Notes/课程/神经网络与深度学习/循环神经网络/index.html",
+    "public/2023/10/19/Notes/课程/神经网络与深度学习/循环神经网络",
+    "public/2023/10/19/Notes/课程/神经网络与深度学习",
     "source/_posts/Notes/课程/智能计算系统/深度学习.md",
     "source/_posts/Notes/课程/神经网络与深度学习/循环神经网络.md",
     "public/2023/10/19/Notes/课程/智能计算系统/深度学习/index.html",
@@ -196,8 +200,6 @@
     "source/_posts/Notes/课程/操作系统/Threads线程.md",
     "public/2023/10/18/Notes/课程/操作系统/Monitor管程/index.html",
     "public/2023/10/18/Notes/课程/操作系统/Monitor管程",
-    "public/2023/10/18/Notes/课程/操作系统",
-    "public/2023/10/18/Notes/课程",
     "source/_posts/Notes/课程/操作系统/Blitz软件.md",
     "source/_posts/Notes/课程/操作系统/操作系统.md",
     "source/_posts/Notes/课程/数据库/SQL中级.md",
@@ -213,7 +215,6 @@
     "source/_posts/Notes/编程/Django/First Class.md",
     "source/_posts/Notes/编程/MySQL/通过MySQL Workbench操作.md",
     "source/_posts/Notes/编程/MySQL/MySQL基本使用.md",
-    "source/_posts/Notes/编程/MySQL/安装MySQL.md",
     "public/img/police_beian.png",
     "public/img/loading.gif",
     "public/img/fluid.png",
