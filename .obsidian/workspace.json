@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "d77ec53774162764",
+        "id": "c534e57e3eb90158",
         "type": "tabs",
         "children": [
           {
-            "id": "b5547d37ebcbc3dd",
+            "id": "b0b4f280110024d1",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -177,9 +177,12 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "b5547d37ebcbc3dd",
+  "active": "a096be5067d8f57d",
   "lastOpenFiles": [
     "source/_posts/Notes/课程/神经网络与深度学习/循环神经网络.md",
+    "source/_posts/Notes/课程/神经网络与深度学习/神经网络与深度学习.md",
+    "source/_posts/Notes/课程/神经网络与深度学习/实验 用numpy搭建全连接神经网络用于手写数字识别.md",
+    "source/_posts/Notes/课程/神经网络与深度学习/前馈神经网络.md",
     "public/2023/10/19/Notes/课程/神经网络与深度学习/循环神经网络/index.html",
     "public/2023/10/19/Notes/课程/神经网络与深度学习/循环神经网络",
     "public/2023/10/19/Notes/课程/神经网络与深度学习",
@@ -192,9 +195,6 @@
     "public/2023/10/19",
     "source/_posts/Notes/课程/智能计算系统/神经网络基础.md",
     "source/_posts/Notes/课程/智能计算系统/智能计算系统.md",
-    "source/_posts/Notes/课程/神经网络与深度学习/实验 用numpy搭建全连接神经网络用于手写数字识别.md",
-    "source/_posts/Notes/课程/神经网络与深度学习/前馈神经网络.md",
-    "source/_posts/Notes/课程/神经网络与深度学习/神经网络与深度学习.md",
     "source/_posts/Notes/课程/操作系统/Monitor管程.md",
     "source/_posts/Notes/课程/操作系统/Semaphores信号量.md",
     "source/_posts/Notes/课程/操作系统/Threads线程.md",
