@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "28cb6c2749c04f8d",
+        "id": "d77ec53774162764",
         "type": "tabs",
         "children": [
           {
-            "id": "a9edd7e510a84765",
+            "id": "b5547d37ebcbc3dd",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -177,13 +177,13 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "a9edd7e510a84765",
+  "active": "b5547d37ebcbc3dd",
   "lastOpenFiles": [
+    "source/_posts/Notes/课程/神经网络与深度学习/循环神经网络.md",
     "public/2023/10/19/Notes/课程/神经网络与深度学习/循环神经网络/index.html",
     "public/2023/10/19/Notes/课程/神经网络与深度学习/循环神经网络",
     "public/2023/10/19/Notes/课程/神经网络与深度学习",
     "source/_posts/Notes/课程/智能计算系统/深度学习.md",
-    "source/_posts/Notes/课程/神经网络与深度学习/循环神经网络.md",
     "public/2023/10/19/Notes/课程/智能计算系统/深度学习/index.html",
     "public/2023/10/19/Notes/课程/智能计算系统/深度学习",
     "public/2023/10/19/Notes/课程/智能计算系统",
@@ -199,7 +199,6 @@
     "source/_posts/Notes/课程/操作系统/Semaphores信号量.md",
     "source/_posts/Notes/课程/操作系统/Threads线程.md",
     "public/2023/10/18/Notes/课程/操作系统/Monitor管程/index.html",
-    "public/2023/10/18/Notes/课程/操作系统/Monitor管程",
     "source/_posts/Notes/课程/操作系统/Blitz软件.md",
     "source/_posts/Notes/课程/操作系统/操作系统.md",
     "source/_posts/Notes/课程/数据库/SQL中级.md",
