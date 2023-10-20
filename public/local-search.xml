@@ -4,6 +4,19 @@
   
   
   <entry>
+    <title>UML</title>
+    <link href="/2023/10/20/Notes/%E8%AF%BE%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/UML/"/>
+    <url>/2023/10/20/Notes/%E8%AF%BE%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/UML/</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>UML：统一建模语言</p><p>UML是一种标准的图形化建模语言，它是面向对象分析与设计的一种标准表示</p><ul><li>是一种<strong>可视化的建模语言</strong>，不是一种可视化的程序设计语言</li><li>是一种<strong>建模语言规格说明</strong>，不是工具或知识库的规格说明</li></ul><h3 id="UML的基本结构"><a href="#UML的基本结构" class="headerlink" title="UML的基本结构"></a>UML的基本结构</h3><p>基本构造块：</p><ul><li>事物 Thing</li><li>关系 Relationship</li><li>图 Diagram</li></ul><p>语义规则：</p><ul><li>name、scope、visibility、integrity、execution</li></ul><p>通用机制：</p><ul><li>specification、adornment、common division、extensibility mechanism</li></ul><h4 id="事物"><a href="#事物" class="headerlink" title="事物"></a>事物</h4><p>Structural thing</p><ul><li>Class, interface, component, node</li></ul><p>Behavior thing</p><ul><li>use case, Interaction, state machine</li></ul><p>Group thing</p><ul><li>package</li></ul><p>Annotation thing</p><ul><li>note</li></ul><h4 id="关系"><a href="#关系" class="headerlink" title="关系"></a>关系</h4><ul><li>Dependenc</li><li>Association</li><li>Generalization</li><li>Realization</li></ul>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>软件需求分析</title>
     <link href="/2023/10/20/Notes/%E8%AF%BE%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90/"/>
     <url>/2023/10/20/Notes/%E8%AF%BE%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90/</url>
