@@ -191,3 +191,6 @@ assertion是一个谓词，表示我们希望数据库始终满足的条件
 ![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231016170853.png)
 
 
+
+
+
