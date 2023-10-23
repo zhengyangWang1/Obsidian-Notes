@@ -94,4 +94,12 @@ SQLJ：Java 中的嵌入式 SQL
 
 #### 5.1.4 Embedded SQL
 将 SQL 用作数据库查询工具的方法
-1. interactive SQL交互式 SQL
+1. interactive SQL交互式 SQL: 通过DBS人机界面直接用作DML和DDL
+2. dynamic SQL动态 SQL: e.g JDBC, ODBC
+3. embedded SQL嵌入式 SQL: 嵌入在通用编程语言中，例如 C 语言
+交互式SQL只能进行DB的访问操作，不能对DB访问结果进行进一步的数据处理，Embedded SQL将SQL的数据库访问功能与C语言等宿主语言的数据处理能力相结合，提高了数据应用系统的能力
+SQL标准定义了C，C++，Pascal，Fortran和Cobol等语言中的SQL嵌入, 嵌入 SQL 查询的语言称为宿主语言（host language）
+
+在执行任何 SQL 语句之前，程序必须首先连接到数据库![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231023114744.png)
+`EXEC SQL`语句用于标识对预处理器的嵌入式 SQL 请求![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231023114708.png)
+可以在嵌入式 SQL 语句中使用主语言的变量。 它们前面带有冒号`:`以区别于 SQL 变量。如上所述使用的变量必须在 DECLARE 部分中声明，用于声明变量的语法遵循通常的主语言语法。
