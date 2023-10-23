@@ -24,8 +24,10 @@
 <meta property="og:description" content="5.1 Accessing SQL from Programming Language应用程序执行数据处理，并调用  与数据库服务器连接 将SQL命令发送到数据库服务器 将结果的元组逐个提取到程序变量中  两种方法访问SQL：dynamic SQL：程序用function连接数据库服务器并与之通信程序将 SQL 查询构造为字符串，提交查询，然后将结果检索到程序变量中  JDBC (Java DB">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-10-23T01:53:47.998Z">
-<meta property="article:modified_time" content="2023-10-23T02:12:03.447Z">
+<meta property="article:modified_time" content="2023-10-23T02:18:54.042Z">
 <meta property="article:author" content="John Doe">
+<meta property="article:tag" content="数据库">
+<meta property="article:tag" content="SQL">
 <meta name="twitter:card" content="summary_large_image">
   
   
@@ -202,7 +204,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          347 字
+          411 字
         
       </span>
     
@@ -213,7 +215,7 @@
         
         
         
-          3 分钟
+          4 分钟
         
       </span>
     
@@ -263,12 +265,16 @@
 </ul>
 <p>两种方法访问SQL：<br><strong>dynamic SQL</strong>：<br>程序用function连接数据库服务器并与之通信<br>程序将 SQL 查询构造为字符串，提交查询，然后将结果检索到程序变量中</p>
 <ul>
-<li><p>JDBC (Java DB Connectivity) with Java</p>
-</li>
-<li><p>ODBC (Open DB Connectivity) with C, C++, and Visual Basic<br><strong>embedded SQL</strong>：<br>SQL 语句在编译时在高级程序中转换为函数调用<br>这些函数调用使用提供动态 SQL 功能的 API 连接到数据库</p>
-</li>
+<li>JDBC (Java DB Connectivity) with Java</li>
+<li>ODBC (Open DB Connectivity) with C, C++, and Visual Basic<br><strong>embedded SQL</strong>：<br>SQL 语句在编译时在高级程序中转换为函数调用<br>这些函数调用使用提供动态 SQL 功能的 API 连接到数据库</li>
 </ul>
-<h4 id="5-1-1-JDBC"><a href="#5-1-1-JDBC" class="headerlink" title="5.1.1 JDBC"></a>5.1.1 JDBC</h4><p>JDBC 是一个基于 Java 的 API<br>支持查询、更新和检索</p>
+<h4 id="5-1-1-JDBC"><a href="#5-1-1-JDBC" class="headerlink" title="5.1.1 JDBC"></a>5.1.1 JDBC</h4><p>JDBC 是一个基于 Java 的 API<br>支持查询、更新和检索<br>与数据库通信的模型：</p>
+<ol>
+<li>创建连接</li>
+<li>创建SQL statement（语句）对象</li>
+<li>用statement对象执行查询并获取结果</li>
+<li>处理错误的异常机制</li>
+</ol>
 
                 
               </div>
@@ -312,6 +318,15 @@
 
     </div>
   
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/" class="print-no-link">#数据库</a>
+      
+        <a href="/tags/SQL/" class="print-no-link">#SQL</a>
+      
+    </div>
   
 </div>
 
