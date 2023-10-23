@@ -33,3 +33,5 @@ JDBC 是一个基于 Java 的 API
 2. 创建SQL statement（语句）对象
 3. 用statement对象执行查询并获取结果
 4. 处理错误的异常机制
+
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231023103147.png)
