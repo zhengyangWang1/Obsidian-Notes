@@ -35,3 +35,14 @@ JDBC 是一个基于 Java 的 API
 4. 处理错误的异常机制
 
 ![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231023103147.png)
+
+使用statement对象 stmt 执行查询以发送查询并获取结果
+使用 execute.query 或 execute.update，例如 insert/delete/update/createtable
+参数：要执行的SQL语句，表示为字符串
+获取查询结果，使用 try{...}/catch{...} 构造
+将结果中的元组集检索到 ResultSet 对象 rset 中，并一次获取一个元组
+next()方法测试结果集是否至少有一个元组，如果是，则获取它
+获取结果：如果 dept_name 是 select result 的第一个参数，则rs.getString（“dept_name”） 和 rs.getString(1)是等价的
+
+##### Prepared Statement
+创建一个prepared statement，其中某些值将替换为“？”，在使用时指定实际值
