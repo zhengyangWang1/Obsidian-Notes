@@ -90,3 +90,8 @@ SQLJ：Java 中的嵌入式 SQL
 - 取回结果
 ![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231023112333.png)
 
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231023113307.png)
+
+#### 5.1.4 Embedded SQL
+将 SQL 用作数据库查询工具的方法
+1. interactive SQL交互式 SQL
