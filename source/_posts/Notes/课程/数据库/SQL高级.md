@@ -62,4 +62,18 @@ JDBC 是一个基于 Java 的 API
 ![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231023111208.png)
 
 ##### Transaction Control
-每个 SQL 语句都被视为一个单独的事务
+每个 SQL 语句都被视为一个单独的transaction，默认情况下自动提交
+关闭连接上的自动提交:`conn.setAutoCommit (false);`
+在连接上启用自动提交:`conn.setAutoCommit (ture);`
+Transaction必须最终提交或回滚：`conn.commit();` or `conn.rollback();`
+
+##### Other Features
+- 调用函数和过程
+- 处理大型对象类型
+
+##### Embedded SQL: SQLJ in Java
+SQLJ：Java 中的嵌入式 SQL
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231023112106.png)
+
+#### 5.1.3 ODBC
+开放式数据库连接 （ODBC） 标准，用于应用程序（作为客户端）与数据库服务器通信
