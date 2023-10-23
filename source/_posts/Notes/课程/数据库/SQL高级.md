@@ -69,11 +69,24 @@ Transaction必须最终提交或回滚：`conn.commit();` or `conn.rollback();`
 
 ##### Other Features
 - 调用函数和过程
+`CallableStatement cStmt1 = conn.prepareCall("{? = call some function(?)}");`
+
+`CallableStatement cStmt2 = conn.prepareCall("{call some procedure(?,?)}");`
 - 处理大型对象类型
+`getBlob（）` 和 `getClob（）` 类似于 `getString（）` 方法，但分别返回 Blob 和 Clob 类型的对象
+通过 `getBytes（）` 从这些对象获取数据
 
 ##### Embedded SQL: SQLJ in Java
 SQLJ：Java 中的嵌入式 SQL
 ![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231023112106.png)
 
+
+#### 5.1.2 从python访问数据库
 #### 5.1.3 ODBC
 开放式数据库连接 （ODBC） 标准，用于应用程序（作为客户端）与数据库服务器通信
+应用程序接口 （API） 到：
+- 打开与数据库的连接
+- 发送查询和更新
+- 取回结果
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231023112333.png)
+
