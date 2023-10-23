@@ -14,5 +14,16 @@ tags:
 - 将结果的元组逐个提取到程序变量中
 
 两种方法访问SQL：
-- dynamic SQL
-- embedded SQL
+**dynamic SQL**：
+程序用function连接数据库服务器并与之通信
+程序将 SQL 查询构造为字符串，提交查询，然后将结果检索到程序变量中
+- JDBC (Java DB Connectivity) with Java
+
+- ODBC (Open DB Connectivity) with C, C++, and Visual Basic
+**embedded SQL**：
+SQL 语句在编译时在高级程序中转换为函数调用
+这些函数调用使用提供动态 SQL 功能的 API 连接到数据库
+
+#### 5.1.1 JDBC
+JDBC 是一个基于 Java 的 API
+支持查询、更新和检索

@@ -16,15 +16,15 @@
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
   
-    <meta name="description" content="5.1 Accessing SQL from Programming Language应用程序执行数据处理，并调用  与数据库服务器连接 将SQL命令发送到数据库服务器 将结果的元组逐个提取到程序变量中  两种方法访问SQL：  dynamic SQL embedded SQL">
+    <meta name="description" content="5.1 Accessing SQL from Programming Language应用程序执行数据处理，并调用  与数据库服务器连接 将SQL命令发送到数据库服务器 将结果的元组逐个提取到程序变量中  两种方法访问SQL：dynamic SQL：程序用function连接数据库服务器并与之通信程序将 SQL 查询构造为字符串，提交查询，然后将结果检索到程序变量中  JDBC (Java DB">
 <meta property="og:type" content="article">
 <meta property="og:title" content="SQL高级">
 <meta property="og:url" content="http://example.com/2023/10/23/Notes/%E8%AF%BE%E7%A8%8B/%E6%95%B0%E6%8D%AE%E5%BA%93/SQL%E9%AB%98%E7%BA%A7/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="5.1 Accessing SQL from Programming Language应用程序执行数据处理，并调用  与数据库服务器连接 将SQL命令发送到数据库服务器 将结果的元组逐个提取到程序变量中  两种方法访问SQL：  dynamic SQL embedded SQL">
+<meta property="og:description" content="5.1 Accessing SQL from Programming Language应用程序执行数据处理，并调用  与数据库服务器连接 将SQL命令发送到数据库服务器 将结果的元组逐个提取到程序变量中  两种方法访问SQL：dynamic SQL：程序用function连接数据库服务器并与之通信程序将 SQL 查询构造为字符串，提交查询，然后将结果检索到程序变量中  JDBC (Java DB">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-10-23T01:53:47.998Z">
-<meta property="article:modified_time" content="2023-10-23T02:01:48.953Z">
+<meta property="article:modified_time" content="2023-10-23T02:12:03.447Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary_large_image">
   
@@ -202,7 +202,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          123 字
+          347 字
         
       </span>
     
@@ -213,7 +213,7 @@
         
         
         
-          2 分钟
+          3 分钟
         
       </span>
     
@@ -261,11 +261,14 @@
 <li>将SQL命令发送到数据库服务器</li>
 <li>将结果的元组逐个提取到程序变量中</li>
 </ul>
-<p>两种方法访问SQL：</p>
+<p>两种方法访问SQL：<br><strong>dynamic SQL</strong>：<br>程序用function连接数据库服务器并与之通信<br>程序将 SQL 查询构造为字符串，提交查询，然后将结果检索到程序变量中</p>
 <ul>
-<li>dynamic SQL</li>
-<li>embedded SQL</li>
+<li><p>JDBC (Java DB Connectivity) with Java</p>
+</li>
+<li><p>ODBC (Open DB Connectivity) with C, C++, and Visual Basic<br><strong>embedded SQL</strong>：<br>SQL 语句在编译时在高级程序中转换为函数调用<br>这些函数调用使用提供动态 SQL 功能的 API 连接到数据库</p>
+</li>
 </ul>
+<h4 id="5-1-1-JDBC"><a href="#5-1-1-JDBC" class="headerlink" title="5.1.1 JDBC"></a>5.1.1 JDBC</h4><p>JDBC 是一个基于 Java 的 API<br>支持查询、更新和检索</p>
 
                 
               </div>
@@ -273,6 +276,41 @@
             <hr/>
             <div>
               <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/Notes/" class="category-chain-item">Notes</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/Notes/%E8%AF%BE%E7%A8%8B/" class="category-chain-item">课程</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/Notes/%E8%AF%BE%E7%A8%8B/%E6%95%B0%E6%8D%AE%E5%BA%93/" class="category-chain-item">数据库</a>
+  
+  
+
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
   
   
 </div>
