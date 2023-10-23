@@ -16,11 +16,15 @@
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
   
-    <meta property="og:type" content="website">
-<meta property="og:title" content="归档">
-<meta property="og:url" content="http://example.com/archives/2023/page/2/index.html">
+    <meta name="description" content="5.1 Accessing SQL from Programming Language应用程序执行数据处理，并调用  与数据库服务器连接 将SQL命令发送到数据库服务器 将结果的元组逐个提取到程序变量中  两种方法访问SQL：  dynamic SQL embedded SQL">
+<meta property="og:type" content="article">
+<meta property="og:title" content="SQL高级">
+<meta property="og:url" content="http://example.com/2023/10/23/Notes/%E8%AF%BE%E7%A8%8B/%E6%95%B0%E6%8D%AE%E5%BA%93/SQL%E9%AB%98%E7%BA%A7/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="5.1 Accessing SQL from Programming Language应用程序执行数据处理，并调用  与数据库服务器连接 将SQL命令发送到数据库服务器 将结果的元组逐个提取到程序变量中  两种方法访问SQL：  dynamic SQL embedded SQL">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2023-10-23T01:53:47.998Z">
+<meta property="article:modified_time" content="2023-10-23T02:01:48.953Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary_large_image">
   
@@ -28,11 +32,17 @@
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>归档 - Hexo</title>
+  <title>SQL高级 - Hexo</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
 
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
 
 
 
@@ -82,7 +92,7 @@
   <header>
     
 
-<div class="header-inner" style="height: 60vh;">
+<div class="header-inner" style="height: 70vh;">
   <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand" href="/">
@@ -170,15 +180,48 @@
   
 
 <div id="banner" class="banner" parallax=true
-     style="background: url('https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/c8049b9b880411ebb6edd017c2d2eca2.jpg') no-repeat center center; background-size: cover;">
+     style="background: url('https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/edc7fcb0880411ebb6edd017c2d2eca2.png') no-repeat center center; background-size: cover;">
   <div class="full-bg-img">
     <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="归档"></span>
+            <span id="subtitle" data-typed-text="SQL高级"></span>
           
         </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          123 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          2 分钟
+        
+      </span>
+    
+
+    
+    
+  </div>
+
 
         
       </div>
@@ -194,100 +237,192 @@
 
   <main>
     
-      <div class="container nopadding-x-md">
-        <div id="board"
-          >
-          
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-md-10 m-auto">
-                
-
-<div class="list-group">
-  <p class="h4">共计 48 篇文章</p>
-  <hr>
-  
-  
-    
       
-      <p class="h5">2023</p>
-    
-    <a href="/2023/10/10/Notes/%E8%AF%BE%E7%A8%8B/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E4%B8%8E%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/%E5%AE%9E%E9%AA%8C%20%E7%94%A8numpy%E6%90%AD%E5%BB%BA%E5%85%A8%E8%BF%9E%E6%8E%A5%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E7%94%A8%E4%BA%8E%E6%89%8B%E5%86%99%E6%95%B0%E5%AD%97%E8%AF%86%E5%88%AB/" class="list-group-item list-group-item-action">
-      <time>10-10</time>
-      <div class="list-group-item-title">实验 用numpy搭建全连接神经网络用于手写数字识别</div>
-    </a>
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header">SQL高级</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <h3 id="5-1-Accessing-SQL-from-Programming-Language"><a href="#5-1-Accessing-SQL-from-Programming-Language" class="headerlink" title="5.1 Accessing SQL from Programming Language"></a>5.1 Accessing SQL from Programming Language</h3><p>应用程序执行数据处理，并调用</p>
+<ul>
+<li>与数据库服务器连接</li>
+<li>将SQL命令发送到数据库服务器</li>
+<li>将结果的元组逐个提取到程序变量中</li>
+</ul>
+<p>两种方法访问SQL：</p>
+<ul>
+<li>dynamic SQL</li>
+<li>embedded SQL</li>
+</ul>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
   
-    
-    <a href="/2023/10/09/Notes/%E8%AF%BE%E7%A8%8B/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/Threads%E7%BA%BF%E7%A8%8B/" class="list-group-item list-group-item-action">
-      <time>10-09</time>
-      <div class="list-group-item-title">Threads线程</div>
-    </a>
-  
-    
-    <a href="/2023/10/09/Notes/%E8%AF%BE%E7%A8%8B/%E6%95%B0%E6%8D%AE%E5%BA%93/SQL%E4%B8%AD%E7%BA%A7/" class="list-group-item list-group-item-action">
-      <time>10-09</time>
-      <div class="list-group-item-title">SQL中级</div>
-    </a>
-  
-    
-    <a href="/2023/10/06/Notes/%E7%BC%96%E7%A8%8B/MySQL/%E9%80%9A%E8%BF%87MySQL%20Workbench%E6%93%8D%E4%BD%9C/" class="list-group-item list-group-item-action">
-      <time>10-06</time>
-      <div class="list-group-item-title">通过MySQL Workbench操作</div>
-    </a>
-  
-    
-    <a href="/2023/09/28/Notes/%E8%AF%BE%E7%A8%8B/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E4%B8%8E%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/%E7%BD%91%E7%BB%9C%E4%BC%98%E5%8C%96%E4%B8%8E%E6%AD%A3%E5%88%99%E5%8C%96/" class="list-group-item list-group-item-action">
-      <time>09-28</time>
-      <div class="list-group-item-title">网络优化与正则化</div>
-    </a>
-  
-    
-    <a href="/2023/09/28/Notes/%E8%AF%BE%E7%A8%8B/%E6%99%BA%E8%83%BD%E8%AE%A1%E7%AE%97%E7%B3%BB%E7%BB%9F/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E5%9F%BA%E7%A1%80/" class="list-group-item list-group-item-action">
-      <time>09-28</time>
-      <div class="list-group-item-title">神经网络基础</div>
-    </a>
-  
-    
-    <a href="/2023/09/27/Notes/%E7%BC%96%E7%A8%8B/Django/Django%E6%93%8D%E4%BD%9CMySQL/" class="list-group-item list-group-item-action">
-      <time>09-27</time>
-      <div class="list-group-item-title">Django操作MySQL</div>
-    </a>
-  
-    
-    <a href="/2023/09/27/Notes/%E7%BC%96%E7%A8%8B/MySQL/MySQL%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/" class="list-group-item list-group-item-action">
-      <time>09-27</time>
-      <div class="list-group-item-title">MySQL基本使用</div>
-    </a>
-  
-    
-    <a href="/2023/09/27/Notes/%E7%BC%96%E7%A8%8B/MySQL/%E5%AE%89%E8%A3%85MySQL/" class="list-group-item list-group-item-action">
-      <time>09-27</time>
-      <div class="list-group-item-title">安装MySQL</div>
-    </a>
-  
-    
-    <a href="/2023/09/25/Notes/%E8%AF%BE%E7%A8%8B/%E6%95%B0%E6%8D%AE%E5%BA%93/SQL%E5%9F%BA%E7%A1%80/" class="list-group-item list-group-item-action">
-      <time>09-25</time>
-      <div class="list-group-item-title">SQL基础</div>
-    </a>
   
 </div>
 
 
-  <nav aria-label="navigation">
-    <span class="pagination" id="pagination">
-      <a class="extend prev" rel="prev" href="/archives/2023/"><i class="iconfont icon-arrowleft"></i></a><a class="page-number" href="/archives/2023/">1</a><span class="page-number current">2</span><a class="page-number" href="/archives/2023/page/3/#board">3</a><a class="page-number" href="/archives/2023/page/4/#board">4</a><a class="page-number" href="/archives/2023/page/5/#board">5</a><a class="extend next" rel="next" href="/archives/2023/page/3/#board"><i class="iconfont icon-arrowright"></i></a>
-    </span>
-  </nav>
+              
+  
 
-
-
-
-              </div>
-            </div>
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>SQL高级</div>
+      <div>http://example.com/2023/10/23/Notes/课程/数据库/SQL高级/</div>
+    </div>
+    <div class="license-meta">
+      
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>更新于</div>
+          <div>2023年10月23日</div>
+        </div>
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-by"></i>
+                  </span>
+                </a>
+              
+            
           </div>
         </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2023/10/20/Notes/%E8%AF%BE%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E5%88%86%E6%9E%90/" title="面向对象分析">
+                        <span class="hidden-mobile">面向对象分析</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+  
+  
+    <article id="comments" lazyload>
+      
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.loadComments('#valine', function() {
+      Fluid.utils.createScript('https://lib.baomitu.com/valine/1.5.1/Valine.min.js', function() {
+        var options = Object.assign(
+          {"appId":"Gu5ECxvGGmgKCcp5rU4dq6mf-gzGzoHsz","appKey":"yhwIunMgUsQgFKezVjcG9sYe","path":"window.location.pathname","placeholder":"留言","avatar":"retro","meta":["nick","mail","link"],"requiredFields":[],"pageSize":10,"lang":"zh-CN","highlight":false,"recordIP":false,"serverURLs":"","emojiCDN":null,"emojiMaps":null,"enableQQ":true},
+          {
+            el: "#valine",
+            path: window.location.pathname
+          }
+        )
+        new Valine(options);
+        Fluid.utils.waitElementVisible('#valine .vcontent', () => {
+          var imgSelector = '#valine .vcontent img:not(.vemoji)';
+          Fluid.plugins.imageCaption(imgSelector);
+          Fluid.plugins.fancyBox(imgSelector);
+        })
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the comments</noscript>
+
+
+    </article>
+  
+
+
+          </article>
+        </div>
       </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
     
 
     
@@ -411,6 +546,99 @@
 
 
 
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
 
   <script  src="/js/local-search.js" ></script>
 

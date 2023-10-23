@@ -4,6 +4,19 @@
   
   
   <entry>
+    <title>SQL高级</title>
+    <link href="/2023/10/23/Notes/%E8%AF%BE%E7%A8%8B/%E6%95%B0%E6%8D%AE%E5%BA%93/SQL%E9%AB%98%E7%BA%A7/"/>
+    <url>/2023/10/23/Notes/%E8%AF%BE%E7%A8%8B/%E6%95%B0%E6%8D%AE%E5%BA%93/SQL%E9%AB%98%E7%BA%A7/</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="5-1-Accessing-SQL-from-Programming-Language"><a href="#5-1-Accessing-SQL-from-Programming-Language" class="headerlink" title="5.1 Accessing SQL from Programming Language"></a>5.1 Accessing SQL from Programming Language</h3><p>应用程序执行数据处理，并调用</p><ul><li>与数据库服务器连接</li><li>将SQL命令发送到数据库服务器</li><li>将结果的元组逐个提取到程序变量中</li></ul><p>两种方法访问SQL：</p><ul><li>dynamic SQL</li><li>embedded SQL</li></ul>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>面向对象分析</title>
     <link href="/2023/10/20/Notes/%E8%AF%BE%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E5%88%86%E6%9E%90/"/>
     <url>/2023/10/20/Notes/%E8%AF%BE%E7%A8%8B/%E8%BD%AF%E4%BB%B6%E5%B7%A5%E7%A8%8B/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E5%88%86%E6%9E%90/</url>
