@@ -54,3 +54,12 @@ JDBC 是一个基于 Java 的 API
 ##### Metadata Features
 获取查询结果集中列的数目（结果关系的属性总数），输出各列的列名、数据类型
 ![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231023110241.png)
+`DatabaseMetaData dbmd=conn.getMetaData()`
+参数：catalog目录、schemas架构模式、table表模式和column列模式
+`null`表示所有目录/schemas
+`""`表示当前目录/schemas
+`%`与SQL子句`like`含义相同
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231023111208.png)
+
+##### Transaction Control
+每个 SQL 语句都被视为一个单独的事务
