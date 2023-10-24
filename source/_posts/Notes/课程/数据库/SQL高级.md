@@ -110,4 +110,9 @@ SQL标准定义了C，C++，Pascal，Fortran和Cobol等语言中的SQL嵌入, �
 变量 c 用于标识查询
 利用Embedded SQL进行查询时，查询结果有可能包括多个元组，此时无法直接将多个元组通过共享变量赋值传递给宿主程序
 系统开辟专门working区域存放SQL查询的结果关系，并利用查询游标c指向此区域。宿主程序根据c指向的查询结果关系集合，使用open, fetch, close依次获取结果关系中的各元组
+游标c相当于一个临时的table
 ![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231023120312.png)
+
+##### Updates Through Embedded SQL
+用于修改（更新、插入和删除）的嵌入式 SQL 表达式
+可以通过更新游标来更新游标fetch的tuple
