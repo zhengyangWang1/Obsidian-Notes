@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "source/_posts/Notes/课程/软件工程/作业.md",
+                "file": "source/_posts/Notes/课程/软件工程/大作业 酒店温控计费系统 规划.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "source/_posts/Notes/课程/软件工程/作业.md",
+                "file": "source/_posts/Notes/课程/软件工程/大作业 酒店温控计费系统 规划.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "source/_posts/Notes/课程/软件工程/作业.md",
+                "file": "source/_posts/Notes/课程/软件工程/大作业 酒店温控计费系统 规划.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "source/_posts/Notes/课程/软件工程/作业.md"
+                "file": "source/_posts/Notes/课程/软件工程/大作业 酒店温控计费系统 规划.md"
               }
             }
           },
@@ -153,7 +153,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "source/_posts/Notes/课程/软件工程/作业.md"
+                "file": "source/_posts/Notes/课程/软件工程/大作业 酒店温控计费系统 规划.md"
               }
             }
           }
@@ -178,9 +178,13 @@
   },
   "active": "b0b4f280110024d1",
   "lastOpenFiles": [
-    "source/_posts/Notes/课程/软件工程/UML.md",
-    "source/_posts/Notes/课程/软件工程/大作业 酒店温控计费系统 规划.md",
     "source/_posts/Notes/课程/数据库/SQL高级.md",
+    "source/_posts/Notes/课程/软件工程/大作业 酒店温控计费系统 规划.md",
+    "source/_posts/Notes/课程/软件工程/面向对象分析.md",
+    "source/_posts/Notes/课程/软件工程/软件生命周期.md",
+    "source/_posts/Notes/课程/软件工程/软件需求分析.md",
+    "source/_posts/Notes/课程/软件工程/作业.md",
+    "source/_posts/Notes/课程/软件工程/UML.md",
     "public/2023/10/23/Notes/课程/数据库/SQL高级/index.html",
     "public/2023/10/23/Notes/课程/数据库/SQL高级",
     "public/2023/10/23/Notes/课程/数据库",
@@ -194,14 +198,10 @@
     "source/_posts/Notes/课程/操作系统/Blitz软件.md",
     "source/_posts/Notes/课程/操作系统/操作系统.md",
     "source/_posts/Notes/Linux学习/文本编辑器.md",
-    "source/_posts/Notes/课程/软件工程/面向对象分析.md",
     "public/2023/10/20/Notes/课程/软件工程/面向对象分析/index.html",
     "public/2023/10/20/Notes/课程/软件工程/面向对象分析",
     "public/2023/10/20/Notes/课程/软件工程/UML/index.html",
     "public/2023/10/20/Notes/课程/软件工程/UML",
-    "source/_posts/Notes/课程/软件工程/软件需求分析.md",
-    "source/_posts/Notes/课程/软件工程/软件生命周期.md",
-    "source/_posts/Notes/课程/软件工程/作业.md",
     "source/_posts/Notes/课程/神经网络与深度学习/循环神经网络.md",
     "source/_posts/Notes/课程/神经网络与深度学习/神经网络与深度学习.md",
     "source/_posts/Notes/课程/神经网络与深度学习/实验 用numpy搭建全连接神经网络用于手写数字识别.md",
