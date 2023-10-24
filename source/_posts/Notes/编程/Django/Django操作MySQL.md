@@ -49,7 +49,7 @@ SELECT User FROM mysql.user;  # 查看mysql的用户名列表
 ```
 
 ### 创建删除和修改表
-在app的models文件下写入类 文件结构见[[First Class]]
+在app的models文件下写入类 文件结构见[[Django基础]]
 ```
 class User(models.Model):  
     # 用户身份证号 主键  

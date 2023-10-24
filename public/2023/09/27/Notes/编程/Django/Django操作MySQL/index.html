@@ -24,7 +24,7 @@
 <meta property="og:description" content="安装第三方模块1pip install mysqlclient  ORMORM全称是：Object Relational Mapping(对象关系映射)，其主要作用是在编程中，把面向对象的概念跟数据库中表的概念对应起来。在Django中的应用  创建、修改、删除数据库中的表 操作表中的数据  创建数据库 启动MySQL服务 自带工具创建数据库12create datebase 数据库名;  # 创">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-09-27T15:37:46.021Z">
-<meta property="article:modified_time" content="2023-10-10T03:23:23.386Z">
+<meta property="article:modified_time" content="2023-10-24T14:50:21.245Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="Python">
 <meta property="article:tag" content="MySQL">
@@ -274,7 +274,7 @@
 <p>注：</p>
 <figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs crmsh">SELECT <span class="hljs-keyword">User</span> <span class="hljs-title">FROM</span> mysql.user;  <span class="hljs-comment"># 查看mysql的用户名列表</span><br></code></pre></td></tr></table></figure>
 
-<h3 id="创建删除和修改表"><a href="#创建删除和修改表" class="headerlink" title="创建删除和修改表"></a>创建删除和修改表</h3><p>在app的models文件下写入类 文件结构见[[First Class]]</p>
+<h3 id="创建删除和修改表"><a href="#创建删除和修改表" class="headerlink" title="创建删除和修改表"></a>创建删除和修改表</h3><p>在app的models文件下写入类 文件结构见[[Django基础]]</p>
 <figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs routeros">class User(models.Model):  <br>    # 用户身份证号 主键  <br>    user_id = models.CharField(<span class="hljs-string">&#x27;user_id&#x27;</span>, <span class="hljs-attribute">primary_key</span>=<span class="hljs-literal">True</span>, <span class="hljs-attribute">max_length</span>=30)  <br>    # 用户姓名  <br>    user_name = models.CharField(<span class="hljs-string">&#x27;user_name&#x27;</span>, <span class="hljs-attribute">max_length</span>=20, <span class="hljs-attribute">null</span>=<span class="hljs-literal">False</span>)  <br>    <br>    class Meta:  <br>        db_table = <span class="hljs-string">&#x27;User&#x27;</span><br></code></pre></td></tr></table></figure>
 
 <p>models修改完后，在终端中执行</p>
@@ -351,7 +351,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>更新于</div>
-          <div>2023年10月10日</div>
+          <div>2023年10月24日</div>
         </div>
       
       

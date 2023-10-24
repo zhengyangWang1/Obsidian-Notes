@@ -1,5 +1,5 @@
 ---
-title: First Class
+title: Django基础
 categories:
   - Notes
   - 编程
