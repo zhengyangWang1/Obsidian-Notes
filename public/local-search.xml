@@ -4,6 +4,25 @@
   
   
   <entry>
+    <title>图神经网络</title>
+    <link href="/2023/10/26/Notes/%E8%AF%BE%E7%A8%8B/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E4%B8%8E%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/%E5%9B%BE%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/"/>
+    <url>/2023/10/26/Notes/%E8%AF%BE%E7%A8%8B/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E4%B8%8E%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/%E5%9B%BE%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C/</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>图是一种描述样本间关系的通用语言<br><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231026095632.png" alt="image.png"></p><h2 id="图神经网络"><a href="#图神经网络" class="headerlink" title="图神经网络"></a>图神经网络</h2><p>图神经网络是一种基于图结构数据的深度学习方法，学习图结构数据中的节点特征、边特征、图级表示</p><ul><li>图是图神经网络研究的基本对象;𝐺&#x3D;(𝑉,𝐸)</li><li>是描述复杂事务的数据表示形式，由节点和边组成；</li><li>可描述不规则数据（非欧式数据），充分利用数据间关系信息</li></ul>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>神经网络</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Deadlock死锁</title>
     <link href="/2023/10/25/Notes/%E8%AF%BE%E7%A8%8B/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/Deadlock%E6%AD%BB%E9%94%81/"/>
     <url>/2023/10/25/Notes/%E8%AF%BE%E7%A8%8B/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/Deadlock%E6%AD%BB%E9%94%81/</url>
