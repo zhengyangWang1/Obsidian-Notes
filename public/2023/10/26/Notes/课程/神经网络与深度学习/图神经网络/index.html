@@ -54,7 +54,7 @@
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231026113021.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231026113151.png">
 <meta property="article:published_time" content="2023-10-26T01:53:12.478Z">
-<meta property="article:modified_time" content="2023-10-26T03:32:22.030Z">
+<meta property="article:modified_time" content="2023-10-26T03:38:23.766Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="神经网络">
 <meta name="twitter:card" content="summary_large_image">
@@ -234,7 +234,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.7k 字
+          2k 字
         
       </span>
     
@@ -245,7 +245,7 @@
         
         
         
-          15 分钟
+          17 分钟
         
       </span>
     
@@ -359,6 +359,18 @@
 <h2 id="图神经网络的应用"><a href="#图神经网络的应用" class="headerlink" title="图神经网络的应用"></a>图神经网络的应用</h2><p><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231026112424.png" srcset="/img/loading.gif" lazyload alt="image.png"></p>
 <h3 id="文本分类"><a href="#文本分类" class="headerlink" title="文本分类"></a>文本分类</h3><p>文本分类是自然语言处理（NLP）中的一项基础任务，它的目标是将输入的文本分配给一个或多个类别。常见的文本分类应用包括情感分析、主题分类、垃圾邮件检测等。<br>面向文本数据的图构建：文本数据（词、文档）不直接包含关系信息，但可以基于统计进行关系构建<br><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231026113021.png" srcset="/img/loading.gif" lazyload alt="image.png"></p>
 <h3 id="知识图谱嵌入"><a href="#知识图谱嵌入" class="headerlink" title="知识图谱嵌入"></a>知识图谱嵌入</h3><p>定义：知识图谱嵌入(Knowledge Graph Embeddings, KGEs)，也称为知识图谱表示学习(Knowledge Graph Representing Learning)，是将包含实体和关系的知识图谱的组成部分嵌入到低维度、连续的向量空间中，从而<strong>在保持知识图谱固有结构的同时简化操作</strong>。<br><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231026113151.png" srcset="/img/loading.gif" lazyload alt="image.png"></p>
+<p>模型概述：</p>
+<ol>
+<li>多模态实体嵌入模块：编码器通过多层感知器网络学习不同模态（图片、文本）数据的实体嵌入。</li>
+<li>局部对比多关系特征聚合模块：将实体的局部邻域的关系类型区分为多关系子图，通过注意力机制进行关系内、关系间特征聚合。</li>
+<li>高阶对比编码模块：显式对比来自实体及其高阶邻居的编码来丰富实体特征。</li>
+</ol>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>图是一个非常强大的工具，几乎所有的数据都能够表示成图</p>
+<ul>
+<li>计算机视觉、生物化学、推荐系统、交通、程序验证、程序推理……<br>然而：</li>
+<li>在图上进行优化非常困难，因为图是稀疏架构，每个节点的边数高度可变，空间效率低</li>
+<li>图神经网络对超参数非常敏感</li>
+</ul>
 
                 
               </div>
