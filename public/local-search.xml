@@ -8,7 +8,7 @@
     <link href="/2023/10/27/Notes/%E7%BC%96%E7%A8%8B/Django/Django%E6%A8%A1%E6%9D%BF/"/>
     <url>/2023/10/27/Notes/%E7%BC%96%E7%A8%8B/Django/Django%E6%A8%A1%E6%9D%BF/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="加载静态文件"><a href="#加载静态文件" class="headerlink" title="加载静态文件"></a>加载静态文件</h3><p><a href="https://blog.csdn.net/weixin_41529093/article/details/115653070">django在html中显示图片【实测成功】_django 显示图片-CSDN博客</a><br><a href="https://cloud.tencent.com/developer/article/1465931">Django基础篇-模板加载静态文件-腾讯云开发者社区-腾讯云</a></p><h3 id="前后端通信"><a href="#前后端通信" class="headerlink" title="前后端通信"></a>前后端通信</h3>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="加载静态文件"><a href="#加载静态文件" class="headerlink" title="加载静态文件"></a>加载静态文件</h3><p><a href="https://docs.djangoproject.com/zh-hans/4.2/howto/static-files/">如何管理静态文件（如图片、JavaScript、CSS） | Django 文档 | Django</a><br><a href="https://blog.csdn.net/weixin_41529093/article/details/115653070">django在html中显示图片【实测成功】_django 显示图片-CSDN博客</a><br><a href="https://cloud.tencent.com/developer/article/1465931">Django基础篇-模板加载静态文件-腾讯云开发者社区-腾讯云</a></p><h3 id="前后端通信"><a href="#前后端通信" class="headerlink" title="前后端通信"></a>前后端通信</h3>]]></content>
     
     
     <categories>
