@@ -16,15 +16,15 @@
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
   
-    <meta name="description" content="NEW   数据生成方面 对比学习的方式    别的论文中更好的方法去看    梳理一下idea    方案列出来和老师讨论    英文文章中添加新的思路    0.2倍调参 数量和误分类两种策略结合  大规模数据+误分类：生成两份数量都为N的数据（N为原始数据规模的10-100倍），一份通过分类器得到误分类样本，与另一份融合，共同用于训练分类器 模型数据融合DDPM+GAN生成的数据进行融合共同">
+    <meta name="description" content="NEW   数据生成方面 对比学习的方式    别的论文中更好的方法去看    英文文章中添加新的思路   基于误分样本的数据重构之前调节分类器的参数，来提升评估效果现在可以尝试&#x3D;&#x3D;调节生成模型的参数&#x3D;&#x3D;来提升生成模型的效果 难分类样本难以分类但是分类正确的样本，提升权重之前是使用全部原始样本生成生成数据，然后从生成数据中挑选误分类样本。现在先评估原始数据，">
 <meta property="og:type" content="article">
 <meta property="og:title" content="扩散模型论文todo（已过期）">
 <meta property="og:url" content="http://example.com/2023/09/22/Notes/%E8%AE%BA%E6%96%87/%E6%89%A9%E6%95%A3%E6%A8%A1%E5%9E%8B%E8%AE%BA%E6%96%87todo/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="NEW   数据生成方面 对比学习的方式    别的论文中更好的方法去看    梳理一下idea    方案列出来和老师讨论    英文文章中添加新的思路    0.2倍调参 数量和误分类两种策略结合  大规模数据+误分类：生成两份数量都为N的数据（N为原始数据规模的10-100倍），一份通过分类器得到误分类样本，与另一份融合，共同用于训练分类器 模型数据融合DDPM+GAN生成的数据进行融合共同">
+<meta property="og:description" content="NEW   数据生成方面 对比学习的方式    别的论文中更好的方法去看    英文文章中添加新的思路   基于误分样本的数据重构之前调节分类器的参数，来提升评估效果现在可以尝试&#x3D;&#x3D;调节生成模型的参数&#x3D;&#x3D;来提升生成模型的效果 难分类样本难以分类但是分类正确的样本，提升权重之前是使用全部原始样本生成生成数据，然后从生成数据中挑选误分类样本。现在先评估原始数据，">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-09-21T16:36:34.336Z">
-<meta property="article:modified_time" content="2023-10-29T12:34:16.238Z">
+<meta property="article:modified_time" content="2023-10-29T13:36:27.594Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="扩散模型">
 <meta name="twitter:card" content="summary_large_image">
@@ -203,7 +203,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          8.9k 字
+          9.3k 字
         
       </span>
     
@@ -214,7 +214,7 @@
         
         
         
-          75 分钟
+          78 分钟
         
       </span>
     
@@ -264,21 +264,17 @@
 别的论文中更好的方法去看</p>
 </li>
 <li><p><input disabled="" type="checkbox"> 
-梳理一下idea</p>
-</li>
-<li><p><input disabled="" type="checkbox"> 
-方案列出来和老师讨论</p>
-</li>
-<li><p><input disabled="" type="checkbox"> 
 英文文章中添加新的思路</p>
 </li>
 </ul>
-<ol>
-<li>0.2倍调参</li>
-<li>数量和误分类两种策略结合</li>
-</ol>
-<p>大规模数据+误分类：<br>生成两份数量都为N的数据（N为原始数据规模的10-100倍），一份通过分类器得到误分类样本，与另一份融合，共同用于训练分类器</p>
-<p>模型数据融合<br>DDPM+GAN生成的数据进行融合共同用于训练分类器</p>
+<h4 id="基于误分样本的数据重构"><a href="#基于误分样本的数据重构" class="headerlink" title="基于误分样本的数据重构"></a>基于误分样本的数据重构</h4><p>之前调节分类器的参数，来提升评估效果<br>现在可以尝试&#x3D;&#x3D;调节生成模型的参数&#x3D;&#x3D;来提升生成模型的效果</p>
+<h4 id="难分类样本"><a href="#难分类样本" class="headerlink" title="难分类样本"></a>难分类样本</h4><p>难以分类但是分类正确的样本，提升权重<br>之前是使用全部原始样本生成生成数据，然后从生成数据中挑选误分类样本。<br>现在先评估原始数据，挑选出难分类样本，生成难分类样本生成数据，进行评估或者和原始数据融合</p>
+<h4 id="对比学习"><a href="#对比学习" class="headerlink" title="对比学习"></a>对比学习</h4><p>数据抽样</p>
+<p>将原始数据划分为正样本和负样本，可知正样本很少，存在严重的不平衡<br>按照对比学习的思路，可以尝试在全部样本中进行两两一组的随机抽样，两个样本标签相同为正样本对，不同为负样本对</p>
+<h4 id="误分类样本数据重构-数据规模"><a href="#误分类样本数据重构-数据规模" class="headerlink" title="误分类样本数据重构 +数据规模"></a>误分类样本数据重构 +数据规模</h4><p>考虑到真实数据量比较小<br>我们可以生成大量数据<br>以真实数据训练分类器，提取生成误分样本，并和一些生成样本融合，（相当于提升了数据规模）<br>生成两份数量都为N的数据（N为原始数据规模的10-100倍），一份通过分类器得到误分类样本，与另一份融合，共同用于训练分类器</p>
+<h4 id="不同生成模型数据融合"><a href="#不同生成模型数据融合" class="headerlink" title="不同生成模型数据融合"></a>不同生成模型数据融合</h4><p>将扩散生成模型和 GAN 模型生成的数据进行融合用于共同训练分类器</p>
+<hr>
+<h2 id="融合生成数据和原始数据的特征表示？"><a href="#融合生成数据和原始数据的特征表示？" class="headerlink" title="融合生成数据和原始数据的特征表示？"></a>融合生成数据和原始数据的特征表示？</h2><p>使用自适应的权重机制</p>
 <hr>
 <ul>
 <li><p><input checked="" disabled="" type="checkbox"> 
