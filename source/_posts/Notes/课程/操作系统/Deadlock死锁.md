@@ -34,11 +34,18 @@ Hold and Wait持有等待
 - Request：一个n×m的矩阵代表每个进程需要的资源数量
 
 检测算法：
-1. 
-	`Work`和`Finish`为长度为m和n的向量，
+1. `Work`和`Finish`为长度为m和n的向量，
 	(a) Work = Available
 	(b) For **i = 1,2, …, n**, 
 			if **Allocationi != 0**, 
 			then **Finish[i] = false**; 
 			otherwise, **Finish[i] = true**
-2. 
+2. 找到一个index `i`，使得
+	(a) Finish[i] == false 
+	(b) Request_i <= Work
+
+3. Work = Work + Allocation_i 
+	Finish[i] = true 
+	go to step 2
+
+4. If Finish[i] == false, for some i, 1 <= i <= n, then the system is in deadlock state. Moreover, if Finish[i] == false, then P_i is deadlocked
