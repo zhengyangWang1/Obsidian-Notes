@@ -136,3 +136,8 @@ e.g. 给定一个部门的名称，返回教师人数
 
 指定导致触发器执行的事件（插入、删除、更新）
 更新：更新时的触发器可以限制为特定属性
+`before`和`after`属性值:
+- `referencing old row as`：用于删除和更新
+- `referencing new row as`：用于插入和更新
+
+
