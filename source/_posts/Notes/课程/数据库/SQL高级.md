@@ -140,4 +140,8 @@ e.g. 给定一个部门的名称，返回教师人数
 - `referencing old row as`：用于删除和更新
 - `referencing new row as`：用于插入和更新
 
+将空白成绩转换为 null:
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231030104701.png)
+
+可以对受事务影响的所有行执行单个操作，而不是对每个受影响的行执行单独的操作
 
