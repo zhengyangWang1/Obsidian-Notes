@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "source/_posts/Notes/TODO.md",
+                "file": "source/_posts/Notes/课程/数据库/SQL高级.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 271.5
+    "width": 271.5,
+    "collapsed": true
   },
   "right": {
     "id": "45464171d8013cd8",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "source/_posts/Notes/TODO.md",
+                "file": "source/_posts/Notes/课程/数据库/SQL高级.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "source/_posts/Notes/TODO.md",
+                "file": "source/_posts/Notes/课程/数据库/SQL高级.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "source/_posts/Notes/TODO.md"
+                "file": "source/_posts/Notes/课程/数据库/SQL高级.md"
               }
             }
           },
@@ -153,7 +154,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "source/_posts/Notes/TODO.md"
+                "file": "source/_posts/Notes/课程/数据库/SQL高级.md"
               }
             }
           }
@@ -176,14 +177,14 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "b0b4f280110024d1",
+  "active": "7be48aeafb4b3406",
   "lastOpenFiles": [
+    "source/_posts/Notes/TODO.md",
     "source/_posts/Notes/课程/操作系统/Threads线程.md",
     "source/_posts/Notes/课程/操作系统/Semaphores信号量.md",
     "source/_posts/Notes/课程/操作系统/Monitor管程.md",
     "source/_posts/Notes/课程/操作系统/Blitz软件.md",
     "source/_posts/Notes/课程/操作系统/Deadlock死锁.md",
-    "source/_posts/Notes/TODO.md",
     "source/_posts/Notes/课程/数据库/SQL高级.md",
     "source/_posts/Notes/论文/扩散模型论文todo.md",
     "source/_posts/Notes/编程/WSL配置.md",

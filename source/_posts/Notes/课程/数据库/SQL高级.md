@@ -115,3 +115,6 @@ SQL标准定义了C，C++，Pascal，Fortran和Cobol等语言中的SQL嵌入, �
 ##### Updates Through Embedded SQL
 用于修改（更新、插入和删除）的嵌入式 SQL 表达式
 可以通过更新游标来更新游标fetch的tuples
+
+### 5.2 Functions and Procedures
+定义一个函数
