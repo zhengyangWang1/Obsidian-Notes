@@ -117,4 +117,11 @@ SQL标准定义了C，C++，Pascal，Fortran和Cobol等语言中的SQL嵌入, �
 可以通过更新游标来更新游标fetch的tuples
 
 ### 5.2 Functions and Procedures
-定义一个函数
+定义一个函数：
+e.g. 给定一个部门的名称，返回教师人数
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231030095637.png)
+定义函数后可以在查找时直接使用：
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231030095946.png)
+
+过程：
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231030100409.png)
