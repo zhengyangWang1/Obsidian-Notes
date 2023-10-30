@@ -28,3 +28,17 @@ P3申请R2，R2被P1持有，P3无法执行，导致P2和P1无法执行
 Hold and Wait持有等待
 要么持有全部资源，要么等待
 
+资源类型
+- Available：一个长度为m的向量，表示每种可用资源的数量（m种资源）
+- Allocation：一个n×m的矩阵代表每个进程现在持有的资源数量（n个进程）
+- Request：一个n×m的矩阵代表每个进程需要的资源数量
+
+检测算法：
+1. 
+	`Work`和`Finish`为长度为m和n的向量，
+	(a) Work = Available
+	(b) For **i = 1,2, …, n**, 
+			if **Allocationi != 0**, 
+			then **Finish[i] = false**; 
+			otherwise, **Finish[i] = true**
+2. 
