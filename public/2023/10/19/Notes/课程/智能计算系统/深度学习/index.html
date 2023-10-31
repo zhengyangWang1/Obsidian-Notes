@@ -39,8 +39,9 @@
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231031171150.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231031171221.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231031171330.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231031173437.png">
 <meta property="article:published_time" content="2023-10-19T00:11:43.144Z">
-<meta property="article:modified_time" content="2023-10-31T09:18:49.474Z">
+<meta property="article:modified_time" content="2023-10-31T09:34:41.339Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="深度学习">
 <meta name="twitter:card" content="summary_large_image">
@@ -220,7 +221,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1k 字
+          1.2k 字
         
       </span>
     
@@ -231,7 +232,7 @@
         
         
         
-          9 分钟
+          10 分钟
         
       </span>
     
@@ -325,7 +326,13 @@
 <h5 id="耦合输入门和遗忘门"><a href="#耦合输入门和遗忘门" class="headerlink" title="耦合输入门和遗忘门"></a>耦合输入门和遗忘门</h5><p><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231031171150.png" srcset="/img/loading.gif" lazyload alt="image.png"></p>
 <h5 id="GRU"><a href="#GRU" class="headerlink" title="GRU"></a>GRU</h5><p>在LSTM的基础上，将单元状态和隐藏状态合并，将遗忘门和输入门合并为更新门，无输出门。更新门决定历史信息和当前信息如何相加；重置门决定保留多少历史信息进入当前信息<br><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231031171221.png" srcset="/img/loading.gif" lazyload alt="image.png"></p>
 <h5 id="LSTM与GRU"><a href="#LSTM与GRU" class="headerlink" title="LSTM与GRU"></a>LSTM与GRU</h5><p><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231031171330.png" srcset="/img/loading.gif" lazyload alt="image.png"><br>GRU参数量更少，训练速度快；在训练数据足够的情况下，LSTM的表征能力更强。</p>
-<h3 id="生成对抗网络（GAN）"><a href="#生成对抗网络（GAN）" class="headerlink" title="生成对抗网络（GAN）"></a>生成对抗网络（GAN）</h3><p>损失函数通过学习得到，网络学习到的是数据的分布</p>
+<h3 id="生成对抗网络（GAN）"><a href="#生成对抗网络（GAN）" class="headerlink" title="生成对抗网络（GAN）"></a>生成对抗网络（GAN）</h3><p>损失函数通过学习得到，网络学习到的是数据的分布<br>模型由两部分组成：</p>
+<ul>
+<li>生成器（伪装者）：找出观测数据内部的统计规律，尽可能生成 能够以假乱真的样本，使判别网络输出接近0.5，难以区分真假。</li>
+<li>判别器（警察）：判断输入数据是来自真实样本集还是生成样本 集。如果输入是真样本，输出接近1；如果输入是生成样本，输出接近0。</li>
+</ul>
+<h4 id="训练过程"><a href="#训练过程" class="headerlink" title="训练过程"></a>训练过程</h4><p><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231031173437.png" srcset="/img/loading.gif" lazyload alt="image.png"></p>
+<p>更新k次判别器后更新一次生成器</p>
 
                 
               </div>
