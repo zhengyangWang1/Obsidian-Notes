@@ -33,8 +33,10 @@
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231101233933.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231101234007.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231101234344.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231101234446.png">
+<meta property="og:image" content="http://example.com/">
 <meta property="article:published_time" content="2023-10-30T02:48:52.676Z">
-<meta property="article:modified_time" content="2023-11-01T15:43:46.982Z">
+<meta property="article:modified_time" content="2023-11-01T15:53:48.621Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="数据库">
 <meta name="twitter:card" content="summary_large_image">
@@ -214,7 +216,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.7k 字
+          1.9k 字
         
       </span>
     
@@ -225,7 +227,7 @@
         
         
         
-          15 分钟
+          16 分钟
         
       </span>
     
@@ -333,8 +335,12 @@
 <h5 id="Cardinality-Limits-for-Participation（参与的基数限制）"><a href="#Cardinality-Limits-for-Participation（参与的基数限制）" class="headerlink" title="Cardinality Limits for Participation（参与的基数限制）"></a>Cardinality Limits for Participation（参与的基数限制）</h5><p>基数限制（参与的基数界限）用于表示对参与的定量约束<br>e.g.</p>
 <ul>
 <li>每个instructor最多可以指导多个student, 最少可以指导0个student</li>
-<li>每个student最少有1个指导instructor，最多也只有1个指导instructor<br><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231101234344.png" srcset="/img/loading.gif" lazyload alt="image.png"></li>
+<li>每个student最少有1个指导instructor，最多也只有1个指导instructor<br><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231101234344.png" srcset="/img/loading.gif" lazyload alt="image.png"><br>*表示无限制<br>A参与R的基数下界$l_{A}$和上界$h_{A}$</li>
+<li>A中的每个实体a通过R关联了最少$l_{A}$个、最多$h_{A}$个B中实体b</li>
+<li>$l_{A}$ ：对A中的每个实体a, B中至少有$l_{A}$个实体b通过R与其对应&#x2F;关联</li>
+<li>$h_{A}$：对A中的每个实体a, B中至多有$h_{A}$个实体b通过R与其对应&#x2F;关联<br><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231101234446.png" srcset="/img/loading.gif" lazyload alt="image.png"><br>最小值 lA &#x3D; 0：A 是 R 的部分参与<br>最小值 lA &gt; 0：A 为 R 的总参与，相当于双线<br>最大值 * 表示无限制</li>
 </ul>
+<p><img src="/" srcset="/img/loading.gif" lazyload alt="Uploading file...jo68r"></p>
 
                 
               </div>

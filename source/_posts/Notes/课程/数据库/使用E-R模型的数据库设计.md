@@ -108,3 +108,14 @@ e.g.
 - 每个instructor最多可以指导多个student, 最少可以指导0个student
 - 每个student最少有1个指导instructor，最多也只有1个指导instructor
 ![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231101234344.png)
+\*表示无限制
+A参与R的基数下界$l_{A}$和上界$h_{A}$
+- A中的每个实体a通过R关联了最少$l_{A}$个、最多$h_{A}$个B中实体b
+- $l_{A}$ ：对A中的每个实体a, B中至少有$l_{A}$个实体b通过R与其对应/关联
+- $h_{A}$：对A中的每个实体a, B中至多有$h_{A}$个实体b通过R与其对应/关联
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231101234446.png)
+最小值 lA = 0：A 是 R 的部分参与 
+最小值 lA > 0：A 为 R 的总参与，相当于双线
+最大值 * 表示无限制
+
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231101235347.png)
