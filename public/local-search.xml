@@ -4,6 +4,25 @@
   
   
   <entry>
+    <title>Memory内存</title>
+    <link href="/2023/11/01/Notes/%E8%AF%BE%E7%A8%8B/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/Memory%E5%86%85%E5%AD%98/"/>
+    <url>/2023/11/01/Notes/%E8%AF%BE%E7%A8%8B/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/Memory%E5%86%85%E5%AD%98/</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>程序需要从硬盘读取到内存才能执行<br>CPU可以直接访问的只有内存和寄存器<br>内存单元只看到地址流和读写请求<br>内存访问需要很多<br>Cache（高速缓存）设置在内存和CPU寄存器之间</p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>操作系统</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>扩散模型调研</title>
     <link href="/2023/11/01/Notes/%E8%AE%BA%E6%96%87/%E6%89%A9%E6%95%A3%E6%A8%A1%E5%9E%8B%E8%B0%83%E7%A0%94/"/>
     <url>/2023/11/01/Notes/%E8%AE%BA%E6%96%87/%E6%89%A9%E6%95%A3%E6%A8%A1%E5%9E%8B%E8%B0%83%E7%A0%94/</url>
