@@ -5,7 +5,7 @@ categories:
   - 数据库
 tags:
   - 数据库
-title:
+title: 使用E-R模型的数据库设计
 date:
 ---
 ### 6.1 Overview of Design Process
