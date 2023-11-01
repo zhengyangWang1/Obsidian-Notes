@@ -43,12 +43,14 @@ ER模型使用有关联的图表表示，即ER图，它以图形的方式表示�
 #### 6.2.1 Entity Sets（实体集）
 实体是一个存在的对象，区别于其他对象。实体通过一组属性表示。
 实体集是一些相同类型实体的集合。
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231101224017.png)
 
-#### 6.2.2 Relationship Sets
+#### 6.2.2 Relationship Sets（关系集）
 关系是多个实体之间的关联
 实体集 E1， E2， ...， En 参与关系集 R
 ##### Attributes with Relationship Sets
 属性也可以与关系集合联系
+在教师和学生之间设置的顾问关系可能具有属性日期，该属性跟踪学生何时开始与顾问关联
 
 ##### Role in Relationship Sets
 
