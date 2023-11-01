@@ -67,6 +67,19 @@ ER模型使用有关联的图表表示，即ER图，它以图形的方式表示�
 
 ### 6.3 Complex Attributes
 每个属性都有一个可取值的集合，称为该属性的域（domain），或者值集（value set）
+属性类型： 
+- 简单属性和复合属性 
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231101231709.png)
+
+- 单值和多值属性
+- 派生属性: 可以从其他属性计算
+
+属性的 Null 值表示:
+- 该属性不适用于实体，不存在
+- 该属性的值存在，但为“未知”
+
+冗余属性：
+
 ### 6.4 Mapping  Cardinalities Constrants
 一对一
 一对多
