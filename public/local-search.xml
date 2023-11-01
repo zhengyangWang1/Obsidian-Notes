@@ -4,6 +4,25 @@
   
   
   <entry>
+    <title>扩散模型调研</title>
+    <link href="/2023/11/01/Notes/%E8%AE%BA%E6%96%87/%E6%89%A9%E6%95%A3%E6%A8%A1%E5%9E%8B%E8%B0%83%E7%A0%94/"/>
+    <url>/2023/11/01/Notes/%E8%AE%BA%E6%96%87/%E6%89%A9%E6%95%A3%E6%A8%A1%E5%9E%8B%E8%B0%83%E7%A0%94/</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>扩散模型</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>个人发展规划大作业</title>
     <link href="/2023/10/31/Notes/%E8%AF%BE%E7%A8%8B/%E4%B8%AA%E4%BA%BA%E5%8F%91%E5%B1%95%E8%A7%84%E5%88%92%E5%A4%A7%E4%BD%9C%E4%B8%9A/"/>
     <url>/2023/10/31/Notes/%E8%AF%BE%E7%A8%8B/%E4%B8%AA%E4%BA%BA%E5%8F%91%E5%B1%95%E8%A7%84%E5%88%92%E5%A4%A7%E4%BD%9C%E4%B8%9A/</url>
@@ -1242,7 +1261,7 @@
     <link href="/2023/09/22/Notes/TODO/"/>
     <url>/2023/09/22/Notes/TODO/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><hr><h3 id="十月"><a href="#十月" class="headerlink" title="十月"></a>十月</h3><ul><li><input checked="" disabled="" type="checkbox"> 操作系统阅读文档</li><li><input checked="" disabled="" type="checkbox"> git学习</li><li><input checked="" disabled="" type="checkbox"> Django学习</li><li><input checked="" disabled="" type="checkbox"> 数据库第一次课作业</li><li><input checked="" disabled="" type="checkbox"> 全连接网络的实现</li><li><input checked="" disabled="" type="checkbox"> 智能计算系统第二章作业</li><li><input disabled="" type="checkbox"> 软工调研报告</li><li><input checked="" disabled="" type="checkbox"> 数据库实验二</li><li><input disabled="" type="checkbox"> nndlA2</li><li><input disabled="" type="checkbox"> 操作系统p2 结合ppt理解代码</li><li><input disabled="" type="checkbox"> 操作系统进度跟上 笔记同步</li><li><input disabled="" type="checkbox"> 周六软件工程小组开会 开会前实现前后端交互</li><li><input disabled="" type="checkbox"> 周日前大创进度跟上[[扩散模型论文todo]]</li><li><input disabled="" type="checkbox"> 下周一OS期中考试 选择 判断 填空 简答 中文</li></ul>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><hr><h3 id="十月"><a href="#十月" class="headerlink" title="十月"></a>十月</h3><ul><li><input checked="" disabled="" type="checkbox"> 操作系统阅读文档</li><li><input checked="" disabled="" type="checkbox"> git学习</li><li><input checked="" disabled="" type="checkbox"> Django学习</li><li><input checked="" disabled="" type="checkbox"> 数据库第一次课作业</li><li><input checked="" disabled="" type="checkbox"> 全连接网络的实现</li><li><input checked="" disabled="" type="checkbox"> 智能计算系统第二章作业</li><li><input checked="" disabled="" type="checkbox"> 软工调研报告</li><li><input checked="" disabled="" type="checkbox"> 数据库实验二</li><li><input disabled="" type="checkbox"> nndlA2</li><li><input disabled="" type="checkbox"> 操作系统p2 结合ppt理解代码</li><li><input disabled="" type="checkbox"> 操作系统进度跟上 笔记同步</li><li><input disabled="" type="checkbox"> 周六软件工程小组开会 开会前实现前后端交互</li><li><input disabled="" type="checkbox"> 周日前大创进度跟上[[扩散模型论文todo]]</li><li><input disabled="" type="checkbox"> 下周一OS期中考试 选择 判断 填空 简答 中文</li></ul>]]></content>
     
     
     <categories>
