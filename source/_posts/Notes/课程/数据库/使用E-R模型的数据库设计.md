@@ -96,3 +96,15 @@ ER模型使用有关联的图表表示，即ER图，它以图形的方式表示�
 
 在 ER 图中表示基数约束：
 - 有→的代表一，没有箭头为多
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231101233549.png)
+- 用双线表示至少有一个实体相关联，单线则表示可以有零个或多个
+
+##### Participate Constraints（参与约束）
+实体 E 在关系 R 中的参与是**完全的（total）**，如果 E 中的每个实体都参与 R 中的至少一个关系：![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231101233933.png)
+实体 E 在关系 R 中的参与是**部分的（partial）**，如果 E 中的某些实体可能不参与 R 中的任何关系：![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231101234007.png)
+##### Cardinality Limits for Participation（参与的基数限制）
+基数限制（参与的基数界限）用于表示对参与的定量约束
+e.g.
+- 每个instructor最多可以指导多个student, 最少可以指导0个student
+- 每个student最少有1个指导instructor，最多也只有1个指导instructor
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231101234344.png)
