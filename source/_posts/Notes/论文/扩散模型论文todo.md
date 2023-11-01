@@ -1,5 +1,5 @@
 ---
-title: 扩散模型论文todo（已过期）
+title: 扩散模型论文todo
 categories:
   - Notes
   - 论文
