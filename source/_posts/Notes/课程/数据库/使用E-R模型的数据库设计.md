@@ -49,15 +49,24 @@ ER模型使用有关联的图表表示，即ER图，它以图形的方式表示�
 关系是多个实体之间的关联
 实体集 E1， E2， ...， En 参与关系集 R
 ##### Attributes with Relationship Sets
-属性也可以与关系集合联系
+
+关系集在E-R图中用菱形表示，菱形通过线条连接到多个不同的实体集（矩形）。属性也可以与关系集合联系。
 在教师和学生之间设置的顾问关系可能具有属性日期，该属性跟踪学生何时开始与顾问关联
 ![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231101225949.png)
 
 ##### Role in Relationship Sets
+实体在关系中扮演的功能称为该实体的角色
+在E-R图中角色一般标注在菱形和矩形之间的连线上
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231101230806.png)
+
+##### Degree of a Relationship Set（关系集的度） vs Non-binary Relationship Sets（非二元关系集）
+二元关系涉及两个实体集（或二度）
+在某些情况下，我们将关系表示为非二元关系。 具有三元关系的 E-R 图示例：学生在教师的指导下从事研究项目，教师、学生和项目之间的关系proj_guide是三元的
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231101231144.png)
 
 
 ### 6.3 Complex Attributes
-
+每个属性都有一个可取值的集合，称为该属性的域（domain），或者值集（value set）
 ### 6.4 Mapping  Cardinalities Constrants
 一对一
 一对多
