@@ -95,4 +95,11 @@ fork() 通过复制调用进程地址空间的内容来创建新进程 新进程
 ![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231102232654.png)
 
 ### 进程的状态
-#### 阻塞态
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231102233236.png)
+
+进程的等待队列用指针建立表
+
+### 进程控制
+实现原语的原子性：
+关中断指令和开中断指令
+CPU执行了关中断指令后就不再
