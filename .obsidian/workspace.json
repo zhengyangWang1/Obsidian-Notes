@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "source/_posts/Notes/课程/操作系统/操作系统.md",
+                "file": "source/_posts/Notes/课程/操作系统/Processes进程.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "source/_posts/Notes/课程/操作系统/操作系统.md",
+                "file": "source/_posts/Notes/课程/操作系统/Processes进程.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "source/_posts/Notes/课程/操作系统/操作系统.md",
+                "file": "source/_posts/Notes/课程/操作系统/Processes进程.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "source/_posts/Notes/课程/操作系统/操作系统.md"
+                "file": "source/_posts/Notes/课程/操作系统/Processes进程.md"
               }
             }
           },
@@ -154,7 +154,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "source/_posts/Notes/课程/操作系统/操作系统.md"
+                "file": "source/_posts/Notes/课程/操作系统/Processes进程.md"
               }
             }
           }
@@ -179,8 +179,9 @@
   },
   "active": "b0b4f280110024d1",
   "lastOpenFiles": [
-    "source/_posts/Notes/TODO.md",
     "source/_posts/Notes/课程/操作系统/操作系统.md",
+    "source/_posts/Notes/课程/操作系统/Processes进程.md",
+    "source/_posts/Notes/TODO.md",
     "source/_posts/Notes/课程/操作系统/Blitz软件.md",
     "source/_posts/Notes/课程/神经网络与深度学习/注意力机制.md",
     "source/_posts/Notes/课程/智能计算系统/深度学习.md",
@@ -214,7 +215,6 @@
     "source/_posts/Notes/课程/操作系统/Threads线程.md",
     "source/_posts/Notes/课程/操作系统/Semaphores信号量.md",
     "source/_posts/Notes/课程/操作系统/Monitor管程.md",
-    "source/_posts/Notes/编程/WSL配置.md",
     "public/img/police_beian.png",
     "public/img/loading.gif",
     "public/img/fluid.png",
