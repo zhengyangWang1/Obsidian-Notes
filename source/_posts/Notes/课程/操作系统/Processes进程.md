@@ -88,3 +88,11 @@ fork() 通过复制调用进程地址空间的内容来创建新进程 新进程
 
 ### 进程的组成--PCB
 进程控制块PCB，记录PID、UID
+进程被创建时创建唯一PCB，进程结束时回收
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231102232517.png)
+
+### 进程的特征
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231102232654.png)
+
+### 进程的状态
+#### 阻塞态

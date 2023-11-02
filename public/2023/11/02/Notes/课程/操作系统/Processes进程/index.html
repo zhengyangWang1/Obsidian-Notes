@@ -23,11 +23,14 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="为什么我们需要同时运行多个程序？称为“多道程序设计” 因为它会提高 CPU 利用率I&#x2F;O 密集型程序大部分时间都在等待 I&#x2F;O，因此最好让 CPU 忙于其他任务 多道程序设计：在一个物理地址空间中容纳多个进程 每个进程可以是 I&#x2F;O 密集型或 CPU 密集型 混合使用 I&#x2F;O 密集型和 CPU 密集型进程会很好 目标是提高 CPU 利用率 调度程序决定哪个进">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231102232517.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231102232654.png">
 <meta property="article:published_time" content="2023-11-02T12:53:55.380Z">
-<meta property="article:modified_time" content="2023-11-02T15:20:05.559Z">
+<meta property="article:modified_time" content="2023-11-02T15:29:21.256Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="操作系统">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231102232517.png">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
@@ -214,7 +217,7 @@
         
         
         
-          21 分钟
+          22 分钟
         
       </span>
     
@@ -283,8 +286,9 @@
 <p>进程直接在CPU上执行指令</p>
 <p>进程可能会做一些非法的事情（读&#x2F;写不属于该进程的内存，直接访问硬件） 进程可能会永远运行（操作系统必须保持控制） 进程可能会做一些缓慢的事情，例如 I&#x2F;O（操作系统可能想要切换到另一个进程）<br>解决方案：操作系统在硬件的帮助下维持一些控制。例如，操作系统维护定时器以定期拦截执行，并且进程可能不会执行直接访问硬件的特权指令</p>
 <p>在大多数操作系统上，进程是： 相互隔离 与操作系统隔离 隔离是安全的核心要求： 将错误限制在进程中 启用权限隔离 启用分区（将复杂系统分解为独立的故障域)</p>
-<h3 id="进程的组成–PCB"><a href="#进程的组成–PCB" class="headerlink" title="进程的组成–PCB"></a>进程的组成–PCB</h3><p>进程控制块PCB，记录PID、UID</p>
-
+<h3 id="进程的组成–PCB"><a href="#进程的组成–PCB" class="headerlink" title="进程的组成–PCB"></a>进程的组成–PCB</h3><p>进程控制块PCB，记录PID、UID<br>进程被创建时创建唯一PCB，进程结束时回收<br><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231102232517.png" srcset="/img/loading.gif" lazyload alt="image.png"></p>
+<h3 id="进程的特征"><a href="#进程的特征" class="headerlink" title="进程的特征"></a>进程的特征</h3><p><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231102232654.png" srcset="/img/loading.gif" lazyload alt="image.png"></p>
+<h3 id="进程的状态"><a href="#进程的状态" class="headerlink" title="进程的状态"></a>进程的状态</h3><h4 id="阻塞态"><a href="#阻塞态" class="headerlink" title="阻塞态"></a>阻塞态</h4>
                 
               </div>
             
