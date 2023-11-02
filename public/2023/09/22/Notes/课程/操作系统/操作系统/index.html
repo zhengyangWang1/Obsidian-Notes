@@ -24,7 +24,7 @@
 <meta property="og:description" content="老师声音小，需要坐前排 40分平时作业（gitee），60分期末 TODO：   加入gitee仓库   虚拟换CPU：操作系统需要以某种方式在看似同时运行的许多程序之间共享物理CPU 基本思想：运行一个程序一小会儿，然后切换到运行另一个程序，依此类推 分时CPU - 虚拟化就实现了！ 都具有用于在内存和寄存器之间移动项目的加载和存储指令   将位于内存中某个地址的字加载到寄存器中  将寄存器的内">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-09-21T16:36:34.336Z">
-<meta property="article:modified_time" content="2023-11-02T12:35:48.706Z">
+<meta property="article:modified_time" content="2023-11-02T12:47:00.920Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="操作系统">
 <meta name="twitter:card" content="summary_large_image">
@@ -203,7 +203,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          660 字
+          948 字
         
       </span>
     
@@ -214,7 +214,7 @@
         
         
         
-          6 分钟
+          8 分钟
         
       </span>
     
@@ -283,6 +283,8 @@
 <p>寄存器r15指向执行栈的顶部<br>堆栈从较高的内存地址向较低的内存地址向下增长</p>
 <p>CPU在PSW中有一个模式位，用于定义程序的执行能力</p>
 <p>内核模式：执行任何指令<br>用户模式： 执行指令的子集<br>仅在内核模式下执行的指令称为特权指令</p>
+<p>在用户模式下运行的应用程序要执行系统调用，用户程序需要执行一条称为陷阱<code>trap</code>的指令<br>它所做的只是跳转到内核，同时将特权级别提升到内核模式<br>我们需要返回到进行系统调用的程序，但同时，需要清除模式位（将特权级别降低回用户模式）同样，操作系统依赖于CPU的一些帮助，通过使用另一条指令，我们称之为从陷阱返回<code>return-from-trap</code></p>
+<p>内核在内核模式下启动时会设置一个陷阱表，然后让硬件知道它在哪里。陷阱表也称为中断表&#x2F;向量，因为它也有硬件中断和异常的条目！事实证明，trap 只是陷阱表中的条目之一。系统调用的实际类型称为系统调用号，它可以存储在内核堆栈中的众所周知的位置</p>
 
                 
               </div>
