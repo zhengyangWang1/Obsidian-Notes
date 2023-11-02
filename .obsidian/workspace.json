@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 271.5
+    "width": 271.5,
+    "collapsed": true
   },
   "right": {
     "id": "45464171d8013cd8",
@@ -178,6 +179,12 @@
   },
   "active": "b0b4f280110024d1",
   "lastOpenFiles": [
+    "public/2023/11/02/Notes/课程/神经网络与深度学习/注意力机制/index.html",
+    "public/2023/11/02/Notes/课程/神经网络与深度学习/注意力机制",
+    "public/2023/11/02/Notes/课程/神经网络与深度学习",
+    "public/2023/11/02/Notes/课程",
+    "public/2023/11/02/Notes",
+    "public/2023/11/02",
     "source/_posts/Notes/课程/神经网络与深度学习/循环神经网络.md",
     "source/_posts/Notes/课程/神经网络与深度学习/注意力机制.md",
     "source/_posts/Notes/课程/神经网络与深度学习/前馈神经网络.md",
@@ -199,11 +206,6 @@
     "public/2023/11/01/Notes/课程/操作系统/Memory内存/index.html",
     "public/2023/11/01/Notes/课程/操作系统/Memory内存",
     "public/2023/11/01/Notes/课程/操作系统",
-    "public/2023/11/01/Notes/课程",
-    "public/2023/11/01/Notes/论文/扩散模型调研/index.html",
-    "public/2023/11/01/Notes/论文/扩散模型调研",
-    "public/2023/11/01/Notes/论文",
-    "public/2023/11/01/Notes",
     "source/_posts/Notes/课程/智能计算系统/深度学习.md",
     "source/_posts/Notes/课程/个人发展规划大作业.md",
     "source/_posts/Notes/课程/操作系统/操作系统.md",
@@ -213,7 +215,6 @@
     "source/_posts/Notes/课程/操作系统/Monitor管程.md",
     "source/_posts/Notes/课程/操作系统/Blitz软件.md",
     "source/_posts/Notes/编程/WSL配置.md",
-    "source/_posts/Notes/课程/智能计算系统/智能计算系统.md",
     "public/img/police_beian.png",
     "public/img/loading.gif",
     "public/img/fluid.png",
