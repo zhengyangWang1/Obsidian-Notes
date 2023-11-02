@@ -24,7 +24,7 @@
 <meta property="og:description" content="为什么我们需要同时运行多个程序？称为“多道程序设计” 因为它会提高 CPU 利用率I&#x2F;O 密集型程序大部分时间都在等待 I&#x2F;O，因此最好让 CPU 忙于其他任务 多道程序设计：在一个物理地址空间中容纳多个进程 每个进程可以是 I&#x2F;O 密集型或 CPU 密集型 混合使用 I&#x2F;O 密集型和 CPU 密集型进程会很好 目标是提高 CPU 利用率 调度程序决定哪个进">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-11-02T12:53:55.380Z">
-<meta property="article:modified_time" content="2023-11-02T13:58:54.552Z">
+<meta property="article:modified_time" content="2023-11-02T14:10:13.790Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="操作系统">
 <meta name="twitter:card" content="summary_large_image">
@@ -203,7 +203,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          693 字
+          1.4k 字
         
       </span>
     
@@ -214,7 +214,7 @@
         
         
         
-          6 分钟
+          12 分钟
         
       </span>
     
@@ -270,6 +270,11 @@
 </ul>
 <p>允许在同一物理地址空间中执行多个程序<br>虚拟化CPU：多个独立进程同时运行在一台物理机上 但实际上，每个CPU上任一时刻最多只能有一个进程处于活动状态。</p>
 <p>程序是磁盘上的应用程序，由代码和数据组成；<br><strong>程序在执行时就成为进程</strong>。<strong>进程是程序的运行实例</strong>。进程以单个执行线程和地址空间开始。一个进程可以在同一地址空间中启动多个执行线程。<strong>每个线程都有自己的堆栈</strong>，但它们<strong>共享全局数据、代码和堆</strong>。</p>
+<p>当用户执行程序时，操作系统会创建一个进程。操作系统在多个进程之间分时共享 CPU。操作系统调度程序选择要运行的可执行进程之一。<br>调度程序必须保留进程列表<br>调度程序必须保留调度策略的元数据</p>
+<p>策略和机制之间的区别可以实现模块化。调度策略独立于上下文切换功能。</p>
+<p>运行（Running）：此进程当前正在执行<br>就绪（Ready）：此进程已准备好执行（并且将在策略决定时进行调度）<br>阻塞（Blocked）：此进程已挂起（例如，等待某些操作；当该操作完成时，操作系统将取消阻止它）<br>New：此进程正在创建（以确保它不会被调度） Dead&#x2F;termination：此进程已终止（例如，如果父进程尚未读出返回值）</p>
+<p>如果所有进程都被阻塞，应该调度什么进程？空闲进程（idle）。现代内核使用低优先级空闲进程，如果没有其他进程准备好，该进程就会被调度并执行。空闲进程从不阻塞或执行任何 I&#x2F;O。空闲进程是解决挑战性问题的简单方法。如果没有空闲进程，调度程序将必须检查是否没有进程准备好运行，并且必须保守地采取行动。空闲进程保证至少有一个进程可以运行</p>
+<p>操作系统维护活动进程的数据结构（数组&#x2F;列表）。每个进程的信息都存储在进程控制块（在 Linux 上，称为 task_struct）中，其中包含：<br>进程标识符 (PID)<br>进程状态（例如，就绪）<br>指向父进程的指针 (cat &#x2F;proc&#x2F;self&#x2F;status)<br>CPU 上下文（如果进程未运行）<br>指向地址空间的指针 (cat &#x2F;proc&#x2F;self&#x2F;maps)<br>指向打开文件列表的指针（文件描述符，cat &#x2F;proc&#x2F;self&#x2F;fdinfo&#x2F;*）</p>
 
                 
               </div>
