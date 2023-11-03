@@ -34,7 +34,16 @@ STATICFILES_DIRS = [
 前端可以使用表单将参数传递给后端接收
 ```
 <form id="表单名" action="{% url '接收表单的函数' %}" method="post" >
+	{% csrf_token %} 
+	<!-- ... 其他表单字段 ... --> 
+	<button type="submit">提交</button> 
+</form>
 ```
 url中的函数需要在views中定义，用来接受表单中的信息并进行处理，接收方式常用`get`和`post`
 
-Django使用CSRF令牌是一种保护机制，用于防止恶意网站利用用户的登录状态进行伪造请求。
+Django使用CSRF令牌保护机制，用于防止恶意网站利用用户的登录状态进行伪造请求。在表单中需要添加`{% csrf_token %}`标签，它会生成一个包含 CSRF 令牌的隐藏字段。
+
+使用javascript函数返回布尔值，可以控制表单是否被提交：
+```
+<button type="submit" onclick="return submitForm()">提交</button>
+```
