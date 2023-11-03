@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "c8a391c3dcbd8987",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "source/_posts/Notes/课程/操作系统/Scheduling调度.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -86,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "source/_posts/Notes/课程/操作系统/Processes进程.md",
+                "file": "source/_posts/Notes/课程/操作系统/Scheduling调度.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "source/_posts/Notes/课程/操作系统/Processes进程.md",
+                "file": "source/_posts/Notes/课程/操作系统/Scheduling调度.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "source/_posts/Notes/课程/操作系统/Processes进程.md"
+                "file": "source/_posts/Notes/课程/操作系统/Scheduling调度.md"
               }
             }
           },
@@ -154,7 +167,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "source/_posts/Notes/课程/操作系统/Processes进程.md"
+                "file": "source/_posts/Notes/课程/操作系统/Scheduling调度.md"
               }
             }
           }
@@ -177,8 +190,10 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "b0b4f280110024d1",
+  "active": "c8a391c3dcbd8987",
   "lastOpenFiles": [
+    "source/_posts/Notes/课程/操作系统/Processes进程.md",
+    "source/_posts/Notes/课程/操作系统/Scheduling调度.md",
     "source/_posts/Notes/编程/Django/Django模板.md",
     "source/_posts/Notes/编程/Django/Django操作MySQL.md",
     "source/_posts/Notes/编程/Django/Django基础.md",
@@ -188,7 +203,6 @@
     "source/_posts/Notes/课程/软件工程/面向对象分析.md",
     "source/_posts/Notes/课程/软件工程/软件生命周期.md",
     "source/_posts/Notes/课程/软件工程/软件需求分析.md",
-    "source/_posts/Notes/课程/操作系统/Processes进程.md",
     "source/_posts/Notes/课程/神经网络与深度学习/分析与简答.md",
     "source/_posts/Notes/课程/操作系统/操作系统.md",
     "source/_posts/Notes/课程/操作系统/Deadlock死锁.md",
@@ -214,7 +228,6 @@
     "source/_posts/Notes/课程/神经网络与深度学习/网络优化与正则化.md",
     "source/_posts/Notes/课程/数据库/使用E-R模型的数据库设计.md",
     "source/_posts/Notes/课程/数据库/SQL高级.md",
-    "source/_posts/Notes/课程/数据库/SQL基础.md",
     "public/img/police_beian.png",
     "public/img/loading.gif",
     "public/img/fluid.png",
