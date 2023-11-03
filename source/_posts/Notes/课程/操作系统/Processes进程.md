@@ -113,3 +113,4 @@ CPU执行了关中断指令后就不再检查中断信号，直到执行开中�
 ![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231102234718.png)
 
 切换原语：
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231102235107.png)
