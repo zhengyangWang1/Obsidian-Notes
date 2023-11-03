@@ -21,6 +21,7 @@ date:
 Concurrency并发：在单核系统上
 Parallelism并行：在多核系统上
 
+操作系统会为每个内核级线程建立相应的TCB（线程控制块），通过TCB对线程进行管理
 ### Race Conditions竞争条件
 ![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231009143100.png)
 线程分为send和receive
