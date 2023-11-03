@@ -24,6 +24,17 @@ STATICFILES_DIRS = [
 ```
 
 #### 修改html文件
-在html中需要添加一行
+在html中需要添加一行`{% load static %}`在调用静态文件之前。
+然后在调用静态文件时，使用`{% static '文件路径' %}`
+
 
 ### 前后端通信
+#### 表单传参
+[使用表单 | Django 文档 | Django](https://docs.djangoproject.com/zh-hans/4.2/topics/forms/)
+前端可以使用表单将参数传递给后端接收
+```
+<form id="表单名" action="{% url '接收表单的函数' %}" method="post" >
+```
+url中的函数需要在views中定义，用来接受表单中的信息并进行处理，接收方式常用`get`和`post`
+
+Django使用CSRF令牌是一种保护机制，用于防止恶意网站利用用户的登录状态进行伪造请求。
