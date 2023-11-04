@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "source/_posts/Notes/论文/扩散模型调研.md",
+                "file": "source/_posts/Notes/论文/扩散模型论文todo.md",
                 "mode": "source",
                 "source": false
               }
@@ -81,8 +81,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 271.5,
-    "collapsed": true
+    "width": 271.5
   },
   "right": {
     "id": "45464171d8013cd8",
@@ -98,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "source/_posts/Notes/论文/扩散模型调研.md",
+                "file": "source/_posts/Notes/论文/扩散模型论文todo.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "source/_posts/Notes/论文/扩散模型调研.md",
+                "file": "source/_posts/Notes/论文/扩散模型论文todo.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "source/_posts/Notes/论文/扩散模型调研.md"
+                "file": "source/_posts/Notes/论文/扩散模型论文todo.md"
               }
             }
           },
@@ -166,7 +165,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "source/_posts/Notes/论文/扩散模型调研.md"
+                "file": "source/_posts/Notes/论文/扩散模型论文todo.md"
               }
             }
           }
@@ -191,8 +190,8 @@
   },
   "active": "b0b4f280110024d1",
   "lastOpenFiles": [
-    "source/_posts/Notes/论文/扩散模型论文todo.md",
     "source/_posts/Notes/论文/扩散模型调研.md",
+    "source/_posts/Notes/论文/扩散模型论文todo.md",
     "source/_posts/Notes/课程/操作系统/Processes进程.md",
     "source/_posts/Notes/课程/操作系统/Scheduling调度.md",
     "source/_posts/Notes/课程/操作系统/Threads线程.md",
