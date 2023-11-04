@@ -36,8 +36,9 @@
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231016083314.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231016083325.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231104223505.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231104224824.png">
 <meta property="article:published_time" content="2023-10-09T06:02:39.808Z">
-<meta property="article:modified_time" content="2023-11-04T14:47:22.350Z">
+<meta property="article:modified_time" content="2023-11-04T14:50:07.299Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="操作系统">
 <meta name="twitter:card" content="summary_large_image">
@@ -217,7 +218,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          888 字
+          995 字
         
       </span>
     
@@ -228,7 +229,7 @@
         
         
         
-          8 分钟
+          9 分钟
         
       </span>
     
@@ -307,7 +308,9 @@
 <li>有限等待</li>
 <li>让权等待</li>
 </ol>
-<h3 id="单标志法"><a href="#单标志法" class="headerlink" title="单标志法"></a>单标志法</h3><p>一个进程在访问完临界区后hui’ba</p>
+<h3 id="单标志法"><a href="#单标志法" class="headerlink" title="单标志法"></a>单标志法</h3><p>一个进程在访问完临界区后会把使用临界区的权限转交给另一个进程。也就是说<strong>每个进程进入临界区的权限只能被另一个进程赋予</strong></p>
+<p>举例：<br><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231104224824.png" srcset="/img/loading.gif" lazyload alt="image.png"></p>
+<p>如果此时允许P0进入临界区，但P0一直不访问临界区，那么虽然此时临界区空闲，但是并不允许P1访问。<br>因此单标志法<strong>违背”空闲让进“原则</strong></p>
 
                 
               </div>
