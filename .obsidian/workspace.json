@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "source/_posts/Notes/论文/扩散模型论文todo.md",
+                "file": "source/_posts/Notes/课程/操作系统/Threads线程.md",
                 "mode": "source",
                 "source": false
               }
@@ -81,7 +81,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 271.5
+    "width": 271.5,
+    "collapsed": true
   },
   "right": {
     "id": "45464171d8013cd8",
@@ -97,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "source/_posts/Notes/论文/扩散模型论文todo.md",
+                "file": "source/_posts/Notes/课程/操作系统/Threads线程.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "source/_posts/Notes/论文/扩散模型论文todo.md",
+                "file": "source/_posts/Notes/课程/操作系统/Threads线程.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "source/_posts/Notes/论文/扩散模型论文todo.md"
+                "file": "source/_posts/Notes/课程/操作系统/Threads线程.md"
               }
             }
           },
@@ -165,7 +166,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "source/_posts/Notes/论文/扩散模型论文todo.md"
+                "file": "source/_posts/Notes/课程/操作系统/Threads线程.md"
               }
             }
           }
@@ -188,13 +189,14 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "a096be5067d8f57d",
+  "active": "b0b4f280110024d1",
   "lastOpenFiles": [
-    "source/_posts/Notes/论文/扩散模型调研.md",
-    "source/_posts/Notes/论文/扩散模型论文todo.md",
-    "source/_posts/Notes/课程/操作系统/Processes进程.md",
-    "source/_posts/Notes/课程/操作系统/Scheduling调度.md",
+    "source/_posts/Notes/课程/操作系统/Deadlock死锁.md",
     "source/_posts/Notes/课程/操作系统/Threads线程.md",
+    "source/_posts/Notes/课程/操作系统/Processes进程.md",
+    "source/_posts/Notes/论文/扩散模型论文todo.md",
+    "source/_posts/Notes/论文/扩散模型调研.md",
+    "source/_posts/Notes/课程/操作系统/Scheduling调度.md",
     "source/_posts/Notes/课程/操作系统/操作系统.md",
     "public/2023/11/03/Notes/课程/操作系统/Scheduling调度/index.html",
     "public/2023/11/03/Notes/课程/操作系统/Scheduling调度",
@@ -212,7 +214,6 @@
     "source/_posts/Notes/课程/软件工程/软件生命周期.md",
     "source/_posts/Notes/课程/软件工程/软件需求分析.md",
     "source/_posts/Notes/课程/神经网络与深度学习/分析与简答.md",
-    "source/_posts/Notes/课程/操作系统/Deadlock死锁.md",
     "source/_posts/Notes/课程/操作系统/Blitz软件.md",
     "public/2023/11/02/Notes/课程/操作系统/Processes进程/index.html",
     "public/2023/11/02/Notes/课程/操作系统/Processes进程",

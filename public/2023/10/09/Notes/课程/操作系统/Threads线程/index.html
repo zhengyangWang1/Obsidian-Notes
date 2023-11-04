@@ -35,8 +35,9 @@
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231016082444.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231016083314.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231016083325.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231104223505.png">
 <meta property="article:published_time" content="2023-10-09T06:02:39.808Z">
-<meta property="article:modified_time" content="2023-11-04T02:37:17.097Z">
+<meta property="article:modified_time" content="2023-11-04T14:37:22.078Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="操作系统">
 <meta name="twitter:card" content="summary_large_image">
@@ -216,7 +217,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          618 字
+          780 字
         
       </span>
     
@@ -227,7 +228,7 @@
         
         
         
-          6 分钟
+          7 分钟
         
       </span>
     
@@ -290,6 +291,8 @@
 <p>解决方法：Test and Set Lock（TSL）把参数变为真值，返回它的旧值<br><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231016081529.png" srcset="/img/loading.gif" lazyload alt="image.png"></p>
 <p><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231016082444.png" srcset="/img/loading.gif" lazyload alt="image.png"></p>
 <p>Compare-and-swap lock<br><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231016083314.png" srcset="/img/loading.gif" lazyload alt="image.png"><br><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231016083325.png" srcset="/img/loading.gif" lazyload alt="image.png"><br>当线程A进行比较时，返回true，lck被置为true，线程A得到lock，此时线程B进行比较，返回false，进入循环，直到A进行release</p>
+<h3 id="进程同步"><a href="#进程同步" class="headerlink" title="进程同步"></a>进程同步</h3><p>进程具有异步性的特征，各并发执行的进程以各自独立的、不可预知的速度向前推进</p>
+<h3 id="进程互斥"><a href="#进程互斥" class="headerlink" title="进程互斥"></a>进程互斥</h3><p><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231104223505.png" srcset="/img/loading.gif" lazyload alt="image.png"><br>一个时间段内只允许一个进程使用的资源称为临界资源。对临界资源的访问，必须<strong>互斥</strong>地进行。<br>进程互斥指当一个进程访问某临界资源时，另一个想要访问该资源的进程必须等待。当前访问临界资源的进程访问结束，释放该资源后，另一个进程才能去访问临界资源。</p>
 
                 
               </div>

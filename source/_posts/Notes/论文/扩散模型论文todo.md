@@ -10,6 +10,14 @@ tags:
 对比学习生成 **hardsample**
 自动数据增强
 识别出假数据
+https://arxiv.org/pdf/2207.00148.pdf
+https://arxiv.org/pdf/2010.04592v2.pdf
+https://epubs.siam.org/doi/epdf/10.1137/1.9781611977653.ch19
+https://ojs.aaai.org/index.php/AAAI/article/view/26071
+https://arxiv.org/pdf/2303.15161v3.pdf
+https://www.sciencedirect.com/science/article/abs/pii/S0031320323002121
+https://paperswithcode.com/paper/hard-sample-guided-hybrid-contrast-learning
+https://paperswithcode.com/paper/hard-sample-aware-noise-robust-learning-for
 ### NEW
 
 近三到五年文章 的方法 论文和代码调研 不止对比学习
