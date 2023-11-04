@@ -25,7 +25,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231104173325.png">
 <meta property="article:published_time" content="2023-11-01T01:17:04.297Z">
-<meta property="article:modified_time" content="2023-11-04T12:42:23.053Z">
+<meta property="article:modified_time" content="2023-11-04T12:49:45.143Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="扩散模型">
 <meta name="twitter:card" content="summary_large_image">
@@ -205,7 +205,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          2k 字
+          2.3k 字
         
       </span>
     
@@ -216,7 +216,7 @@
         
         
         
-          17 分钟
+          20 分钟
         
       </span>
     
@@ -265,6 +265,7 @@
 <h3 id="Learning-Fast-Samplers-for-Diffusion-Models-by-Differentiating-Through-Sample-Quality"><a href="#Learning-Fast-Samplers-for-Diffusion-Models-by-Differentiating-Through-Sample-Quality" class="headerlink" title="Learning Fast Samplers for Diffusion Models by Differentiating Through Sample Quality"></a>Learning Fast Samplers for Diffusion Models by Differentiating Through Sample Quality</h3><h3 id="2022-ICLR-Learning-Fast-Samplers-for-Diffusion-Models-by-Differentiating-Through-Sample-Quality-OpenReview"><a href="#2022-ICLR-Learning-Fast-Samplers-for-Diffusion-Models-by-Differentiating-Through-Sample-Quality-OpenReview" class="headerlink" title="2022 ICLR Learning Fast Samplers for Diffusion Models by Differentiating Through Sample Quality | OpenReview"></a>2022 ICLR <a target="_blank" rel="noopener" href="https://openreview.net/forum?id=VFBjuF8HEp">Learning Fast Samplers for Diffusion Models by Differentiating Through Sample Quality | OpenReview</a></h3><p><strong>通过区分样本质量进行快速采样</strong><br>我们引入可微扩散采样器搜索（DDSS）：一种通过区分样本质量分数来优化任何预训练扩散模型的快速采样器的方法。我们还提出了广义高斯扩散模型（GGDM），这是一系列用于扩散模型的灵活非马尔可夫采样器。我们表明，通过梯度下降最大化样本质量分数来优化 GGDM 采样器的自由度可以提高样本质量。我们的优化过程使用重参数化技巧和梯度重物化通过采样过程进行反向传播。</p>
 <h3 id="Learning-to-Efﬁciently-Sample-from-Diffusion-Probabilistic-Models"><a href="#Learning-to-Efﬁciently-Sample-from-Diffusion-Probabilistic-Models" class="headerlink" title="Learning to Efﬁciently Sample from Diffusion Probabilistic Models"></a>Learning to Efﬁciently Sample from Diffusion Probabilistic Models</h3><p><strong>引入了一种动态规划算法，减少推理步数，进行快速采样</strong><br>在这项工作中，我们将推理调度路径的选择视为一个独立的优化问题，其中我们尝试学习最佳调度。我们的方法依赖于动态规划算法，在给定 K 个细化步骤的固定预算和预先训练的 DDPM 的情况下，我们找到最大化优化目标 (ELBO) 的时间步集。作为优化目标，ELBO 具有关键的可分解性属性：总 ELBO 是各个 KL 项的总和，对于任何两个推理路径，如果时间步 (s, t) 连续出现在两者中，则它们共享一个共同的 KL 项，因此承认记忆化。<br>引入了一种动态规划算法，该算法基于 ELBO 为 K 细化步骤的所有可能计算预算找到最佳推理路径。该算法搜索 T &gt; K 个时间步长，仅需要 O(T ) 神经网络前向传递。它只需要对预训练的DDPM 应用一次，不需要训练或重新训练DDPM，并且适用于时间离散和时间连续的DDPM。</p>
 <h3 id="Deep-Equilibrium-Approaches-to-Diffusion-Models"><a href="#Deep-Equilibrium-Approaches-to-Diffusion-Models" class="headerlink" title="Deep Equilibrium Approaches to Diffusion Models"></a>Deep Equilibrium Approaches to Diffusion Models</h3><p>从不同的角度（深度）平衡（DEQ）定点模型来研究扩散模型。具体来说，我们扩展了最近的去噪扩散隐式模型（DDIM）[68]，并将整个采样链建模为联合多变量定点系统。该设置提供了扩散和平衡模型的优雅统一，并显示出以下优点：1）单图像采样，因为它用并行采样过程取代了全串行典型采样过程； 2）模型反演，我们可以利用 DEQ 设置中的快速梯度来更快地找到生成给定图像的噪声。该方法也是正交的，因此与用于减少采样时间或改进模型反演的其他方法互补。</p>
+<h3 id="Improved-Denoising-Diffusion-Probabilistic-Models"><a href="#Improved-Denoising-Diffusion-Probabilistic-Models" class="headerlink" title="Improved Denoising Diffusion Probabilistic Models"></a>Improved Denoising Diffusion Probabilistic Models</h3><p>在本文中，我们证明 DDPM 可以实现与其他基于似然的模型竞争的对数似然，即使在 ImageNet 等高多样性数据集上也是如此。为了更紧密地优化变分下界（VLB），我们使用简单的重新参数化和混合学习目标来学习逆向过程方差，该混合学习目标将 VLB 与 Ho 等人的简化目标相结合。我们令人惊讶地发现，通过我们的混合目标，我们的模型比直接优化对数似然获得的模型获得了更好的对数似然，并且发现后一个目标在训练过程中具有更多的梯度噪声。我们证明了一种简单的重要性采样技术可以减少这种噪声，并使我们能够比混合目标获得更好的对数似然。在将学习到的方差合并到我们的模型中后，我们惊讶地发现我们可以用很少的时间从我们的模型中<strong>以更少的步骤进行采样</strong>。</p>
 
                 
               </div>
