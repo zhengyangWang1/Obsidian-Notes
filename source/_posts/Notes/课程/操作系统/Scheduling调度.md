@@ -102,3 +102,15 @@ date:
 #### 先来先服务（FCFS）
 按照到达的先后顺序，等待时间越久的越先得到服务。
 例题：![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231104145306.png)
+非抢占式算法
+优点：公平，算法实现简单
+缺点：排在长作业（进程）后面的短作业需要等待很长时间，带权周转时间很大。即FCFS算法**对长作业有利，对短作业不利**。
+
+不会导致饥饿
+
+#### 短作业优先（SJF）
+每次调度时选择当前已到达且运行时间最短的进程。
+例题：![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231104150027.png)
+非抢占式算法
+
+抢占式的短作业you
