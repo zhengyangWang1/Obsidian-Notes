@@ -97,3 +97,8 @@ date:
 等待时间：进程处于等待处理机状态时间之和
 
 响应时间：用户从提出请求到首次产生响应所用的时
+
+### 调度算法
+#### 先来先服务（FCFS）
+按照到达的先后顺序，等待时间越久的越先得到服务。
+例题：![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231104145306.png)
