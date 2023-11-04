@@ -64,3 +64,22 @@ date:
 ![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231104113430.png)
 
 不能进行进程调度与切换的情况：![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231104113457.png)
+### 进程调度的方式
+- 非抢占式
+- 抢占式：优先处理更紧急的进程
+
+进程切换的过程：
+1. 对原来运行进程各种数据的保存
+2. 对新的进程各种数据的恢复
+进程切换是有代价的
+
+### 调度程序
+决定让谁运行，以及运行多长时间
+抢占式调度策略在时钟中断时唤醒调度程序
+
+闲逛进程（idle）：
+- 优先级最低
+- 可以是0地址指令，占一个完整的指令周期
+- 能耗低
+
+### CPU利用率
