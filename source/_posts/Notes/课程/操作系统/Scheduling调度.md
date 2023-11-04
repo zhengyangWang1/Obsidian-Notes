@@ -113,7 +113,7 @@ date:
 例题：![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231104150027.png)
 非抢占式算法
 
-##### 抢占式的短作业优先算法：最短剩余时间优先算法（SRTN）
+##### 抢占式的短作业优先算法：最短剩余时间优先算法（SRTN/STCF）
 每当有进程加入，就绪队列改变时就需要调度，如果新到达进程的剩余时间比当前运行的进程剩余时间更短，则由新进程抢占处理机，当前进程回到就绪队列。
 例题：![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231104150908.png)![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231104150952.png)
 未特别说明，短作业优先算法默认是非抢占式的。
@@ -130,3 +130,9 @@ date:
 例题：![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231104152220.png)
 综合考虑了等待时间和运行时间
 避免了长作业饥饿的问题
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231104152435.png)
+
+#### 时间片轮转（RR）
+按各进程到达就绪队列的顺序，轮流让各个进程执行一个**时间片**（如100ms）。若进程未在一个时间片内执行完，则剥夺处理机，将进程重新放到就绪队列队尾重新排队。
+
+抢占式算法
