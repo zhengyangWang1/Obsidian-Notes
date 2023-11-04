@@ -91,6 +91,16 @@ Compare-and-swap lock
 因此单标志法**违背”空闲让进“原则**
 
 ### 双标志先检查法
-设置一个布尔型数组flag[]，数组中各个元素用来标记各进程想进入临界区的意愿![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231104230557.png)
+设置一个布尔型数组flag[]，数组中各个元素用来标记各进程想进入临界区的意愿
+先检查后上锁
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231104230557.png)
 如果两个进程同时想要进入临界区，就会出现冲突。
 因此双标志先检查法的问题是**违背”忙则等待“原则**
+
+### 双标志后检查法
+先上锁后检查
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231104230953.png)
+如果两个进程同时想要进入临界区，则它们都将无法进入临界区
+**违背了”空闲让进“和”有限等待“原则**，会让进程产生饥饿现象
+
+### Peterson算法
