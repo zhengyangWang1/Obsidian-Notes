@@ -136,3 +136,14 @@ date:
 按各进程到达就绪队列的顺序，轮流让各个进程执行一个**时间片**（如100ms）。若进程未在一个时间片内执行完，则剥夺处理机，将进程重新放到就绪队列队尾重新排队。
 
 抢占式算法
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231104153525.png)
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231104153547.png)
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231104153618.png)
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231104153635.png)
+
+如果时间片太大，使得每个进程都可以在一个时间片内完成，则时间片轮转调度算法退化为先来先服务算法，并且会增大进程相应时间。
+如果时间片太小，会导致进程切换过于频繁。
+
+#### 优先级调度算法
+每个进程都有各自的优先级，调度时选择优先级最高的进程。
+有抢占式和非抢占式。
