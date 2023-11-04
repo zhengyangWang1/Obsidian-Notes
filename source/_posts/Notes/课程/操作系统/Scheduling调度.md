@@ -116,4 +116,17 @@ date:
 ##### 抢占式的短作业优先算法：最短剩余时间优先算法（SRTN）
 每当有进程加入，就绪队列改变时就需要调度，如果新到达进程的剩余时间比当前运行的进程剩余时间更短，则由新进程抢占处理机，当前进程回到就绪队列。
 例题：![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231104150908.png)![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231104150952.png)
-未特别说明，短作业优先算法默认是非抢占式的
+未特别说明，短作业优先算法默认是非抢占式的。
+在所有进程都几乎同时到达时，采用SJF算法的平均等待时间、平均周转时间最少。
+抢占式的短作业优先算法的平均等待时间、平均周转时间最少。在所有进程同时到达时，SJF算法等同于抢占式SJF算法。
+
+缺点：可能产生饥饿现象。**短作业友好，长作业不友好**。
+
+#### 高相应比优先（HRRN）
+在调度时计算每个进程的相应比，选择相应比最高的进程为其服务。
+>![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231104152027.png)
+
+非抢占式算法
+例题：![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231104152220.png)
+综合考虑了等待时间和运行时间
+避免了长作业饥饿的问题
