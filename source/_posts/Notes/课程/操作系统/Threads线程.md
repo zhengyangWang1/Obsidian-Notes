@@ -104,3 +104,5 @@ Compare-and-swap lock
 **违背了”空闲让进“和”有限等待“原则**，会让进程产生饥饿现象
 
 ### Peterson算法
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231104231828.png)
+最后一个设置turn的进程会失去优先权
