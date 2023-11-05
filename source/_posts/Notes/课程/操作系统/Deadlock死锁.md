@@ -64,5 +64,13 @@ Hold and Wait持有等待
 3. 信号量的使用不当也会造成死锁
 
 #### 预防死锁
+破坏互斥条件：![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231105150332.png)
+破坏不剥夺条件：
 ![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231105150225.png)
+
+破坏请求和保持条件：
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231105150533.png)
+
+破坏循环等待条件：
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231105150733.png)
 
