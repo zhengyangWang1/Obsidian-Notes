@@ -63,3 +63,8 @@ S.value的初值表示系统中某资源的数目。遵循“让权等待”原�
 潜在问题：只要有读进程还在读，写进程就要一直阻塞等待，可能饿死。这种算法中，读进程是优先的。
 实现写优先：![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231105131045.png)
 ### 哲学家进餐问题
+问题描述：![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231105131830.png)
+防止死锁发生：
+1. 最多允许四个哲学家同时进餐
+2. 要求奇数号哲学家先拿左边的筷子，然后再拿右边的筷子，而偶数号哲学家刚好相反
+3. 使各哲学家拿筷子的操作互斥进行。![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231105132054.png)
