@@ -80,3 +80,9 @@ Hold and Wait持有等待
 如果分配了资源后，系统中找不出任何一个安全序列，系统就进入了不安全状态。如果系统进入不安全状态，就**有可能发生死锁**
 
 银行家算法：在进程提出资源申请时，先预判此次分配是否会导致系统进入不安全状态，如果会进入不安全状态，就暂时不答应这次请求，让该进程先阻塞等待。
+
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231105152524.png)
+
+#### 死锁的检测
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231105152801.png)
+
