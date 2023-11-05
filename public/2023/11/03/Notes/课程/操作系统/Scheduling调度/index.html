@@ -40,7 +40,7 @@
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231104154536.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231104155638.png">
 <meta property="article:published_time" content="2023-11-03T07:47:49.049Z">
-<meta property="article:modified_time" content="2023-11-05T16:21:31.434Z">
+<meta property="article:modified_time" content="2023-11-05T16:21:43.070Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="操作系统">
 <meta name="twitter:card" content="summary_large_image">
@@ -330,7 +330,7 @@
 <p>如果时间片太大，使得每个进程都可以在一个时间片内完成，则时间片轮转调度算法退化为先来先服务算法，并且会增大进程相应时间。<br>如果时间片太小，会导致进程切换过于频繁。</p>
 <h4 id="优先级调度算法"><a href="#优先级调度算法" class="headerlink" title="优先级调度算法"></a>优先级调度算法</h4><p>每个进程都有各自的优先级，调度时选择优先级最高的进程。<br>有抢占式和非抢占式。<br><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231104154536.png" srcset="/img/loading.gif" lazyload alt="image.png"></p>
 <p>会导致饥饿</p>
-<h4 id="多级反馈队列调度算法（MLFQ）"><a href="#多级反馈队列调度算法（MLFQ）" class="headerlink" title="多级反馈队列调度算法（MLFQ）"></a>多级反馈队列调度算法（MLFQ）</h4><p><strong>设置多级就绪队列，各级队列优先级从高到低，时间片从小到大。</strong><br><strong>新进程到达时先进入第一级队列，按FCFS原则排队等待被分配时间片</strong>。<strong>若用完时间片进程还没结束，则进程进入下一级队列队尾</strong>。如果此时已经在最下级队列，则重新放回最下级队列队尾。只有在第k级队列为空时，才会为k+1级队头的进程分配时间片<br>抢占式算法。在k级队列的进程运行过程中，若更上级的队列中进入了一个新进程，则由于新进程处于优先级更高的队列中，因此新进程会抢占处理机，原来运行的进程放回k级队列队尾。<br><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231104155638.png" srcset="/img/loading.gif" lazyload alt="image.png"></p>
+<h4 id="多级反馈队列调度算法（MLFQ）"><a href="#多级反馈队列调度算法（MLFQ）" class="headerlink" title="多级反馈队列调度算法（MLFQ）"></a>多级反馈队列调度算法（MLFQ）</h4><p><strong>设置多级就绪队列，各级队列优先级从高到低，时间片从小到大。</strong><br><strong>新进程到达时先进入第一级队列，按FCFS原则排队等待被分配时间片</strong>。<strong>若用完时间片进程还没结束，则进程进入下一级队列队尾</strong>。如果此时已经在最下级队列，则重新放回最下级队列队尾。<strong>只有在第k级队列为空时，才会为k+1级队头的进程分配时间片</strong><br>抢占式算法。在k级队列的进程运行过程中，若更上级的队列中进入了一个新进程，则由于新进程处于优先级更高的队列中，因此新进程会抢占处理机，原来运行的进程放回k级队列队尾。<br><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231104155638.png" srcset="/img/loading.gif" lazyload alt="image.png"></p>
 <h4 id="完全公平调度器（CFS）"><a href="#完全公平调度器（CFS）" class="headerlink" title="完全公平调度器（CFS）"></a>完全公平调度器（CFS）</h4><p>对于n个正在运行的任务，当这些任务同时不断地运行时，CPU会尽可能分配给他们1&#x2F;n的处理时间。CFS是一种基于加权公平排队思想的调度算法<br>实现：将所有进程保留在红黑树中，按最大执行时间排序（跟踪其正余额） 调度 调度最左边的进程（余额最高的进程） 如果进程退出，则将其从调度树中删除 中断时（时间片或 I&#x2F;O 结束），将进程重新插入树中的新位置</p>
 <blockquote>
 <p>红黑树是一种特殊的二叉搜索树，也就是左边节点都小于根节点都小于右边节点，递归整个树都满足这一点。也就是说最左边的叶子节点是最小的，最右边的叶子节点是最大的。红黑树相比二叉搜索树多了红色黑色两个颜色的宏定义,红黑树有以下5个性质：<br>每个结点要么是红的要么是黑的。<br>  根结点是黑的。<br>  每个叶结点都是黑的。<br>  如果一个结点是红的，那么它的两个儿子都是黑的。<br>  对于任意结点而言，其到叶结点的每条路径都包含相同数目的黑结点。</p>
