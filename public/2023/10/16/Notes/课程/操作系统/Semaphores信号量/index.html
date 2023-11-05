@@ -31,7 +31,7 @@
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231105112301.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231105112422.png">
 <meta property="article:published_time" content="2023-10-16T00:42:44.174Z">
-<meta property="article:modified_time" content="2023-11-05T03:27:19.493Z">
+<meta property="article:modified_time" content="2023-11-05T04:56:19.135Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="操作系统">
 <meta name="twitter:card" content="summary_large_image">
@@ -211,7 +211,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          626 字
+          709 字
         
       </span>
     
@@ -279,6 +279,12 @@
 <li>缓冲区是临界资源，各进程必须互斥访问。<br><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231105112301.png" srcset="/img/loading.gif" lazyload alt="image.png"></li>
 </ul>
 <p>实现互斥的P操作一定要在实现同步的P操作之后。先上锁再操作缓冲区会产生阻塞。<br><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231105112422.png" srcset="/img/loading.gif" lazyload alt="image.png"><br>两个V操作顺序可以交换。</p>
+<h3 id="读者写者问题"><a href="#读者写者问题" class="headerlink" title="读者写者问题"></a>读者写者问题</h3><ol>
+<li>允许多个读者同时对文件执行读操作</li>
+<li>只允许一个写者往文件中写信息</li>
+<li>任一写者在完成写操作前不允许其他读者或者写者工作</li>
+<li>写者执行写操作前，应让已有的读者和写者全部退出</li>
+</ol>
 
                 
               </div>
