@@ -86,3 +86,9 @@ Hold and Wait持有等待
 #### 死锁的检测
 ![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231105152801.png)
 
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231105153928.png)
+
+#### 死锁的解除
+1. 资源剥夺法：挂起某些死锁进程，并抢占它的资源。但是应防止被挂起的进程长时间得不到资源而饥饿
+2. 撤销进程法：强制撤销部分、甚至全部死锁进程。
+3. 进程回退法：让一个或多个死锁进程回退到足以避免死锁的地步。要求记录历史信息，设置还原点
