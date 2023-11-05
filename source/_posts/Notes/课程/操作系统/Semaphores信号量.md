@@ -28,3 +28,5 @@ semaphore（信号量）：
 
 #### 记录型信号量
 用记录型数据结构表示的信号量
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231105104723.png)
+S.value的初值表示系统中某资源的数目。遵循“让权等待”原则
