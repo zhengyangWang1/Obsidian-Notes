@@ -28,7 +28,7 @@
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231025100454.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231025100550.png">
 <meta property="article:published_time" content="2023-10-25T02:00:44.849Z">
-<meta property="article:modified_time" content="2023-11-05T06:23:32.839Z">
+<meta property="article:modified_time" content="2023-11-05T06:41:47.709Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="操作系统">
 <meta name="twitter:card" content="summary_large_image">
@@ -208,7 +208,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          733 字
+          983 字
         
       </span>
     
@@ -219,7 +219,7 @@
         
         
         
-          7 分钟
+          9 分钟
         
       </span>
     
@@ -285,6 +285,13 @@
 </li>
 <li><p>If Finish[i] &#x3D;&#x3D; false, for some i, 1 &lt;&#x3D; i &lt;&#x3D; n, then the system is in deadlock state. Moreover, if Finish[i] &#x3D;&#x3D; false, then P_i is deadlocked</p>
 </li>
+</ol>
+<h3 id="死锁"><a href="#死锁" class="headerlink" title="死锁"></a>死锁</h3><p>在并发环境下，各进程因竞争资源而造成的一种互相等待对方手里的资源，导致各进程都阻塞，都无法向前推进的现象，就是“死锁”。</p>
+<h4 id="死锁产生的必要条件"><a href="#死锁产生的必要条件" class="headerlink" title="死锁产生的必要条件"></a>死锁产生的必要条件</h4><ol>
+<li>互斥条件：只有对互斥使用的资源的争抢才会导致死锁</li>
+<li>不剥夺条件：进程所获得的资源未使用完之前，不能由其他进程强行夺走，只能主动释放</li>
+<li>请求和保持条件：进程已经保持了至少一个资源，又提出新的资源请求，而该资源又被其他进程占用，此时请求进程被阻塞，但又对自己已有的资源保持不放</li>
+<li>循环等待条件：存在一种进程资源的循环等待链，链中的每一个进程已获得的资源同时被下一个进程所请求</li>
 </ol>
 
                 
