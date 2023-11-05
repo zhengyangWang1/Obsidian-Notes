@@ -30,3 +30,14 @@ semaphore（信号量）：
 用记录型数据结构表示的信号量
 ![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231105104723.png)
 S.value的初值表示系统中某资源的数目。遵循“让权等待”原则
+
+### 信号量机制实现进程互斥
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231105105903.png)
+设置互斥信号量mutex，初值为1
+
+### 信号量机制实现进程同步
+需要保证“一前一后”执行的两个操作（或两句代码）
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231105110323.png)
+设置同步信号量S，初值为0
+在“前操作”之后执行V(S)
+在“后操作”之前执行P(S)
