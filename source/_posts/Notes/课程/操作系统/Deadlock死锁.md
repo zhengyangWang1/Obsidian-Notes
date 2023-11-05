@@ -49,3 +49,5 @@ Hold and Wait持有等待
 	go to step 2
 
 4. If Finish[i] == false, for some i, 1 <= i <= n, then the system is in deadlock state. Moreover, if Finish[i] == false, then P_i is deadlocked
+
+
