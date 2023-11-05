@@ -115,3 +115,10 @@ Compare-and-swap lock
 #### TestAndSet指令
 简称TS指令或TSL指令
 ![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231105102430.png)
+
+### 锁
+#### 互斥锁（mutex lock）
+一个进程在进入临界区时获得锁，在退出临界区时释放锁![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231105103037.png)
+函数acquire()获得锁，函数release()释放锁
+每个互斥锁有一个布尔变量available，表示锁是否可用
+需要连续循环忙等的互斥锁，都可称为自旋锁（spin lock），如TSL指令、swap指令、单标志法
