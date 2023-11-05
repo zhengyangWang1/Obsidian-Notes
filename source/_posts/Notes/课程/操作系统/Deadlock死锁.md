@@ -63,4 +63,6 @@ Hold and Wait持有等待
 2. 进程推进顺序非法
 3. 信号量的使用不当也会造成死锁
 
-#### 破坏互斥条件
+#### 预防死锁
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231105150225.png)
+
