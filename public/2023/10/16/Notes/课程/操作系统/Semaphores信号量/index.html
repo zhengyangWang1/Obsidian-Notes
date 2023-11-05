@@ -28,8 +28,10 @@
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231105105903.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231105110323.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231105110711.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231105112301.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231105112422.png">
 <meta property="article:published_time" content="2023-10-16T00:42:44.174Z">
-<meta property="article:modified_time" content="2023-11-05T03:09:58.367Z">
+<meta property="article:modified_time" content="2023-11-05T03:25:13.790Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="操作系统">
 <meta name="twitter:card" content="summary_large_image">
@@ -209,7 +211,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          420 字
+          626 字
         
       </span>
     
@@ -220,7 +222,7 @@
         
         
         
-          4 分钟
+          6 分钟
         
       </span>
     
@@ -270,7 +272,9 @@
 <h4 id="记录型信号量"><a href="#记录型信号量" class="headerlink" title="记录型信号量"></a>记录型信号量</h4><p>用记录型数据结构表示的信号量<br><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231105104723.png" srcset="/img/loading.gif" lazyload alt="image.png"><br>S.value的初值表示系统中某资源的数目。遵循“让权等待”原则</p>
 <h3 id="信号量机制实现进程互斥"><a href="#信号量机制实现进程互斥" class="headerlink" title="信号量机制实现进程互斥"></a>信号量机制实现进程互斥</h3><p><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231105105903.png" srcset="/img/loading.gif" lazyload alt="image.png"><br>设置互斥信号量mutex，初值为1</p>
 <h3 id="信号量机制实现进程同步"><a href="#信号量机制实现进程同步" class="headerlink" title="信号量机制实现进程同步"></a>信号量机制实现进程同步</h3><p>需要保证“一前一后”执行的两个操作（或两句代码）<br><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231105110323.png" srcset="/img/loading.gif" lazyload alt="image.png"><br>设置同步信号量S，初值为0<br>在“前操作”之后执行V(S)<br>在“后操作”之前执行P(S)<br>例题：<img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231105110711.png" srcset="/img/loading.gif" lazyload alt="image.png"></p>
-<h3 id="生产者-消费者问题"><a href="#生产者-消费者问题" class="headerlink" title="生产者-消费者问题"></a>生产者-消费者问题</h3>
+<h3 id="生产者-消费者问题"><a href="#生产者-消费者问题" class="headerlink" title="生产者-消费者问题"></a>生产者-消费者问题</h3><p>系统中有一组生产者进程和一组消费者进程，生产者进程每次生产一个产品放入缓冲区，消费者进程每次从缓冲区中取出一个产品使用。生产者共享一个初始为空、大小为n的缓冲区。<br>只有缓冲区没满时，生产者才能把产品放入缓冲区，否则必须等待<br>只有缓冲区不空时，消费者才能从中取出产品，否则必须等待<br>缓冲区是临界资源，各进程必须互斥访问。<br><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231105112301.png" srcset="/img/loading.gif" lazyload alt="image.png"></p>
+<p>实现互斥的P操作一定要在实现同步的P操作之后。先上锁再操作缓冲区会产生阻塞。<br><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231105112422.png" srcset="/img/loading.gif" lazyload alt="image.png"><br>两个V操作顺序可以交换。</p>
+
                 
               </div>
             
