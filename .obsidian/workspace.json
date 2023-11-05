@@ -81,8 +81,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 271.5,
-    "collapsed": true
+    "width": 271.5
   },
   "right": {
     "id": "45464171d8013cd8",
@@ -191,12 +190,12 @@
   },
   "active": "b0b4f280110024d1",
   "lastOpenFiles": [
-    "source/_posts/Notes/课程/操作系统/Deadlock死锁.md",
+    "source/_posts/Notes/课程/操作系统/Scheduling调度.md",
     "source/_posts/Notes/课程/操作系统/Threads线程.md",
+    "source/_posts/Notes/课程/操作系统/Deadlock死锁.md",
     "source/_posts/Notes/课程/操作系统/Processes进程.md",
     "source/_posts/Notes/论文/扩散模型论文todo.md",
     "source/_posts/Notes/论文/扩散模型调研.md",
-    "source/_posts/Notes/课程/操作系统/Scheduling调度.md",
     "source/_posts/Notes/课程/操作系统/操作系统.md",
     "public/2023/11/03/Notes/课程/操作系统/Scheduling调度/index.html",
     "public/2023/11/03/Notes/课程/操作系统/Scheduling调度",

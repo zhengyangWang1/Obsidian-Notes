@@ -81,7 +81,8 @@ Compare-and-swap lock
 3. 有限等待
 4. 让权等待
 
-### 单标志法
+### 进程互斥的软件实现方式
+#### 单标志法
 一个进程在访问完临界区后会把使用临界区的权限转交给另一个进程。也就是说**每个进程进入临界区的权限只能被另一个进程赋予**
 
 举例：
@@ -90,19 +91,27 @@ Compare-and-swap lock
 如果此时允许P0进入临界区，但P0一直不访问临界区，那么虽然此时临界区空闲，但是并不允许P1访问。
 因此单标志法**违背”空闲让进“原则**
 
-### 双标志先检查法
+#### 双标志先检查法
 设置一个布尔型数组flag[]，数组中各个元素用来标记各进程想进入临界区的意愿
 先检查后上锁
 ![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231104230557.png)
 如果两个进程同时想要进入临界区，就会出现冲突。
 因此双标志先检查法的问题是**违背”忙则等待“原则**
 
-### 双标志后检查法
+#### 双标志后检查法
 先上锁后检查
 ![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231104230953.png)
 如果两个进程同时想要进入临界区，则它们都将无法进入临界区
 **违背了”空闲让进“和”有限等待“原则**，会让进程产生饥饿现象
 
-### Peterson算法
+#### Peterson算法
 ![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231104231828.png)
 最后一个设置turn的进程会失去优先权
+
+
+### 进程互斥的硬件实现方式
+#### 中断屏蔽方法
+利用“开/关中断指令”实现，即某进程开始访问临界区到结束访问为止都不允许被中断![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231105102139.png)
+#### TestAndSet指令
+简称TS指令或TSL指令
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231105102430.png)
