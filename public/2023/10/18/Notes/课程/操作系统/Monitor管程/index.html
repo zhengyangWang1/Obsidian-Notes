@@ -16,16 +16,16 @@
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
   
-    <meta name="description" content="Monitor每个monitor都有一个互斥锁，monitor中只能有一个线程处于活动状态 Condition variablescondition是一个类，实现了以下函数：  condition.wait() condition.signal() condition.broadcast()">
+    <meta name="description" content="Monitor每个monitor都有一个互斥锁，monitor中只能有一个线程处于活动状态 Condition variablescondition是一个类，实现了以下函数：  condition.wait() condition.signal() condition.broadcast()  管程管程是一种特殊的软件模块，有这些部分组成：  局部于管程的共享数据结构说明 对该数据结构进行操作的一">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Monitor管程">
 <meta property="og:url" content="http://example.com/2023/10/18/Notes/%E8%AF%BE%E7%A8%8B/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/Monitor%E7%AE%A1%E7%A8%8B/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Monitor每个monitor都有一个互斥锁，monitor中只能有一个线程处于活动状态 Condition variablescondition是一个类，实现了以下函数：  condition.wait() condition.signal() condition.broadcast()">
+<meta property="og:description" content="Monitor每个monitor都有一个互斥锁，monitor中只能有一个线程处于活动状态 Condition variablescondition是一个类，实现了以下函数：  condition.wait() condition.signal() condition.broadcast()  管程管程是一种特殊的软件模块，有这些部分组成：  局部于管程的共享数据结构说明 对该数据结构进行操作的一">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231018102847.png">
 <meta property="article:published_time" content="2023-10-18T02:13:15.672Z">
-<meta property="article:modified_time" content="2023-10-23T00:28:25.093Z">
+<meta property="article:modified_time" content="2023-11-05T05:31:18.891Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="操作系统">
 <meta name="twitter:card" content="summary_large_image">
@@ -205,7 +205,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          140 字
+          297 字
         
       </span>
     
@@ -216,7 +216,7 @@
         
         
         
-          2 分钟
+          3 分钟
         
       </span>
     
@@ -265,6 +265,19 @@
 <li>condition.signal()</li>
 <li>condition.broadcast()</li>
 </ul>
+<h3 id="管程"><a href="#管程" class="headerlink" title="管程"></a>管程</h3><p>管程是一种特殊的软件模块，有这些部分组成：</p>
+<ol>
+<li>局部于管程的共享数据结构说明</li>
+<li>对该数据结构进行操作的一组过程</li>
+<li>对局部于管程的共享数据设置初始值的语句</li>
+<li>管程有一个名字</li>
+</ol>
+<p>管程的基本特征：</p>
+<ol>
+<li>局部于管程的数据只能被局部于管程的过程所访问</li>
+<li>一个进程只有通过调用管程内的过程才能进入管程访问共享数据</li>
+<li>每次仅允许一个进程在管程内执行某个内部过程</li>
+</ol>
 
                 
               </div>
@@ -333,7 +346,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>更新于</div>
-          <div>2023年10月23日</div>
+          <div>2023年11月5日</div>
         </div>
       
       
