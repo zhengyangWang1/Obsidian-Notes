@@ -18,18 +18,6 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "c8a391c3dcbd8987",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "source/_posts/Notes/课程/操作系统/Scheduling调度.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
         ]
       }
@@ -81,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 271.5,
-    "collapsed": true
+    "width": 271.5
   },
   "right": {
     "id": "45464171d8013cd8",
@@ -191,15 +178,16 @@
   },
   "active": "b0b4f280110024d1",
   "lastOpenFiles": [
-    "source/_posts/Notes/课程/操作系统/Monitor管程.md",
-    "source/_posts/Notes/课程/操作系统/Semaphores信号量.md",
-    "source/_posts/Notes/课程/操作系统/Processes进程.md",
     "source/_posts/Notes/课程/操作系统/Threads线程.md",
-    "source/_posts/Notes/课程/操作系统/Scheduling调度.md",
+    "source/_posts/Notes/课程/操作系统/Semaphores信号量.md",
+    "source/_posts/Notes/课程/操作系统/操作系统.md",
+    "source/_posts/Notes/AI/AI绘画.md",
     "source/_posts/Notes/课程/操作系统/Deadlock死锁.md",
+    "source/_posts/Notes/课程/操作系统/Monitor管程.md",
+    "source/_posts/Notes/课程/操作系统/Processes进程.md",
+    "source/_posts/Notes/课程/操作系统/Scheduling调度.md",
     "source/_posts/Notes/论文/扩散模型论文todo.md",
     "source/_posts/Notes/论文/扩散模型调研.md",
-    "source/_posts/Notes/课程/操作系统/操作系统.md",
     "public/2023/11/03/Notes/课程/操作系统/Scheduling调度/index.html",
     "public/2023/11/03/Notes/课程/操作系统/Scheduling调度",
     "public/2023/11/03/Notes/课程/操作系统",
@@ -226,7 +214,6 @@
     "source/_posts/Notes/课程/智能计算系统/神经网络基础.md",
     "public/categories/Notes/课程/page/4/index.html",
     "source/_posts/Notes/课程/神经网络与深度学习/循环神经网络.md",
-    "source/_posts/Notes/课程/神经网络与深度学习/前馈神经网络.md",
     "public/img/police_beian.png",
     "public/img/loading.gif",
     "public/img/fluid.png",

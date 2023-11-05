@@ -1,5 +1,5 @@
 ---
-title: Git操作
+title: AI绘画
 categories:
   - Notes
   - AI
