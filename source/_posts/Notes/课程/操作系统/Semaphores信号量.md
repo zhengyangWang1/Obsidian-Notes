@@ -58,3 +58,8 @@ S.value的初值表示系统中某资源的数目。遵循“让权等待”原�
 2. 只允许一个写者往文件中写信息
 3. 任一写者在完成写操作前不允许其他读者或者写者工作
 4. 写者执行写操作前，应让已有的读者和写者全部退出
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231105130752.png)
+用rw实现互斥访问，用count实现多个读进程访问，用mutex实现count和rw的原子化操作
+潜在问题：只要有读进程还在读，写进程就要一直阻塞等待，可能饿死。这种算法中，读进程是优先的。
+实现写优先：![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231105131045.png)
+### 哲学家进餐问题
