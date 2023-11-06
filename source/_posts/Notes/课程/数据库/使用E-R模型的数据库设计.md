@@ -136,3 +136,14 @@ superkey可能包含无关属性，候选键是最小的超键
 尽管可能存在多个候选键，但选择其中一个候选密钥作为主键
 
 #### Keys For Relationship Sets
+
+#### Choice of Primary key for Binary Relationship
+
+#### Weak Entity Sets
+没有主键的实体集称为弱实体集
+弱实体集是其存在依赖于另一个实体（称为其标识实体，identifying entity）的实体集
+不是将主键与弱实体相关联，而是使用标识实体以及称为鉴别器(discriminator)的额外属性来唯一标识弱实体
+每个弱实体都必须与一个标识实体相关联，弱实体集是依赖于标识实体集的存在。
+标识实体集是拥有弱实体集。 将弱实体集与标识实体集相关联的关系称为标识关系(identifying relationship)
+在 E-R 图中，弱实体集通过双矩形进行描述。 我们用虚线强调弱实体集的判别器。 将弱实体集连接到标识强实体集的关系集由双菱形表示。
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231106103032.png)
