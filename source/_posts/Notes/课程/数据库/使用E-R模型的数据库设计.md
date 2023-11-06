@@ -195,7 +195,16 @@ specialization （特化，特殊化，例化） generalization （概括化，�
 - total：实体必须属于较低级别的实体集之一 例如，学生泛化，所有实体必须是研究生或本科生 
 - partial：实体不必属于较低级别的实体集之一 例如，人员专业化 部分泛化是默认设置。 
 我们可以通过在图中添加关键字 total 并在关键字到相应的空心箭头（用于全面泛化）或空心箭头集（用于重叠泛化）来指定总泛化。
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231106114347.png)
 
 关于一个高级实体是否可能属于单个专业化中集的多个较低级别实体的约束,
-disjoint：一个高级实体只能属于一个较低级别的实体集，即 L-entity-set-1 ∩ L-entity-set-2 = Φ 
-overlapping：一个高级实体可以属于多个较低级别的实体集 L-实体集-1∩L-实体集-2 ≠ Φ 例如，员工和学生
+- disjoint：一个高级实体只能属于一个较低级别的实体集，即 L-entity-set-1 ∩ L-entity-set-2 = Φ 
+- overlapping：一个高级实体可以属于多个较低级别的实体集 L-实体集-1∩L-实体集-2 ≠ Φ
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231106114410.png)
+
+#### Representing Specialization via Schemas
+1. 形成更高级别实体的架构 为每个较低级别的实体集形成一个架构，包括较高级别实体集的主键和本地属性![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231106114529.png)
+2. 为每个实体集形成一个架构，其中包含所有本地属性和继承属性![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231106114548.png)
+3. 如果泛化/特殊化是不相交的且完整的，则创建两个表
+
+#### Aggregation

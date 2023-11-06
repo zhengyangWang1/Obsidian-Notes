@@ -36,8 +36,12 @@
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231101234446.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231101235347.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231106103032.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231106114347.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231106114410.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231106114529.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231106114548.png">
 <meta property="article:published_time" content="2023-10-30T02:48:52.676Z">
-<meta property="article:modified_time" content="2023-11-06T03:42:14.210Z">
+<meta property="article:modified_time" content="2023-11-06T03:48:22.438Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="数据库">
 <meta name="twitter:card" content="summary_large_image">
@@ -217,7 +221,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          4.2k 字
+          4.4k 字
         
       </span>
     
@@ -228,7 +232,7 @@
         
         
         
-          36 分钟
+          37 分钟
         
       </span>
     
@@ -363,10 +367,19 @@
 <h4 id="Completeness-Constraint"><a href="#Completeness-Constraint" class="headerlink" title="Completeness Constraint"></a>Completeness Constraint</h4><p>完整性约束<br>指定高级实体集中的实体是否必须至少属于泛化中的一个较低级别的实体集 </p>
 <ul>
 <li>total：实体必须属于较低级别的实体集之一 例如，学生泛化，所有实体必须是研究生或本科生 </li>
-<li>partial：实体不必属于较低级别的实体集之一 例如，人员专业化 部分泛化是默认设置。<br>我们可以通过在图中添加关键字 total 并在关键字到相应的空心箭头（用于全面泛化）或空心箭头集（用于重叠泛化）来指定总泛化。</li>
+<li>partial：实体不必属于较低级别的实体集之一 例如，人员专业化 部分泛化是默认设置。<br>我们可以通过在图中添加关键字 total 并在关键字到相应的空心箭头（用于全面泛化）或空心箭头集（用于重叠泛化）来指定总泛化。<br><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231106114347.png" srcset="/img/loading.gif" lazyload alt="image.png"></li>
 </ul>
-<p>关于一个高级实体是否可能属于单个专业化中集的多个较低级别实体的约束,<br>disjoint：一个高级实体只能属于一个较低级别的实体集，即 L-entity-set-1 ∩ L-entity-set-2 &#x3D; Φ<br>overlapping：一个高级实体可以属于多个较低级别的实体集 L-实体集-1∩L-实体集-2 ≠ Φ 例如，员工和学生</p>
-
+<p>关于一个高级实体是否可能属于单个专业化中集的多个较低级别实体的约束,</p>
+<ul>
+<li>disjoint：一个高级实体只能属于一个较低级别的实体集，即 L-entity-set-1 ∩ L-entity-set-2 &#x3D; Φ </li>
+<li>overlapping：一个高级实体可以属于多个较低级别的实体集 L-实体集-1∩L-实体集-2 ≠ Φ<br><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231106114410.png" srcset="/img/loading.gif" lazyload alt="image.png"></li>
+</ul>
+<h4 id="Representing-Specialization-via-Schemas"><a href="#Representing-Specialization-via-Schemas" class="headerlink" title="Representing Specialization via Schemas"></a>Representing Specialization via Schemas</h4><ol>
+<li>形成更高级别实体的架构 为每个较低级别的实体集形成一个架构，包括较高级别实体集的主键和本地属性<img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231106114529.png" srcset="/img/loading.gif" lazyload alt="image.png"></li>
+<li>为每个实体集形成一个架构，其中包含所有本地属性和继承属性<img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231106114548.png" srcset="/img/loading.gif" lazyload alt="image.png"></li>
+<li>如果泛化&#x2F;特殊化是不相交的且完整的，则创建两个表</li>
+</ol>
+<h4 id="Aggregation"><a href="#Aggregation" class="headerlink" title="Aggregation"></a>Aggregation</h4>
                 
               </div>
             
