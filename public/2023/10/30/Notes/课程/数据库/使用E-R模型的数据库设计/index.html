@@ -37,7 +37,7 @@
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231101235347.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231106103032.png">
 <meta property="article:published_time" content="2023-10-30T02:48:52.676Z">
-<meta property="article:modified_time" content="2023-11-06T03:26:54.898Z">
+<meta property="article:modified_time" content="2023-11-06T03:42:14.210Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="数据库">
 <meta name="twitter:card" content="summary_large_image">
@@ -217,7 +217,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          3.9k 字
+          4.2k 字
         
       </span>
     
@@ -228,7 +228,7 @@
         
         
         
-          33 分钟
+          36 分钟
         
       </span>
     
@@ -360,6 +360,12 @@
 <h3 id="6-8-Extended-E-R-Features"><a href="#6-8-Extended-E-R-Features" class="headerlink" title="6.8 Extended E-R Features"></a>6.8 Extended E-R Features</h3><p>面向对象 （OO） E-R ：<br>specialization （特化，特殊化，例化） generalization （概括化，泛化，普遍化） attributes inheritance （属性继承）</p>
 <h4 id="Specialization"><a href="#Specialization" class="headerlink" title="Specialization"></a>Specialization</h4><p>自上而下的设计过程： 我们在实体集中指定有别于其他实体的子组 这些子分组成为较低级别的实体集，这些实体集具有属性或参与适用于较高级别实体集的关系<br>属性继承：较低级别的实体集继承它所链接到的较高级别实体集的所有属性和关系参与，较高级别实体的属性和关系可以应用于其所有较低级别的实体</p>
 <h4 id="Generalization"><a href="#Generalization" class="headerlink" title="Generalization"></a>Generalization</h4><p>自下而上的设计过程<br>将多个共享相同功能的实体集组合成更高级别的实体集<br>超类和子类：对于实体集合 A 和 B，如果 A 是 B 的泛化，即 B 是 A 的特化， 则 A 是 B 的超类，B 是 A 的子类</p>
+<h4 id="Completeness-Constraint"><a href="#Completeness-Constraint" class="headerlink" title="Completeness Constraint"></a>Completeness Constraint</h4><p>完整性约束<br>指定高级实体集中的实体是否必须至少属于泛化中的一个较低级别的实体集 </p>
+<ul>
+<li>total：实体必须属于较低级别的实体集之一 例如，学生泛化，所有实体必须是研究生或本科生 </li>
+<li>partial：实体不必属于较低级别的实体集之一 例如，人员专业化 部分泛化是默认设置。<br>我们可以通过在图中添加关键字 total 并在关键字到相应的空心箭头（用于全面泛化）或空心箭头集（用于重叠泛化）来指定总泛化。</li>
+</ul>
+<p>关于一个高级实体是否可能属于单个专业化中集的多个较低级别实体的约束,<br>disjoint：一个高级实体只能属于一个较低级别的实体集，即 L-entity-set-1 ∩ L-entity-set-2 &#x3D; Φ<br>overlapping：一个高级实体可以属于多个较低级别的实体集 L-实体集-1∩L-实体集-2 ≠ Φ 例如，员工和学生</p>
 
                 
               </div>
