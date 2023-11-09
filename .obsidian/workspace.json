@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "source/_posts/Notes/课程/智能计算系统/编程框架使用.md",
+                "file": "source/_posts/Notes/课程/神经网络与深度学习/生成模型.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "source/_posts/Notes/课程/智能计算系统/编程框架使用.md",
+                "file": "source/_posts/Notes/课程/神经网络与深度学习/生成模型.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "source/_posts/Notes/课程/智能计算系统/编程框架使用.md",
+                "file": "source/_posts/Notes/课程/神经网络与深度学习/生成模型.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "source/_posts/Notes/课程/智能计算系统/编程框架使用.md"
+                "file": "source/_posts/Notes/课程/神经网络与深度学习/生成模型.md"
               }
             }
           },
@@ -154,7 +154,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "source/_posts/Notes/课程/智能计算系统/编程框架使用.md"
+                "file": "source/_posts/Notes/课程/神经网络与深度学习/生成模型.md"
               }
             }
           }
@@ -179,6 +179,9 @@
   },
   "active": "b0b4f280110024d1",
   "lastOpenFiles": [
+    "source/_posts/Notes/课程/神经网络与深度学习/神经网络与深度学习.md",
+    "source/_posts/Notes/课程/神经网络与深度学习/生成模型.md",
+    "source/_posts/Notes/课程/智能计算系统/编程框架使用.md",
     "public/2023/11/09/Notes/课程/智能计算系统/编程框架使用/index.html",
     "public/2023/11/09/Notes/课程/智能计算系统/编程框架使用",
     "public/2023/11/09/Notes/课程/智能计算系统",
@@ -188,7 +191,6 @@
     "public/tags/Pytorch/index.html",
     "public/tags/Pytorch",
     "source/_posts/Notes/课程/智能计算系统/深度学习.md",
-    "source/_posts/Notes/课程/智能计算系统/编程框架使用.md",
     "source/_posts/Notes/课程/智能计算系统/神经网络基础.md",
     "source/_posts/Notes/课程/智能计算系统/智能计算系统.md",
     "source/_posts/Notes/论文/扩散模型调研.md",
@@ -208,13 +210,11 @@
     "source/_posts/Notes/AI/AI绘画.md",
     "public/2023/11/03/Notes/课程/操作系统/Scheduling调度/index.html",
     "public/2023/11/03/Notes/课程/操作系统/Scheduling调度",
-    "public/2023/11/03/Notes/课程/操作系统",
     "source/_posts/Notes/编程/Django/Django模板.md",
     "source/_posts/Notes/编程/Django/Django操作MySQL.md",
     "source/_posts/Notes/编程/Django/Django基础.md",
     "source/_posts/Notes/课程/软件工程/UML.md",
     "source/_posts/Notes/课程/软件工程/作业.md",
-    "source/_posts/Notes/课程/软件工程/面向对象分析.md",
     "public/img/police_beian.png",
     "public/img/loading.gif",
     "public/img/fluid.png",
