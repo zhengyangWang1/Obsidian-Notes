@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "source/_posts/Notes/课程/智能计算系统/深度学习.md",
+                "file": "source/_posts/Notes/课程/智能计算系统/编程框架使用.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 271.5,
-    "collapsed": true
+    "width": 271.5
   },
   "right": {
     "id": "45464171d8013cd8",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "source/_posts/Notes/课程/智能计算系统/深度学习.md",
+                "file": "source/_posts/Notes/课程/智能计算系统/编程框架使用.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "source/_posts/Notes/课程/智能计算系统/深度学习.md",
+                "file": "source/_posts/Notes/课程/智能计算系统/编程框架使用.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "source/_posts/Notes/课程/智能计算系统/深度学习.md"
+                "file": "source/_posts/Notes/课程/智能计算系统/编程框架使用.md"
               }
             }
           },
@@ -154,7 +153,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "source/_posts/Notes/课程/智能计算系统/深度学习.md"
+                "file": "source/_posts/Notes/课程/智能计算系统/编程框架使用.md"
               }
             }
           }
@@ -179,8 +178,9 @@
   },
   "active": "b0b4f280110024d1",
   "lastOpenFiles": [
-    "source/_posts/Notes/课程/智能计算系统/神经网络基础.md",
     "source/_posts/Notes/课程/智能计算系统/深度学习.md",
+    "source/_posts/Notes/课程/智能计算系统/编程框架使用.md",
+    "source/_posts/Notes/课程/智能计算系统/神经网络基础.md",
     "source/_posts/Notes/课程/智能计算系统/智能计算系统.md",
     "source/_posts/Notes/论文/扩散模型调研.md",
     "source/_posts/Notes/课程/软件工程/大作业 酒店温控计费系统 规划.md",
@@ -210,7 +210,6 @@
     "source/_posts/Notes/课程/软件工程/作业.md",
     "source/_posts/Notes/课程/软件工程/面向对象分析.md",
     "source/_posts/Notes/课程/软件工程/软件生命周期.md",
-    "source/_posts/Notes/课程/软件工程/软件需求分析.md",
     "public/2023/11/02/Notes/课程/操作系统/Processes进程/index.html",
     "public/2023/11/02/Notes/课程/操作系统/Processes进程",
     "public/2023/11/02/Notes/课程/操作系统",
