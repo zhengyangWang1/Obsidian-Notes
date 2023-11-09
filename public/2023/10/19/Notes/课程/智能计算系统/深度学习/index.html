@@ -42,8 +42,11 @@
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231031173437.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231031174016.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231031174326.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231109080759.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231109081123.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231109081133.png">
 <meta property="article:published_time" content="2023-10-19T00:11:43.144Z">
-<meta property="article:modified_time" content="2023-10-31T09:50:56.770Z">
+<meta property="article:modified_time" content="2023-11-09T00:11:37.758Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="深度学习">
 <meta name="twitter:card" content="summary_large_image">
@@ -223,7 +226,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.4k 字
+          1.7k 字
         
       </span>
     
@@ -234,7 +237,7 @@
         
         
         
-          13 分钟
+          15 分钟
         
       </span>
     
@@ -348,6 +351,15 @@
 <li>BiGAN<br>对抗自编码器</li>
 <li>VAE-GAN</li>
 </ul>
+<h3 id="图像风格迁移"><a href="#图像风格迁移" class="headerlink" title="图像风格迁移"></a>图像风格迁移</h3><p><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231109080759.png" srcset="/img/loading.gif" lazyload alt="image.png"><br>给定一张风格图像 a 和一张内容图像 p:</p>
+<ul>
+<li>风格图像 a 经过 CNN 生成的 feature maps 组成风格特征集A</li>
+<li>内容图像 p 通过 CNN 生成的 feature maps 组成内容特征集P</li>
+<li>输入一张随机噪声图像 x，随机噪声图像 x 通过 CNN 生成的 feature maps 构 成内容特征和风格特征集合 F和 G ，目标损失函数由 A, P, F ,G 计算得到</li>
+<li>优化函数是希望调整图像 x，使其最后看起来既保持内容图像 p的内容, 又有风 格图像 a 的风格。</li>
+<li>CNN网络为在imageNet上训练好的VGG19， 去除了最后的全连接层和softmax</li>
+<li>损失函数：<img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231109081123.png" srcset="/img/loading.gif" lazyload alt="image.png"><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231109081133.png" srcset="/img/loading.gif" lazyload alt="image.png"></li>
+</ul>
 
                 
               </div>
@@ -416,7 +428,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>更新于</div>
-          <div>2023年10月31日</div>
+          <div>2023年11月9日</div>
         </div>
       
       
