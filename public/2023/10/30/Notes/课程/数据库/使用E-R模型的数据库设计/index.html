@@ -41,7 +41,7 @@
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231106114529.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231106114548.png">
 <meta property="article:published_time" content="2023-10-30T02:48:52.676Z">
-<meta property="article:modified_time" content="2023-11-06T04:11:36.574Z">
+<meta property="article:modified_time" content="2023-11-12T05:09:33.993Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="数据库">
 <meta name="twitter:card" content="summary_large_image">
@@ -354,8 +354,9 @@
 <h3 id="6-5-Primary-Keys"><a href="#6-5-Primary-Keys" class="headerlink" title="6.5 Primary Keys"></a>6.5 Primary Keys</h3><p>键是一组属性<br>键包括 superkey （超键）， candidate key （候选键）， primary key （主键）</p>
 <h4 id="Keys-For-Entity-Sets"><a href="#Keys-For-Entity-Sets" class="headerlink" title="Keys For Entity Sets"></a>Keys For Entity Sets</h4><p>实体集的superkey是一个或多个属性的集合，其值唯一地确定实体集中的每个实体<br>superkey可能包含无关属性，候选键是最小的超键</p>
 <p>主键是被选为标识实体集中实体的主要方法的候选键<br>尽管可能存在多个候选键，但选择其中一个候选键作为主键</p>
-<h4 id="Keys-For-Relationship-Sets"><a href="#Keys-For-Relationship-Sets" class="headerlink" title="Keys For Relationship Sets"></a>Keys For Relationship Sets</h4><h4 id="Choice-of-Primary-key-for-Binary-Relationship"><a href="#Choice-of-Primary-key-for-Binary-Relationship" class="headerlink" title="Choice of Primary key for Binary Relationship"></a>Choice of Primary key for Binary Relationship</h4><h4 id="Weak-Entity-Sets"><a href="#Weak-Entity-Sets" class="headerlink" title="Weak Entity Sets"></a>Weak Entity Sets</h4><p>没有主键的实体集称为弱实体集<br>弱实体集是其存在依赖于另一个实体（称为其标识实体，identifying entity）的实体集<br>不是将主键与弱实体相关联，而是使用标识实体以及称为鉴别器(discriminator)的额外属性来唯一标识弱实体<br>每个弱实体都必须与一个标识实体相关联，弱实体集是依赖于标识实体集的存在。<br>标识实体集是拥有弱实体集。 将弱实体集与标识实体集相关联的关系称为标识关系(identifying relationship)<br>在 E-R 图中，弱实体集通过双矩形进行描述。 我们用虚线强调弱实体集的判别器。 将弱实体集连接到标识强实体集的关系集由双菱形表示。<br><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231106103032.png" srcset="/img/loading.gif" lazyload alt="image.png"><br>弱实体集的鉴别器（或部分键）是一组属性，用于区分弱实体集中依赖于特定强实体的所有实体<br>例如sec_id、学期、年份 弱实体集的鉴别器用虚线下划线<br>弱实体集的主键由弱实体集存在依赖的强实体集的主键加上弱实体集的判别器组成 弱实体集 E1 的主键 &#x3D; 鉴别器 ∪ primary_key（E2）<br>弱实体集 E1 具有多个标识实体集 E2、E3、..、En，弱实体集 E1 的主键 &#x3D; 鉴别器 ∪ primary_key（E2） ∪…primary_key（En） .</p>
-<h3 id="6-6-Removing-Redundant-Attributes"><a href="#6-6-Removing-Redundant-Attributes" class="headerlink" title="6.6 Removing Redundant Attributes"></a>6.6 Removing Redundant Attributes</h3><h3 id="6-7-Reducing-E-R-Diagrams-to-Relation-Schemas"><a href="#6-7-Reducing-E-R-Diagrams-to-Relation-Schemas" class="headerlink" title="6.7 Reducing E-R Diagrams to Relation Schemas"></a>6.7 Reducing E-R Diagrams to Relation Schemas</h3><p>将 E-R 图转换为表格式是从 E-R 图派生关系数据库设计的基础<br>符合 E-R 图的数据库可以由架构&#x2F;表的集合表示 实体集和关系集可以统一表示为表示数据库内容的关系架构。 对于每个实体集或关系集，都有一个与实体集或关系集对应的唯一架构。 每个表都有许多列，对应于它们的属性将 E-R 图转换为表格式是从 E-R 图派生关系数据库设计的基础<br>符合 E-R 图的数据库可以由架构&#x2F;表的集合表示<br>实体集和关系集可以统一表示为表示数据库内容的关系架构。 对于每个实体集或关系集，都有一个与实体集或关系集对应的唯一架构。 每个表都有许多列，对应于它们的属性</p>
+<h4 id="Weak-Entity-Sets"><a href="#Weak-Entity-Sets" class="headerlink" title="Weak Entity Sets"></a>Weak Entity Sets</h4><p>没有主键的实体集称为弱实体集<br>弱实体集是其存在依赖于另一个实体（称为其标识实体，identifying entity）的实体集<br>不是将主键与弱实体相关联，而是使用标识实体以及称为鉴别器(discriminator)的额外属性来唯一标识弱实体<br>每个弱实体都必须与一个标识实体相关联，弱实体集是依赖于标识实体集的存在。<br>标识实体集是拥有弱实体集。 将弱实体集与标识实体集相关联的关系称为标识关系(identifying relationship)<br>在 E-R 图中，弱实体集通过双矩形进行描述。 我们用虚线强调弱实体集的判别器。 将弱实体集连接到标识强实体集的关系集由双菱形表示。<br><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231106103032.png" srcset="/img/loading.gif" lazyload alt="image.png"><br>弱实体集的鉴别器（或部分键）是一组属性，用于区分弱实体集中依赖于特定强实体的所有实体<br>例如sec_id、学期、年份 弱实体集的鉴别器用虚线下划线<br>弱实体集的主键由弱实体集存在依赖的强实体集的主键加上弱实体集的判别器组成 弱实体集 E1 的主键 &#x3D; 鉴别器 ∪ primary_key（E2）<br>弱实体集 E1 具有多个标识实体集 E2、E3、..、En，弱实体集 E1 的主键 &#x3D; 鉴别器 ∪ primary_key（E2） ∪…primary_key（En） .</p>
+<h3 id="6-6-Removing-Redundant-Attributes"><a href="#6-6-Removing-Redundant-Attributes" class="headerlink" title="6.6 Removing Redundant Attributes"></a>6.6 Removing Redundant Attributes</h3><p>两个实体集存在共同属性构成关系，该属性不作为主键时的实体集中属性是冗余的需要删除。转换成表时</p>
+<h3 id="6-7-Reducing-E-R-Diagrams-to-Relation-Schemas"><a href="#6-7-Reducing-E-R-Diagrams-to-Relation-Schemas" class="headerlink" title="6.7 Reducing E-R Diagrams to Relation Schemas"></a>6.7 Reducing E-R Diagrams to Relation Schemas</h3><p>将 E-R 图转换为表格式是从 E-R 图派生关系数据库设计的基础<br>符合 E-R 图的数据库可以由架构&#x2F;表的集合表示 实体集和关系集可以统一表示为表示数据库内容的关系架构。 对于每个实体集或关系集，都有一个与实体集或关系集对应的唯一架构。 每个表都有许多列，对应于它们的属性将 E-R 图转换为表格式是从 E-R 图派生关系数据库设计的基础<br>符合 E-R 图的数据库可以由架构&#x2F;表的集合表示<br>实体集和关系集可以统一表示为表示数据库内容的关系架构。 对于每个实体集或关系集，都有一个与实体集或关系集对应的唯一架构。 每个表都有许多列，对应于它们的属性</p>
 <p>强实体集简化为具有相同属性的架构<br>弱实体集将变成一个表，其中包含标识强实体集的主键的列</p>
 <h4 id="Representation-of-Entity-Sets-with-Multivalued-Attributes"><a href="#Representation-of-Entity-Sets-with-Multivalued-Attributes" class="headerlink" title="Representation of Entity Sets with Multivalued Attributes"></a>Representation of Entity Sets with Multivalued Attributes</h4><p>实体 E 的多值属性 M 由单独的架构 EM 表示<br>架构 EM 具有与 E 的主键对应的属性和对应于多值属性 M 的属性</p>
 <h4 id="Representing-Relationship-Sets"><a href="#Representing-Relationship-Sets" class="headerlink" title="Representing Relationship Sets"></a>Representing Relationship Sets</h4><p>将关系集简化为表在很大程度上依赖于映射基数约束和总&#x2F;部分约束<br>多对多关系集表示为一个表，其中包含两个参与实体集的主键的列，以及关系集的任何描述性属性<br>可以通过向多端添加一个额外的属性来表示在多端上合计的多对一和一对多关系集，其中包含一端的主键</p>
@@ -457,7 +458,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>更新于</div>
-          <div>2023年11月6日</div>
+          <div>2023年11月12日</div>
         </div>
       
       

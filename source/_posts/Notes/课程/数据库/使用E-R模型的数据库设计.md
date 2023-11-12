@@ -135,10 +135,6 @@ superkey可能包含无关属性，候选键是最小的超键
 主键是被选为标识实体集中实体的主要方法的候选键
 尽管可能存在多个候选键，但选择其中一个候选键作为主键
 
-#### Keys For Relationship Sets
-
-#### Choice of Primary key for Binary Relationship
-
 #### Weak Entity Sets
 没有主键的实体集称为弱实体集
 弱实体集是其存在依赖于另一个实体（称为其标识实体，identifying entity）的实体集
@@ -153,7 +149,7 @@ superkey可能包含无关属性，候选键是最小的超键
 弱实体集 E1 具有多个标识实体集 E2、E3、..、En，弱实体集 E1 的主键 = 鉴别器 ∪ primary_key（E2） ∪...primary_key（En） .
 
 ### 6.6 Removing Redundant Attributes
-
+两个实体集存在共同属性构成关系，该属性不作为主键时的实体集中属性是冗余的需要删除。转换成表时，xu'yao
 
 ### 6.7 Reducing E-R Diagrams to Relation Schemas
 将 E-R 图转换为表格式是从 E-R 图派生关系数据库设计的基础 
@@ -230,4 +226,4 @@ E-R 图中的常见错误
 关系集 R 的属性可能与其参与实体集之一相关联 
 对于关系集 R 之间的属性 attr-A （R ⊆ E1 ╳ E2 ），如果 R 的基数为 
 一对一：attr-A 可以指定为 E1 或 E2 的属性，而不是关系集 R 从 E1 到 E2 的
-一对多：attr-A 只能指定为实体集 E2（多边）的属性，而不是关系集 R 的属性
+一对多：attr-A 只能指定为实体集 E2（多边）的属性，而不是关系集 R 
