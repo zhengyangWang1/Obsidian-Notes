@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "source/_posts/Notes/课程/数据库/使用E-R模型的数据库设计.md",
+                "file": "source/_posts/Notes/论文/ChatEdit.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "source/_posts/Notes/课程/数据库/使用E-R模型的数据库设计.md",
+                "file": "source/_posts/Notes/论文/ChatEdit.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "source/_posts/Notes/课程/数据库/使用E-R模型的数据库设计.md",
+                "file": "source/_posts/Notes/论文/ChatEdit.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "source/_posts/Notes/课程/数据库/使用E-R模型的数据库设计.md"
+                "file": "source/_posts/Notes/论文/ChatEdit.md"
               }
             }
           },
@@ -153,7 +153,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "source/_posts/Notes/课程/数据库/使用E-R模型的数据库设计.md"
+                "file": "source/_posts/Notes/论文/ChatEdit.md"
               }
             }
           }
@@ -178,6 +178,9 @@
   },
   "active": "b0b4f280110024d1",
   "lastOpenFiles": [
+    "source/_posts/Notes/课程/数据库/使用E-R模型的数据库设计.md",
+    "source/_posts/Notes/论文/ChatEdit.md",
+    "source/_posts/Notes/论文/未命名",
     "source/_posts/Notes/课程/软件工程/软件生命周期.md",
     "source/_posts/Notes/课程/软件工程/软件需求分析.md",
     "source/_posts/Notes/课程/神经网络与深度学习/生成对抗网络.md",
@@ -190,7 +193,6 @@
     "public/archives/page/7/index.html",
     "public/2023/11/09/Notes/课程/神经网络与深度学习/生成对抗网络/index.html",
     "public/2023/11/09/Notes/课程/神经网络与深度学习/生成对抗网络",
-    "public/page/7/index.html",
     "source/_posts/Notes/课程/神经网络与深度学习/生成模型.md",
     "source/_posts/Notes/课程/神经网络与深度学习/神经网络与深度学习.md",
     "source/_posts/Notes/课程/神经网络与深度学习/分析与简答.md",
@@ -201,7 +203,6 @@
     "source/_posts/Notes/论文/扩散模型调研.md",
     "source/_posts/Notes/课程/软件工程/大作业 酒店温控计费系统 规划.md",
     "source/_posts/Notes/论文/扩散模型论文todo.md",
-    "source/_posts/Notes/课程/数据库/使用E-R模型的数据库设计.md",
     "source/_posts/Notes/TODO.md",
     "source/_posts/Notes/课程/操作系统/Deadlock死锁.md",
     "source/_posts/Notes/课程/操作系统/Monitor管程.md",
@@ -213,7 +214,6 @@
     "source/_posts/Notes/课程/操作系统/Blitz软件.md",
     "source/_posts/Notes/课程/操作系统/操作系统.md",
     "source/_posts/Notes/AI/AI绘画.md",
-    "source/_posts/Notes/编程/Django/Django模板.md",
     "public/img/police_beian.png",
     "public/img/loading.gif",
     "public/img/fluid.png",
