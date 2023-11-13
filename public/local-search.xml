@@ -4,11 +4,11 @@
   
   
   <entry>
-    <title></title>
+    <title>ChatEdit</title>
     <link href="/2023/11/13/Notes/%E8%AE%BA%E6%96%87/ChatEdit/"/>
     <url>/2023/11/13/Notes/%E8%AE%BA%E6%96%87/ChatEdit/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>ChatEdit是一个数据集，用于评估</p>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>ChatEdit是一个数据集，用于评估在此背景下的图像编辑和对话能力。<br>ChatEdit是根据CelebA-HQ数据集（30k张1024×1024面部图像数据集）构建的，包含与图像上的用户编辑请求相对应的带注释的多轮对话</p>]]></content>
     
     
     
