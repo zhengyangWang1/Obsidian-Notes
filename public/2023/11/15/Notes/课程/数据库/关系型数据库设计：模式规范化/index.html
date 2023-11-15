@@ -26,7 +26,7 @@
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231115120558.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231115120646.png">
 <meta property="article:published_time" content="2023-11-15T02:59:47.886Z">
-<meta property="article:modified_time" content="2023-11-15T07:44:28.920Z">
+<meta property="article:modified_time" content="2023-11-15T07:50:43.059Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="数据库">
 <meta name="twitter:card" content="summary_large_image">
@@ -265,11 +265,11 @@
 <li>关系架构规范化</li>
 </ul>
 <h4 id="Lossless-Decomposition无损分解"><a href="#Lossless-Decomposition无损分解" class="headerlink" title="Lossless Decomposition无损分解"></a>Lossless Decomposition无损分解</h4><p>Def：设 R 为关系模式，R1 和 R2 构成 R 的分解。 即 R &#x3D; R1 U R2<br>Def：分解是<strong>无损分解</strong>，如果将模式 R 替换为两个关系模式 R1 U R2 没有丢失信息</p>
-<h4 id="Normalization-Principles归一化原则"><a href="#Normalization-Principles归一化原则" class="headerlink" title="Normalization Principles归一化原则"></a>Normalization Principles归一化原则</h4><p>在DBS逻辑设计过程中，将E-R图转换，得到面向应用领域的初始关系模式集<br>初始关系模式集存在关系模式属性间的数据依赖 (Data Dependence) 关系</p>
+<h4 id="Normalization-Principles归一化原则"><a href="#Normalization-Principles归一化原则" class="headerlink" title="Normalization Principles归一化原则"></a>Normalization Principles归一化原则</h4><p>在DBS逻辑设计过程中，将E-R图转换，得到面向应用领域的初始关系模式集<br><strong>初始关系模式集</strong>存在关系模式属性间的<strong>数据依赖 (Data Dependence) 关系</strong></p>
 <ul>
-<li>函数依赖 (functional  dependencies,  FD)</li>
-<li>多值依赖 (Mutivalued Dependencies,  MVD)</li>
-<li>连接依赖 (Join Dependencies, JD)</li>
+<li><strong>函数依赖</strong> (functional  dependencies,  FD)</li>
+<li><strong>多值依赖</strong> (Mutivalued Dependencies,  MVD)</li>
+<li><strong>连接依赖</strong> (Join Dependencies, JD)</li>
 </ul>
 <p>直接根据初始关系模式构造DBS，由于初始关系模式中数据依赖关系的存在，  可能会违反DB的完整性约束，导致DBS使用的正确性、性能、效率受到影响</p>
 <ul>
@@ -287,9 +287,9 @@
 <p>关系模式规范化主要步骤为：</p>
 <ul>
 <li>根据函数依赖的Armstrong’s 公理系统和多值依赖 的公理系统，从初始关系模式集中已知的函数依赖和多值依赖出发，推导出初始关系模式集中所有的函数依赖和多值依赖</li>
-<li>对具有函数依赖和多值依赖的初始关系模式集，采用 模式分解算法，对其进行（等价）分解和变换，将其转换为各种范式形式，包括：1NF、 2NF、 BCNF、 3NF、 4NF、5NF，以消除函数依赖和多值依赖的负面影响, 保证数据库完整性</li>
+<li>对具有函数依赖和多值依赖的初始关系模式集，采用<strong>模式分解算法</strong>，对其进行（等价）分解和变换，将其转换为各种范式形式，包括：1NF、 2NF、 BCNF、 3NF、 4NF、5NF，以消除函数依赖和多值依赖的负面影响, 保证数据库完整性</li>
 </ul>
-<p>关系模式规范化处理的基本要求为: </p>
+<p>关系模式规范化处理的<strong>基本要求</strong>为: </p>
 <ul>
 <li>静态关系具有第一范式形式 </li>
 <li>动态关系最好具有3NF或BCNF形式</li>
