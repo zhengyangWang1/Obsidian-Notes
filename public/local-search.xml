@@ -4,6 +4,25 @@
   
   
   <entry>
+    <title>关系型数据库设计：模式规范化</title>
+    <link href="/2023/11/15/Notes/%E8%AF%BE%E7%A8%8B/%E6%95%B0%E6%8D%AE%E5%BA%93/%E5%85%B3%E7%B3%BB%E5%9E%8B%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%BE%E8%AE%A1%EF%BC%9A%E6%A8%A1%E5%BC%8F%E8%A7%84%E8%8C%83%E5%8C%96/"/>
+    <url>/2023/11/15/Notes/%E8%AF%BE%E7%A8%8B/%E6%95%B0%E6%8D%AE%E5%BA%93/%E5%85%B3%E7%B3%BB%E5%9E%8B%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%BE%E8%AE%A1%EF%BC%9A%E6%A8%A1%E5%BC%8F%E8%A7%84%E8%8C%83%E5%8C%96/</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="7-1-Good-Relational-DB-Design"><a href="#7-1-Good-Relational-DB-Design" class="headerlink" title="7.1 Good Relational DB Design"></a>7.1 Good Relational DB Design</h3><p>逻辑数据库设计包括:</p><ul><li>初始关系架构生成</li><li>关系架构规范化</li></ul>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>数据库</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>ChatEdit</title>
     <link href="/2023/11/13/Notes/%E8%AE%BA%E6%96%87/ChatEdit/"/>
     <url>/2023/11/13/Notes/%E8%AE%BA%E6%96%87/ChatEdit/</url>

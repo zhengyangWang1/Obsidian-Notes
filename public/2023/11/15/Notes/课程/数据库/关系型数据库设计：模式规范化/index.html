@@ -16,25 +16,24 @@
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
   
-    <meta name="description" content="ChatEditChatEdit是一个数据集，用于评估在此背景下的图像编辑和对话能力。ChatEdit是根据CelebA-HQ数据集（30k张1024×1024面部图像数据集，它提供了 40 个面部属性的二进制注释）构建的，包含与图像上的用户编辑请求相对应的带注释的多轮对话，21个可编辑属性 TODO：数据集是什么类型？一张图像和几个标签？图像生成后怎么判断生成是否符合要求 交互式面部图像编辑 跟">
+    <meta name="description" content="7.1 Good Relational DB Design逻辑数据库设计包括:  初始关系架构生成 关系架构规范化">
 <meta property="og:type" content="article">
-<meta property="og:title" content="ChatEdit">
-<meta property="og:url" content="http://example.com/2023/11/13/Notes/%E8%AE%BA%E6%96%87/ChatEdit/index.html">
+<meta property="og:title" content="关系型数据库设计：模式规范化">
+<meta property="og:url" content="http://example.com/2023/11/15/Notes/%E8%AF%BE%E7%A8%8B/%E6%95%B0%E6%8D%AE%E5%BA%93/%E5%85%B3%E7%B3%BB%E5%9E%8B%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%BE%E8%AE%A1%EF%BC%9A%E6%A8%A1%E5%BC%8F%E8%A7%84%E8%8C%83%E5%8C%96/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="ChatEditChatEdit是一个数据集，用于评估在此背景下的图像编辑和对话能力。ChatEdit是根据CelebA-HQ数据集（30k张1024×1024面部图像数据集，它提供了 40 个面部属性的二进制注释）构建的，包含与图像上的用户编辑请求相对应的带注释的多轮对话，21个可编辑属性 TODO：数据集是什么类型？一张图像和几个标签？图像生成后怎么判断生成是否符合要求 交互式面部图像编辑 跟">
+<meta property="og:description" content="7.1 Good Relational DB Design逻辑数据库设计包括:  初始关系架构生成 关系架构规范化">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231113213751.png">
-<meta property="article:published_time" content="2023-11-13T12:43:06.374Z">
-<meta property="article:modified_time" content="2023-11-13T14:06:20.761Z">
+<meta property="article:published_time" content="2023-11-15T02:59:47.886Z">
+<meta property="article:modified_time" content="2023-11-15T03:01:11.467Z">
 <meta property="article:author" content="John Doe">
+<meta property="article:tag" content="数据库">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231113213751.png">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>ChatEdit - Hexo</title>
+  <title>关系型数据库设计：模式规范化 - Hexo</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -188,7 +187,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="ChatEdit"></span>
+            <span id="subtitle" data-typed-text="关系型数据库设计：模式规范化"></span>
           
         </div>
 
@@ -204,7 +203,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          271 字
+          50 字
         
       </span>
     
@@ -215,7 +214,7 @@
         
         
         
-          3 分钟
+          1 分钟
         
       </span>
     
@@ -252,19 +251,16 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">ChatEdit</h1>
+            <h1 id="seo-header">关系型数据库设计：模式规范化</h1>
             
             
               <div class="markdown-body">
                 
-                <h3 id="ChatEdit"><a href="#ChatEdit" class="headerlink" title="ChatEdit"></a>ChatEdit</h3><p>ChatEdit是一个数据集，用于评估在此背景下的图像编辑和对话能力。<br>ChatEdit是根据CelebA-HQ数据集（30k张1024×1024面部图像数据集，它提供了 40 个面部属性的二进制注释）构建的，包含与图像上的用户编辑请求相对应的带注释的多轮对话，21个可编辑属性<br><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231113213751.png" srcset="/img/loading.gif" lazyload alt="image.png"></p>
-<p>TODO：<br>数据集是什么类型？一张图像和几个标签？<br>图像生成后怎么判断生成是否符合要求</p>
-<h3 id="交互式面部图像编辑"><a href="#交互式面部图像编辑" class="headerlink" title="交互式面部图像编辑"></a>交互式面部图像编辑</h3><ol>
-<li>跟踪用户编辑请求</li>
-<li>图像编辑</li>
-<li>响应生成（对话）</li>
-</ol>
-<p>跟踪整个对话历史记录到当前用户编辑请求，直接对原始图像进行修改，而不是调整前一轮的输出。减少错误累计、防止属性遗忘</p>
+                <h3 id="7-1-Good-Relational-DB-Design"><a href="#7-1-Good-Relational-DB-Design" class="headerlink" title="7.1 Good Relational DB Design"></a>7.1 Good Relational DB Design</h3><p>逻辑数据库设计包括:</p>
+<ul>
+<li>初始关系架构生成</li>
+<li>关系架构规范化</li>
+</ul>
 
                 
               </div>
@@ -273,34 +269,13 @@
             <div>
               <div class="post-metas my-3">
   
-    <div class="post-meta mr-3 d-flex align-items-center">
-      <i class="iconfont icon-category"></i>
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
       
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/Notes/" class="category-chain-item">Notes</a>
-  
-  
-    <span>></span>
-    
-  <a href="/categories/Notes/%E8%AE%BA%E6%96%87/" class="category-chain-item">论文</a>
-  
-  
-
-  
-
-      </span>
-    
-  
-</span>
-
+        <a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/" class="print-no-link">#数据库</a>
+      
     </div>
-  
   
 </div>
 
@@ -310,8 +285,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>ChatEdit</div>
-      <div>http://example.com/2023/11/13/Notes/论文/ChatEdit/</div>
+      <div>关系型数据库设计：模式规范化</div>
+      <div>http://example.com/2023/11/15/Notes/课程/数据库/关系型数据库设计：模式规范化/</div>
     </div>
     <div class="license-meta">
       
@@ -319,7 +294,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>更新于</div>
-          <div>2023年11月13日</div>
+          <div>2023年11月15日</div>
         </div>
       
       
@@ -350,18 +325,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/11/15/Notes/%E8%AF%BE%E7%A8%8B/%E6%95%B0%E6%8D%AE%E5%BA%93/%E5%85%B3%E7%B3%BB%E5%9E%8B%E6%95%B0%E6%8D%AE%E5%BA%93%E8%AE%BE%E8%AE%A1%EF%BC%9A%E6%A8%A1%E5%BC%8F%E8%A7%84%E8%8C%83%E5%8C%96/" title="关系型数据库设计：模式规范化">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">关系型数据库设计：模式规范化</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/11/09/Notes/%E8%AF%BE%E7%A8%8B/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E4%B8%8E%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/%E7%94%9F%E6%88%90%E5%AF%B9%E6%8A%97%E7%BD%91%E7%BB%9C/" title="生成对抗网络">
-                        <span class="hidden-mobile">生成对抗网络</span>
+                      <a href="/2023/11/13/Notes/%E8%AE%BA%E6%96%87/ChatEdit/" title="ChatEdit">
+                        <span class="hidden-mobile">ChatEdit</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
