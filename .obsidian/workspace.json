@@ -4,35 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "c534e57e3eb90158",
+        "id": "c514e71c54c262bf",
         "type": "tabs",
         "children": [
           {
-            "id": "b0b4f280110024d1",
+            "id": "7550b72ff24afff4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "source/_posts/Notes/课程/神经网络与深度学习/注意力机制.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b5e9092319f0d14c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "source/_posts/Notes/课程/神经网络与深度学习/循环神经网络.md",
+                "file": "source/_posts/Notes/课程/神经网络与深度学习/前馈神经网络.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -99,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "source/_posts/Notes/课程/神经网络与深度学习/循环神经网络.md",
+                "file": "source/_posts/Notes/课程/神经网络与深度学习/前馈神经网络.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "source/_posts/Notes/课程/神经网络与深度学习/循环神经网络.md",
+                "file": "source/_posts/Notes/课程/神经网络与深度学习/前馈神经网络.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "source/_posts/Notes/课程/神经网络与深度学习/循环神经网络.md"
+                "file": "source/_posts/Notes/课程/神经网络与深度学习/前馈神经网络.md"
               }
             }
           },
@@ -167,7 +154,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "source/_posts/Notes/课程/神经网络与深度学习/循环神经网络.md"
+                "file": "source/_posts/Notes/课程/神经网络与深度学习/前馈神经网络.md"
               }
             }
           }
@@ -190,13 +177,13 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "b5e9092319f0d14c",
+  "active": "7550b72ff24afff4",
   "lastOpenFiles": [
     "source/_posts/Notes/课程/神经网络与深度学习/神经网络与深度学习.md",
     "source/_posts/Notes/课程/神经网络与深度学习/循环神经网络.md",
+    "source/_posts/Notes/课程/神经网络与深度学习/注意力机制.md",
     "source/_posts/Notes/课程/神经网络与深度学习/前馈神经网络.md",
     "source/_posts/Notes/课程/神经网络与深度学习/图神经网络.md",
-    "source/_posts/Notes/课程/神经网络与深度学习/注意力机制.md",
     "source/_posts/Notes/课程/神经网络与深度学习/分析与简答.md",
     "source/_posts/Notes/课程/神经网络与深度学习/卷积神经网络.md",
     "source/_posts/Notes/课程/神经网络与深度学习/生成对抗网络.md",
