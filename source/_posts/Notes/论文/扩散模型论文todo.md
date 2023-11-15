@@ -20,23 +20,26 @@ https://paperswithcode.com/paper/hard-sample-guided-hybrid-contrast-learning
 https://paperswithcode.com/paper/hard-sample-aware-noise-robust-learning-for
 ### NEW
 
-近三到五年文章 的方法 论文和代码调研 不止对比学习
-
-一周 整理调研文档
-
-11.30之前修改完
 ![ff4ca0be44cbc807008ad5e9d025a40.jpg](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/ff4ca0be44cbc807008ad5e9d025a40.jpg)
 
 - [ ] 表一加个表头
+
 - [ ] 表三添加：auc已经到很高的数值，差距拉不开，意义不大
 
 - [ ] 所有数据换成通信数据,电信场景不同任务，网络优化、运维、用户进行实验，验证在不同任务下的效果
 
 - [ ] 基于文章写一个ppt
+
+
 背景 相关工作
 方法介绍
 数据集介绍
 哪几个实验
+
+用对比学习做GAN的判别器
+1. hardsample的生成结果进行对比
+2. hardsample怎么生成，普通生成也怎么生成
+3. 对这些样本构造一个图，从图中计算hardsample
 ### IDEA
 #### 基于误分样本的数据重构
 之前调节分类器的参数，来提升评估效果
