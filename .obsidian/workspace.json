@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "source/_posts/Notes/课程/神经网络与深度学习/图神经网络.md",
+                "file": "source/_posts/Notes/课程/神经网络与深度学习/循环神经网络.md",
                 "mode": "source",
                 "source": false
               }
@@ -82,7 +82,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 271.5
+    "width": 271.5,
+    "collapsed": true
   },
   "right": {
     "id": "45464171d8013cd8",
@@ -98,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "source/_posts/Notes/课程/神经网络与深度学习/图神经网络.md",
+                "file": "source/_posts/Notes/课程/神经网络与深度学习/循环神经网络.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "source/_posts/Notes/课程/神经网络与深度学习/图神经网络.md",
+                "file": "source/_posts/Notes/课程/神经网络与深度学习/循环神经网络.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "source/_posts/Notes/课程/神经网络与深度学习/图神经网络.md"
+                "file": "source/_posts/Notes/课程/神经网络与深度学习/循环神经网络.md"
               }
             }
           },
@@ -166,7 +167,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "source/_posts/Notes/课程/神经网络与深度学习/图神经网络.md"
+                "file": "source/_posts/Notes/课程/神经网络与深度学习/循环神经网络.md"
               }
             }
           }
@@ -191,17 +192,17 @@
   },
   "active": "b5e9092319f0d14c",
   "lastOpenFiles": [
+    "source/_posts/Notes/课程/神经网络与深度学习/神经网络与深度学习.md",
+    "source/_posts/Notes/课程/神经网络与深度学习/循环神经网络.md",
+    "source/_posts/Notes/课程/神经网络与深度学习/前馈神经网络.md",
+    "source/_posts/Notes/课程/神经网络与深度学习/图神经网络.md",
     "source/_posts/Notes/课程/神经网络与深度学习/注意力机制.md",
     "source/_posts/Notes/课程/神经网络与深度学习/分析与简答.md",
     "source/_posts/Notes/课程/神经网络与深度学习/卷积神经网络.md",
-    "source/_posts/Notes/课程/神经网络与深度学习/前馈神经网络.md",
-    "source/_posts/Notes/课程/神经网络与深度学习/神经网络与深度学习.md",
     "source/_posts/Notes/课程/神经网络与深度学习/生成对抗网络.md",
     "source/_posts/Notes/课程/神经网络与深度学习/生成模型.md",
     "source/_posts/Notes/课程/神经网络与深度学习/实验 用numpy搭建全连接神经网络用于手写数字识别.md",
-    "source/_posts/Notes/课程/神经网络与深度学习/图神经网络.md",
     "source/_posts/Notes/课程/神经网络与深度学习/网络优化与正则化.md",
-    "source/_posts/Notes/课程/神经网络与深度学习/循环神经网络.md",
     "source/_posts/Notes/课程/数据库/关系型数据库设计：模式规范化.md",
     "source/_posts/Notes/课程/数据库/使用E-R模型的数据库设计.md",
     "public/2023/11/15/Notes/课程/数据库/关系型数据库设计：模式规范化/index.html",
