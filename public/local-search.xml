@@ -11,6 +11,16 @@
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="7-1-Good-Relational-DB-Design"><a href="#7-1-Good-Relational-DB-Design" class="headerlink" title="7.1 Good Relational DB Design"></a>7.1 Good Relational DB Design</h3><p>逻辑数据库设计包括:</p><ul><li>初始关系架构生成</li><li>关系架构规范化</li></ul>]]></content>
     
     
+    <categories>
+      
+      <category>Notes</category>
+      
+      <category>课程</category>
+      
+      <category>数据库</category>
+      
+    </categories>
+    
     
     <tags>
       
