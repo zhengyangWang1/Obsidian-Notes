@@ -39,8 +39,9 @@
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231116085711.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231116090605.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231116091113.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231116091810.png">
 <meta property="article:published_time" content="2023-11-09T00:25:42.360Z">
-<meta property="article:modified_time" content="2023-11-16T01:11:40.066Z">
+<meta property="article:modified_time" content="2023-11-16T01:18:16.058Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="智能计算系统">
 <meta property="article:tag" content="Pytorch">
@@ -221,7 +222,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          649 字
+          823 字
         
       </span>
     
@@ -232,7 +233,7 @@
         
         
         
-          6 分钟
+          7 分钟
         
       </span>
     
@@ -290,6 +291,11 @@
 <h4 id="张量的数据格式"><a href="#张量的数据格式" class="headerlink" title="张量的数据格式"></a>张量的数据格式</h4><p><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231116085711.png" srcset="/img/loading.gif" lazyload alt="image.png"></p>
 <h4 id="张量维度的压缩、扩展"><a href="#张量维度的压缩、扩展" class="headerlink" title="张量维度的压缩、扩展"></a>张量维度的压缩、扩展</h4><p><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231116090605.png" srcset="/img/loading.gif" lazyload alt="image.png"></p>
 <h4 id="原地操作"><a href="#原地操作" class="headerlink" title="原地操作"></a>原地操作</h4><p><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231116091113.png" srcset="/img/loading.gif" lazyload alt="image.png"><br>原地操作能够节省内存占用，在进行深度学习算法推理时，使用原地操作能够有效减少模型占用的内存<br>原地操作会覆盖原张量，如果在模型训练时使用原地操 作来更新张量梯度，则每次迭代计算所的梯度值将被覆 盖，从而破坏模型的训练过程<br>对于多个张量同时引用一个张量的情况，对该张量进行 原地操作会影响其他张量的操作</p>
+<h4 id="广播机制"><a href="#广播机制" class="headerlink" title="广播机制"></a>广播机制</h4><p>对于参与计算操作的多个张量，如果张量维度不匹配，可以 使用PyTorch的广播机制对不匹配的张量维度进行扩展，最终 将这些张量均扩展为维度相同<br>广播条件：</p>
+<ul>
+<li>每个张量都有至少1个维度</li>
+<li>从<strong>张量末尾的维度开始对齐</strong>扩展，在对齐后的同一维度中，仅下列情况下才允许进行广播操作：1）维度尺寸相同；2）维度尺寸不同 但其中一个维度尺寸为1；3）其中一个张量没有该维度<br><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231116091810.png" srcset="/img/loading.gif" lazyload alt="image.png"></li>
+</ul>
 
                 
               </div>
