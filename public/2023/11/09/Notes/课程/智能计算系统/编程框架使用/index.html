@@ -16,12 +16,12 @@
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
   
-    <meta name="description" content="深度学习编程框架：将深度学习算法中的基本操作封装成一系列组件，这一系列深度学习组件，即构成一套深度学习框架 pytorchAPI设计简洁一致，基本上是tensor、autograd、nn三层封装动态图 pytorch和tensorflowNumpy基础  ndarray的属性 形状操作 索引">
+    <meta name="description" content="深度学习编程框架：将深度学习算法中的基本操作封装成一系列组件，这一系列深度学习组件，即构成一套深度学习框架 pytorchAPI设计简洁一致，基本上是tensor、autograd、nn三层封装动态图 pytorch和tensorflowNumpy基础  ndarray的属性 形状操作 索引 Pytorch基础张量是现代深度学习框架的核心数据结构之一，包括PyTorch和TensorFlow等。它">
 <meta property="og:type" content="article">
 <meta property="og:title" content="编程框架使用">
 <meta property="og:url" content="http://example.com/2023/11/09/Notes/%E8%AF%BE%E7%A8%8B/%E6%99%BA%E8%83%BD%E8%AE%A1%E7%AE%97%E7%B3%BB%E7%BB%9F/%E7%BC%96%E7%A8%8B%E6%A1%86%E6%9E%B6%E4%BD%BF%E7%94%A8/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="深度学习编程框架：将深度学习算法中的基本操作封装成一系列组件，这一系列深度学习组件，即构成一套深度学习框架 pytorchAPI设计简洁一致，基本上是tensor、autograd、nn三层封装动态图 pytorch和tensorflowNumpy基础  ndarray的属性 形状操作 索引">
+<meta property="og:description" content="深度学习编程框架：将深度学习算法中的基本操作封装成一系列组件，这一系列深度学习组件，即构成一套深度学习框架 pytorchAPI设计简洁一致，基本上是tensor、autograd、nn三层封装动态图 pytorch和tensorflowNumpy基础  ndarray的属性 形状操作 索引 Pytorch基础张量是现代深度学习框架的核心数据结构之一，包括PyTorch和TensorFlow等。它">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231116080600.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231116080608.png">
@@ -31,8 +31,10 @@
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231116081251.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231116081536.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231116081931.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231116082757.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231116082837.png">
 <meta property="article:published_time" content="2023-11-09T00:25:42.360Z">
-<meta property="article:modified_time" content="2023-11-16T00:21:13.186Z">
+<meta property="article:modified_time" content="2023-11-16T00:31:35.438Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="智能计算系统">
 <meta property="article:tag" content="Pytorch">
@@ -213,7 +215,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          140 字
+          401 字
         
       </span>
     
@@ -224,7 +226,7 @@
         
         
         
-          2 分钟
+          4 分钟
         
       </span>
     
@@ -273,7 +275,10 @@
 <h4 id="ndarray的属性"><a href="#ndarray的属性" class="headerlink" title="ndarray的属性"></a>ndarray的属性</h4><p><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231116081100.png" srcset="/img/loading.gif" lazyload alt="image.png"></p>
 <h4 id="形状操作"><a href="#形状操作" class="headerlink" title="形状操作"></a>形状操作</h4><p><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231116081251.png" srcset="/img/loading.gif" lazyload alt="image.png"><br><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231116081536.png" srcset="/img/loading.gif" lazyload alt="image.png"></p>
 <h4 id="索引"><a href="#索引" class="headerlink" title="索引"></a>索引</h4><p><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231116081931.png" srcset="/img/loading.gif" lazyload alt="image.png"></p>
-
+<h3 id="Pytorch基础"><a href="#Pytorch基础" class="headerlink" title="Pytorch基础"></a>Pytorch基础</h3><p>张量是现代深度学习框架的核心数据结构之一，包括PyTorch和TensorFlow等。它类似于 NumPy中的多维数组（ndarray），在PyTorch中，几乎所有的数据都表示为张量。这包括输 入数据、模型参数、梯度等。<br>支持GPU加速：PyTorch能够利用GPU加速计算，而张量是在GPU上进行计算的主要数据类 型。<br>张量是计算图上的数据载体，用张量统一表示所有的数据，张量在计算图的节点之间传递。<br>张量可以看做是n维的数组，数组的维数即为张量的阶数</p>
+<h4 id="tensor创建"><a href="#tensor创建" class="headerlink" title="tensor创建"></a>tensor创建</h4><p><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231116082757.png" srcset="/img/loading.gif" lazyload alt="image.png"></p>
+<h4 id="tensor与array的转换"><a href="#tensor与array的转换" class="headerlink" title="tensor与array的转换"></a>tensor与array的转换</h4><p><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231116082837.png" srcset="/img/loading.gif" lazyload alt="image.png"></p>
+<h4 id="张量的数据类型"><a href="#张量的数据类型" class="headerlink" title="张量的数据类型"></a>张量的数据类型</h4>
                 
               </div>
             
