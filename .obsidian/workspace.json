@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "source/_posts/Notes/课程/神经网络与深度学习/强化学习.md",
+                "file": "source/_posts/Notes/论文/扩散模型论文todo.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 271.5,
-    "collapsed": true
+    "width": 271.5
   },
   "right": {
     "id": "45464171d8013cd8",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "source/_posts/Notes/课程/神经网络与深度学习/强化学习.md",
+                "file": "source/_posts/Notes/论文/扩散模型论文todo.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "source/_posts/Notes/课程/神经网络与深度学习/强化学习.md",
+                "file": "source/_posts/Notes/论文/扩散模型论文todo.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "source/_posts/Notes/课程/神经网络与深度学习/强化学习.md"
+                "file": "source/_posts/Notes/论文/扩散模型论文todo.md"
               }
             }
           },
@@ -154,7 +153,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "source/_posts/Notes/课程/神经网络与深度学习/强化学习.md"
+                "file": "source/_posts/Notes/论文/扩散模型论文todo.md"
               }
             }
           }
@@ -179,8 +178,9 @@
   },
   "active": "7550b72ff24afff4",
   "lastOpenFiles": [
-    "source/_posts/Notes/课程/神经网络与深度学习/神经网络与深度学习.md",
+    "source/_posts/Notes/论文/扩散模型调研.md",
     "source/_posts/Notes/课程/神经网络与深度学习/强化学习.md",
+    "source/_posts/Notes/课程/神经网络与深度学习/神经网络与深度学习.md",
     "source/_posts/Notes/课程/神经网络与深度学习/循环神经网络.md",
     "public/2023/11/16/Notes/课程/神经网络与深度学习/强化学习/index.html",
     "public/2023/11/16/Notes/课程/神经网络与深度学习/强化学习",
