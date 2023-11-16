@@ -8,8 +8,18 @@
     <link href="/2023/11/16/Notes/%E8%AF%BE%E7%A8%8B/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E4%B8%8E%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0/"/>
     <url>/2023/11/16/Notes/%E8%AF%BE%E7%A8%8B/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E4%B8%8E%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>一种试错型学习范式<br>随即环境，智能体的动作引起环境的变化<br>评价：包含噪声的延迟奖励<br>目标：最大化长期累计回报<br><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231116102158.png" alt="image.png"></p><h4 id="状态"><a href="#状态" class="headerlink" title="状态"></a>状态</h4><p>状态是用于决定下一步发生什么的信息<br>形式上，状态是一个关于历史信息的表示<br>历史是一个状态、动作和奖励组成的序列</p><h4 id="环境状态"><a href="#环境状态" class="headerlink" title="环境状态"></a>环境状态</h4><p><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231116102437.png" alt="image.png"><br><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231116102701.png" alt="image.png"></p>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="强化学习"><a href="#强化学习" class="headerlink" title="强化学习"></a>强化学习</h3><p>一种试错型学习范式<br>随即环境，智能体的动作引起环境的变化<br>评价：包含噪声的延迟奖励<br>目标：最大化长期累计回报<br><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231116102158.png" alt="image.png"></p><h4 id="状态"><a href="#状态" class="headerlink" title="状态"></a>状态</h4><p>状态是用于决定下一步发生什么的信息<br>形式上，状态是一个关于历史信息的表示<br>历史是一个状态、动作和奖励组成的序列</p><h4 id="环境状态"><a href="#环境状态" class="headerlink" title="环境状态"></a>环境状态</h4><p><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231116102437.png" alt="image.png"><br><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231116102701.png" alt="image.png"></p><p>完全可观测性：智能体能够直接观测到环境状态$O_t &#x3D; s_t$<br>部分可观测性：智能体间接观察环境$O_t !&#x3D; s_t$</p><h4 id="目标"><a href="#目标" class="headerlink" title="目标"></a>目标</h4><p>智能体的目标：最大化其收到的奖励总和<br><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231116103205.png" alt="image.png"></p><h3 id="马尔可夫决策过程"><a href="#马尔可夫决策过程" class="headerlink" title="马尔可夫决策过程"></a>马尔可夫决策过程</h3><p>理想情况下，一个状态应该总结过去的“经历”，以便保留所有必要的信息，也就是说，它应该具有马尔可夫性：<img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231116103615.png" alt="image.png"></p>]]></content>
     
+    
+    <categories>
+      
+      <category>Notes</category>
+      
+      <category>课程</category>
+      
+      <category>神经网络与深度学习</category>
+      
+    </categories>
     
     
     <tags>
