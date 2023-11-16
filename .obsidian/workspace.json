@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "source/_posts/Notes/课程/智能计算系统/编程框架使用.md",
+                "file": "source/_posts/Notes/课程/神经网络与深度学习/循环神经网络.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "source/_posts/Notes/课程/智能计算系统/编程框架使用.md",
+                "file": "source/_posts/Notes/课程/神经网络与深度学习/循环神经网络.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "source/_posts/Notes/课程/智能计算系统/编程框架使用.md",
+                "file": "source/_posts/Notes/课程/神经网络与深度学习/循环神经网络.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "source/_posts/Notes/课程/智能计算系统/编程框架使用.md"
+                "file": "source/_posts/Notes/课程/神经网络与深度学习/循环神经网络.md"
               }
             }
           },
@@ -154,7 +154,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "source/_posts/Notes/课程/智能计算系统/编程框架使用.md"
+                "file": "source/_posts/Notes/课程/神经网络与深度学习/循环神经网络.md"
               }
             }
           }
@@ -179,10 +179,10 @@
   },
   "active": "7550b72ff24afff4",
   "lastOpenFiles": [
-    "source/_posts/Notes/论文/扩散模型论文todo.md",
-    "source/_posts/Notes/课程/智能计算系统/编程框架使用.md",
-    "source/_posts/Notes/论文/论文查阅、写作与投稿的综合指南.md",
     "source/_posts/Notes/课程/神经网络与深度学习/神经网络与深度学习.md",
+    "source/_posts/Notes/课程/智能计算系统/编程框架使用.md",
+    "source/_posts/Notes/论文/扩散模型论文todo.md",
+    "source/_posts/Notes/论文/论文查阅、写作与投稿的综合指南.md",
     "public/2023/11/15/Notes/论文/论文查阅、写作与投稿的综合指南/index.html",
     "public/2023/11/15/Notes/论文/论文查阅、写作与投稿的综合指南",
     "public/2023/11/15/Notes/论文",
