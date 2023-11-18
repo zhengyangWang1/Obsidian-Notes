@@ -29,7 +29,7 @@ https://paperswithcode.com/paper/hard-sample-aware-noise-robust-learning-for
 - [ ] 所有数据换成通信数据,电信场景不同任务，网络优化、运维、用户进行实验，验证在不同任务下的效果
 
 - [ ] 基于文章写一个ppt
-
+12-15页有效内容
 
 背景 相关工作
 方法介绍
