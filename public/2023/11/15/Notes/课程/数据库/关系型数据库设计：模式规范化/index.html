@@ -28,7 +28,7 @@
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231119232132.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231119232656.png">
 <meta property="article:published_time" content="2023-11-15T02:59:47.886Z">
-<meta property="article:modified_time" content="2023-11-19T15:33:34.312Z">
+<meta property="article:modified_time" content="2023-11-19T15:41:46.976Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="数据库">
 <meta name="twitter:card" content="summary_large_image">
@@ -309,9 +309,9 @@
 <li>分解是无损连接分解</li>
 </ul>
 <h4 id="Functional-Dependencies功能依赖关系"><a href="#Functional-Dependencies功能依赖关系" class="headerlink" title="Functional Dependencies功能依赖关系"></a>Functional Dependencies功能依赖关系</h4><p>数据通常存在（完整性）约束（规则）<br>例如，预期成立的约束：<br>学生和教师通过其 ID 进行唯一标识。<br>每个学生和教师只有一个名字。<br>每个教师和学生只与一个部门相关联。<br>每个部门只有一个预算值，并且只有一个关联的建筑物</p>
-<p>Def：满足所有此类现实世界约束的关系实例称为<strong>关系的合法实例</strong><br>Def：<strong>功能依赖</strong>:<br>对法律关系的约束询问 一组特定属性的值唯一地决定了另一组属性的值<br>函数依赖关系是键概念的泛化<br>函数： f： X→Y， x∈X， y∈Y， y &#x3D; f（x）<br>对于 x1，x2∈X，如果 x1&#x3D;x2，则 f（x1）&#x3D; f（x2)</p>
+<p>Def：满足所有此类现实世界约束的关系实例称为<strong>关系的合法实例</strong><br>Def：<strong>功能依赖</strong>:<br>对法律关系的约束询问<br>一组特定属性的值唯一地决定了另一组属性的值<br>函数依赖关系是键概念的泛化<br>函数： f： X→Y， x∈X， y∈Y， y &#x3D; f（x）<br>对于 x1，x2∈X，如果 x1&#x3D;x2，则 f（x1）&#x3D; f（x2)</p>
 <h4 id="Relation-Instance-Satisfy-Functional-Dependency"><a href="#Relation-Instance-Satisfy-Functional-Dependency" class="headerlink" title="Relation Instance Satisfy Functional Dependency"></a>Relation Instance Satisfy Functional Dependency</h4><p>对于关系模式R，$\alpha$⊆ R，$\beta$⊆ R,满足函数依赖关系$\alpha$→$\beta$<br>对于元组 ti 和 tj ∈r（R） 对，使得 $t_i[\alpha]&#x3D; t_j [\alpha ]$，也是 $t_i[\beta]&#x3D; t_j [\beta]$ 的情况</p>
-<h4 id="Functional-Dependency-Holds-on-Schema-r-R-功能依赖关系保留在架构-r（R）-上"><a href="#Functional-Dependency-Holds-on-Schema-r-R-功能依赖关系保留在架构-r（R）-上" class="headerlink" title="Functional Dependency Holds on Schema r(R)功能依赖关系保留在架构 r（R） 上"></a>Functional Dependency Holds on Schema r(R)功能依赖关系保留在架构 r（R） 上</h4><p>Def：让 R 成为关系架构 $\alpha \subseteq R$ and $\beta \subseteq R$，如果每个法律实例 r（R） 都满足$\alpha$→$\beta$，函数依赖FD在关系模式R上成立&#x2F;保持$\alpha$→$\beta$，每当两个元组 t1 和 t2 在属性$\alpha$上达成一致时，也就在$\beta$属性达成一致</p>
+<h4 id="Functional-Dependency-Holds-on-Schema-r-R-功能依赖关系保留在架构-r（R）-上"><a href="#Functional-Dependency-Holds-on-Schema-r-R-功能依赖关系保留在架构-r（R）-上" class="headerlink" title="Functional Dependency Holds on Schema r(R)功能依赖关系保留在架构 r（R） 上"></a>Functional Dependency Holds on Schema r(R)功能依赖关系保留在架构 r（R） 上</h4><p>Def：让 R 成为关系架构 $\alpha \subseteq R$ and $\beta \subseteq R$，如果每个实例 r（R） 都满足$\alpha$→$\beta$，函数依赖FD在关系模式R上成立&#x2F;保持$\alpha$→$\beta$，每当两个元组 t1 和 t2 在属性$\alpha$上达成一致时，也就在$\beta$属性达成一致</p>
 <h4 id="FD-holds-on-R-vs-FD-is-satisfied-by-r-R-FD-保持-R-与-FD-满足-r（R）"><a href="#FD-holds-on-R-vs-FD-is-satisfied-by-r-R-FD-保持-R-与-FD-满足-r（R）" class="headerlink" title="FD holds on R  vs  FD is satisfied by r(R)FD 保持 R 与 FD 满足 r（R）"></a>FD holds on R  vs  FD is satisfied by r(R)FD 保持 R 与 FD 满足 r（R）</h4><p>在 R 上定义可能有多个关系实例 r（R），即$r_1（R） ， r_2（R） ， r_3（R） ,…, r_m（R）$<br>定义：关系 r（R） 满足$\alpha$→$\beta$与$\alpha$→$\beta$保留架构 R<br>如果$\alpha$→$\beta$在 R 上成立，则每个合法 r（R） 都满足此 R<br>但是对于模式 R，如果只有一些 ri（R） 满足 R，则$\alpha$→$\beta$可能不会对 R 成立。</p>
 <p>FD holds on R:<br>定义在R的属性间的语义约束，或R的属性间体现出的语义约束<br>从设计角度，R应满足的约束</p>
 <p>FD is satisfied by r(R):<br>根据 R构造的实际数据 r(R) 是否满足语义约束FD</p>
