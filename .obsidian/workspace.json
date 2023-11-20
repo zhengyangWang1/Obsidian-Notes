@@ -162,8 +162,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 286.5,
-    "collapsed": true
+    "width": 286.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -178,9 +177,10 @@
   },
   "active": "7550b72ff24afff4",
   "lastOpenFiles": [
+    "source/_posts/Notes/课程/智能计算系统/深度学习.md",
+    "source/_posts/Notes/课程/智能计算系统/第三章作业.md",
     "source/_posts/Notes/课程/智能计算系统/神经网络基础.md",
     "source/_posts/Notes/课程/神经网络与深度学习/卷积神经网络.md",
-    "source/_posts/Notes/课程/智能计算系统/第三章作业.md",
     "public/2023/11/20/Notes/课程/智能计算系统/第三章作业/index.html",
     "public/2023/11/20/Notes/课程/智能计算系统/第三章作业",
     "public/2023/11/20/Notes/课程/智能计算系统",
@@ -213,7 +213,6 @@
     "source/_posts/Notes/课程/神经网络与深度学习/分析与简答.md",
     "source/_posts/Notes/课程/神经网络与深度学习/生成对抗网络.md",
     "source/_posts/Notes/课程/神经网络与深度学习/生成模型.md",
-    "source/_posts/Notes/课程/神经网络与深度学习/实验 用numpy搭建全连接神经网络用于手写数字识别.md",
     "source/_posts/Notes/未命名.canvas",
     "public/img/police_beian.png",
     "public/img/loading.gif",
