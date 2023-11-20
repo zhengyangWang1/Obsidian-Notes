@@ -25,7 +25,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231120165524.png">
 <meta property="article:published_time" content="2023-11-20T07:22:53.443Z">
-<meta property="article:modified_time" content="2023-11-20T10:55:10.969Z">
+<meta property="article:modified_time" content="2023-11-20T10:58:12.367Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231120165524.png">
@@ -204,7 +204,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          2.4k 字
+          2.7k 字
         
       </span>
     
@@ -215,7 +215,7 @@
         
         
         
-          21 分钟
+          23 分钟
         
       </span>
     
@@ -267,7 +267,7 @@
 <h3 id="简述GAN的训练过程"><a href="#简述GAN的训练过程" class="headerlink" title="简述GAN的训练过程"></a>简述GAN的训练过程</h3><p>模型由两部分组成：</p>
 <ul>
 <li>生成器：生成器的任务是生成与真实数据相似的虚假数据，目标是让生成器尽可能地欺骗判别器，使其生成的数据在视觉上或在数据分布上与真实数据难以区分。</li>
-<li>判别器：判别器是一个二分类器，它的任务是将真实数据和由生成器产生的假数据区分开来。判别器的目标是尽可能地准确地区分真实数据和虚假数据。<br>生成器生成一批假样本，然后将这些假样本输入给判别器，判别器评估并给出对这些样本的判断，判别器接收一批真实样本和由生成器生成的假样本，然后分别对它们进行分类</li>
+<li>判别器：判别器是一个二分类器，它的任务是将真实数据和由生成器产生的假数据区分开来。判别器的目标是尽可能地准确地区分真实数据和虚假数据。<br>生成器生成一批假样本，然后将这些假样本输入给判别器，判别器评估并给出对这些样本的判断，判别器接收一批真实样本和由生成器生成的假样本，然后分别对它们进行分类。<br>优化判别器：$$J^{(D)}&#x3D;-\mathrm{E}<em>{\boldsymbol{x} \sim p</em>{\text {data }}(\boldsymbol{x})}[\log (D(\boldsymbol{x}))]-\mathrm{E}<em>{z \sim p</em>{\boldsymbol{z}}(z)}[\log (1-D(G(\boldsymbol{z})))]$$<br>优化生成器：$$J^{(G)}&#x3D;\mathrm{E}<em>{\boldsymbol{z} \sim p</em>{z}(z)}[\log (1-D(G(z)))]$$</li>
 </ul>
 
                 
