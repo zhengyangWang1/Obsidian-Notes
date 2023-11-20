@@ -4,6 +4,19 @@
   
   
   <entry>
+    <title>第三章作业</title>
+    <link href="/2023/11/20/Notes/%E8%AF%BE%E7%A8%8B/%E6%99%BA%E8%83%BD%E8%AE%A1%E7%AE%97%E7%B3%BB%E7%BB%9F/%E7%AC%AC%E4%B8%89%E7%AB%A0%E4%BD%9C%E4%B8%9A/"/>
+    <url>/2023/11/20/Notes/%E8%AF%BE%E7%A8%8B/%E6%99%BA%E8%83%BD%E8%AE%A1%E7%AE%97%E7%B3%BB%E7%BB%9F/%E7%AC%AC%E4%B8%89%E7%AB%A0%E4%BD%9C%E4%B8%9A/</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="计算AlexNet、VGG19、ResNet152三个网络中的神经元数目及可训练的参数数目"><a href="#计算AlexNet、VGG19、ResNet152三个网络中的神经元数目及可训练的参数数目" class="headerlink" title="计算AlexNet、VGG19、ResNet152三个网络中的神经元数目及可训练的参数数目"></a>计算AlexNet、VGG19、ResNet152三个网络中的神经元数目及可训练的参数数目</h3><h3 id="简述错误率与IoU、mAP的关系"><a href="#简述错误率与IoU、mAP的关系" class="headerlink" title="简述错误率与IoU、mAP的关系"></a>简述错误率与IoU、mAP的关系</h3><h3 id="简述R-CNN、Fast-R-CNN和-Faster-R-CNN-的区别"><a href="#简述R-CNN、Fast-R-CNN和-Faster-R-CNN-的区别" class="headerlink" title="简述R-CNN、Fast R-CNN和 Faster R-CNN 的区别"></a>简述R-CNN、Fast R-CNN和 Faster R-CNN 的区别</h3><h3 id="简述LSTM标准模型中三个门的主要作用，并给出计算公式"><a href="#简述LSTM标准模型中三个门的主要作用，并给出计算公式" class="headerlink" title="简述LSTM标准模型中三个门的主要作用，并给出计算公式"></a>简述LSTM标准模型中三个门的主要作用，并给出计算公式</h3><h3 id="简述GAN的训练过程"><a href="#简述GAN的训练过程" class="headerlink" title="简述GAN的训练过程"></a>简述GAN的训练过程</h3>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>强化学习</title>
     <link href="/2023/11/16/Notes/%E8%AF%BE%E7%A8%8B/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E4%B8%8E%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0/"/>
     <url>/2023/11/16/Notes/%E8%AF%BE%E7%A8%8B/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E4%B8%8E%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0/</url>
