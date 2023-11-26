@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "source/_posts/Notes/课程/数据库/使用E-R模型的数据库设计.md",
+                "file": "source/_posts/Notes/课程/数据库/关系型数据库设计：模式规范化.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "source/_posts/Notes/课程/数据库/使用E-R模型的数据库设计.md",
+                "file": "source/_posts/Notes/课程/数据库/关系型数据库设计：模式规范化.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "source/_posts/Notes/课程/数据库/使用E-R模型的数据库设计.md",
+                "file": "source/_posts/Notes/课程/数据库/关系型数据库设计：模式规范化.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "source/_posts/Notes/课程/数据库/使用E-R模型的数据库设计.md"
+                "file": "source/_posts/Notes/课程/数据库/关系型数据库设计：模式规范化.md"
               }
             }
           },
@@ -153,7 +153,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "source/_posts/Notes/课程/数据库/使用E-R模型的数据库设计.md"
+                "file": "source/_posts/Notes/课程/数据库/关系型数据库设计：模式规范化.md"
               }
             }
           }
@@ -177,6 +177,7 @@
   },
   "active": "7550b72ff24afff4",
   "lastOpenFiles": [
+    "source/_posts/Notes/课程/数据库/使用E-R模型的数据库设计.md",
     "source/_posts/Notes/课程/数据库/SQL基础.md",
     "source/_posts/Notes/课程/数据库/SQL中级.md",
     "source/_posts/Notes/课程/数据库/SQL高级.md",
@@ -212,7 +213,6 @@
     "source/_posts/Notes/课程/智能计算系统/编程框架使用.md",
     "source/_posts/Notes/论文/论文查阅、写作与投稿的综合指南.md",
     "source/_posts/Notes/课程/神经网络与深度学习/前馈神经网络.md",
-    "source/_posts/Notes/课程/神经网络与深度学习/注意力机制.md",
     "source/_posts/Notes/未命名.canvas",
     "public/img/police_beian.png",
     "public/img/loading.gif",
