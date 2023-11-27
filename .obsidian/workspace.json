@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "source/_posts/Notes/课程/数据库/使用E-R模型的数据库设计.md",
+                "file": "source/_posts/Notes/课程/数据库/关系型数据库设计：模式规范化.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 271.5
+    "width": 271.5,
+    "collapsed": true
   },
   "right": {
     "id": "45464171d8013cd8",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "source/_posts/Notes/课程/数据库/使用E-R模型的数据库设计.md",
+                "file": "source/_posts/Notes/课程/数据库/关系型数据库设计：模式规范化.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "source/_posts/Notes/课程/数据库/使用E-R模型的数据库设计.md",
+                "file": "source/_posts/Notes/课程/数据库/关系型数据库设计：模式规范化.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "source/_posts/Notes/课程/数据库/使用E-R模型的数据库设计.md"
+                "file": "source/_posts/Notes/课程/数据库/关系型数据库设计：模式规范化.md"
               }
             }
           },
@@ -153,7 +154,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "source/_posts/Notes/课程/数据库/使用E-R模型的数据库设计.md"
+                "file": "source/_posts/Notes/课程/数据库/关系型数据库设计：模式规范化.md"
               }
             }
           }
@@ -162,7 +163,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 286.5
+    "width": 286.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -177,10 +179,10 @@
   },
   "active": "7550b72ff24afff4",
   "lastOpenFiles": [
+    "source/_posts/Notes/课程/数据库/使用E-R模型的数据库设计.md",
     "source/_posts/Notes/课程/数据库/SQL高级.md",
     "source/_posts/Notes/课程/数据库/SQL中级.md",
     "source/_posts/Notes/课程/数据库/SQL基础.md",
-    "source/_posts/Notes/课程/数据库/使用E-R模型的数据库设计.md",
     "source/_posts/Notes/课程/数据库/关系型数据库设计：模式规范化.md",
     "source/_posts/Notes/课程/数据库/数据库.md",
     "source/_posts/Notes/论文/扩散模型论文todo.md",
