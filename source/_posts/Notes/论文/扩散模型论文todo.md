@@ -40,6 +40,12 @@ https://paperswithcode.com/paper/hard-sample-aware-noise-robust-learning-for
 1. hardsample的生成结果进行对比
 2. hardsample怎么生成，普通生成也怎么生成
 3. 对这些样本构造一个图，从图中计算hardsample
+
+1. 基于对比学习
+2. DDPM在通信的应用
+3. 隐私保护的深入探索 看论文
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231127150317.png)
+
 ### IDEA
 #### 基于误分样本的数据重构
 之前调节分类器的参数，来提升评估效果

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "source/_posts/Notes/课程/数据库/关系型数据库设计：模式规范化.md",
+                "file": "source/_posts/Notes/论文/扩散模型论文todo.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "source/_posts/Notes/课程/数据库/关系型数据库设计：模式规范化.md",
+                "file": "source/_posts/Notes/论文/扩散模型论文todo.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "source/_posts/Notes/课程/数据库/关系型数据库设计：模式规范化.md",
+                "file": "source/_posts/Notes/论文/扩散模型论文todo.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "source/_posts/Notes/课程/数据库/关系型数据库设计：模式规范化.md"
+                "file": "source/_posts/Notes/论文/扩散模型论文todo.md"
               }
             }
           },
@@ -154,7 +154,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "source/_posts/Notes/课程/数据库/关系型数据库设计：模式规范化.md"
+                "file": "source/_posts/Notes/论文/扩散模型论文todo.md"
               }
             }
           }
@@ -179,11 +179,11 @@
   },
   "active": "7550b72ff24afff4",
   "lastOpenFiles": [
+    "source/_posts/Notes/课程/数据库/关系型数据库设计：模式规范化.md",
     "source/_posts/Notes/课程/数据库/使用E-R模型的数据库设计.md",
     "source/_posts/Notes/课程/数据库/SQL高级.md",
     "source/_posts/Notes/课程/数据库/SQL中级.md",
     "source/_posts/Notes/课程/数据库/SQL基础.md",
-    "source/_posts/Notes/课程/数据库/关系型数据库设计：模式规范化.md",
     "source/_posts/Notes/课程/数据库/数据库.md",
     "source/_posts/Notes/论文/扩散模型论文todo.md",
     "source/_posts/Notes/论文/扩散模型调研.md",
