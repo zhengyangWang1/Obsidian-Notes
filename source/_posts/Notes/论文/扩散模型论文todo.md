@@ -31,6 +31,10 @@ https://paperswithcode.com/paper/hard-sample-aware-noise-robust-learning-for
 - [ ] 基于文章写一个ppt
 12-15页有效内容
 
+11.29
+ppt要求：刷一下ppt格式
+参考p8做p11
+
 背景 相关工作
 方法介绍
 数据集介绍

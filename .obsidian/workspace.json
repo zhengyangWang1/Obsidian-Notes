@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "source/_posts/Notes/课程/智能计算系统/编程框架机理.md",
+                "file": "source/_posts/Notes/论文/扩散模型论文todo.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 271.5
+    "width": 271.5,
+    "collapsed": true
   },
   "right": {
     "id": "45464171d8013cd8",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "source/_posts/Notes/课程/智能计算系统/编程框架机理.md",
+                "file": "source/_posts/Notes/论文/扩散模型论文todo.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "source/_posts/Notes/课程/智能计算系统/编程框架机理.md",
+                "file": "source/_posts/Notes/论文/扩散模型论文todo.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "source/_posts/Notes/课程/智能计算系统/编程框架机理.md"
+                "file": "source/_posts/Notes/论文/扩散模型论文todo.md"
               }
             }
           },
@@ -153,7 +154,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "source/_posts/Notes/课程/智能计算系统/编程框架机理.md"
+                "file": "source/_posts/Notes/论文/扩散模型论文todo.md"
               }
             }
           }
@@ -178,6 +179,7 @@
   },
   "active": "7550b72ff24afff4",
   "lastOpenFiles": [
+    "source/_posts/Notes/课程/智能计算系统/编程框架机理.md",
     "public/2023/11/28/Notes/课程/智能计算系统/编程框架机理/index.html",
     "public/2023/11/28/Notes/课程/智能计算系统/编程框架机理",
     "public/2023/11/28/Notes/课程/智能计算系统",
@@ -185,7 +187,6 @@
     "public/2023/11/28/Notes",
     "public/2023/11/28",
     "source/_posts/Notes/课程/智能计算系统/编程框架使用.md",
-    "source/_posts/Notes/课程/智能计算系统/编程框架机理.md",
     "source/_posts/Notes/课程/智能计算系统/智能计算系统.md",
     "source/_posts/Notes/论文/扩散模型论文todo.md",
     "source/_posts/Notes/课程/数据库/关系型数据库设计：模式规范化.md",
@@ -205,7 +206,6 @@
     "public/2023/11/20/Notes/课程/智能计算系统/第三章作业",
     "public/2023/11/20/Notes/课程/智能计算系统",
     "public/2023/11/20/Notes/课程",
-    "public/2023/11/20/Notes",
     "source/_posts/Notes/编程/Django/Django模板.md",
     "source/_posts/Notes/编程/Django/Django基础.md",
     "source/_posts/Notes/课程/软件工程/面向对象分析.md",
