@@ -16,24 +16,24 @@
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
   
-    <meta name="description" content="Pytorch的设计原则 要性能更要易用 简介抽象而非隐藏细节  Pytorch的计算图机制自动计算梯度：结合数值计算和符号计算torch.autograd： 分布式计算机制">
+    <meta name="description" content="13.1 Introduction物理数据库中解决的两个问题：  数据组织，即数据的物理存储结构 — Ch13  数据访问，例如索引 — Ch14  目标   根据DBMS机制，选择合适的数据库物理结构    在数据库表上合理设置索引，提高数据查询速度    13.2 File Organization文件逻辑&#x2F;物理组织 in Operating System Concepts  逻辑结">
 <meta property="og:type" content="article">
-<meta property="og:title" content="编程框架机理">
-<meta property="og:url" content="http://example.com/2023/11/28/Notes/%E8%AF%BE%E7%A8%8B/%E6%99%BA%E8%83%BD%E8%AE%A1%E7%AE%97%E7%B3%BB%E7%BB%9F/%E7%BC%96%E7%A8%8B%E6%A1%86%E6%9E%B6%E6%9C%BA%E7%90%86/index.html">
+<meta property="og:title" content="数据储存结构">
+<meta property="og:url" content="http://example.com/2023/12/03/Notes/%E8%AF%BE%E7%A8%8B/%E6%95%B0%E6%8D%AE%E5%BA%93/%E6%95%B0%E6%8D%AE%E5%82%A8%E5%AD%98%E7%BB%93%E6%9E%84/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Pytorch的设计原则 要性能更要易用 简介抽象而非隐藏细节  Pytorch的计算图机制自动计算梯度：结合数值计算和符号计算torch.autograd： 分布式计算机制">
+<meta property="og:description" content="13.1 Introduction物理数据库中解决的两个问题：  数据组织，即数据的物理存储结构 — Ch13  数据访问，例如索引 — Ch14  目标   根据DBMS机制，选择合适的数据库物理结构    在数据库表上合理设置索引，提高数据查询速度    13.2 File Organization文件逻辑&#x2F;物理组织 in Operating System Concepts  逻辑结">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-11-28T02:44:05.364Z">
-<meta property="article:modified_time" content="2023-11-28T03:39:29.187Z">
+<meta property="article:published_time" content="2023-12-03T09:33:10.486Z">
+<meta property="article:modified_time" content="2023-12-03T09:43:36.315Z">
 <meta property="article:author" content="John Doe">
-<meta property="article:tag" content="智能计算系统">
+<meta property="article:tag" content="数据库">
 <meta name="twitter:card" content="summary_large_image">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>编程框架机理 - Hexo</title>
+  <title>数据储存结构 - Hexo</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -187,7 +187,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="编程框架机理"></span>
+            <span id="subtitle" data-typed-text="数据储存结构"></span>
           
         </div>
 
@@ -203,7 +203,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          82 字
+          963 字
         
       </span>
     
@@ -214,7 +214,7 @@
         
         
         
-          1 分钟
+          9 分钟
         
       </span>
     
@@ -251,17 +251,51 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">编程框架机理</h1>
+            <h1 id="seo-header">数据储存结构</h1>
             
             
               <div class="markdown-body">
                 
-                <h3 id="Pytorch的设计原则"><a href="#Pytorch的设计原则" class="headerlink" title="Pytorch的设计原则"></a>Pytorch的设计原则</h3><ol>
-<li>要性能更要易用</li>
-<li>简介抽象而非隐藏细节</li>
+                <h3 id="13-1-Introduction"><a href="#13-1-Introduction" class="headerlink" title="13.1 Introduction"></a>13.1 Introduction</h3><p>物理数据库中解决的两个问题：</p>
+<ul>
+<li>数据组织，即数据的物理存储结构 — Ch13 </li>
+<li>数据访问，例如索引 — Ch14</li>
+</ul>
+<p>目标</p>
+<ul>
+<li><ol>
+<li>根据DBMS机制，选择合适的数据库物理结构</li>
 </ol>
-<h3 id="Pytorch的计算图机制"><a href="#Pytorch的计算图机制" class="headerlink" title="Pytorch的计算图机制"></a>Pytorch的计算图机制</h3><p>自动计算梯度：结合数值计算和符号计算<br>torch.autograd：</p>
-<h3 id="分布式计算机制"><a href="#分布式计算机制" class="headerlink" title="分布式计算机制"></a>分布式计算机制</h3>
+</li>
+<li><ol start="2">
+<li>在数据库表上合理设置索引，提高数据查询速度</li>
+</ol>
+</li>
+</ul>
+<h3 id="13-2-File-Organization"><a href="#13-2-File-Organization" class="headerlink" title="13.2 File Organization"></a>13.2 File Organization</h3><p>文件逻辑&#x2F;物理组织 in Operating System Concepts</p>
+<ul>
+<li>逻辑结构</li>
+<li>基于记录的文件</li>
+<li>基于索引的文件（按内容访问）</li>
+</ul>
+<p>物理组织&#x2F;结构</p>
+<ul>
+<li>contiguous, linked, indexed</li>
+<li>以block为单位，存储 在secondary storage, i.e. disk, SSD</li>
+</ul>
+<p>DB 存储为 DB 文件的集合 </p>
+<ul>
+<li>例如.SQL服务器，主文件，辅文件，日志文件 </li>
+<li>每个文件都是一系列记录 </li>
+<li>每条记录都位于一系列字段中<br>一种方法<br>  记录大小是固定的<br>  每个文件仅包含一种特定类型的记录<br>  不同的文件用于不同的关系</li>
+</ul>
+<p>每个文件都是记录序列，每个关系表是一组元组，以元组为单位的DB逻辑文件<br>在以记录为单位的物理文件<br>元组作为记录存储在数据库中<br>将元组表示为文件中的记录<br>    固定长度记录<br>    可变长度记录<br>    例如，名称 varchar（20）</p>
+<h4 id="Fixed-Length-Records-固定长度记录"><a href="#Fixed-Length-Records-固定长度记录" class="headerlink" title="Fixed-Length Records 固定长度记录"></a>Fixed-Length Records 固定长度记录</h4><p>一个块包含多条记录<br>存储记录 i 从字节 n （i – 1） 开始，其中 n 是每条记录的大小。<br>记录访问很简单，但记录可能会跨块<br>修改： 不允许记录跨越块边界</p>
+<p>删除记录 i： 备选方案：<br>    压缩：将记录 i + 1， . . .， n 移动到 i， . . . . ， n – 1<br>    将记录 N 移动到 I<br>    不要移动记录，而是将所有空闲记录链接在空表</p>
+<h4 id="Free-Lists"><a href="#Free-Lists" class="headerlink" title="Free Lists"></a>Free Lists</h4><p>将第一条已删除记录的地址存储在文件头中<br>使用此第一个删除的记录来存储第二个已删除记录的地址，依此类推<br>将这些存储的地址视为指针，因为它们指向记录的位置。<br>更节省空间的表示形式<br>将空间重新用于可用记录的正常属性以存储指针。（使用中的记录中没有存储指针。）</p>
+<h4 id="Variable-Length-Records-可变长度记录"><a href="#Variable-Length-Records-可变长度记录" class="headerlink" title="Variable-Length Records 可变长度记录"></a>Variable-Length Records 可变长度记录</h4><p>可变长度记录以多种方式出现<br>记录类型允许可变长度，例如字符串 （varchar）<br>一个文件中有多种记录类型，例如多表聚类文件<br>记录类型允许重复字段，例如多值属性。</p>
+<h4 id="如何在块中存储可变长度记录"><a href="#如何在块中存储可变长度记录" class="headerlink" title="如何在块中存储可变长度记录"></a>如何在块中存储可变长度记录</h4><p>记录中的属性按顺序存储<br>首先是固定长度属性，然后是可变长度属性<br>可变长度属性由固定大小（偏移量、长度）表示，实际数据存储在所有固定长度属性之后 由 null 值位图表示的 Null 值</p>
+
                 
               </div>
             
@@ -269,46 +303,11 @@
             <div>
               <div class="post-metas my-3">
   
-    <div class="post-meta mr-3 d-flex align-items-center">
-      <i class="iconfont icon-category"></i>
-      
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/Notes/" class="category-chain-item">Notes</a>
-  
-  
-    <span>></span>
-    
-  <a href="/categories/Notes/%E8%AF%BE%E7%A8%8B/" class="category-chain-item">课程</a>
-  
-  
-    <span>></span>
-    
-  <a href="/categories/Notes/%E8%AF%BE%E7%A8%8B/%E6%99%BA%E8%83%BD%E8%AE%A1%E7%AE%97%E7%B3%BB%E7%BB%9F/" class="category-chain-item">智能计算系统</a>
-  
-  
-
-  
-
-  
-
-      </span>
-    
-  
-</span>
-
-    </div>
-  
   
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/%E6%99%BA%E8%83%BD%E8%AE%A1%E7%AE%97%E7%B3%BB%E7%BB%9F/" class="print-no-link">#智能计算系统</a>
+        <a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/" class="print-no-link">#数据库</a>
       
     </div>
   
@@ -320,8 +319,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>编程框架机理</div>
-      <div>http://example.com/2023/11/28/Notes/课程/智能计算系统/编程框架机理/</div>
+      <div>数据储存结构</div>
+      <div>http://example.com/2023/12/03/Notes/课程/数据库/数据储存结构/</div>
     </div>
     <div class="license-meta">
       
@@ -329,7 +328,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>更新于</div>
-          <div>2023年11月28日</div>
+          <div>2023年12月3日</div>
         </div>
       
       
@@ -360,18 +359,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/12/03/Notes/%E8%AF%BE%E7%A8%8B/%E6%95%B0%E6%8D%AE%E5%BA%93/%E6%95%B0%E6%8D%AE%E5%82%A8%E5%AD%98%E7%BB%93%E6%9E%84/" title="数据储存结构">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">数据储存结构</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/11/20/Notes/%E8%AF%BE%E7%A8%8B/%E6%99%BA%E8%83%BD%E8%AE%A1%E7%AE%97%E7%B3%BB%E7%BB%9F/%E7%AC%AC%E4%B8%89%E7%AB%A0%E4%BD%9C%E4%B8%9A/" title="第三章作业">
-                        <span class="hidden-mobile">第三章作业</span>
+                      <a href="/2023/11/28/Notes/%E8%AF%BE%E7%A8%8B/%E6%99%BA%E8%83%BD%E8%AE%A1%E7%AE%97%E7%B3%BB%E7%BB%9F/%E7%BC%96%E7%A8%8B%E6%A1%86%E6%9E%B6%E6%9C%BA%E7%90%86/" title="编程框架机理">
+                        <span class="hidden-mobile">编程框架机理</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
