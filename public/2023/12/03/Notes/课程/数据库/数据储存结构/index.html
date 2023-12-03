@@ -27,7 +27,7 @@
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231203174849.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231203175205.png">
 <meta property="article:published_time" content="2023-12-03T09:33:10.486Z">
-<meta property="article:modified_time" content="2023-12-03T09:52:43.184Z">
+<meta property="article:modified_time" content="2023-12-03T10:01:39.780Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="数据库">
 <meta name="twitter:card" content="summary_large_image">
@@ -300,7 +300,7 @@
 <h4 id="Variable-Length-Records-可变长度记录"><a href="#Variable-Length-Records-可变长度记录" class="headerlink" title="Variable-Length Records 可变长度记录"></a>Variable-Length Records 可变长度记录</h4><p>可变长度记录以多种方式出现<br>记录类型允许可变长度，例如字符串 （varchar）<br>一个文件中有多种记录类型，例如多表聚类文件<br>记录类型允许重复字段，例如多值属性。</p>
 <h4 id="如何在块中存储可变长度记录"><a href="#如何在块中存储可变长度记录" class="headerlink" title="如何在块中存储可变长度记录"></a>如何在块中存储可变长度记录</h4><p>记录中的属性按顺序存储<br>首先是固定长度属性，然后是可变长度属性<br>可变长度属性由固定大小（偏移量、长度）表示，实际数据存储在所有固定长度属性之后<br>由 null 值位图表示的 Null 值</p>
 <h4 id="Variable-Length-Records-Slotted-Page-Structure可变长度记录：开槽页面结构"><a href="#Variable-Length-Records-Slotted-Page-Structure可变长度记录：开槽页面结构" class="headerlink" title="Variable-Length Records: Slotted Page Structure可变长度记录：开槽页面结构"></a>Variable-Length Records: Slotted Page Structure可变长度记录：开槽页面结构</h4><p>存储空间分为固定大小的开槽页，4KB或8KB，记录分配给开槽页<img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231203174823.png" srcset="/img/loading.gif" lazyload alt="image.png"><br>记录可以在页面中移动以保持连续<br>RI 被删除，RI+3、RI+2、RI+1 被移动到删除创建的可用空间<br>标头中的条目必须更新，例如设置为 -1 指针不应直接指向记录，而应指向标头中记录的条目<br><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231203174849.png" srcset="/img/loading.gif" lazyload alt="image.png"></p>
-<h3 id="13-3-Organization-of-Records-in-Files"><a href="#13-3-Organization-of-Records-in-Files" class="headerlink" title="13.3 Organization of Records in Files"></a>13.3 Organization of Records in Files</h3><p>DB文件可以看作是逻辑级别的一组记录，这些记录在逻辑上组织如下<br>    堆、顺序、哈希、聚类<br>    记录的逻辑组织决定了如何访问记录，即访问方法<br>文件包括多个记录，记录在磁盘上的存放属于文件（记录）结构问题<br>对于某种结构的文件如何去查找、插入、删除记录，属于文件的存取方法<br>文件记录的组织结构决定了文件的存取方法</p>
+<h3 id="13-3-Organization-of-Records-in-Files"><a href="#13-3-Organization-of-Records-in-Files" class="headerlink" title="13.3 Organization of Records in Files"></a>13.3 Organization of Records in Files</h3><p>DB文件可以看作是逻辑级别的一组记录，这些记录在逻辑上组织如下<br>    堆、序列、哈希、聚类<br>    记录的逻辑组织决定了如何访问记录，即访问方法<br>文件包括多个记录，记录在磁盘上的存放属于文件（记录）结构问题<br>对于某种结构的文件如何去查找、插入、删除记录，属于文件的存取方法<br>文件记录的组织结构决定了文件的存取方法</p>
 <p>堆 – 放置在任何有空间的地方的记录<br>    没有主键和索引的表中的数据，<br>    例如，学生（ID、姓名、总学分）<br>序列 – 根据每条记录的搜索键按顺序存储的记录<br>    例如学生（ID、姓名、总学分）， 或学生（ID、姓名、总学分），并附有姓名索引<br>    每个关系的记录可以存储在单独的文件中<br>多表聚类 – 存储在同一文件中的不同关系的记录<br>    动机：将相关记录存储在同一个块上，以最大程度地减少 I&#x2F;O，<br>    例如 讲师加入部门，讲师和部门的记录放在一个文件中</p>
 <h4 id="Heap-File-Organization堆文件组织"><a href="#Heap-File-Organization堆文件组织" class="headerlink" title="Heap File Organization堆文件组织"></a>Heap File Organization堆文件组织</h4><p>任何记录都可以放置在文件中有记录空间的任何位置<br>没有记录的顺序<br>记录在分配后通常不会移动<br>关系只有一个文件</p>
 <p>以纪录的输入顺序为序，决定了文件中记录顺序<br>    纪录的存储顺序与记录中的主键无关<br>e.g. 创建新关系表student (ID, name, total-credits)，    但不在student上定义主键、候选键、各类索引，student被组织为heap file<br>通过insert，将记录&#x2F;元组加到堆文件中</p>
