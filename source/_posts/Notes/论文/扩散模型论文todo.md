@@ -7,6 +7,24 @@ update:
 tags:
   - 扩散模型
 ---
+
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231203092747.png)
+![d5304720bd3b25b687d5db36f180fb3.jpg](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/d5304720bd3b25b687d5db36f180fb3.jpg)
+
+
+检查论文，12.4之前
+
+
+
+
+
+
+
+
+
+
+
+
 对比学习生成 **hardsample**
 自动数据增强
 识别出假数据
