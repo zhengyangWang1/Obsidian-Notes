@@ -24,7 +24,7 @@
 <meta property="og:description" content="A6.1 (5分) 分析卷积神经网络中用1×1的卷积核的作用。一文读懂卷积神经网络中的1x1卷积核 - 知乎  改变通道数 当卷积核的个数大于或小于输入通道数时，可以改变输出的通道数 增加非线性 1x1卷积核可以在不改变特征维度的情况下添加非线性激活  A6.2 (5分) 计算函数$𝑦 &#x3D; max(𝑥_1,⋯,𝑥_𝐷)$和函数$𝑦 &#x3D; argmax(𝑥_1,⋯,𝑥">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-12-11T04:50:42.123Z">
-<meta property="article:modified_time" content="2023-12-11T06:42:46.688Z">
+<meta property="article:modified_time" content="2023-12-11T06:47:55.205Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="神经网络">
 <meta property="article:tag" content="深度学习">
@@ -204,7 +204,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          824 字
+          830 字
         
       </span>
     
@@ -262,8 +262,10 @@
 <li>改变通道数<br> 当卷积核的个数大于或小于输入通道数时，可以改变输出的通道数</li>
 <li>增加非线性<br> 1x1卷积核可以在不改变特征维度的情况下添加非线性激活</li>
 </ol>
-<h3 id="A6-2-5分-计算函数-𝑦-max-𝑥-1-⋯-𝑥-𝐷-和函数-𝑦-argmax-𝑥-1-⋯-𝑥-𝐷-的梯度。"><a href="#A6-2-5分-计算函数-𝑦-max-𝑥-1-⋯-𝑥-𝐷-和函数-𝑦-argmax-𝑥-1-⋯-𝑥-𝐷-的梯度。" class="headerlink" title="A6.2 (5分) 计算函数$𝑦 &#x3D; max(𝑥_1,⋯,𝑥_𝐷)$和函数$𝑦 &#x3D; argmax(𝑥_1,⋯,𝑥_𝐷)$的梯度。"></a>A6.2 (5分) 计算函数$𝑦 &#x3D; max(𝑥_1,⋯,𝑥_𝐷)$和函数$𝑦 &#x3D; argmax(𝑥_1,⋯,𝑥_𝐷)$的梯度。</h3><p>$𝑦 &#x3D; max(𝑥<em>1,⋯,𝑥_𝐷)$：如果对于输入向量中的某个元素$𝑥_𝑖$，它是最大值，则其梯度为1，其他所有元素的梯度都为0。用数学符号表示为<br>$$\frac{\partial y}{\partial x</em>{i}}&#x3D;\left{\begin{array}{ll}<br>1, &amp; \text { if } x_{i}&#x3D;max(𝑥<em>1,⋯,𝑥_𝐷) \<br>0, &amp; \text { otherwise }<br>\end{array}\right.$$<br>argmax(𝑥_1,⋯,𝑥_𝐷)输出的是使得函数取得最大值的元素的索引位置.如果对于输入向量中的某个元素𝑥𝑖，它的索引位置与最大值所在的位置相同，则其梯度为1，其他所有元素的梯度都为0。用数学符号表示为<br>$$\frac{\partial y}{\partial x</em>{i}}&#x3D;\left{\begin{array}{ll}<br>1, &amp; \text { if } i&#x3D;argmax(𝑥_1,⋯,𝑥_𝐷) \<br>0, &amp; \text { otherwise }<br>\end{array}\right.$$</p>
+<h3 id="A6-2-5分-计算函数-𝑦-max-𝑥-1-⋯-𝑥-𝐷-和函数-𝑦-argmax-𝑥-1-⋯-𝑥-𝐷-的梯度。"><a href="#A6-2-5分-计算函数-𝑦-max-𝑥-1-⋯-𝑥-𝐷-和函数-𝑦-argmax-𝑥-1-⋯-𝑥-𝐷-的梯度。" class="headerlink" title="A6.2 (5分) 计算函数$𝑦 &#x3D; max(𝑥_1,⋯,𝑥_𝐷)$和函数$𝑦 &#x3D; argmax(𝑥_1,⋯,𝑥_𝐷)$的梯度。"></a>A6.2 (5分) 计算函数$𝑦 &#x3D; max(𝑥_1,⋯,𝑥_𝐷)$和函数$𝑦 &#x3D; argmax(𝑥_1,⋯,𝑥_𝐷)$的梯度。</h3><p>$𝑦 &#x3D; max(𝑥<em>1,⋯,𝑥_𝐷)$：如果对于输入向量中的某个元素$𝑥_𝑖$，它是最大值，则其梯度为1，其他所有元素的梯度都为0。用数学符号表示为<br>$$<br>\frac{\partial y}{\partial x</em>{i}}&#x3D;\left{\begin{array}{ll}<br>1, &amp; \text { if } x_{i}&#x3D;max(𝑥<em>1,⋯,𝑥_𝐷) \<br>0, &amp; \text { otherwise }<br>\end{array}\right.<br>$$<br>argmax(𝑥_1,⋯,𝑥_𝐷)输出的是使得函数取得最大值的元素的索引位置.如果对于输入向量中的某个元素𝑥𝑖，它的索引位置与最大值所在的位置相同，则其梯度为1，其他所有元素的梯度都为0。用数学符号表示为<br>$$<br>\frac{\partial y}{\partial x</em>{i}}&#x3D;\left{\begin{array}{ll}<br>1, &amp; \text { if } i&#x3D;argmax(𝑥_1,⋯,𝑥_𝐷) \<br>0, &amp; \text { otherwise }<br>\end{array}\right.<br>$$</p>
 <h3 id="A6-3-5分-推导LSTM网络中参数的梯度，并分析其避免梯度消失的效果。"><a href="#A6-3-5分-推导LSTM网络中参数的梯度，并分析其避免梯度消失的效果。" class="headerlink" title="A6.3 (5分) 推导LSTM网络中参数的梯度，并分析其避免梯度消失的效果。"></a>A6.3 (5分) 推导LSTM网络中参数的梯度，并分析其避免梯度消失的效果。</h3><p>[[循环神经网络#长短时记忆网络（LSTM）]]<br><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/123857569">LSTM - 长短期记忆递归神经网络 - 知乎</a></p>
+<p>遗忘门</p>
+<p>记忆门</p>
 <h3 id="A6-4-5分-当将自注意力模型作为神经网络的一层使用时，分析它和卷积层以及循环层在建模长距离依赖关系的效率和计算复杂度方面的差异。"><a href="#A6-4-5分-当将自注意力模型作为神经网络的一层使用时，分析它和卷积层以及循环层在建模长距离依赖关系的效率和计算复杂度方面的差异。" class="headerlink" title="A6.4 (5分) 当将自注意力模型作为神经网络的一层使用时，分析它和卷积层以及循环层在建模长距离依赖关系的效率和计算复杂度方面的差异。"></a>A6.4 (5分) 当将自注意力模型作为神经网络的一层使用时，分析它和卷积层以及循环层在建模长距离依赖关系的效率和计算复杂度方面的差异。</h3>
                 
               </div>
