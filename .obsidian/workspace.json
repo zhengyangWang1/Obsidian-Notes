@@ -158,12 +158,11 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 6
       }
     ],
     "direction": "horizontal",
-    "width": 286.5,
-    "collapsed": true
+    "width": 286.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -176,7 +175,7 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "7550b72ff24afff4",
+  "active": "dea0cf62433128f5",
   "lastOpenFiles": [
     "source/_posts/Notes/课程/数据库/数据库.md",
     "source/_posts/Notes/课程/数据库/关系型数据库设计：模式规范化.md",
