@@ -16,20 +16,21 @@
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
   
-    <meta name="description" content="看扩散模型超详细的扩散模型（Diffusion Models）原理+代码 - 知乎看TabDDPM 看Improved DDPM看Generative models for tabular problems、ddpm diffusion model相关检索。 Accelerating Diffusion Models via Early Stop of the Diffusion Process2">
+    <meta name="description" content="12.27调研AI发展中的表格类数据研究趋势 看扩散模型超详细的扩散模型（Diffusion Models）原理+代码 - 知乎看TabDDPM 看Improved DDPM看Generative models for tabular problems、ddpm diffusion model相关检索。 Accelerating Diffusion Models via Early Stop of">
 <meta property="og:type" content="article">
 <meta property="og:title" content="扩散模型调研">
 <meta property="og:url" content="http://example.com/2023/11/01/Notes/%E8%AE%BA%E6%96%87/%E6%89%A9%E6%95%A3%E6%A8%A1%E5%9E%8B%E8%B0%83%E7%A0%94/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="看扩散模型超详细的扩散模型（Diffusion Models）原理+代码 - 知乎看TabDDPM 看Improved DDPM看Generative models for tabular problems、ddpm diffusion model相关检索。 Accelerating Diffusion Models via Early Stop of the Diffusion Process2">
+<meta property="og:description" content="12.27调研AI发展中的表格类数据研究趋势 看扩散模型超详细的扩散模型（Diffusion Models）原理+代码 - 知乎看TabDDPM 看Improved DDPM看Generative models for tabular problems、ddpm diffusion model相关检索。 Accelerating Diffusion Models via Early Stop of">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231227125526.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231104173325.png">
 <meta property="article:published_time" content="2023-11-01T01:17:04.297Z">
-<meta property="article:modified_time" content="2023-11-04T12:49:45.143Z">
+<meta property="article:modified_time" content="2023-12-27T05:00:31.442Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="扩散模型">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231104173325.png">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231227125526.png">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
@@ -258,7 +259,8 @@
             
               <div class="markdown-body">
                 
-                <p>看扩散模型<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/624221952">超详细的扩散模型（Diffusion Models）原理+代码 - 知乎</a><br>看TabDDPM<br><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231104173325.png" srcset="/img/loading.gif" lazyload alt="image.png"></p>
+                <p>12.27<br>调研AI发展中的表格类数据研究趋势<br><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231227125526.png" srcset="/img/loading.gif" lazyload alt="image.png"></p>
+<p>看扩散模型<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/624221952">超详细的扩散模型（Diffusion Models）原理+代码 - 知乎</a><br>看TabDDPM<br><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231104173325.png" srcset="/img/loading.gif" lazyload alt="image.png"></p>
 <p>看Improved DDPM<br>看Generative models for tabular problems、ddpm diffusion model相关检索。</p>
 <h3 id="Accelerating-Diffusion-Models-via-Early-Stop-of-the-Diffusion-Process"><a href="#Accelerating-Diffusion-Models-via-Early-Stop-of-the-Diffusion-Process" class="headerlink" title="Accelerating Diffusion Models via Early Stop of the Diffusion Process"></a>Accelerating Diffusion Models via Early Stop of the Diffusion Process</h3><h4 id="2022-CVPR-2205-12524-pdf"><a href="#2022-CVPR-2205-12524-pdf" class="headerlink" title="2022 CVPR 2205.12524.pdf"></a>2022 CVPR <a target="_blank" rel="noopener" href="https://arxiv.org/pdf/2205.12524.pdf">2205.12524.pdf</a></h4><p>在实际应用中，DDPM往往需要数百甚至数千个去噪步骤才能从高斯噪声中获得高质量的样本，从而导致推理效率极低。<br>在这项工作中，我们提出了一种针对 DDPM 的原则性加速策略，称为 Early-Stopped DDPM (ES-DDPM)。关键思想是尽早停止扩散过程，其中仅考虑少数初始扩散步骤，并且反向降噪过程从非高斯分布开始。 ES-DDPM中进一步<strong>采用强大的预训练生成模型，如GAN和VAE，通过扩散从预训练生成模型获得的样本</strong>，可以有效地实现对目标非高斯分布的采样。通过这种方式，所需的去噪步骤数量显着减少。</p>
 <p>为了最大化数据对数似然 log p(x0)，我们需要最小化两个损失项：LDDPM 和LVAE。我们将证明，这意味着我们可以分别训练 ES-DDPM 和变分自动编码器（VAE），然后将它们组合在一起以获得新的生成模型。<br>分别训练ES-DDPM和VAE后，我们可以将它们组合起来形成新的生成模型。我们按照方程 5 生成样本，如图 1 所示：首先从标准高斯分布中采样 z，然后使用 VAE 的解码器生成图像 fφ(z)。接下来，从公式 11 中描述的分布中采样 xT ‘。最后，使用 ES-DDPM 从 pθ(xt−1|xt) 中采样 xt−1，其中 t &#x3D; T ‘, T ‘ − 1, · · · , 1 ，并输出生成的图像x0。注意，在上面的采样过程中，我们只需要使用解码器fφ(z)，而没有使用编码器qψ(z|x0)。这意味着我们不仅可以将 ES-DDPM 与 VAE 结合起来，还可以与任何可以将潜在代码 z 映射到干净图像的生成模型（例如 GAN）结合起来。由于 GAN 训练完成后，它的生成器非常类似于 VAE 的解码器，只是生成器的编码器是未知的，但我们根本不需要编码器从组合模型生成样本。因此，我们也可以将 fφ(z) 视为经过训练的 GAN 的生成器。</p>
@@ -327,7 +329,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>更新于</div>
-          <div>2023年11月4日</div>
+          <div>2023年12月27日</div>
         </div>
       
       
