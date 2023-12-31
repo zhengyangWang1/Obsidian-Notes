@@ -16,13 +16,15 @@
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
   
-    <meta name="description" content="深度学习编程框架：将深度学习算法中的基本操作封装成一系列组件，这一系列深度学习组件，即构成一套深度学习框架 pytorchAPI设计简洁一致，基本上是tensor、autograd、nn三层封装动态图 pytorch和tensorflowNumpy基础  ndarray的属性 形状操作 索引 Pytorch基础张量是现代深度学习框架的核心数据结构之一，包括PyTorch和TensorFlow等。它">
+    <meta name="description" content="深度学习编程框架：将深度学习算法中的基本操作封装成一系列组件，这一系列深度学习组件，即构成一套深度学习框架 pytorch概述主要优点简洁易懂：API设计简洁一致，基本上是tensor、autograd、nn三层封装便于调试：采用动态图，可以进行调试强大高效：提供了非常丰富的模型组件 pytorch和tensorflowTensorflow在工业界拥有完备的解决方案和用户基础 pytorch编程模">
 <meta property="og:type" content="article">
 <meta property="og:title" content="编程框架使用">
 <meta property="og:url" content="http://example.com/2023/11/09/Notes/%E8%AF%BE%E7%A8%8B/%E6%99%BA%E8%83%BD%E8%AE%A1%E7%AE%97%E7%B3%BB%E7%BB%9F/%E7%BC%96%E7%A8%8B%E6%A1%86%E6%9E%B6%E4%BD%BF%E7%94%A8/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="深度学习编程框架：将深度学习算法中的基本操作封装成一系列组件，这一系列深度学习组件，即构成一套深度学习框架 pytorchAPI设计简洁一致，基本上是tensor、autograd、nn三层封装动态图 pytorch和tensorflowNumpy基础  ndarray的属性 形状操作 索引 Pytorch基础张量是现代深度学习框架的核心数据结构之一，包括PyTorch和TensorFlow等。它">
+<meta property="og:description" content="深度学习编程框架：将深度学习算法中的基本操作封装成一系列组件，这一系列深度学习组件，即构成一套深度学习框架 pytorch概述主要优点简洁易懂：API设计简洁一致，基本上是tensor、autograd、nn三层封装便于调试：采用动态图，可以进行调试强大高效：提供了非常丰富的模型组件 pytorch和tensorflowTensorflow在工业界拥有完备的解决方案和用户基础 pytorch编程模">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231231234517.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231231234940.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231116080600.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231116080608.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231116080629.png">
@@ -43,12 +45,12 @@
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231116093426.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231116093434.png">
 <meta property="article:published_time" content="2023-11-09T00:25:42.360Z">
-<meta property="article:modified_time" content="2023-11-16T01:34:39.303Z">
+<meta property="article:modified_time" content="2023-12-31T15:49:44.666Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="智能计算系统">
 <meta property="article:tag" content="Pytorch">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231116080600.png">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231231234517.png">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
@@ -224,7 +226,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          845 字
+          931 字
         
       </span>
     
@@ -278,8 +280,10 @@
               <div class="markdown-body">
                 
                 <p>深度学习编程框架：将深度学习算法中的基本操作封装成一系列组件，这一系列深度学习组件，即构成一套深度学习框架</p>
-<h3 id="pytorch"><a href="#pytorch" class="headerlink" title="pytorch"></a>pytorch</h3><p>API设计简洁一致，基本上是tensor、autograd、nn三层封装<br>动态图</p>
-<h3 id="pytorch和tensorflow"><a href="#pytorch和tensorflow" class="headerlink" title="pytorch和tensorflow"></a>pytorch和tensorflow</h3><h3 id="Numpy基础"><a href="#Numpy基础" class="headerlink" title="Numpy基础"></a>Numpy基础</h3><p><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231116080600.png" srcset="/img/loading.gif" lazyload alt="image.png"><br><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231116080608.png" srcset="/img/loading.gif" lazyload alt="image.png"><br><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231116080629.png" srcset="/img/loading.gif" lazyload alt="image.png"></p>
+<h3 id="pytorch概述"><a href="#pytorch概述" class="headerlink" title="pytorch概述"></a>pytorch概述</h3><h5 id="主要优点"><a href="#主要优点" class="headerlink" title="主要优点"></a>主要优点</h5><p>简洁易懂：API设计简洁一致，基本上是tensor、autograd、nn三层封装<br>便于调试：采用动态图，可以进行调试<br>强大高效：提供了非常丰富的模型组件</p>
+<h4 id="pytorch和tensorflow"><a href="#pytorch和tensorflow" class="headerlink" title="pytorch和tensorflow"></a>pytorch和tensorflow</h4><p>Tensorflow在工业界拥有完备的解决方案和用户基础<br><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231231234517.png" srcset="/img/loading.gif" lazyload alt="image.png"></p>
+<h3 id="pytorch编程模型及基本用法"><a href="#pytorch编程模型及基本用法" class="headerlink" title="pytorch编程模型及基本用法"></a>pytorch编程模型及基本用法</h3><p><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231231234940.png" srcset="/img/loading.gif" lazyload alt="image.png"></p>
+<h4 id="Numpy基础"><a href="#Numpy基础" class="headerlink" title="Numpy基础"></a>Numpy基础</h4><p><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231116080600.png" srcset="/img/loading.gif" lazyload alt="image.png"><br><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231116080608.png" srcset="/img/loading.gif" lazyload alt="image.png"><br><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231116080629.png" srcset="/img/loading.gif" lazyload alt="image.png"></p>
 <p><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231116080859.png" srcset="/img/loading.gif" lazyload alt="image.png"></p>
 <h4 id="ndarray的属性"><a href="#ndarray的属性" class="headerlink" title="ndarray的属性"></a>ndarray的属性</h4><p><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231116081100.png" srcset="/img/loading.gif" lazyload alt="image.png"></p>
 <h4 id="形状操作"><a href="#形状操作" class="headerlink" title="形状操作"></a>形状操作</h4><p><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231116081251.png" srcset="/img/loading.gif" lazyload alt="image.png"><br><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231116081536.png" srcset="/img/loading.gif" lazyload alt="image.png"></p>
@@ -369,7 +373,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>更新于</div>
-          <div>2023年11月16日</div>
+          <div>2023年12月31日</div>
         </div>
       
       
