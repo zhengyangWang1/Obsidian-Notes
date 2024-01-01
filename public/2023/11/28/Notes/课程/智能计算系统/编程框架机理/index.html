@@ -16,12 +16,12 @@
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
   
-    <meta name="description" content="Pytorch的设计原则 要性能更要易用  简介抽象而非隐藏细节  始于python，忠于python   Pytorch的计算图机制常见求导方法：  手动求解法 数值求导法 符号求导法 自动求导法  分布式计算机制">
+    <meta name="description" content="Pytorch的设计原则 要性能更要易用  简介抽象而非隐藏细节  始于python，忠于python   Pytorch的计算图机制常见求导方法：  手动求解法 数值求导法 符号求导法 自动求导法  分布式计算机制 不同的分布式计算方法：数据并行：对数据进行分区模型并行：对程序进行分区混合并行：同时对数据和程序进行分区  编译机制">
 <meta property="og:type" content="article">
 <meta property="og:title" content="编程框架机理">
 <meta property="og:url" content="http://example.com/2023/11/28/Notes/%E8%AF%BE%E7%A8%8B/%E6%99%BA%E8%83%BD%E8%AE%A1%E7%AE%97%E7%B3%BB%E7%BB%9F/%E7%BC%96%E7%A8%8B%E6%A1%86%E6%9E%B6%E6%9C%BA%E7%90%86/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Pytorch的设计原则 要性能更要易用  简介抽象而非隐藏细节  始于python，忠于python   Pytorch的计算图机制常见求导方法：  手动求解法 数值求导法 符号求导法 自动求导法  分布式计算机制">
+<meta property="og:description" content="Pytorch的设计原则 要性能更要易用  简介抽象而非隐藏细节  始于python，忠于python   Pytorch的计算图机制常见求导方法：  手动求解法 数值求导法 符号求导法 自动求导法  分布式计算机制 不同的分布式计算方法：数据并行：对数据进行分区模型并行：对程序进行分区混合并行：同时对数据和程序进行分区  编译机制">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20240101153815.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20240101153840.png">
@@ -31,8 +31,14 @@
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20240101154058.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20240101154115.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20240101154144.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20240101155704.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20240101155828.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20240101155942.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20240101160028.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20240101160441.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20240101160452.png">
 <meta property="article:published_time" content="2023-11-28T02:44:05.364Z">
-<meta property="article:modified_time" content="2024-01-01T07:41:46.676Z">
+<meta property="article:modified_time" content="2024-01-01T08:04:54.201Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="智能计算系统">
 <meta name="twitter:card" content="summary_large_image">
@@ -212,7 +218,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          93 字
+          149 字
         
       </span>
     
@@ -223,7 +229,7 @@
         
         
         
-          1 分钟
+          2 分钟
         
       </span>
     
@@ -280,7 +286,11 @@
 <li>符号求导法</li>
 <li>自动求导法<br><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20240101154036.png" srcset="/img/loading.gif" lazyload alt="image.png"><br><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20240101154049.png" srcset="/img/loading.gif" lazyload alt="image.png"><br><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20240101154058.png" srcset="/img/loading.gif" lazyload alt="image.png"><br><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20240101154115.png" srcset="/img/loading.gif" lazyload alt="image.png"><br><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20240101154144.png" srcset="/img/loading.gif" lazyload alt="image.png"></li>
 </ul>
-<h3 id="分布式计算机制"><a href="#分布式计算机制" class="headerlink" title="分布式计算机制"></a>分布式计算机制</h3>
+<h3 id="分布式计算机制"><a href="#分布式计算机制" class="headerlink" title="分布式计算机制"></a>分布式计算机制</h3><p><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20240101155704.png" srcset="/img/loading.gif" lazyload alt="image.png"></p>
+<p>不同的分布式计算方法：<br>数据并行：对数据进行分区<br>模型并行：对程序进行分区<br>混合并行：同时对数据和程序进行分区</p>
+<p><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20240101155828.png" srcset="/img/loading.gif" lazyload alt="image.png"><br><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20240101155942.png" srcset="/img/loading.gif" lazyload alt="image.png"><br><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20240101160028.png" srcset="/img/loading.gif" lazyload alt="image.png"></p>
+<h3 id="编译机制"><a href="#编译机制" class="headerlink" title="编译机制"></a>编译机制</h3><p><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20240101160441.png" srcset="/img/loading.gif" lazyload alt="image.png"><br><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20240101160452.png" srcset="/img/loading.gif" lazyload alt="image.png"></p>
+
                 
               </div>
             
