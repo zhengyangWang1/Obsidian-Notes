@@ -39,13 +39,14 @@
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231116083621.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231116084631.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231116085711.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20240101105106.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231116090605.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231116091113.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231116091810.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231116093426.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231116093434.png">
 <meta property="article:published_time" content="2023-11-09T00:25:42.360Z">
-<meta property="article:modified_time" content="2023-12-31T15:49:44.666Z">
+<meta property="article:modified_time" content="2024-01-01T02:51:11.119Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="智能计算系统">
 <meta property="article:tag" content="Pytorch">
@@ -226,7 +227,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          931 字
+          936 字
         
       </span>
     
@@ -295,6 +296,7 @@
 <p>不同数据分布对位宽的需求是不同的<br><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231116083621.png" srcset="/img/loading.gif" lazyload alt="image.png"><br>不同层的数据对于位宽的需求是不一样的，每层数据都有其保持网络收敛的最低位宽要求，每层数据的位宽需求与数据分布之间存在关系</p>
 <h4 id="张量属性的转换"><a href="#张量属性的转换" class="headerlink" title="张量属性的转换"></a>张量属性的转换</h4><p><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231116084631.png" srcset="/img/loading.gif" lazyload alt="image.png"></p>
 <h4 id="张量的数据格式"><a href="#张量的数据格式" class="headerlink" title="张量的数据格式"></a>张量的数据格式</h4><p><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231116085711.png" srcset="/img/loading.gif" lazyload alt="image.png"></p>
+<h4 id="张量的切片"><a href="#张量的切片" class="headerlink" title="张量的切片"></a>张量的切片</h4><p><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20240101105106.png" srcset="/img/loading.gif" lazyload alt="image.png"></p>
 <h4 id="张量维度的压缩、扩展"><a href="#张量维度的压缩、扩展" class="headerlink" title="张量维度的压缩、扩展"></a>张量维度的压缩、扩展</h4><p><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231116090605.png" srcset="/img/loading.gif" lazyload alt="image.png"></p>
 <h4 id="原地操作"><a href="#原地操作" class="headerlink" title="原地操作"></a>原地操作</h4><p><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231116091113.png" srcset="/img/loading.gif" lazyload alt="image.png"><br>原地操作能够节省内存占用，在进行深度学习算法推理时，使用原地操作能够有效减少模型占用的内存<br>原地操作会覆盖原张量，如果在模型训练时使用原地操 作来更新张量梯度，则每次迭代计算所的梯度值将被覆 盖，从而破坏模型的训练过程<br>对于多个张量同时引用一个张量的情况，对该张量进行 原地操作会影响其他张量的操作</p>
 <h4 id="广播机制"><a href="#广播机制" class="headerlink" title="广播机制"></a>广播机制</h4><p>对于参与计算操作的多个张量，如果张量维度不匹配，可以 使用PyTorch的广播机制对不匹配的张量维度进行扩展，最终 将这些张量均扩展为维度相同<br>广播条件：</p>
@@ -373,7 +375,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>更新于</div>
-          <div>2023年12月31日</div>
+          <div>2024年1月1日</div>
         </div>
       
       
