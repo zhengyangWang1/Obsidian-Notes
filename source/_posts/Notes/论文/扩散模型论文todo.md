@@ -7,6 +7,12 @@ update:
 tags:
   - 扩散模型
 ---
+论文检查：
+1. 论文中公式全部检查  公式文字部分也对应检查
+2. 图表全部检查  图表文字部分也对应检查
+3. 参考文献检查  **20和29参考文献重点检查**
+4. 学历补充
+5. word格式整理好
 
 ![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20231203092747.png)
 ![d5304720bd3b25b687d5db36f180fb3.jpg](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/d5304720bd3b25b687d5db36f180fb3.jpg)
