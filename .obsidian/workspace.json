@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "source/_posts/Notes/考研/C语言基础.md",
+                "file": "source/_posts/Notes/课程/自然语言处理/课程介绍.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "source/_posts/Notes/考研/C语言基础.md",
+                "file": "source/_posts/Notes/课程/自然语言处理/课程介绍.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "source/_posts/Notes/考研/C语言基础.md",
+                "file": "source/_posts/Notes/课程/自然语言处理/课程介绍.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "source/_posts/Notes/考研/C语言基础.md"
+                "file": "source/_posts/Notes/课程/自然语言处理/课程介绍.md"
               }
             }
           },
@@ -153,7 +153,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "source/_posts/Notes/考研/C语言基础.md"
+                "file": "source/_posts/Notes/课程/自然语言处理/课程介绍.md"
               }
             }
           }
@@ -178,42 +178,42 @@
   },
   "active": "941d60e9a8fbc41d",
   "lastOpenFiles": [
+    "source/_posts/Notes/考研/C语言基础.md",
+    "source/_posts/Notes/课程/自然语言处理/课程介绍.md",
+    "source/_posts/Notes/课程/嵌入式系统设计与应用",
+    "source/_posts/Notes/课程/项目管理与经济决策",
+    "source/_posts/Notes/课程/智能信息网络实验",
+    "source/_posts/Notes/课程/未命名.md",
+    "source/_posts/Notes/课程/自然语言处理",
+    "source/_posts/Notes/课程/语音信息处理",
+    "source/_posts/Notes/课程/计算机视觉",
+    "source/_posts/Notes/课程/脑与认知科学基础",
+    "source/_posts/Notes/课程/大三（上）",
     "public/categories/Notes/page/8/index.html",
     "public/categories/Notes/page/8",
-    "public/2024/02/25/Notes/考研/C语言基础/index.html",
-    "public/2024/02/25/Notes/考研/C语言基础",
-    "public/2024/02/25/Notes/考研",
-    "public/2024/02/25/Notes",
-    "public/2024/02/25",
-    "public/page/8/index.html",
-    "public/page/8",
-    "public/archives/page/8/index.html",
-    "public/archives/page/8",
     "source/_posts/Notes/考研/择校.md",
-    "source/_posts/Notes/考研/C语言基础.md",
     "source/_posts/Notes/论文/扩散模型调研.md",
     "source/_posts/Notes/论文/ChatEdit.md",
     "source/_posts/Notes/论文/论文查阅、写作与投稿的综合指南.md",
     "source/_posts/Notes/论文/扩散模型论文todo.md",
-    "source/_posts/Notes/课程/操作系统/内存.md",
-    "source/_posts/Notes/课程/数据库/数据库.md",
-    "source/_posts/Notes/课程/智能计算系统/编程框架机理.md",
-    "source/_posts/Notes/课程/智能计算系统/编程框架使用.md",
-    "source/_posts/Notes/课程/智能计算系统/智能计算系统.md",
+    "source/_posts/Notes/课程/大三（上）/操作系统/内存.md",
+    "source/_posts/Notes/课程/大三（上）/数据库/数据库.md",
+    "source/_posts/Notes/课程/大三（上）/智能计算系统/编程框架机理.md",
+    "source/_posts/Notes/课程/大三（上）/智能计算系统/编程框架使用.md",
+    "source/_posts/Notes/课程/大三（上）/智能计算系统/智能计算系统.md",
     "source/_posts/Notes/课程/个人发展规划大作业.md",
-    "source/_posts/Notes/课程/数据库/SQL高级.md",
-    "source/_posts/Notes/课程/数据库/关系型数据库设计：模式规范化.md",
-    "source/_posts/Notes/课程/软件工程/大作业 酒店温控计费系统 规划.md",
-    "source/_posts/Notes/课程/软件工程/面向对象分析.md",
-    "source/_posts/Notes/课程/软件工程/UML.md",
-    "source/_posts/Notes/课程/软件工程/作业.md",
-    "source/_posts/Notes/课程/软件工程/软件需求分析.md",
+    "source/_posts/Notes/课程/大三（上）/数据库/SQL高级.md",
+    "source/_posts/Notes/课程/大三（上）/数据库/关系型数据库设计：模式规范化.md",
+    "source/_posts/Notes/课程/大三（上）/软件工程/大作业 酒店温控计费系统 规划.md",
+    "source/_posts/Notes/课程/大三（上）/软件工程/面向对象分析.md",
+    "source/_posts/Notes/课程/大三（上）/软件工程/UML.md",
+    "source/_posts/Notes/课程/大三（上）/软件工程/作业.md",
+    "source/_posts/Notes/课程/大三（上）/软件工程/软件需求分析.md",
     "source/_posts/Notes/编程/Django/Django模板.md",
     "source/_posts/Notes/编程/Django/Django基础.md",
     "source/_posts/Notes/编程/Django/Django操作MySQL.md",
-    "source/_posts/Notes/课程/数据库/SQL基础.md",
-    "source/_posts/Notes/课程/数据库/使用E-R模型的数据库设计.md",
-    "source/_posts/Notes/课程/数据库/数据储存结构.md",
+    "source/_posts/Notes/课程/大三（上）/数据库/SQL基础.md",
+    "source/_posts/Notes/课程/大三（上）/数据库/使用E-R模型的数据库设计.md",
     "source/_posts/Notes/未命名.canvas",
     "public/img/police_beian.png",
     "public/img/loading.gif",
