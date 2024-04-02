@@ -24,7 +24,7 @@
 <meta property="og:description" content="算法整体流程为了实现钱币定位的功能，实验设计了Canny边缘检测和Hough圆变换两个主要的功能，最终实现了检测出输入图像中各个钱币的边缘并给出各个钱币的圆心坐标与半径的效果。 Canny边缘检测：该算法以原始图像的灰度图为输入，先对图像进行高斯滤波，使图像更加平滑，然后计算梯度，得到图像的梯度图。接下来，进行非极大化抑制，去除所有非边缘的点。最后，用滞后阈值法将比高阈值大、比低阈值小的像素保留为">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2024-04-02T02:53:29.046Z">
-<meta property="article:modified_time" content="2024-04-02T03:23:14.446Z">
+<meta property="article:modified_time" content="2024-04-02T03:32:59.980Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary_large_image">
   
@@ -202,7 +202,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          420 字
+          689 字
         
       </span>
     
@@ -213,7 +213,7 @@
         
         
         
-          4 分钟
+          6 分钟
         
       </span>
     
@@ -259,7 +259,16 @@
 <p><strong>Canny边缘检测：</strong><br>该算法以原始图像的灰度图为输入，先对图像进行高斯滤波，使图像更加平滑，然后计算梯度，得到图像的梯度图。接下来，进行非极大化抑制，去除所有非边缘的点。最后，用滞后阈值法将比高阈值大、比低阈值小的像素保留为强边缘，形成完整的边缘线。将处理好的图像保存在指定路径。</p>
 <p><strong>Hough圆变换：</strong><br>将经过Canny边缘检测处理的图像作为霍夫变换的初始图象，对图中的像素点进行霍夫变换的投票，形成投票矩阵。之后，对投票矩阵中超过设定阈值的解码为圆，并将圆心和半径储存并打印。</p>
 <p>经过上述变换后，可以在指定路径下得到最终结果图，并会得到输出的圆心坐标与半径。</p>
-<h3 id="函数功能说明"><a href="#函数功能说明" class="headerlink" title="函数功能说明"></a>函数功能说明</h3><h2 id="在类’CannyEdgeDetector中实现了下列函数："><a href="#在类’CannyEdgeDetector中实现了下列函数：" class="headerlink" title="在类’CannyEdgeDetector中实现了下列函数："></a>在类’CannyEdgeDetector中实现了下列函数：</h2><h3 id="函数输入参数说明"><a href="#函数输入参数说明" class="headerlink" title="函数输入参数说明"></a>函数输入参数说明</h3><h3 id="最终结果拟合图"><a href="#最终结果拟合图" class="headerlink" title="最终结果拟合图"></a>最终结果拟合图</h3><h3 id="参数对结果的影响"><a href="#参数对结果的影响" class="headerlink" title="参数对结果的影响"></a>参数对结果的影响</h3>
+<h3 id="函数功能说明"><a href="#函数功能说明" class="headerlink" title="函数功能说明"></a>函数功能说明</h3><p>在类<code>CannyEdgeDetector</code>中实现了下列函数：</p>
+<ul>
+<li><p><code>caculate_gradients()</code><br>根据灰度图计算图像的梯度图和梯度方向矩阵，对每个像素点，用Sobel算子计算水平和垂直方向上的梯度。根据计算出的水平和垂直梯度，使用 <code>cv2.cartToPolar()</code> 函数计算每个像素点的梯度幅值和梯度方向。</p>
+</li>
+<li><p><code>non_maximum_suppression()</code><br>对图像梯度图进行非极大化抑制处理，对每个像素点，根据预设的阈值考虑是否将某些点的梯度置零，去除这些非边缘的点。</p>
+</li>
+<li><p><code>hysteresis_thresholding()</code><br>实现了边缘检测中的双阈值滞后阈值化，把梯度大于高阈值的像素标记为边缘点，把与其相邻的</p>
+</li>
+</ul>
+<h3 id="函数输入参数说明"><a href="#函数输入参数说明" class="headerlink" title="函数输入参数说明"></a>函数输入参数说明</h3><h3 id="最终结果拟合图"><a href="#最终结果拟合图" class="headerlink" title="最终结果拟合图"></a>最终结果拟合图</h3><h3 id="参数对结果的影响"><a href="#参数对结果的影响" class="headerlink" title="参数对结果的影响"></a>参数对结果的影响</h3>
                 
               </div>
             
