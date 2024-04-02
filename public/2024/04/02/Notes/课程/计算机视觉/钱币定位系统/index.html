@@ -23,10 +23,15 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="算法整体流程为了实现钱币定位的功能，实验设计了Canny边缘检测和Hough圆变换两个主要的功能，最终实现了检测出输入图像中各个钱币的边缘并给出各个钱币的圆心坐标与半径的效果。 Canny边缘检测：该算法以原始图像的灰度图为输入，先对图像进行高斯滤波，使图像更加平滑，然后计算梯度，得到图像的梯度图。接下来，进行非极大化抑制，去除所有非边缘的点。最后，用滞后阈值法将比高阈值大、比低阈值小的像素保留为">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20240402114130.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20240402114026.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20240402114103.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20240402114249.png">
 <meta property="article:published_time" content="2024-04-02T02:53:29.046Z">
-<meta property="article:modified_time" content="2024-04-02T03:32:59.980Z">
+<meta property="article:modified_time" content="2024-04-02T03:43:00.817Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20240402114130.png">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
@@ -202,7 +207,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          689 字
+          1.1k 字
         
       </span>
     
@@ -213,7 +218,7 @@
         
         
         
-          6 分钟
+          10 分钟
         
       </span>
     
@@ -265,10 +270,26 @@
 </li>
 <li><p><code>non_maximum_suppression()</code><br>对图像梯度图进行非极大化抑制处理，对每个像素点，根据预设的阈值考虑是否将某些点的梯度置零，去除这些非边缘的点。</p>
 </li>
-<li><p><code>hysteresis_thresholding()</code><br>实现了边缘检测中的双阈值滞后阈值化，把梯度大于高阈值的像素标记为边缘点，把与其相邻的</p>
+<li><p><code>hysteresis_thresholding()</code><br>实现了边缘检测中的双阈值滞后阈值化，把梯度大于高阈值的像素标记为边缘点，把与其相邻的梯度高于低阈值的点的梯度设为高阈值。</p>
 </li>
 </ul>
-<h3 id="函数输入参数说明"><a href="#函数输入参数说明" class="headerlink" title="函数输入参数说明"></a>函数输入参数说明</h3><h3 id="最终结果拟合图"><a href="#最终结果拟合图" class="headerlink" title="最终结果拟合图"></a>最终结果拟合图</h3><h3 id="参数对结果的影响"><a href="#参数对结果的影响" class="headerlink" title="参数对结果的影响"></a>参数对结果的影响</h3>
+<p>在类<code>HoughCircleTransform()</code>中实现了下列函数：</p>
+<ul>
+<li><p><code>Hough_transform_algorithm()</code><br>该函数基于Canny边缘检测得到的梯度图，对梯度大于零的点进行投票，形成投票矩阵。</p>
+</li>
+<li><p><code>Select_Circle()</code><br>对得到的投票矩阵进行遍历，找到投票数超过阈值的候选圆，选出合适的圆储存在列表中。</p>
+</li>
+</ul>
+<h3 id="函数输入参数说明"><a href="#函数输入参数说明" class="headerlink" title="函数输入参数说明"></a>函数输入参数说明</h3><p>Guassian_kernal_size：高斯滤波器核大小</p>
+<p>high_threshold：双阈值法的高阈值，减小该值，canny结果更加明显</p>
+<p>low_threshold：双阈值法的低阈值，减小该值，canny结果更加明显</p>
+<p>Hough_transform_step： 图像控件转参数空间的变化比例</p>
+<p>Hough_transform_threshold： hough变换的门限值，减小该值，可增加检测出的圆数量</p>
+<h3 id="最终结果拟合图"><a href="#最终结果拟合图" class="headerlink" title="最终结果拟合图"></a>最终结果拟合图</h3><p>原始图像：<br><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20240402114130.png" srcset="/img/loading.gif" lazyload alt="image.png"></p>
+<p>经过Canny边缘检测得到的图像：<br><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20240402114026.png" srcset="/img/loading.gif" lazyload alt="image.png"></p>
+<p>经过Hough圆变换得到的图像：<br><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20240402114103.png" srcset="/img/loading.gif" lazyload alt="image.png"></p>
+<p>输出结果：<br><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20240402114249.png" srcset="/img/loading.gif" lazyload alt="image.png"></p>
+<h3 id="参数对结果的影响"><a href="#参数对结果的影响" class="headerlink" title="参数对结果的影响"></a>参数对结果的影响</h3>
                 
               </div>
             
