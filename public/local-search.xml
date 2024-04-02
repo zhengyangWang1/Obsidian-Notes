@@ -4,6 +4,19 @@
   
   
   <entry>
+    <title>钱币定位系统</title>
+    <link href="/2024/04/02/Notes/%E8%AF%BE%E7%A8%8B/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89/%E9%92%B1%E5%B8%81%E5%AE%9A%E4%BD%8D%E7%B3%BB%E7%BB%9F/"/>
+    <url>/2024/04/02/Notes/%E8%AF%BE%E7%A8%8B/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89/%E9%92%B1%E5%B8%81%E5%AE%9A%E4%BD%8D%E7%B3%BB%E7%BB%9F/</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="算法整体流程"><a href="#算法整体流程" class="headerlink" title="算法整体流程"></a>算法整体流程</h3><p>为了实现钱币定位的功能，实验设计了Canny边缘检测和Hough圆变换两个主要的功能，最终实现了检测出输入图像中各个钱币的边缘并给出各个钱币的圆心坐标与半径的效果。</p><p><strong>Canny边缘检测：</strong><br>该算法以原始图像的灰度图为输入，先对图像进行高斯滤波，使图像更加平滑，然后计算梯度，得到图像的梯度图。接下来，进行非极大化抑制，</p><h3 id="函数功能说明"><a href="#函数功能说明" class="headerlink" title="函数功能说明"></a>函数功能说明</h3><h3 id="函数输入参数说明"><a href="#函数输入参数说明" class="headerlink" title="函数输入参数说明"></a>函数输入参数说明</h3><h3 id="最终结果拟合图"><a href="#最终结果拟合图" class="headerlink" title="最终结果拟合图"></a>最终结果拟合图</h3><h3 id="参数对结果的影响"><a href="#参数对结果的影响" class="headerlink" title="参数对结果的影响"></a>参数对结果的影响</h3>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>第一次实验</title>
     <link href="/2024/03/19/Notes/%E8%AF%BE%E7%A8%8B/%E8%AF%AD%E9%9F%B3%E4%BF%A1%E6%81%AF%E5%A4%84%E7%90%86/%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%AE%9E%E9%AA%8C/"/>
     <url>/2024/03/19/Notes/%E8%AF%BE%E7%A8%8B/%E8%AF%AD%E9%9F%B3%E4%BF%A1%E6%81%AF%E5%A4%84%E7%90%86/%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%AE%9E%E9%AA%8C/</url>
