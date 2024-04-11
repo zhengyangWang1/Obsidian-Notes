@@ -8,7 +8,7 @@
     <link href="/2024/04/11/Notes/%E8%AF%BE%E7%A8%8B/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86/%E6%9E%84%E5%BB%BA%E6%B1%89%E8%AF%AD%E8%AF%8D%E5%90%91%E9%87%8F/"/>
     <url>/2024/04/11/Notes/%E8%AF%BE%E7%A8%8B/%E8%87%AA%E7%84%B6%E8%AF%AD%E8%A8%80%E5%A4%84%E7%90%86/%E6%9E%84%E5%BB%BA%E6%B1%89%E8%AF%AD%E8%AF%8D%E5%90%91%E9%87%8F/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="代码逻辑"><a href="#代码逻辑" class="headerlink" title="代码逻辑"></a>代码逻辑</h3><p>首先对训练数据和测试数据进行处理，按词进行分割然后储存起来，然后通过SVG和SGNS方法计算出训练数据的词向量，再在测试数据上进行测试。</p><h3 id="SVG"><a href="#SVG" class="headerlink" title="SVG"></a>SVG</h3><h3 id="SGNS"><a href="#SGNS" class="headerlink" title="SGNS"></a>SGNS</h3>]]></content>
     
     
     <categories>
