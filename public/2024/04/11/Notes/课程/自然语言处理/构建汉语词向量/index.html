@@ -24,7 +24,7 @@
 <meta property="og:description" content="代码逻辑首先对训练数据和测试数据进行处理，按词进行分割然后储存起来，然后通过SVG和SGNS方法计算出训练数据的词向量，再在测试数据上进行测试。为此，在代码中定义了load_data(), caculate_sim(), svd_embedding()和sgns_embedding()四个方法，分别进行数据处理、计算测试集上向量相关性、通过svd和sgns得到训练集上向量的操作。最后对输出结果，按">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2024-04-11T03:25:11.780Z">
-<meta property="article:modified_time" content="2024-04-11T05:50:16.034Z">
+<meta property="article:modified_time" content="2024-04-11T06:00:06.230Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary_large_image">
   
@@ -202,7 +202,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          601 字
+          898 字
         
       </span>
     
@@ -213,7 +213,7 @@
         
         
         
-          6 分钟
+          8 分钟
         
       </span>
     
@@ -258,7 +258,7 @@
                 <h3 id="代码逻辑"><a href="#代码逻辑" class="headerlink" title="代码逻辑"></a>代码逻辑</h3><p>首先对训练数据和测试数据进行处理，按词进行分割然后储存起来，然后通过SVG和SGNS方法计算出训练数据的词向量，再在测试数据上进行测试。<br>为此，在代码中定义了<code>load_data()</code>, <code>caculate_sim()</code>, <code>svd_embedding()</code>和<code>sgns_embedding()</code>四个方法，分别进行数据处理、计算测试集上向量相关性、通过svd和sgns得到训练集上向量的操作。<br>最后对输出结果，按要求写入文本文件中。</p>
 <h3 id="SVG"><a href="#SVG" class="headerlink" title="SVG"></a>SVG</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">svd_embedding</span>(<span class="hljs-params">train_data, test_data, dim</span>):<br>    model = Word2Vec(train_data, vector_size=dim, window=<span class="hljs-number">2</span>, sg=<span class="hljs-number">0</span>)<br>    vectors = model.wv.vectors<br>    svd = TruncatedSVD(n_components=<span class="hljs-number">5</span>)  <span class="hljs-comment"># K=5</span><br>    vec_svd = svd.fit_transform(vectors)  <span class="hljs-comment"># 将词向量降维</span><br>    word_index = model.wv.key_to_index<br>    svd_result = caculate_sim(test_data, vec_svd, word_index)<br>    <br>    <span class="hljs-keyword">return</span> vec_svd, svd_result<br></code></pre></td></tr></table></figure>
 
-<p>在SVD中，非零奇异值的数量即为原始矩阵的秩，通常来说，非零奇异值的数量等于词汇表的大小，代码中*<em>key_to_index</em>的长度即为非零</p>
+<p>SVD分解算法的主要思想是将一个矩阵分解为三个矩阵的乘积，即$A &#x3D; UΣV^T$，其中$A$是待分解的矩阵，$U$是左奇异矩阵，$Σ$是奇异值矩阵，$V^T$是右奇异矩阵。在代码中，保留的主成分数量为$K$，然后将原始矩阵$A$分解为$U_kΣ_kV_k^T$，其中$U_k$、$Σ_k$和$V_k^T$分别是前$K个$左奇异矩阵、奇异值矩阵和右奇异矩阵。<br>在SVD中，非零奇异值的数量即为原始矩阵的秩，等于词汇表的大小，代码中<code>word_index</code>的长度即为非零奇异值的个数，在本实验数据中为24843。<br>在代码中使用了TruncatedSVD方法，选取了K&#x3D;5个奇异值进行模型分析。<br>选取的奇异值之和: 0.47254738<br>全部奇异值之和: 1.6644406<br>选取的奇异值之和与全部奇异值之和的比例: 0.28390762</p>
 <h3 id="SGNS"><a href="#SGNS" class="headerlink" title="SGNS"></a>SGNS</h3>
                 
               </div>
