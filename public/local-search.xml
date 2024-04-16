@@ -8,8 +8,18 @@
     <link href="/2024/04/16/Notes/%E8%AF%BE%E7%A8%8B/%E8%AF%AD%E9%9F%B3%E4%BF%A1%E6%81%AF%E5%A4%84%E7%90%86/%E7%AC%AC%E4%BA%8C%E6%AC%A1%E5%AE%9E%E9%AA%8C/"/>
     <url>/2024/04/16/Notes/%E8%AF%BE%E7%A8%8B/%E8%AF%AD%E9%9F%B3%E4%BF%A1%E6%81%AF%E5%A4%84%E7%90%86/%E7%AC%AC%E4%BA%8C%E6%AC%A1%E5%AE%9E%E9%AA%8C/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="声纹识别实验"><a href="#声纹识别实验" class="headerlink" title="声纹识别实验"></a>声纹识别实验</h3><p>模型：GMM（高斯混合模型）<br>数据集：TIMIT</p>]]></content>
     
+    
+    <categories>
+      
+      <category>Notes</category>
+      
+      <category>课程</category>
+      
+      <category>语音信息处理</category>
+      
+    </categories>
     
     
   </entry>
