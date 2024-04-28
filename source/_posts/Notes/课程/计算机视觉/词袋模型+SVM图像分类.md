@@ -17,9 +17,44 @@ tags:
 
 ### 函数功能说明
 `extract_sift_features` 将输入的彩色图像转换为灰度图像，然后使用SIFT算法检测图像中的关键点，并计算这些关键点的SIFT特征描述符。
+```python
+def extract_sift_features(image):
+    gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+    sift = cv2.SIFT_create()
+    keypoints, descriptors = sift.detectAndCompute(gray, None)
+    return descriptors
+```
 `preprocess_data` 对输入的图像路径列表进行预处理，提取每张图像的SIFT特征描述符，并将所有特征描述符拼接成一个特征矩阵返回。
+```python
+def preprocess_data(img_paths):
+    features = []
+    for img_path in img_paths:
+        image = cv2.imread(img_path)
+        if image is not None:
+            sift_features = extract_sift_features(image)
+            if sift_features is not None:
+                features.append(sift_features)
+    return np.concatenate(features, axis=0)
+```
 `build_vocabulary` 使用K均值聚类算法对给定的特征集进行聚类，并构建一个视觉词汇，返回聚类中心。
+```python
+def build_vocabulary(features, vocab_size):
+    kmeans = KMeans(n_clusters=vocab_size)
+    kmeans.fit(features)
+    return kmeans.cluster_centers_
+```
 `compute_bovw` 根据给定的特征和视觉词汇计算图像的词袋表示，并返回词袋表示。
+```python
+def compute_bovw(features, vocabulary):
+    kmeans = KMeans(n_clusters=vocabulary.shape[0], init=vocabulary, n_init=1, max_iter=1)
+    kmeans.fit(vocabulary)
+    bovw_representation = np.zeros((1, vocabulary.shape[0]))
+    if features is not None:
+        assignments = kmeans.predict(features)
+        for assignment in assignments:
+            bovw_representation[0, assignment] += 1
+    return bovw_representation
+```
 在主函数中，首先按每个类别前150个数据为训练数据的原创对原始数据进行训练集和测试集的划分，然后调用上面的函数进行SIFT特征提取、计算词汇表、计算词袋模型，然后训练svm分类器，对测试数据的词袋表示进行预测，计算预测结果与真实结果的准确率与混淆矩阵，并将混淆矩阵可视化。
 
 ### 函数参数说明
@@ -34,8 +69,9 @@ tags:
     - `features`: 特征矩阵，是一个二维NumPy数组，每行代表一个特征向量。
     - `vocabulary`: 视觉词汇，是一个二维NumPy数组，每行代表一个聚类中心。
 ### 结果分析
-在实验中发现，适当增大`vocab_size`可以带来更高的准确率。
-
+在实验中发现，适当增大`vocab_size`可以带来更高的准确率，但考虑设备性能，最终选择的值为3000。
+最终准确率如下：
+![image.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20240429000700.png)
 
 预测结果的混淆矩阵如下：
 ![Figure_1.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/Figure_1.png)

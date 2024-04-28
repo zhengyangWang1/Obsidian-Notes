@@ -23,12 +23,13 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="算法流程描述首先，对数据集进行预处理。本实验使用scene_categories数据集，该数据集包括15个类别（文件夹名就是类别名），每个类中编号前150号的样本作为训练样本，15个类一共2250张训练样本；剩下的样本构成测试集合。对数据进行SIFT特征提取，得到每张图片的描述符，作为训练数据。然后，使用KMeans算法对SIFT特征进行聚类，得到视觉词汇，然后计算图像的词袋模型，将图像的词汇表示">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20240429000700.png">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/Figure_1.png">
 <meta property="article:published_time" content="2024-04-25T07:50:27.414Z">
-<meta property="article:modified_time" content="2024-04-28T15:59:08.562Z">
+<meta property="article:modified_time" content="2024-04-28T16:09:08.852Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/Figure_1.png">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20240429000700.png">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
@@ -204,7 +205,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.1k 字
+          2k 字
         
       </span>
     
@@ -215,7 +216,7 @@
         
         
         
-          10 分钟
+          17 分钟
         
       </span>
     
@@ -258,9 +259,17 @@
               <div class="markdown-body">
                 
                 <h3 id="算法流程描述"><a href="#算法流程描述" class="headerlink" title="算法流程描述"></a>算法流程描述</h3><p>首先，对数据集进行预处理。本实验使用scene_categories数据集，该数据集包括15个类别（文件夹名就是类别名），每个类中编号前150号的样本作为训练样本，15个类一共2250张训练样本；剩下的样本构成测试集合。对数据进行SIFT特征提取，得到每张图片的描述符，作为训练数据。<br>然后，使用KMeans算法对SIFT特征进行聚类，得到视觉词汇，然后计算图像的词袋模型，将图像的词汇表示和标签作为SVM的训练数据，得到训练好的SVM分类器。<br>对测试数据集中的每张图像，同样根据构建的视觉词汇，计算图像的词袋表示。使用训练好的SVM分类器对测试数据集进行分类预测，并计算分类准确率。<br>使用分类预测结果和真实标签计算混淆矩阵，然后用matplotlib绘制其热力图。</p>
-<h3 id="函数功能说明"><a href="#函数功能说明" class="headerlink" title="函数功能说明"></a>函数功能说明</h3><p><code>extract_sift_features</code> 将输入的彩色图像转换为灰度图像，然后使用SIFT算法检测图像中的关键点，并计算这些关键点的SIFT特征描述符。<br><code>preprocess_data</code> 对输入的图像路径列表进行预处理，提取每张图像的SIFT特征描述符，并将所有特征描述符拼接成一个特征矩阵返回。<br><code>build_vocabulary</code> 使用K均值聚类算法对给定的特征集进行聚类，并构建一个视觉词汇，返回聚类中心。<br><code>compute_bovw</code> 根据给定的特征和视觉词汇计算图像的词袋表示，并返回词袋表示。<br>在主函数中，首先按每个类别前150个数据为训练数据的原创对原始数据进行训练集和测试集的划分，然后调用上面的函数进行SIFT特征提取、计算词汇表、计算词袋模型，然后训练svm分类器，对测试数据的词袋表示进行预测，计算预测结果与真实结果的准确率与混淆矩阵，并将混淆矩阵可视化。</p>
+<h3 id="函数功能说明"><a href="#函数功能说明" class="headerlink" title="函数功能说明"></a>函数功能说明</h3><p><code>extract_sift_features</code> 将输入的彩色图像转换为灰度图像，然后使用SIFT算法检测图像中的关键点，并计算这些关键点的SIFT特征描述符。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">extract_sift_features</span>(<span class="hljs-params">image</span>):<br>    gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)<br>    sift = cv2.SIFT_create()<br>    keypoints, descriptors = sift.detectAndCompute(gray, <span class="hljs-literal">None</span>)<br>    <span class="hljs-keyword">return</span> descriptors<br></code></pre></td></tr></table></figure>
+<p><code>preprocess_data</code> 对输入的图像路径列表进行预处理，提取每张图像的SIFT特征描述符，并将所有特征描述符拼接成一个特征矩阵返回。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">preprocess_data</span>(<span class="hljs-params">img_paths</span>):<br>    features = []<br>    <span class="hljs-keyword">for</span> img_path <span class="hljs-keyword">in</span> img_paths:<br>        image = cv2.imread(img_path)<br>        <span class="hljs-keyword">if</span> image <span class="hljs-keyword">is</span> <span class="hljs-keyword">not</span> <span class="hljs-literal">None</span>:<br>            sift_features = extract_sift_features(image)<br>            <span class="hljs-keyword">if</span> sift_features <span class="hljs-keyword">is</span> <span class="hljs-keyword">not</span> <span class="hljs-literal">None</span>:<br>                features.append(sift_features)<br>    <span class="hljs-keyword">return</span> np.concatenate(features, axis=<span class="hljs-number">0</span>)<br></code></pre></td></tr></table></figure>
+<p><code>build_vocabulary</code> 使用K均值聚类算法对给定的特征集进行聚类，并构建一个视觉词汇，返回聚类中心。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">build_vocabulary</span>(<span class="hljs-params">features, vocab_size</span>):<br>    kmeans = KMeans(n_clusters=vocab_size)<br>    kmeans.fit(features)<br>    <span class="hljs-keyword">return</span> kmeans.cluster_centers_<br></code></pre></td></tr></table></figure>
+<p><code>compute_bovw</code> 根据给定的特征和视觉词汇计算图像的词袋表示，并返回词袋表示。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">def</span> <span class="hljs-title function_">compute_bovw</span>(<span class="hljs-params">features, vocabulary</span>):<br>    kmeans = KMeans(n_clusters=vocabulary.shape[<span class="hljs-number">0</span>], init=vocabulary, n_init=<span class="hljs-number">1</span>, max_iter=<span class="hljs-number">1</span>)<br>    kmeans.fit(vocabulary)<br>    bovw_representation = np.zeros((<span class="hljs-number">1</span>, vocabulary.shape[<span class="hljs-number">0</span>]))<br>    <span class="hljs-keyword">if</span> features <span class="hljs-keyword">is</span> <span class="hljs-keyword">not</span> <span class="hljs-literal">None</span>:<br>        assignments = kmeans.predict(features)<br>        <span class="hljs-keyword">for</span> assignment <span class="hljs-keyword">in</span> assignments:<br>            bovw_representation[<span class="hljs-number">0</span>, assignment] += <span class="hljs-number">1</span><br>    <span class="hljs-keyword">return</span> bovw_representation<br></code></pre></td></tr></table></figure>
+<p>在主函数中，首先按每个类别前150个数据为训练数据的原创对原始数据进行训练集和测试集的划分，然后调用上面的函数进行SIFT特征提取、计算词汇表、计算词袋模型，然后训练svm分类器，对测试数据的词袋表示进行预测，计算预测结果与真实结果的准确率与混淆矩阵，并将混淆矩阵可视化。</p>
 <h3 id="函数参数说明"><a href="#函数参数说明" class="headerlink" title="函数参数说明"></a>函数参数说明</h3><p><code>extract_sift_features</code>:<br>    - <code>image</code>: 输入的图像，是一个三维的NumPy数组，表示为(height, width, channels)。<br><code>preprocess_data</code>:<br>    - <code>img_paths</code>: 包含图像文件路径的列表，用于指定要预处理的图像数据集。<br><code>build_vocabulary</code>:<br>    - <code>features</code>: 特征矩阵，是一个二维NumPy数组，每行代表一个特征向量。<br>    - <code>vocab_size</code>: 视觉词汇的大小，即要构建的聚类中心数量。<br><code>compute_bovw</code>:<br>    - <code>features</code>: 特征矩阵，是一个二维NumPy数组，每行代表一个特征向量。<br>    - <code>vocabulary</code>: 视觉词汇，是一个二维NumPy数组，每行代表一个聚类中心。</p>
-<h3 id="结果分析"><a href="#结果分析" class="headerlink" title="结果分析"></a>结果分析</h3><p>在实验中发现，适当增大<code>vocab_size</code>可以带来更高的准确率。</p>
+<h3 id="结果分析"><a href="#结果分析" class="headerlink" title="结果分析"></a>结果分析</h3><p>在实验中发现，适当增大<code>vocab_size</code>可以带来更高的准确率，但考虑设备性能，最终选择的值为3000。<br>最终准确率如下：<br><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20240429000700.png" srcset="/img/loading.gif" lazyload alt="image.png"></p>
 <p>预测结果的混淆矩阵如下：<br><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/Figure_1.png" srcset="/img/loading.gif" lazyload alt="Figure_1.png"></p>
 
                 
@@ -323,7 +332,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>更新于</div>
-          <div>2024年4月28日</div>
+          <div>2024年4月29日</div>
         </div>
       
       
