@@ -20,14 +20,17 @@ tags:
 
 
 ### 函数功能说明
+`extract_sift_features` 将输入的彩色图像转换为灰度图像，然后使用SIFT算法检测图像中的关键点，并计算这些关键点的SIFT特征描述符。
+`preprocess_data` 对输入的图像路径列表进行预处理，提取每张图像的SIFT特征描述符，并将所有特征描述符拼接成一个特征矩阵返回。
+`build_vocabulary` 使用K均值聚类算法对给定的特征集进行聚类，并构建一个视觉词汇，返回聚类中心。
+`compute_bovw` 根据给定的特征和视觉词汇计算图像的词袋表示，并返回词袋表示。
+在主函数中，首先按每个类别前150个数据为训练数据的原创对原始数据进行训练集和测试集的划分，然后
+
+### 函数参数说明
 `extract_sift_features`
 `preprocess_data`
 `build_vocabulary`
-`compute_bovw`
-
-
-### 函数参数说明
-
+`compute_bovw` 
 
 ### 结果分析
 ![Figure_1.png](https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/Figure_1.png)
