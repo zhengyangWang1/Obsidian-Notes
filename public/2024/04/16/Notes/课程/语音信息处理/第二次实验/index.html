@@ -16,15 +16,15 @@
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
   
-    <meta name="description" content="声纹识别实验模型：GMM（高斯混合模型）数据集：TIMIT GMM高斯混合模型（Gaussian mixture model）对于说话人识别，一组$N$个说话人集合，用一系列$GMM$ 示，即每个说话人$\mathrm{s}{\mathrm{k}}  对应一个  \mathrm{GMM}  参数  \lambda{\mathrm{k}}, \mathrm{k}&#x3D;1,2, \ldots,">
+    <meta name="description" content="声纹识别实验模型：GMM（高斯混合模型）数据集：TIMIT GMM高斯混合模型（Gaussian mixture model）对于说话人识别，一组$N$个说话人集合，用一系列$GMM$ 示，即每个说话人$\mathrm{s}{\mathrm{k}}$ 对应一个$\mathrm{GMM}$  参数  $\lambda{\mathrm{k}}, \mathrm{k}&#x3D;1,2, \ldots,">
 <meta property="og:type" content="article">
 <meta property="og:title" content="第二次实验">
 <meta property="og:url" content="http://example.com/2024/04/16/Notes/%E8%AF%BE%E7%A8%8B/%E8%AF%AD%E9%9F%B3%E4%BF%A1%E6%81%AF%E5%A4%84%E7%90%86/%E7%AC%AC%E4%BA%8C%E6%AC%A1%E5%AE%9E%E9%AA%8C/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="声纹识别实验模型：GMM（高斯混合模型）数据集：TIMIT GMM高斯混合模型（Gaussian mixture model）对于说话人识别，一组$N$个说话人集合，用一系列$GMM$ 示，即每个说话人$\mathrm{s}{\mathrm{k}}  对应一个  \mathrm{GMM}  参数  \lambda{\mathrm{k}}, \mathrm{k}&#x3D;1,2, \ldots,">
+<meta property="og:description" content="声纹识别实验模型：GMM（高斯混合模型）数据集：TIMIT GMM高斯混合模型（Gaussian mixture model）对于说话人识别，一组$N$个说话人集合，用一系列$GMM$ 示，即每个说话人$\mathrm{s}{\mathrm{k}}$ 对应一个$\mathrm{GMM}$  参数  $\lambda{\mathrm{k}}, \mathrm{k}&#x3D;1,2, \ldots,">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2024-04-16T11:00:08.620Z">
-<meta property="article:modified_time" content="2024-04-16T11:22:51.770Z">
+<meta property="article:modified_time" content="2024-04-29T05:42:08.111Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary_large_image">
   
@@ -202,7 +202,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          665 字
+          669 字
         
       </span>
     
@@ -256,7 +256,7 @@
               <div class="markdown-body">
                 
                 <h3 id="声纹识别实验"><a href="#声纹识别实验" class="headerlink" title="声纹识别实验"></a>声纹识别实验</h3><p>模型：GMM（高斯混合模型）<br>数据集：TIMIT</p>
-<h4 id="GMM高斯混合模型（Gaussian-mixture-model）"><a href="#GMM高斯混合模型（Gaussian-mixture-model）" class="headerlink" title="GMM高斯混合模型（Gaussian mixture model）"></a>GMM高斯混合模型（Gaussian mixture model）</h4><p>对于说话人识别，一组$N$个说话人集合，用一系列$GMM$ 示，即每个说话人$\mathrm{s}<em>{\mathrm{k}}  对应一个  \mathrm{GMM}  参数  \lambda</em>{\mathrm{k}}, \mathrm{k}&#x3D;1,2, \ldots, \mathrm{N}$ 。说话人识别的目标是寻找一个说话人模型，使得给定说话人观测序列  $\mathrm{X}&#x3D;x_{1}, x_{2}, \ldots, x_{t}, \ldots, x_{T}, x_{t}$  是下标为 $\mathrm{t}$ 的特征向量（时间维度下标，表示帧，frame），在某个模型参数下的后验概率最大（the maximum a posterior probability），该模型即为给定说话人观测序列，得到的说话人模型。假设帧间是相互独立的，预测模型（说话人模型）  $s_{\text {predicted }}$ 表示为:<br>$$<br>\mathrm{S}<em>{\text {predicted }}&#x3D;\underset{\mathrm{k} \in \mathcal{S}}{\arg \max } \sum</em>{\mathrm{t}&#x3D;1}^{\mathrm{T}} \log \left[\mathrm{p}\left(\boldsymbol{x}<em>{\boldsymbol{t}} \mid \lambda</em>{\mathrm{k}}\right)\right]$$</p>
+<h4 id="GMM高斯混合模型（Gaussian-mixture-model）"><a href="#GMM高斯混合模型（Gaussian-mixture-model）" class="headerlink" title="GMM高斯混合模型（Gaussian mixture model）"></a>GMM高斯混合模型（Gaussian mixture model）</h4><p>对于说话人识别，一组$N$个说话人集合，用一系列$GMM$ 示，即每个说话人$\mathrm{s}<em>{\mathrm{k}}$ 对应一个$\mathrm{GMM}$  参数  $\lambda</em>{\mathrm{k}}, \mathrm{k}&#x3D;1,2, \ldots, \mathrm{N}$ 。说话人识别的目标是寻找一个说话人模型，使得给定说话人观测序列  $\mathrm{X}&#x3D;x_{1}, x_{2}, \ldots, x_{t}, \ldots, x_{T}, x_{t}$  是下标为 $\mathrm{t}$ 的特征向量（时间维度下标，表示帧，frame），在某个模型参数下的后验概率最大（the maximum a posterior probability），该模型即为给定说话人观测序列，得到的说话人模型。假设帧间是相互独立的，预测模型（说话人模型）  $s_{\text {predicted }}$ 表示为:<br>$$<br>\mathrm{S}<em>{\text {predicted }}&#x3D;\underset{\mathrm{k} \in \mathcal{S}}{\arg \max } \sum</em>{\mathrm{t}&#x3D;1}^{\mathrm{T}} \log \left[\mathrm{p}\left(\boldsymbol{x}<em>{\boldsymbol{t}} \mid \lambda</em>{\mathrm{k}}\right)\right]$$</p>
 <h4 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h4>
                 
               </div>
@@ -318,7 +318,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>更新于</div>
-          <div>2024年4月16日</div>
+          <div>2024年4月29日</div>
         </div>
       
       
