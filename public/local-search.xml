@@ -4,6 +4,19 @@
   
   
   <entry>
+    <title>目标跟踪</title>
+    <link href="/2024/05/12/Notes/%E8%AF%BE%E7%A8%8B/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89/%E7%9B%AE%E6%A0%87%E8%B7%9F%E8%B8%AA/"/>
+    <url>/2024/05/12/Notes/%E8%AF%BE%E7%A8%8B/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89/%E7%9B%AE%E6%A0%87%E8%B7%9F%E8%B8%AA/</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>ppt</p><ol><li>介绍算法：<br> hog算法<br> kcf算法：岭回归-&gt;岭回归简化计算-&gt;核技巧（高斯核）</li><li>代码<br> hog  update  main</li><li>展示结果</li></ol>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>词袋模型+SVM图像分类</title>
     <link href="/2024/04/25/Notes/%E8%AF%BE%E7%A8%8B/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89/%E8%AF%8D%E8%A2%8B%E6%A8%A1%E5%9E%8B+SVM%E5%9B%BE%E5%83%8F%E5%88%86%E7%B1%BB/"/>
     <url>/2024/04/25/Notes/%E8%AF%BE%E7%A8%8B/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89/%E8%AF%8D%E8%A2%8B%E6%A8%A1%E5%9E%8B+SVM%E5%9B%BE%E5%83%8F%E5%88%86%E7%B1%BB/</url>
