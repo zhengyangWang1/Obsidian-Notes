@@ -11,6 +11,16 @@
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>ppt</p><ol><li>介绍算法：<br> hog算法<br> kcf算法：岭回归-&gt;岭回归简化计算-&gt;核技巧（高斯核）</li><li>代码<br> hog  update  main</li><li>展示结果</li></ol>]]></content>
     
     
+    <categories>
+      
+      <category>Notes</category>
+      
+      <category>课程</category>
+      
+      <category>计算机视觉</category>
+      
+    </categories>
+    
     
   </entry>
   
