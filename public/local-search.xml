@@ -11,6 +11,16 @@
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="基于Transformer的命名实体识别模型说明文档"><a href="#基于Transformer的命名实体识别模型说明文档" class="headerlink" title="基于Transformer的命名实体识别模型说明文档"></a>基于Transformer的命名实体识别模型说明文档</h3><h4 id="标签集"><a href="#标签集" class="headerlink" title="标签集"></a>标签集</h4><p>根据<code>train_TAG.txt</code>统计得到的标签集如下：</p><ul><li>O (非命名实体中的字符)</li><li>B_T (时间实体的开头字)</li><li>I_T (时间实体的中间字)</li><li>B_LOC (地点实体的开头字)</li><li>I_LOC (地点实体的中间字)</li></ul><p>这些标签用于对每个字符进行标注，分别表示非命名实体、时间实体和地点实体的不同部分。</p><h4 id="模型和执行细节"><a href="#模型和执行细节" class="headerlink" title="模型和执行细节"></a>模型和执行细节</h4><h5 id="模型结构"><a href="#模型结构" class="headerlink" title="模型结构"></a>模型结构</h5><p>本项目使用BERT作为基础模型进行命名实体识别。具体的模型结构和超参数如下：</p><ul><li>模型类型：BERT</li><li>模型名称：<code>bert-base-chinese</code></li><li>输入：字符序列</li><li>输出：字符对应的标签</li></ul><h5 id="超参数"><a href="#超参数" class="headerlink" title="超参数"></a>超参数</h5><ul><li>隐藏层大小：768</li><li>Transformer层数：12</li><li>注意力头数：12</li><li>最大序列长度：128</li><li>标签数：5 (根据标签集)</li></ul><h5 id="训练算法"><a href="#训练算法" class="headerlink" title="训练算法"></a>训练算法</h5><p>使用的训练算法和配置如下：</p><ul><li>优化器：AdamW</li><li>学习率：5e-5</li><li>批次大小：32</li><li>训练轮数：3</li></ul><h5 id="数据预处理"><a href="#数据预处理" class="headerlink" title="数据预处理"></a>数据预处理</h5><p>数据预处理步骤包括：</p><ol><li>使用BERT分词器对文本进行编码，确保每个字符对应一个token。</li><li>将标签转换为相应的ID。</li><li>对输入序列进行填充或截断以达到最大长度。</li></ol><h5 id="训练过程"><a href="#训练过程" class="headerlink" title="训练过程"></a>训练过程</h5><p>训练过程中，模型的输入为编码后的字符序列，输出为每个字符对应的标签。损失函数采用交叉熵损失，优化器为AdamW。训练循环中每个epoch包括以下步骤：</p><ol><li>前向传播计算损失。</li><li>反向传播更新模型参数。</li><li>每个epoch结束后输出损失值。</li></ol><h5 id="验证过程"><a href="#验证过程" class="headerlink" title="验证过程"></a>验证过程</h5><p>为了评估模型的性能，每个epoch结束后在验证集上进行测试，记录验证集上的损失和准确率。</p><h4 id="训练损失和验证集性能随时间变化的曲线"><a href="#训练损失和验证集性能随时间变化的曲线" class="headerlink" title="训练损失和验证集性能随时间变化的曲线"></a>训练损失和验证集性能随时间变化的曲线</h4><p>我们记录了每个epoch的训练损失和验证集上的损失与准确率，并绘制了随时间变化的曲线。</p><h4 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h4><p>本项目参考了以下文献、网站和代码：</p><ol><li>Devlin, J., Chang, M. W., Lee, K., &amp; Toutanova, K. (2018). BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding. arXiv preprint arXiv:1810.04805.</li><li>Hugging Face Transformers库：<a href="https://github.com/huggingface/transformers">https://github.com/huggingface/transformers</a></li><li>PyTorch官方文档：<a href="https://pytorch.org/docs/stable/index.html">https://pytorch.org/docs/stable/index.html</a></li></ol>]]></content>
     
     
+    <categories>
+      
+      <category>Notes</category>
+      
+      <category>课程</category>
+      
+      <category>自然语言处理</category>
+      
+    </categories>
+    
     
   </entry>
   
