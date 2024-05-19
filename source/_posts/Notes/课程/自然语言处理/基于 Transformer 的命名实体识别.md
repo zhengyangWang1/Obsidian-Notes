@@ -23,7 +23,8 @@ tags:
 #### 模型结构
 模型使用hugging face的bert-base-chinese作为预训练模型。模型接受预处理后的字符序列作为输入，输出字符对应的标签
 ##### 超参数
-BERT模型包含12层Transformer编码器
+BERT模型包含12层Transformer encoder，每层Transformer encoder包含的多头自注意头数为12，隐藏层大小为768。
+在构建数据集时，设定单条文本最大长度为128，对数据集进行阶段或填充。使用库函数`BertTokenizer`对数据进行向量化操作
 - 隐藏层大小：768
 - Transformer层数：12
 - 注意力头数：12
