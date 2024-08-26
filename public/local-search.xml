@@ -11,6 +11,16 @@
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/e2ecdf84352b5a5f1fd2a63b3e19c840_.jpg" alt="e2ecdf84352b5a5f1fd2a63b3e19c840_.jpg"></p><p><a href="file:///C:/Users/wang/Documents/WeChat%20Files/wxid_3v4u4g0js7gz22/FileStorage/File/2024-08/9ceb9198bbb4b3df50474a6a8594956c_02ddf5d511aa3195f5837db881d7418d_8.pdf">实验文档</a></p><p>大模型实验 三选一 </p><ul><li>实验1：基于 Stable_diffusion 实现图像生成图像的功能。主要 内容为完成各项基础运算配置、实现在潜在空间的反向过程特征 采样、补全推理阶段的关键步骤以及一系列基 本适配工作，实现由图像&#x2F;文字生成图像。 </li><li>实验2：基于 Llama2实现聊天机器人应用并在 DLP平台上进行 部署。主要内容为完成模型加载和适配、对话模板的应用、文本 生成的基本流程、模型推理的关键步骤，实现 DLP上的机器人聊 天功能。 </li><li>实验3：基于 CodeLlama 实现代码生成并在 DLP平台上进行部 署。主要内容为补全推理模块代码，具体包括模型加载和设置、 文本生成和性能统计、结果处理和打印等步骤，实现 DLP上的代 码生成。</li></ul><p>团队实验：基于pytorch自由选题 l 实验讲师讲解示例并提供文档作为参考 l 不限平台，不限主题，根据小组汇报和完成度来打分 l 在MLU平台上完成大模型移植，可额外获得10%加分</p>]]></content>
     
     
+    <categories>
+      
+      <category>Notes</category>
+      
+      <category>课程</category>
+      
+      <category>专业实习</category>
+      
+    </categories>
+    
     
   </entry>
   
