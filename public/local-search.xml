@@ -11,6 +11,14 @@
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="Emergent-Correspondence-from-Image-Diffusion"><a href="#Emergent-Correspondence-from-Image-Diffusion" class="headerlink" title="Emergent Correspondence from Image Diffusion"></a>Emergent Correspondence from Image Diffusion</h3><p>使用预训练的扩散模型提取真实图像上的特征，找到两幅图共存的某个特征的对应。在输入图像中添加噪声，然后用U-Net生成特征图，用余弦距离找到不同图像的相似特征</p>]]></content>
     
     
+    <categories>
+      
+      <category>Notes</category>
+      
+      <category>毕设</category>
+      
+    </categories>
+    
     
   </entry>
   
