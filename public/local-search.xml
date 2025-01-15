@@ -4,20 +4,25 @@
   
   
   <entry>
-    <title></title>
+    <title>相关文章</title>
+    <link href="/2025/01/15/Notes/%E6%AF%95%E8%AE%BE/%E7%9B%B8%E5%85%B3%E6%96%87%E7%AB%A0/"/>
+    <url>/2025/01/15/Notes/%E6%AF%95%E8%AE%BE/%E7%9B%B8%E5%85%B3%E6%96%87%E7%AB%A0/</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20250115110842.png" alt="image.png"><br><a href="https://zhuanlan.zhihu.com/p/133301967">图像特征提取与匹配技术</a> </p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>论文调研</title>
     <link href="/2024/11/27/Notes/%E6%AF%95%E8%AE%BE/%E8%AE%BA%E6%96%87%E8%B0%83%E7%A0%94/"/>
     <url>/2024/11/27/Notes/%E6%AF%95%E8%AE%BE/%E8%AE%BA%E6%96%87%E8%B0%83%E7%A0%94/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="Emergent-Correspondence-from-Image-Diffusion"><a href="#Emergent-Correspondence-from-Image-Diffusion" class="headerlink" title="Emergent Correspondence from Image Diffusion"></a>Emergent Correspondence from Image Diffusion</h3><p><strong>这篇文章用扩散模型提取图像特征，最终实现跨域匹配，但没有涉及手绘图像领域</strong><br>使用预训练的扩散模型提取真实图像上的特征，找到两幅图共存的某个特征的对应。<br>对于一张噪声图，在训练好的U-Net逐步去噪的过程中，可以在中间某一个时间步的图像作为特征图。<br>而对于真实图像，可以在前向扩散时加噪，得到原图和噪声的混合图像，然后送到U-Net中提取中间层的激活得到扩散特征</p><h3 id="Learning-Dense-Correspondences-between-Photos-and-Sketches"><a href="#Learning-Dense-Correspondences-between-Photos-and-Sketches" class="headerlink" title="Learning Dense Correspondences between Photos and Sketches"></a>Learning Dense Correspondences between Photos and Sketches</h3><p><strong>这篇文章通过深度学习方法提取素描图像的特征，建立素描图像和真实图像的关系</strong></p>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="Emergent-Correspondence-from-Image-Diffusion"><a href="#Emergent-Correspondence-from-Image-Diffusion" class="headerlink" title="Emergent Correspondence from Image Diffusion"></a>Emergent Correspondence from Image Diffusion</h3><p><a href="https://ar5iv.labs.arxiv.org/html/2306.03881?_immersive_translate_auto_translate=1">[2306.03881] Emergent Correspondence from Image Diffusion</a><br><strong>这篇文章用扩散模型提取图像特征，最终实现跨域匹配，但没有涉及手绘图像领域</strong><br>使用预训练的扩散模型提取真实图像上的特征，找到两幅图共存的某个特征的对应。<br>对于一张噪声图，在训练好的U-Net逐步去噪的过程中，可以在中间某一个时间步的图像作为特征图。<br>而对于真实图像，可以在前向扩散时加噪，得到原图和噪声的混合图像，然后送到U-Net中提取中间层的激活得到扩散特征</p><h3 id="Learning-Dense-Correspondences-between-Photos-and-Sketches"><a href="#Learning-Dense-Correspondences-between-Photos-and-Sketches" class="headerlink" title="Learning Dense Correspondences between Photos and Sketches"></a>Learning Dense Correspondences between Photos and Sketches</h3><p><strong>这篇文章通过深度学习方法提取素描图像的特征，建立素描图像和真实图像的关系</strong></p>]]></content>
     
-    
-    <categories>
-      
-      <category>Notes</category>
-      
-      <category>毕设</category>
-      
-    </categories>
     
     
   </entry>
