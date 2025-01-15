@@ -8,8 +8,16 @@
     <link href="/2025/01/15/Notes/%E6%AF%95%E8%AE%BE/%E5%AE%9E%E9%AA%8C/"/>
     <url>/2025/01/15/Notes/%E6%AF%95%E8%AE%BE/%E5%AE%9E%E9%AA%8C/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><ul><li><input disabled="" type="checkbox"> 通过复现该论文的方法，用扩散模型实现提取特征图<a href="https://ar5iv.labs.arxiv.org/html/2306.03881?_immersive_translate_auto_translate=1">[2306.03881] Emergent Correspondence from Image Diffusion</a> </li><li><input disabled="" type="checkbox"> </li></ul>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><ul><li><input disabled="" type="checkbox"> 通过复现该论文的方法，用扩散模型实现提取特征图<a href="https://github.com/Tsingularity/dift">GitHub - Tsingularity&#x2F;dift: [NeurIPS’23] Emergent Correspondence from Image Diffusion</a></li><li><input disabled="" type="checkbox"> 将手绘图像数据集迁移到该模型上，测试可行性</li></ul>]]></content>
     
+    
+    <categories>
+      
+      <category>Notes</category>
+      
+      <category>毕设</category>
+      
+    </categories>
     
     
   </entry>
@@ -21,7 +29,7 @@
     <link href="/2025/01/15/Notes/%E6%AF%95%E8%AE%BE/%E7%9B%B8%E5%85%B3%E6%96%87%E7%AB%A0/"/>
     <url>/2025/01/15/Notes/%E6%AF%95%E8%AE%BE/%E7%9B%B8%E5%85%B3%E6%96%87%E7%AB%A0/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20250115110842.png" alt="image.png"></p><p><a href="https://zhuanlan.zhihu.com/p/133301967">图像特征提取与匹配技术</a> 计算机视觉中常用的图像特征点匹配技术</p>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><img src="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20250115110842.png" alt="image.png"></p><p><a href="https://zhuanlan.zhihu.com/p/133301967">图像特征提取与匹配技术</a> 计算机视觉中常用的图像特征点匹配技术<br><a href="https://blog.csdn.net/qq_42708183/article/details/109133806">2020最强匹配综述—《Image Matching from Handcrafted to Deep Features: A Survey》阅读总结-CSDN博客</a> 图像匹配综述</p>]]></content>
     
     
     <categories>
@@ -42,7 +50,7 @@
     <link href="/2024/11/27/Notes/%E6%AF%95%E8%AE%BE/%E8%AE%BA%E6%96%87%E8%B0%83%E7%A0%94/"/>
     <url>/2024/11/27/Notes/%E6%AF%95%E8%AE%BE/%E8%AE%BA%E6%96%87%E8%B0%83%E7%A0%94/</url>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="Emergent-Correspondence-from-Image-Diffusion"><a href="#Emergent-Correspondence-from-Image-Diffusion" class="headerlink" title="Emergent Correspondence from Image Diffusion"></a>Emergent Correspondence from Image Diffusion</h3><p><a href="https://ar5iv.labs.arxiv.org/html/2306.03881?_immersive_translate_auto_translate=1">[2306.03881] Emergent Correspondence from Image Diffusion</a><br><strong>这篇文章用扩散模型提取图像特征，最终实现跨域匹配，但没有涉及手绘图像领域</strong><br>使用预训练的扩散模型提取真实图像上的特征，找到两幅图共存的某个特征的对应。<br>对于一张噪声图，在训练好的U-Net逐步去噪的过程中，可以在中间某一个时间步的图像作为特征图。<br>而对于真实图像，可以在前向扩散时加噪，得到原图和噪声的混合图像，然后送到U-Net中提取中间层的激活得到扩散特征</p><h3 id="Learning-Dense-Correspondences-between-Photos-and-Sketches"><a href="#Learning-Dense-Correspondences-between-Photos-and-Sketches" class="headerlink" title="Learning Dense Correspondences between Photos and Sketches"></a>Learning Dense Correspondences between Photos and Sketches</h3><p><a href="https://ar5iv.labs.arxiv.org/html/2307.12967?_immersive_translate_auto_translate=1">[2307.12967] Learning Dense Correspondences between Photos and Sketches</a><br><strong>这篇文章通过深度学习方法提取素描图像的特征，建立素描图像和真实图像的关系</strong><br>数据集为PSC6k<a href="https://github.com/cogtoolslab/photo-sketch-correspondence/blob/main/PSC6K_Benchmark_README.md">photo-sketch-correspondence&#x2F;PSC6K_Benchmark_README.md at main · cogtoolslab&#x2F;photo-sketch-correspondence · GitHub</a><br>在原有的Sketchy数据集上进行的扩充<a href="https://github.com/CDOTAD/SketchyDatabase?tab=readme-ov-file">GitHub - CDOTAD&#x2F;SketchyDatabase: This project is a reimplementation of The Sketchy Database: Learning to Retrieve Badly Drawn Bunnies</a><br>用自监督方法来学习草图和照片之间的密集对应关系。构造照片-草图对，用照片中带注释的关键点</p>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="Emergent-Correspondence-from-Image-Diffusion"><a href="#Emergent-Correspondence-from-Image-Diffusion" class="headerlink" title="Emergent Correspondence from Image Diffusion"></a>Emergent Correspondence from Image Diffusion</h3><p><a href="https://ar5iv.labs.arxiv.org/html/2306.03881?_immersive_translate_auto_translate=1">[2306.03881] Emergent Correspondence from Image Diffusion</a><br><strong>这篇文章用扩散模型提取图像特征，最终实现跨域匹配，但没有涉及手绘图像领域</strong><br>使用预训练的扩散模型提取真实图像上的特征，找到两幅图共存的某个特征的对应。<br>对于一张噪声图，在训练好的U-Net逐步去噪的过程中，可以在中间某一个时间步的图像作为特征图。<br>而对于真实图像，可以在前向扩散时加噪，得到原图和噪声的混合图像，然后送到U-Net中提取中间层的激活得到扩散特征</p><h3 id="Learning-Dense-Correspondences-between-Photos-and-Sketches"><a href="#Learning-Dense-Correspondences-between-Photos-and-Sketches" class="headerlink" title="Learning Dense Correspondences between Photos and Sketches"></a>Learning Dense Correspondences between Photos and Sketches</h3><p><a href="https://ar5iv.labs.arxiv.org/html/2307.12967?_immersive_translate_auto_translate=1">[2307.12967] Learning Dense Correspondences between Photos and Sketches</a><br><strong>这篇文章通过深度学习方法提取素描图像的特征，建立素描图像和真实图像的关系</strong><br>数据集为PSC6k<a href="https://github.com/cogtoolslab/photo-sketch-correspondence/blob/main/PSC6K_Benchmark_README.md">photo-sketch-correspondence&#x2F;PSC6K_Benchmark_README.md at main · cogtoolslab&#x2F;photo-sketch-correspondence · GitHub</a><br>在原有的Sketchy数据集上进行的扩充<a href="https://github.com/CDOTAD/SketchyDatabase?tab=readme-ov-file">GitHub - CDOTAD&#x2F;SketchyDatabase: This project is a reimplementation of The Sketchy Database: Learning to Retrieve Badly Drawn Bunnies</a><br>用自监督方法来学习草图和照片之间的密集对应关系。构造照片-草图对，用照片中带注释的关键点</p><h3 id="Image-Matching-from-Handcrafted-to-Deep-Features-A-Survey"><a href="#Image-Matching-from-Handcrafted-to-Deep-Features-A-Survey" class="headerlink" title="Image Matching from Handcrafted to Deep Features: A Survey"></a>Image Matching from Handcrafted to Deep Features: A Survey</h3><p><a href="https://link.springer.com/article/10.1007/s11263-020-01359-2">Image Matching from Handcrafted to Deep Features: A Survey | International Journal of Computer Vision</a></p>]]></content>
     
     
     <categories>
