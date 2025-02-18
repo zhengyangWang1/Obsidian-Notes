@@ -4,6 +4,19 @@
   
   
   <entry>
+    <title>代码随想录</title>
+    <link href="/2025/02/18/Notes/%E8%80%83%E7%A0%94/%E4%BB%A3%E7%A0%81%E9%9A%8F%E6%83%B3%E5%BD%95/"/>
+    <url>/2025/02/18/Notes/%E8%80%83%E7%A0%94/%E4%BB%A3%E7%A0%81%E9%9A%8F%E6%83%B3%E5%BD%95/</url>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h3><h4 id="二分查找"><a href="#二分查找" class="headerlink" title="二分查找"></a>二分查找</h4><h4 id="双指针法"><a href="#双指针法" class="headerlink" title="双指针法"></a>双指针法</h4><ul><li>快指针：寻找新数组的元素 ，新数组就是不含有目标元素的数组</li><li>慢指针：指向更新 新数组下标的位置</li></ul>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>复试准备</title>
     <link href="/2025/02/18/Notes/%E8%80%83%E7%A0%94/%E5%A4%8D%E8%AF%95%E5%87%86%E5%A4%87/"/>
     <url>/2025/02/18/Notes/%E8%80%83%E7%A0%94/%E5%A4%8D%E8%AF%95%E5%87%86%E5%A4%87/</url>
