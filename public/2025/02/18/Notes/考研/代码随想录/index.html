@@ -24,7 +24,7 @@
 <meta property="og:description" content="数组二分查找查找有序数组的快速方法（数组中无重复元素） 双指针法用一个循环实现两个循环嵌套才能实现的任务  快指针：寻找新数组的元素 ，新数组就是不含有目标元素的数组 慢指针：指向更新 新数组下标的位置  滑动窗口用两个指针分别标志窗口的起始和终止位置，用一个循环控制终止位置的移动，用判别条件控制起始位置的移动 螺旋矩阵二维矩阵的每一圈可以拆分为四条边，为了不充分考虑四个角处，每条边左闭右开 前缀">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2025-02-18T07:52:55.269Z">
-<meta property="article:modified_time" content="2025-03-01T02:23:33.131Z">
+<meta property="article:modified_time" content="2025-03-01T03:18:14.884Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary_large_image">
   
@@ -202,7 +202,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          523 字
+          586 字
         
       </span>
     
@@ -266,6 +266,7 @@
 <h4 id="前缀和"><a href="#前缀和" class="headerlink" title="前缀和"></a>前缀和</h4><p>给定任意数组，求某个区间的和，可以先求该数组的所有前缀和，即从0到每个元素的和。那么某个区间的和就等于该区间末尾元素的前缀和减去起始元素上一个元素的前缀和</p>
 <h3 id="哈希表"><a href="#哈希表" class="headerlink" title="哈希表"></a>哈希表</h3><h4 id="std-unordered-map"><a href="#std-unordered-map" class="headerlink" title="std::unordered_map"></a>std::unordered_map</h4><p>存储键值对的数据结构，查找的时间复杂度为O(1)<br>创建：unordered_map&lt;datatype,..&gt; map<br>访问：map[key] 如果key不存在，则会插入一个新元素<br>容量：map.empty()  map.size()<br>修改器：map.insert({key,value})插入，map.erase(key)删除<br>查找：map.find(key)，如果不存在则返回map.end()</p>
 <h4 id="两数之和问题"><a href="#两数之和问题" class="headerlink" title="两数之和问题"></a>两数之和问题</h4><p>先在hash表中find另一个匹配的数，然后将该元素加入hash表</p>
+<h3 id="滑动窗口-1"><a href="#滑动窗口-1" class="headerlink" title="滑动窗口"></a>滑动窗口</h3><h4 id="固定滑动窗口"><a href="#固定滑动窗口" class="headerlink" title="固定滑动窗口"></a>固定滑动窗口</h4><p>438.每次窗口移动时，要考虑左侧出窗口的元素的影响和右侧进窗口的值的影响，初始起始索引为0的窗口单独考虑</p>
 
                 
               </div>
