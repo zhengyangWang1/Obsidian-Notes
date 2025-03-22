@@ -25,7 +25,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20250307173907.png">
 <meta property="article:published_time" content="2025-02-18T01:35:06.711Z">
-<meta property="article:modified_time" content="2025-03-22T08:32:24.875Z">
+<meta property="article:modified_time" content="2025-03-22T12:12:34.569Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/zhengyangWang1/image@main/img/20250307173907.png">
@@ -204,7 +204,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          3.8k 字
+          3.9k 字
         
       </span>
     
@@ -215,7 +215,7 @@
         
         
         
-          32 分钟
+          33 分钟
         
       </span>
     
@@ -272,7 +272,7 @@
 </ul>
 <p>笔试：每天做几道算法题（贪心、排序、动态规划）<br>专业课复习：编程语言类（c++、python），软件工程（定义、原型、开发模型），软件测试（方法、分类），面向对象（定义），人工智能类（pytorch，机器学习、深度学习）<br>英语听说能力：</p>
 <h4 id="项目准备："><a href="#项目准备：" class="headerlink" title="项目准备："></a>项目准备：</h4><p>数据处理-&gt;模型结构（原理，优势）-&gt;训练方式（损失函数，优化器，参数更新）-&gt;评测指标，效果</p>
-<p><strong>论文</strong><br>数据处理：对数值型特征进行归一化处理，对类别型特征进行one-hot<br>模型结构：对连续性数据（数值）进行高斯扩散，对离散型数据（类别）进行多项式扩散，用MLP进行噪声的估计<br>损失函数：用KL散度<br>通过实验发现，DDPM生成的数据在弱分类器（决策树、SVM、贝叶斯、逻辑回归的平均值）和强分类器Catboost上表现接近或超越真实数据，增大样本规模可以提升效果（70、100倍），同时具有更好的隐私保护能力（DCR，NNDR）<br>关键方法：DDPM、SMOTE、CTAB-GAN、弱分类器、Catboost<br>关键指标：相关性矩阵、F1、AUC、ACC、DCR、NNDR、shapley</p>
+<p><strong>论文</strong><br>数据处理：对数值型特征进行归一化处理，对类别型特征进行one-hot<br>模型结构：对连续性数据（数值）进行高斯扩散，对离散型数据（类别）进行多项式扩散，用MLP进行噪声的估计<br>损失函数：用KL散度<br>通过实验发现，DDPM生成的数据在弱分类器（决策树、SVM、贝叶斯、逻辑回归的平均值）和强分类器Catboost上表现接近或超越真实数据，增大样本规模可以提升效果（70、100倍），同时具有更好的隐私保护能力（DCR，NNDR）<br>关键方法：DDPM、SMOTE、CTAB-GAN、弱分类器、Catboost<br>关键指标：相关性矩阵、F1、AUC、ACC、DCR、NNDR、shapley<br>AUC：以假阳率为横轴，真阳率为纵轴，通过改变分类阈值形成的ROC曲线下的面积，取值0.5-1越大越好<br>SMOTE：选择一个少数类样本，然后选择其最邻近样本，进行线性插值，形成新的样本<br>DCR：最邻近&#x2F;所有点距离<br>NNDR：最邻近&#x2F;次临近</p>
 <p><strong>基于扩散模型的手绘跨域图像匹配算法（毕业设计）</strong></p>
 <p>利用扩散模型提取图像特征，进行手绘图像的稀疏匹配，用于患者精神疾病的诊断<br>模型：stable diffusion（SD），该模型主要分为三个部分，分别为CLIP text encoder，VAE，U-net。其中CLIP是将文本转化为embedding，然后通过cross attention机制将其与图像的latent一起送入Unet。VAE负责将原始的图像进行encoding和decoding，实现从原始图像到latent的转化。Unet则负责学习每个时间步的误差，然后根据一个随机噪声的latent、文本的embedding、时间步t来预测该时间步的噪声，然后从latent上减去这个噪声。<br>在本项目中，我们将将时间步长t的噪声添加到真实图像，然后将其与t一起送入U-net，提取U-net上采样层的特征<br>数据集：来自 ROCF（Rey-Osterrieth Complex Figure Test，雷-奥斯特列斯复杂图形测验）的实验数据集，一种经典的神经心理学测验，广泛用于评估个体的视觉-空间能力、记忆力以及执行功能。该测验通常要求被试者在没有时间限制的情况下临摹一幅复杂图形，以此评估其基本的视觉-空间能力和绘图策略。<br>评价指标：BQSS评分系统，BQSS（Boston Qualitative Scoring System，波士顿定性评分系统）进行评分。BQSS 通过分析绘图的完整性、空间组织性、结构性错误等多方面指标，给出打分<br>创新点：首次将扩散模型特征提取方法用于手绘图像的匹配工作</p>
 <p><strong>kaggle竞赛 Plant Pathology 2021 - FGVC8 取得排名140&#x2F;625</strong><br>根据植物叶判断疾病的多标签分类任务，利用深度神经网络和一些训练方法，提升准确率<br>模型：resnet、efficientnet-v2，resnet是由何凯明提出的残差网络结构，基于CNN添加了残差，将原始输入和这一层的输出进行加权求和<br>创新点：基于上述模型，利用自蒸馏、余弦退火学习率、测试时增强等方法提高准确率<br>评价指标：F1值 &#x3D; Precision和Recall的调和平均值</p>
